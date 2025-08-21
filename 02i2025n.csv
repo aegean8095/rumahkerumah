@@ -1,4 +1,4 @@
-id,label,name,year,type,date
+elementId,label,name,year,type,date
 1,Investigation,"Shadow operator of Great Reach",2025,"Deforestation Case",
 2,Company,"PT Flora Nuansa Hijau",,"Plantation operator",
 3,Event,"PT FNH claiming to operate in 18 concessions",2022,"Company Operation",August 2022
