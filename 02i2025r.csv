@@ -1,5 +1,5 @@
 from,to,type,role,amount,link,startdate,enddate
-1,2,RELATED_TO,,,,,,
+1,2,RELATED_TO,,,,,
 2,3,PARTICIPATED_IN,,,,,,
 3,4,LINKED_TO,,,,,,
 3,5,LINKED_TO,,,,,,
