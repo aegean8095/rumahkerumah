@@ -28,4 +28,4 @@ from,to,type,role,amount,link,startdate,enddate
 25,20,OWNED_BY,Shareholder,95%,https://drive.google.com/file/d/1HsnfDmE4TeWV1ixMXj7TqfaFR_lVU2AJ/view?usp=drive_link,22-02-2023,23-01-2024
 25,21,OWNED_BY,Shareholder,5%,https://drive.google.com/file/d/1HsnfDmE4TeWV1ixMXj7TqfaFR_lVU2AJ/view?usp=drive_link,22-02-2023,23-01-2024
 25,22,MANAGED_BY,Commissioner,https://drive.google.com/file/d/1HsnfDmE4TeWV1ixMXj7TqfaFR_lVU2AJ/view?usp=drive_link,22-02-2023,23-01-2024
-25,23,MANAGED_BY,2023|2024,,,"Current",Director,,"Profile:TWA 2023","https://drive.google.com/file/d/1HsnfDmE4TeWV1ixMXj7TqfaFR_lVU2AJ/view?usp=drive_link",22-02-2023,23-01-2024
+25,23,MANAGED_BY,Director,,https://drive.google.com/file/d/1HsnfDmE4TeWV1ixMXj7TqfaFR_lVU2AJ/view?usp=drive_link,22-02-2023,23-01-2024
