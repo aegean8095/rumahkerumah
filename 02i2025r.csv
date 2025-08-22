@@ -91,4 +91,8 @@ from,to,type,role,amount,link,startdate,enddate
 63,64,PARTICIPATED_IN,,,,,
 63,2,LINKED_TO,,,,,
 2,64,OPERATING_ON,,,,,
+28,14,OPERATING_ON,,,,,
+28,16,OPERATING_ON,,,,,
+
+
 
