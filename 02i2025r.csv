@@ -76,5 +76,15 @@ from,to,type,role,amount,link,startdate,enddate
 21,49,MANAGED_BY,Director,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,06-10-2022,23-12-2022
 21,51,MANAGED_BY,Director,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,22-12-2022,08-08-2023
 21,52,MANAGED_BY,Secretary,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,06-10-2022,03-10-2023
+49,53,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+49,54,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+49,55,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+49,56,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+53,57,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+54,57,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+58,54,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+55,59,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+61,60,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
+56,61,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
 
 
