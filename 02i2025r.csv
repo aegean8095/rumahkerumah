@@ -90,3 +90,5 @@ from,to,type,role,amount,link,startdate,enddate
 1,63,RELATED_TO,,,https://docs.google.com/document/d/1QXhOzppFT0cjimHeP8if_vgnpPukvkCp/edit?usp=drivesdk&ouid=112024695383237399393&rtpof=true&sd=true,,
 63,64,PARTICIPATED_IN,,,,,
 63,2,LINKED_TO,,,,,
+2,64,OPERATING_ON,,,,,
+
