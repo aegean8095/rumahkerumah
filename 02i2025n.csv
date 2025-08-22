@@ -38,3 +38,8 @@ elementId,label,name,year,type,date
 37,Person,"Budi Santoso",,"Executives",
 38,Company,"EGL Capital SDN BHD",,"Holding company",
 39,Person,"Yudiana",,"Executives",
+40,Company,"Green Meadows Fiber Product LTD",2022,"Holding company",
+41,Company,"Hillrise Commercial INC",2022,"Holding company",
+42,Person,"Johannes Perangin-Angin",2022,"Executives",
+43,Person,"Tje Hwa",2022,"Executives",
+44,Person,"Antonius Silalahi",2023,"Executives",
