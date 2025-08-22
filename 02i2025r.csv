@@ -61,5 +61,13 @@ from,to,type,role,amount,link,startdate,enddate
 45,35,OWNER_OF,Shareholding,50%,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-06-2020,21-04-2022
 46,35,OWNER_OF,Shareholding,50%,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-06-2020,21-04-2022
 35,47,MANAGED_BY,Director,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-06-2020,21-04-2022
+48,20,OWNER_OF,Shareholder,50%,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-11-2022,22-11-2022
+49,20,OWNER_OF,Shareholder,50%,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-11-2022,22-11-2022
+20,48,MANAGED_BY,Director,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,06-10-2022,08-08-2023
+20,49,MANAGED_BY,Director,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,06-10-2022,23-12-2022
+20,50,MANAGED_BY,Secretary,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,06-10-2022,03-10-2023
+20,51,MANAGED_BY,Director,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,22-12-2022,08-08-2023
+20,52,MANAGED_BY,Secretary,,https://drive.google.com/drive/u/4/folders/1O9X25dgrncW-AyCC2sCAeIjKtPKB4LVC,06-10-2022,03-10-2023
+29,20,OWNER_OF,Shareholder,100%,https://drive.google.com/file/d/1HzpM-iGA70443cutbNLlb50opXKCeSbR/view?usp=drive_link,22-11-2022,31-01-2024
 
 
