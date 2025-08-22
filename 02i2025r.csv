@@ -53,5 +53,10 @@ from,to,type,role,amount,link,startdate,enddate
 27,37,MANAGED_BY,Commissioner,,https://drive.google.com/file/d/1HixfmA1R5CU_LLLQOHsIw8ja0nXDxAYX/view?usp=drive_link,19-07-2021,05-09-2023
 38,27,OWNER_OF,Shareholder,50%,https://drive.google.com/file/d/1HixfmA1R5CU_LLLQOHsIw8ja0nXDxAYX/view?usp=drive_link,30-12-2022,05-09-2023
 27,39,MANAGED_BY,Director,,https://drive.google.com/file/d/1HixfmA1R5CU_LLLQOHsIw8ja0nXDxAYX/view?usp=drive_link,28-01-2022,05-09-2023
+40,28,OWNER_OF,Shareholder,99%,https://drive.google.com/file/d/1HzCmodGYGt0VXbVy2woBbNkfFPrlnSVS/view?usp=drivesdk,09-09-2022,28-11-2024
+41,28,OWNER_OF,Shareholder,1%,https://drive.google.com/file/d/1HzCmodGYGt0VXbVy2woBbNkfFPrlnSVS/view?usp=drivesdk,09-09-2022,28-11-2024
+28,42,MANAGED_BY,Director,,https://drive.google.com/file/d/1HzCmodGYGt0VXbVy2woBbNkfFPrlnSVS/view?usp=drivesdk,09-09-2022,18-07-2023
+28,43,MANAGED_BY,Commissioner,,https://drive.google.com/file/d/1HzCmodGYGt0VXbVy2woBbNkfFPrlnSVS/view?usp=drivesdk,09-09-2022,28-11-2024
+28,44,MANAGED_BY,Director,,https://drive.google.com/file/d/1HzCmodGYGt0VXbVy2woBbNkfFPrlnSVS/view?usp=drivesdk,18-07-2023,28-11-2024
 
 
