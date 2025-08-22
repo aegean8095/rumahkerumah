@@ -86,5 +86,5 @@ from,to,type,role,amount,link,startdate,enddate
 55,59,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
 61,60,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
 56,61,OWNER_OF,Shareholder,,https://www.greenpeace.org/static/planet4-international-stateless/2023/05/3bdb7844-pulping_borneo_2023.pdf,2023,
-1,62,RELATED_TO,,,,,
+1,62,RELATED_TO,,,https://drive.google.com/drive/folders/1uz7QxY5xf8jTWmUYSMf-wNkrRlXVU9a1,,
 
