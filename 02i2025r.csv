@@ -37,10 +37,15 @@ from,to,type,role,amount,link,startdate,enddate
 28,21,OWNED_BY,Shareholder,5%,https://drive.google.com/file/d/1Hrg3UIiM59ar9d4htGnsnk384VVxJA_i/view?usp=drive_link,27-03-2023,08-04-2024
 28,22,MANAGED_BY,Commissioner,,https://drive.google.com/file/d/1Hrg3UIiM59ar9d4htGnsnk384VVxJA_i/view?usp=drive_link,27-03-2023,08-04-2024
 28,23,MANAGED_BY,Director,,https://drive.google.com/file/d/1Hrg3UIiM59ar9d4htGnsnk384VVxJA_i/view?usp=drive_link,27-03-2023,08-04-2024
-29,20,OWNED_BY,Shareholder,100%,https://drive.google.com/file/d/1HzpM-iGA70443cutbNLlb50opXKCeSbR/view?usp=drive_link,22-11-2022,31-01-2024
-30,20,MANAGED_BY,Director,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,07-08-2023,31-01-2024
-31,20,MANAGED_BY,Director,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,07-08-2023,31-01-2024
-32,20,MANAGED_BY,Secretary,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,03-10-2023,31-01-2024
-33,20,MANAGED_BY,Secretary,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,03-10-2023,31-01-2024
+20,29,OWNED_BY,Shareholder,100%,https://drive.google.com/file/d/1HzpM-iGA70443cutbNLlb50opXKCeSbR/view?usp=drive_link,22-11-2022,31-01-2024
+20,30,MANAGED_BY,Director,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,07-08-2023,31-01-2024
+20,31,MANAGED_BY,Director,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,07-08-2023,31-01-2024
+20,32,MANAGED_BY,Secretary,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,03-10-2023,31-01-2024
+20,33,MANAGED_BY,Secretary,,https://drive.google.com/file/d/1Hm1HqKrpvMykALqgJWajjLknSLZs75KM/view?usp=drive_link,03-10-2023,31-01-2024
+21,30,MANAGED_BY,Director,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,07-08-2023,31-01-2024
+21,31,MANAGED_BY,Director,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,07-08-2023,31-01-2024
+21,32,MANAGED_BY,Secretary,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,03-10-2023,31-01-2024
+21,33,MANAGED_BY,Secretary,,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,03-10-2023,31-01-2024
+21,29,OWNED_BY,Shareholding,100%,https://aleph.occrp.org/entities/40d28c04-5084-411c-a689-368cd4ccf706.3702eba18dfb5854b31462f54cb01919211be1a9#mode=Directorship%3Aorganization,22-11-2022,31-01-2024
 
 
