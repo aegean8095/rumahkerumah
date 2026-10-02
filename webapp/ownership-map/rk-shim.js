@@ -1,12 +1,15 @@
 /* Standalone replacement for the claude.ai artifact runtime (window.claude.use).
  * Lets the Ownership Map run as a static site (GitHub Pages):
- *   - 'db'        Firestore-like store kept in this browser's IndexedDB,
- *                 seeded once from data/seed.json when the store is empty.
+ *   - 'db'        Firestore-like store kept in this browser's IndexedDB. Seeded from
+ *                 data/seed.json on the very first visit only (a flag is kept), so a
+ *                 dataset the user empties stays empty. Open tabs stay in sync through
+ *                 BroadcastChannel. Persistent storage is requested on the first edit.
  *   - 'downloads' saves a file through a normal browser download.
  *   - 'sample'    reads documents with the DeepSeek API (OpenAI-compatible, called straight from the
  *                 browser). The API key is typed in by the user, kept in localStorage and never in the repo.
  *                 Text PDFs only; scans (images) are not supported.
- * Console helpers: rumahkerumahDB.export(), rumahkerumahDB.import(obj), rumahkerumahDB.reset(),
+ * Console helpers: rumahkerumahDB.export(), rumahkerumahDB.import(obj), rumahkerumahDB.replace(obj),
+ *                  rumahkerumahDB.reset() (also reloads the seed),
  *                  rumahkerumahAI.clearKey()
  */
 (function(){
@@ -32,6 +35,10 @@
   var cols = {};            // collection -> Map(id -> data)
   var listeners = {};       // collection -> Set(fn)
   var idb = null;
+  var META = '_meta/';      // keys under this prefix are bookkeeping, not data
+  var chan = null;          // BroadcastChannel to the other open tabs
+  try { chan = new BroadcastChannel('rk-ownership-map'); } catch (e){}
+  var persistAsked = false;
 
   function col(name){ return cols[name] || (cols[name] = new Map()); }
   function clone(o){ return o == null ? o : JSON.parse(JSON.stringify(o)); }
@@ -41,15 +48,40 @@
     idb = await openIdb();
     var keys = await idbDo(idb, 'readonly', function(s){ return s.getAllKeys(); });
     var vals = await idbDo(idb, 'readonly', function(s){ return s.getAll(); });
+    var meta = {};
     keys.forEach(function(k, i){
-      var p = String(k).split('/'); col(p[0]).set(p.slice(1).join('/'), vals[i]);
+      k = String(k);
+      if (k.indexOf(META) === 0){ meta[k.slice(META.length)] = vals[i]; return; }
+      var p = k.split('/'); col(p[0]).set(p.slice(1).join('/'), vals[i]);
     });
-    if (!col('entities').size && !col('links').size){
-      try {
-        var r = await fetch('data/seed.json', { cache: 'no-cache' });
-        if (r.ok) await importAll(await r.json(), true);
-      } catch (e){ /* no seed: start empty */ }
+    if (!meta.seeded){
+      // First visit: load the seed into an empty store. A store that already holds
+      // data (from before this flag existed) is only marked, never overwritten.
+      if (!col('entities').size && !col('links').size){
+        try {
+          var r = await fetch('data/seed.json', { cache: 'no-cache' });
+          if (r.ok) await importAll(await r.json(), true);
+        } catch (e){ /* no seed: start empty */ }
+      }
+      await setMeta('seeded', Date.now());
     }
+    if (chan) chan.onmessage = onRemote;
+  }
+  function setMeta(k, v){ return idbDo(idb, 'readwrite', function(s){ return s.put(v, META + k); }); }
+
+  // Another tab wrote: its IndexedDB write is done, mirror it here.
+  function onRemote(ev){
+    var m = ev.data || {};
+    if (m.reload){ location.reload(); return; }
+    if (!m.c) return;
+    if (m.data === null) col(m.c).delete(m.id); else col(m.c).set(m.id, m.data);
+    notify(m.c);
+  }
+  function tell(c, id, data){ if (chan) try { chan.postMessage({ c: c, id: id, data: data }); } catch (e){} }
+  function askPersist(){
+    if (persistAsked) return;
+    persistAsked = true;
+    try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(function(){}); } catch (e){}
   }
 
   async function importAll(obj, quiet){
@@ -69,16 +101,32 @@
     return out;
   }
   function put(c, id, data, quiet){
-    col(c).set(id, clone(data));
-    var p = idbDo(idb, 'readwrite', function(s){ return s.put(clone(data), c + '/' + id); });
-    if (!quiet) notify(c);
+    var v = clone(data);
+    col(c).set(id, v);
+    var p = idbDo(idb, 'readwrite', function(s){ return s.put(v, c + '/' + id); })
+      .then(function(r){ tell(c, id, v); return r; });
+    if (!quiet){ notify(c); askPersist(); }
     return p;
   }
   function del(c, id){
     col(c).delete(id);
-    var p = idbDo(idb, 'readwrite', function(s){ return s.delete(c + '/' + id); });
-    notify(c);
+    var p = idbDo(idb, 'readwrite', function(s){ return s.delete(c + '/' + id); })
+      .then(function(r){ tell(c, id, null); return r; });
+    notify(c); askPersist();
     return p;
+  }
+  // Replaces the whole dataset (entities, links, history) with obj, then reloads every tab.
+  async function replaceAll(obj){
+    if (!obj || typeof obj !== 'object' || (!obj.entities && !obj.links)) throw new Error('not a dataset file');
+    var keys = await idbDo(idb, 'readonly', function(s){ return s.getAllKeys(); });
+    await idbDo(idb, 'readwrite', function(s){
+      keys.forEach(function(k){ if (String(k).indexOf(META) !== 0) s.delete(k); });
+    });
+    cols = {};
+    await importAll({ entities: obj.entities || {}, links: obj.links || {}, versions: obj.versions || {} }, true);
+    await setMeta('seeded', Date.now());
+    if (chan) try { chan.postMessage({ reload: true }); } catch (e){}
+    location.reload();
   }
 
   function query(name, spec){
@@ -167,7 +215,7 @@
     limits: function(){ return Promise.resolve({ images: null }); },
     json: async function(prompt, opts){
       opts = opts || {};
-      if (opts.images && opts.images.length) throw { code: 'images_unavailable' };
+      if (opts.images && opts.images.length) throw { code: 'images_unavailable' };   // deepseek-chat reads text only
       var key = getKey() || askKey();
       var res;
       try {
@@ -202,9 +250,13 @@
 
   var ready = load();
   window.rumahkerumahDB = {
+    ready: ready,
     export: exportAll,
     import: function(o){ return ready.then(function(){ return importAll(o); }); },
-    reset: function(){ return ready.then(function(){ return idbDo(idb, 'readwrite', function(s){ return s.clear(); }); }).then(function(){ location.reload(); }); }
+    replace: function(o){ return ready.then(function(){ return replaceAll(o); }); },
+    // Clears everything, including the seeded flag, so the seed loads again.
+    reset: function(){ return ready.then(function(){ return idbDo(idb, 'readwrite', function(s){ return s.clear(); }); })
+      .then(function(){ if (chan) try { chan.postMessage({ reload: true }); } catch (e){} location.reload(); }); }
   };
   window.claude = window.claude || {
     use: function(name){

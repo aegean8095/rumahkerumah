@@ -840,7 +840,7 @@
       </div>
       <button type="button" class="icon-btn panel-toggle" id="panelCloseBtn" aria-label="Hide the control panel" title="Hide panel" aria-controls="sidebar" aria-expanded="true"><svg class="icon"><use href="#i-panel"/></svg></button>
       <p class="eyebrow">Corporate structure analysis</p>
-      <p class="tagline">Shareholdings and director or commissioner roles between entities, kept in one shared dataset with sources, notes and history.</p>
+      <p class="tagline">Shareholdings and director or commissioner roles between entities, kept in a dataset in this browser, with sources, notes and history.</p>
     </header>
 
     <section class="panel" id="groupsPanel" aria-labelledby="groupsHeading" hidden>
@@ -950,9 +950,9 @@
       <p class="hint" id="dataHint">Paste rows or sentences, then draw the map.</p>
       <div class="data-body" id="dataBody">
       <div class="pdf-block" id="pdfBlock" hidden>
-        <input type="file" id="pdfInput" accept="application/pdf,.pdf,image/png,image/jpeg,image/webp" multiple hidden>
+        <input type="file" id="pdfInput" accept="application/pdf,.pdf" multiple hidden>
         <button type="button" class="btn" id="pdfBtn"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Read a company profile PDF</span></button>
-        <p class="hint">An AHU profile as a PDF, or photos of its pages. Claude reads the shareholders and the board; you check every row before anything is added. The file itself is not stored.</p>
+        <p class="hint">An AHU profile as a PDF with selectable text (not a scan). DeepSeek reads the shareholders and the board; you check every row before anything is added. The file is not stored, but its text is sent to DeepSeek.</p>
       </div>
       <p class="or-rule" id="pdfOr" hidden>or paste rows</p>
       <details class="help">
@@ -1013,7 +1013,7 @@
 
     <section class="panel" id="datasetPanel" aria-labelledby="datasetHeading">
       <h2 id="datasetHeading">Dataset</h2>
-      <p class="hint" id="datasetHint">Loading the shared dataset…</p>
+      <p class="hint" id="datasetHint">Loading the dataset…</p>
       <p class="dataset-counts" id="datasetCounts"></p>
       <details class="ds-block" id="checksBlock" hidden>
         <summary><span>Checks</span><span class="ds-count" id="checksCount"></span></summary>
@@ -1026,7 +1026,11 @@
       <div class="action-row" id="datasetActions" hidden>
         <button type="button" class="btn" id="exportCsvBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Relationships CSV</span></button>
         <button type="button" class="btn" id="exportEntitiesCsvBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Entities CSV</span></button>
+        <button type="button" class="btn" id="backupBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Back up dataset</span></button>
+        <button type="button" class="btn" id="restoreBackupBtn"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Restore from backup</span></button>
+        <input type="file" id="restoreBackupInput" accept="application/json,.json" hidden>
       </div>
+      <p class="history-note" id="backupNote" hidden></p>
       <p class="parse-status" id="datasetStatus" aria-live="polite"></p>
       <div class="field" id="historyBlock" hidden>
         <span class="field-label">History</span>
@@ -4826,7 +4830,7 @@
     } else {
       html += '<p class="detail-empty">' + (previewMode
         ? 'This relationship is only in the preview. Add it to the dataset to record groups, sources and notes.'
-        : 'Groups, sources and notes are kept in the shared dataset, which isn’t available in this view.') + '</p>';
+        : 'Groups, sources and notes are kept in the dataset, which this browser can’t store right now.') + '</p>';
     }
     els.detailBody.innerHTML = html;
     els.detailPanel.hidden = false;
@@ -5669,17 +5673,17 @@
       (review && review.files ? '<button type="button" class="btn btn--primary" data-rv="retry">Try again</button>' : '');
   }
   const SAMPLE_ERRORS = {
-    not_granted: 'Reading documents needs your permission for this page to use Claude, and it was not given.',
-    sampling_disabled: 'Claude isn’t available to this page for your account.',
-    not_declared: 'This version of the page can’t use Claude. Reload it.',
-    capability_disabled: 'Claude isn’t available in this view.',
-    capability_removed: 'Claude isn’t available in this view.',
-    images_unavailable: 'This PDF is a scan with no text layer, and reading page images isn’t available in this view.',
+    not_granted: 'Document reading was not allowed.',
+    sampling_disabled: 'Document reading isn’t available.',
+    not_declared: 'Document reading isn’t available. Reload the page.',
+    capability_disabled: 'Document reading isn’t available.',
+    capability_removed: 'Document reading isn’t available.',
+    images_unavailable: 'This file has no text layer (a scan or a photo), so it can’t be read here. Only PDFs with selectable text work; paste the rows by hand instead.',
     image_rejected: 'A page image couldn’t be read. Try a clearer scan or a different file.',
     rate_limited: 'Too many requests just now. Wait a minute and try again.',
     session_expired: 'Your session has expired. Sign in again, then retry.',
     prompt_too_large: 'The document is too long to read at once. Upload just the profile pages.',
-    refused: 'Claude declined to read this document.',
+    refused: 'DeepSeek declined to read this document.',
     empty_completion: 'Nothing came back. Try again.',
     invalid_json: 'The answer could not be read as rows. Try again.',
     upstream_error: 'The connection was interrupted. Try again.',
@@ -5751,8 +5755,8 @@
       }
       if (signal.aborted) throw { code: 'cancelled' };
       showReviewProgress(input.mode === 'text'
-        ? 'Claude is reading the document’s text. This usually takes 20 to 60 seconds…'
-        : 'Claude is reading ' + input.images.length + ' page image' + (input.images.length === 1 ? '' : 's') + ' (OCR). This can take a minute or two…', true);
+        ? 'DeepSeek is reading the document’s text. This usually takes 20 to 60 seconds…'
+        : 'DeepSeek is reading ' + input.images.length + ' page image' + (input.images.length === 1 ? '' : 's') + ' (OCR). This can take a minute or two…', true);
       const prompt = EXTRACT_PROMPT + '\n\n' + (input.mode === 'text'
         ? 'The document\'s text, taken from the PDF page by page (table columns may run together):\n\n' + input.text
         : 'The attached images are the document\'s pages, in order. Read them carefully, including tables.');
@@ -6058,7 +6062,7 @@
     els.addBtn.hidden = true;
     els.historyBlock.hidden = true;
     els.datasetActions.hidden = true;
-    els.datasetHint.textContent = 'The shared dataset isn’t available in this view. Pasted data is kept only as a draft in this browser.';
+    els.datasetHint.textContent = 'This browser can’t store the dataset (storage may be blocked, for example in a private window). Pasted data is kept only as a draft.';
     els.dataHint.textContent = 'Paste rows or sentences, then draw the map.';
     const steps = document.querySelector('.empty-card ol');
     if (steps) steps.innerHTML = '<li>Paste rows from a spreadsheet or an AHU extract into Data.</li><li>Choose Draw map.</li><li>Open any entity for its ownership chain and roles.</li>';
@@ -6091,7 +6095,7 @@
     els.parseBtn.classList.remove('btn--primary');
     els.parseBtn.classList.add('btn');
     els.dataHint.textContent = 'Paste rows, name the company group and the source, then add them to the dataset. Preview draws them on their own first.';
-    els.datasetHint.textContent = 'The dataset is stored in this browser (IndexedDB). The latest 10 changes are kept in the history and can be undone. To share it, put an export in data/seed.json.';
+    els.datasetHint.textContent = 'The dataset is kept only in this browser. Back it up regularly: a backup file can be restored here, on another device, or committed as data/seed.json. The latest 10 changes are kept in the history and can be undone.';
     let gotE = false, gotL = false;
     const onErr = (e) => {
       els.datasetStatus.classList.add('has-error');
@@ -6154,4 +6158,5 @@
   }
 })();
 </script>
+<script src="rk-backup.js"></script>
 </body></html>

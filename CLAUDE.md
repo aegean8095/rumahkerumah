@@ -67,7 +67,7 @@ rumahkerumah/
 ### 2026-10-02 — Ownership Map web app
 
 - Converted the Ownership Map artifact into a standalone static app in `webapp/ownership-map/`
-- `rk-shim.js` replaces the artifact runtime: db → IndexedDB (optional seed `data/seed.json`), downloads → browser download; PDF reading via Claude is unavailable
+- `rk-shim.js` replaces the artifact runtime: db → IndexedDB (optional seed `data/seed.json`), downloads → browser download (PDF reading was added later via DeepSeek, see below)
 - Tested in Chromium (map draws, data persists after reload). See `webapp/ownership-map/README.md` for Pages setup
 
 ### 2026-10-02 — Ownership Map seed data
@@ -81,6 +81,15 @@ rumahkerumah/
 - `rk-shim.js` now implements the `sample` capability with the DeepSeek chat API (browser → api.deepseek.com, CORS allowed for the Pages origin)
 - The API key is entered in the browser (localStorage), never committed. Text PDFs only; scans are unsupported
 - Tested with a generated PDF and a mocked API response; not tested against the live DeepSeek API
+
+### 2026-10-02 — Ownership Map review fixes
+
+- Seed loads on the first visit only (flag `_meta/seeded` in IndexedDB); an emptied dataset no longer comes back
+- Open tabs sync through BroadcastChannel; persistent storage requested on first edit
+- Dataset panel: *Back up dataset* / *Restore from backup* buttons (`rk-backup.js`), with last-backup note
+- UI text no longer mentions Claude or a shared dataset; PDF picker accepts PDFs only, clearer message for scans
+- `.nojekyll` moved to the repo root (Pages serves the root)
+- Tested in Chromium: seed once, tab sync, backup/restore, add + undo, PDF flow with mocked API
 
 ---
 
