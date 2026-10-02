@@ -29,6 +29,9 @@ rumahkerumah/
 │   ├── 02i2025n.csv                       #    Deforestation news/incidents 2025
 │   └── 02i2025r.csv                       #    Deforestation research data 2025
 │
+├── webapp/                                # 6) Static web apps for GitHub Pages
+│   └── ownership-map/                     #    Ownership Map (index.html + rk-shim.js)
+│
 ├── research-and-second-brain/             # 4) Research notes & second brain
 │
 └── personal/                              # 5) Personal workspace
@@ -60,6 +63,12 @@ rumahkerumah/
   - `shadow-corporate/` — cSPKaltim corporate linkage data
   - `deforestation-risk/` — 02i2025n and 02i2025r incident/research data
 - Created empty `research-and-second-brain/` and `personal/` folders for future use
+
+### 2026-10-02 — Ownership Map web app
+
+- Converted the Ownership Map artifact into a standalone static app in `webapp/ownership-map/`
+- `rk-shim.js` replaces the artifact runtime: db → IndexedDB (optional seed `data/seed.json`), downloads → browser download; PDF reading via Claude is unavailable
+- Tested in Chromium (map draws, data persists after reload). See `webapp/ownership-map/README.md` for Pages setup
 
 ---
 
