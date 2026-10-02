@@ -70,6 +70,12 @@ rumahkerumah/
 - `rk-shim.js` replaces the artifact runtime: db → IndexedDB (optional seed `data/seed.json`), downloads → browser download; PDF reading via Claude is unavailable
 - Tested in Chromium (map draws, data persists after reload). See `webapp/ownership-map/README.md` for Pages setup
 
+### 2026-10-02 — Ownership Map seed data
+
+- Added `shadow-corporate/build_seed.py`: builds `webapp/ownership-map/data/seed.json` from `cSPKaltim.csv` (165 entities, 235 relationships, group `Kaltim`)
+- Row 229 (PT Sylvaduta, Pieter Tanuri) is typed DIRECTORSHIP but titled MINORITY SHAREHOLDER 1%; the seed treats it as a stake. Source CSV left unchanged
+- Tenure start/end dates become the relationship's seen dates (month precision)
+
 ---
 
 ## Notes
