@@ -3,8 +3,11 @@
  *   - 'db'        Firestore-like store kept in this browser's IndexedDB,
  *                 seeded once from data/seed.json when the store is empty.
  *   - 'downloads' saves a file through a normal browser download.
- *   - 'sample'    not available (reading PDFs needs Claude); the page falls back to manual paste.
- * Console helpers: rumahkerumahDB.export(), rumahkerumahDB.import(obj), rumahkerumahDB.reset()
+ *   - 'sample'    reads documents with the DeepSeek API (OpenAI-compatible, called straight from the
+ *                 browser). The API key is typed in by the user, kept in localStorage and never in the repo.
+ *                 Text PDFs only; scans (images) are not supported.
+ * Console helpers: rumahkerumahDB.export(), rumahkerumahDB.import(obj), rumahkerumahDB.reset(),
+ *                  rumahkerumahAI.clearKey()
  */
 (function(){
   'use strict';
@@ -137,6 +140,66 @@
     }
   };
 
+
+  // ---- Document reading through DeepSeek ----
+  var KEY_NAME = 'rk-deepseek-key';
+  var AI_URL = 'https://api.deepseek.com/chat/completions';
+  var AI_MODEL = 'deepseek-chat';
+  function getKey(){ try { return localStorage.getItem(KEY_NAME) || ''; } catch (e){ return ''; } }
+  function setKey(k){ try { k ? localStorage.setItem(KEY_NAME, k) : localStorage.removeItem(KEY_NAME); } catch (e){} }
+  function askKey(){
+    var k = window.prompt('Masukkan DeepSeek API key untuk membaca dokumen.\n' +
+      'Key hanya disimpan di browser ini dan dikirim langsung ke api.deepseek.com.\n' +
+      'Isi dokumen yang dibaca juga dikirim ke DeepSeek.');
+    k = (k || '').trim();
+    if (!k) throw { code: 'no_key' };
+    setKey(k);
+    return k;
+  }
+  function parseJsonLoose(t){
+    t = String(t || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+    try { return JSON.parse(t); } catch (e){}
+    var a = t.indexOf('{'), b = t.lastIndexOf('}');
+    if (a >= 0 && b > a) return JSON.parse(t.slice(a, b + 1));
+    throw new Error('no json');
+  }
+  var sampleApi = {
+    limits: function(){ return Promise.resolve({ images: null }); },
+    json: async function(prompt, opts){
+      opts = opts || {};
+      if (opts.images && opts.images.length) throw { code: 'images_unavailable' };
+      var key = getKey() || askKey();
+      var res;
+      try {
+        res = await fetch(AI_URL, {
+          method: 'POST', signal: opts.signal,
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
+          body: JSON.stringify({
+            model: AI_MODEL, temperature: 0, max_tokens: 4096,
+            response_format: { type: 'json_object' },
+            messages: [
+              { role: 'system', content: 'You extract structured data from documents and answer only with one valid JSON object.' },
+              { role: 'user', content: prompt }
+            ]
+          })
+        });
+      } catch (e){
+        if (e && e.name === 'AbortError') throw { code: 'cancelled' };
+        throw { code: 'upstream_error' };
+      }
+      if (res.status === 401){ setKey(''); throw { code: 'bad_key' }; }
+      if (res.status === 402) throw { code: 'insufficient_balance' };
+      if (res.status === 429) throw { code: 'rate_limited' };
+      if (res.status === 400 && /length|token|context/i.test(await res.clone().text())) throw { code: 'prompt_too_large' };
+      if (!res.ok) throw { code: 'upstream_error' };
+      var body = await res.json();
+      var text = body && body.choices && body.choices[0] && body.choices[0].message && body.choices[0].message.content;
+      if (!text) throw { code: 'empty_completion' };
+      try { return parseJsonLoose(text); } catch (e){ throw { code: 'invalid_json' }; }
+    }
+  };
+  window.rumahkerumahAI = { clearKey: function(){ setKey(''); } };
+
   var ready = load();
   window.rumahkerumahDB = {
     export: exportAll,
@@ -147,6 +210,7 @@
     use: function(name){
       if (name === 'db') return ready.then(function(){ return dbApi; });
       if (name === 'downloads') return Promise.resolve(downloadsApi);
+      if (name === 'sample') return Promise.resolve(sampleApi);
       return Promise.reject({ code: 'capability_disabled' });
     }
   };

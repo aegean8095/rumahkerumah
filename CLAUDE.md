@@ -76,6 +76,12 @@ rumahkerumah/
 - Row 229 (PT Sylvaduta, Pieter Tanuri) is typed DIRECTORSHIP but titled MINORITY SHAREHOLDER 1%; the seed treats it as a stake. Source CSV left unchanged
 - Tenure start/end dates become the relationship's seen dates (month precision)
 
+### 2026-10-02 — Ownership Map PDF reading via DeepSeek
+
+- `rk-shim.js` now implements the `sample` capability with the DeepSeek chat API (browser → api.deepseek.com, CORS allowed for the Pages origin)
+- The API key is entered in the browser (localStorage), never committed. Text PDFs only; scans are unsupported
+- Tested with a generated PDF and a mocked API response; not tested against the live DeepSeek API
+
 ---
 
 ## Notes

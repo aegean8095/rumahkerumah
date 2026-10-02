@@ -5683,6 +5683,9 @@
     empty_completion: 'Nothing came back. Try again.',
     invalid_json: 'The answer could not be read as rows. Try again.',
     upstream_error: 'The connection was interrupted. Try again.',
+    no_key: 'No DeepSeek API key was entered, so the document was not read.',
+    bad_key: 'DeepSeek rejected the API key. It was removed from this browser; choose Try again to enter it again.',
+    insufficient_balance: 'The DeepSeek account has no balance left. Top it up, then try again.',
   };
 
   async function pdfToInput(file, sample, signal){
@@ -5732,7 +5735,7 @@
     review = { files: list, label };
     openReview(label);
     const sample = await getSampleApi();
-    if (!sample){ showReviewError('Reading documents needs Claude, which isn’t available in this standalone version. You can still paste rows by hand.'); return; }
+    if (!sample){ showReviewError('Document reading is not available right now. You can still paste rows by hand.'); return; }
     reviewCtl = new AbortController();
     const signal = reviewCtl.signal;
     try {
