@@ -2133,6 +2133,46 @@
    "note": "",
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
+  },
+  "e-pt-bintang-utama-lestari": {
+   "name": "PT Bintang Utama Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "e-pt-agam-sempurna": {
+   "name": "PT Agam Sempurna",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "e-pt-super-mitra-nusantara-abadi": {
+   "name": "PT Super Mitra Nusantara Abadi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "e-jajang-suherlan": {
+   "name": "Jajang Suherlan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "e-kirmadi": {
+   "name": "Kirmadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   }
  },
  "links": {
@@ -9747,195 +9787,97 @@
    "note": "",
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
+  },
+  "l-musl2zfn-kcwnxu": {
+   "source": "e-pt-bintang-utama-lestari",
+   "target": "e-pt-agam-sempurna",
+   "type": "ownership",
+   "value": 98.8,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "l-musl2zfn-fqp883": {
+   "source": "e-pt-super-mitra-nusantara-abadi",
+   "target": "e-pt-agam-sempurna",
+   "type": "ownership",
+   "value": 1.2,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "l-musl2zfn-q5jtcq": {
+   "source": "e-jajang-suherlan",
+   "target": "e-pt-agam-sempurna",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "l-musl2zfn-h4zcxl": {
+   "source": "e-kirmadi",
+   "target": "e-pt-agam-sempurna",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   }
  },
  "versions": {
-  "v-musbabnb-puif": {
-   "at": 1791027090551,
-   "batch": "v-musbabnb-puif",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-foresta-hijau-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Foresta Hijau Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-tarakan-chip-mill",
-     "before": null,
-     "after": {
-      "name": "PT Tarakan Chip Mill",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536,
-      "clusters": [
-       "Forestry"
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-anugrah-hijau-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Anugrah Hijau Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-andang-priadi",
-     "before": null,
-     "after": {
-      "name": "Andang Priadi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-wiendi",
-     "before": null,
-     "after": {
-      "name": "Wiendi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbabmw-v9vw05",
-     "before": null,
-     "after": {
-      "source": "e-pt-foresta-hijau-lestari",
-      "target": "e-pt-tarakan-chip-mill",
-      "type": "ownership",
-      "value": 99.6,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbabmw-d968ah",
-     "before": null,
-     "after": {
-      "source": "e-pt-anugrah-hijau-lestari",
-      "target": "e-pt-tarakan-chip-mill",
-      "type": "ownership",
-      "value": 0.4,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbabmw-o8rws7",
-     "before": null,
-     "after": {
-      "source": "e-andang-priadi",
-      "target": "e-pt-tarakan-chip-mill",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbabmw-iu4ldn",
-     "before": null,
-     "after": {
-      "source": "e-wiendi",
-      "target": "e-pt-tarakan-chip-mill",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027090536,
-      "updatedAt": 1791027090536
-     }
-    }
-   ]
-  },
   "v-musbaycu-yalq": {
    "at": 1791027119982,
    "batch": "v-musbaycu-yalq",
@@ -12239,6 +12181,189 @@
       "note": "",
       "createdAt": 1791043506749,
       "updatedAt": 1791043506749
+     }
+    }
+   ]
+  },
+  "v-musl2zgn-fr75": {
+   "at": 1791043544327,
+   "batch": "v-musl2zgn-fr75",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-bintang-utama-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Bintang Utama Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-agam-sempurna",
+     "before": null,
+     "after": {
+      "name": "PT Agam Sempurna",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-super-mitra-nusantara-abadi",
+     "before": null,
+     "after": {
+      "name": "PT Super Mitra Nusantara Abadi",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-jajang-suherlan",
+     "before": null,
+     "after": {
+      "name": "Jajang Suherlan",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-kirmadi",
+     "before": null,
+     "after": {
+      "name": "Kirmadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl2zfn-kcwnxu",
+     "before": null,
+     "after": {
+      "source": "e-pt-bintang-utama-lestari",
+      "target": "e-pt-agam-sempurna",
+      "type": "ownership",
+      "value": 98.8,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl2zfn-fqp883",
+     "before": null,
+     "after": {
+      "source": "e-pt-super-mitra-nusantara-abadi",
+      "target": "e-pt-agam-sempurna",
+      "type": "ownership",
+      "value": 1.2,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl2zfn-q5jtcq",
+     "before": null,
+     "after": {
+      "source": "e-jajang-suherlan",
+      "target": "e-pt-agam-sempurna",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl2zfn-h4zcxl",
+     "before": null,
+     "after": {
+      "source": "e-kirmadi",
+      "target": "e-pt-agam-sempurna",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
      }
     }
    ]
