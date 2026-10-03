@@ -161,6 +161,12 @@ Working efficiently (token use):
 - Connect told every failure apart as "GitHub rejected that token". Now: not a token (e.g. the token's name pasted), api.github.com unreachable (firewall, VPN, blocker extension), GitHub error, or a really rejected token
 - Spaces, line breaks and quotes around a pasted token are removed. 1 new test (17 total)
 
+### 2026-10-03 — Ownership Map: focus from the right-click menu
+
+- Entity right-click menu: *Focus on this entity*, *Focus on it and its direct relations*, *Focus on its whole network* (connected entities through any number of steps). Everything else is hidden through the existing hidden-entities mechanism; the map refits; *Show all* restores and refits
+- Follows the Relationships and Timeline filters. `focusOn(id, depth)` sits next to `hideNode` in `index.html` and is on the add-on API, with `showAllNodes`
+- 1 new test (18 total). In one full run the "quality: counts" test failed once and then passed 4 times on its own (likely timing under load)
+
 ---
 
 ## Notes

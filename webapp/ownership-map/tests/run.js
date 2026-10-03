@@ -376,6 +376,39 @@ const tests = {
     await ctx.unroute(GH + '**'); await ctx.route(GH + '**', r => r.abort('blockedbyclient'));
     ok(/couldn’t reach api.github.com/.test(await tryToken('github_pat_GOOD000000000000000000000000')), 'blocked network');
   },
+  async 'focus: right-click menu focuses on an entity, its relations, its network'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    // What should stay, computed here from the links the map shows.
+    const expected = await p.evaluate(id => {
+      const nb = x => { const s = new Set(); OwnershipMap.graph.links.forEach(l => { if (!OwnershipMap.linkPassesFilter(l)) return;
+        const [a, b] = OwnershipMap.linkEnds(l); if (a === x) s.add(b); if (b === x) s.add(a); }); return s; };
+      const one = new Set([id, ...nb(id)]);
+      const all = new Set([id]); let q = [id];
+      while (q.length){ const n = []; q.forEach(x => nb(x).forEach(y => { if (!all.has(y)){ all.add(y); n.push(y); } })); q = n; }
+      return { one: one.size, all: all.size, total: OwnershipMap.graph.nodes.length };
+    }, id);
+    const shown = () => p.$$eval('g.node', gs => gs.filter(g => getComputedStyle(g).display !== 'none' && g.getAttribute('visibility') !== 'hidden').length);
+    const menu = async action => {
+      await p.evaluate(id => { const g = d3.selectAll('g.node').filter(d => d.id === id).node(); const r = g.getBoundingClientRect();
+        g.dispatchEvent(new MouseEvent('contextmenu', { bubbles: true, cancelable: true, clientX: r.x + r.width / 2, clientY: r.y + r.height / 2 })); }, id);
+      await sleep(200); ok(await p.isVisible('#nodeContextMenu'), 'menu opens');
+      await p.click('#nodeContextMenu [data-action="' + action + '"]'); await sleep(900);
+    };
+    await menu('focus-0'); eq(await shown(), 1, 'focus on the entity alone');
+    ok(new RegExp('^' + (expected.total - 1) + '$').test(await p.textContent('#hiddenCount')), 'hidden counter');
+    await menu('focus-1'); eq(await shown(), expected.one, 'entity + direct relations');
+    await menu('focus-all'); eq(await shown(), expected.all, 'whole network');
+    ok(expected.all > expected.one, 'network is larger than the direct relations (test data sanity)');
+    await p.click('#showHiddenBtn'); await sleep(900); eq(await shown(), expected.total, 'Show all brings everything back');
+    // Only shareholdings: direct relations follow the filter
+    await p.click('.view-bar [data-type="ownership"]'); await sleep(700);
+    const ownOnly = await p.evaluate(id => { const s = new Set([id]); OwnershipMap.graph.links.forEach(l => { if (l.type !== 'ownership') return;
+      const [a, b] = OwnershipMap.linkEnds(l); if (a === id) s.add(b); if (b === id) s.add(a); }); return s.size; }, id);
+    await menu('focus-1'); eq(await shown(), ownOnly, 'focus follows the Shareholding filter');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {
