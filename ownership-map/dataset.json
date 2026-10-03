@@ -24,6 +24,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-al-hakim-hanafiah": {
+   "name": "Al Hakim Hanafiah",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
   "e-andang-priadi": {
    "name": "Andang Priadi",
    "type": "person",
@@ -55,6 +63,22 @@
    "note": "",
    "createdAt": 1791026886145,
    "updatedAt": 1791027575625
+  },
+  "e-apputhasamy-rathnam": {
+   "name": "Apputhasamy Rathnam",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-arfan-sani": {
+   "name": "Arfan Sani",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   },
   "e-ari-hariadi": {
    "name": "Ari Hariadi",
@@ -95,6 +119,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-bastian-purnama": {
+   "name": "Bastian Purnama",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   },
   "e-benny-pangbin-gayonie": {
    "name": "Benny Pangbin Gayonie",
@@ -192,6 +224,14 @@
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
   },
+  "e-chong-choong-khim": {
+   "name": "Chong Choong Khim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
   "e-choong-yoke-long": {
    "name": "Choong Yoke Long",
    "type": "person",
@@ -263,6 +303,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-eddy-hartanto": {
+   "name": "Eddy Hartanto",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   },
   "e-eddy-rahardjo-hadisiswojo": {
    "name": "Eddy Rahardjo Hadisiswojo",
@@ -383,6 +431,14 @@
    "note": "",
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
+  },
+  "e-goh-keng-ee": {
+   "name": "Goh Keng Ee",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
   },
   "e-goodwood-bcl-sdn-bhd": {
    "name": "Goodwood Bcl Sdn Bhd",
@@ -624,6 +680,16 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-kl-kepong-plantation": {
+   "name": "Kl-Kepong Plantation Sdn Bhd",
+   "type": "company",
+   "aliases": [
+    "Kl-Kepong Plantation"
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043175845
+  },
   "e-krisman-p-sitinjak": {
    "name": "Krisman P Sitinjak",
    "type": "person",
@@ -792,6 +858,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-nicolaas-bernadus-tirtadinata": {
+   "name": "Nicolaas Bernadus Tirtadinata",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
   "e-olympia-medal-sdn-bhd": {
    "name": "Olympia Medal Sdn Bhd",
    "type": "company",
@@ -799,6 +873,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-patrick-kee-chuan-peng": {
+   "name": "Patrick Kee Chuan Peng",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
   },
   "e-pengarapen-gurusinga": {
    "name": "Pengarapen Gurusinga",
@@ -879,6 +961,22 @@
    "note": "",
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
+  },
+  "e-pt-adei-plantation-industry": {
+   "name": "PT Adei Plantation & Industry",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-pt-adhyaksa-dharmasatya": {
+   "name": "PT Adhyaksa Dharmasatya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   },
   "e-pt-adindo-hutani-lestari": {
    "name": "PT Adindo Hutani Lestari",
@@ -1025,6 +1123,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-bumilanggeng-perdanatrada": {
+   "name": "PT Bumilanggeng Perdanatrada",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
   "e-pt-cahaya-bumi-makmur": {
    "name": "PT Cahaya Bumi Makmur",
    "type": "company",
@@ -1059,6 +1165,14 @@
    "note": "",
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
+  },
+  "e-pt-eagle-high-plantations-tbk": {
+   "name": "PT Eagle High Plantations Tbk",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   },
   "e-pt-firdaus-mitra-utama": {
    "name": "PT Firdaus Mitra Utama",
@@ -1580,6 +1694,14 @@
    "createdAt": 1791027119945,
    "updatedAt": 1791027119945
   },
+  "e-shivaganesh-kuppusamy": {
+   "name": "Shivaganesh Kuppusamy",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
   "e-siet-lin-lee": {
    "name": "Siet Lin Lee",
    "type": "person",
@@ -1748,6 +1870,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-thomas-thomas": {
+   "name": "Thomas Thomas",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
   "e-tio-bio-kok": {
    "name": "Tio Bio Kok",
    "type": "person",
@@ -1883,136 +2013,6 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
-  },
-  "e-kl-kepong-plantation": {
-   "name": "Kl-Kepong Plantation Sdn Bhd",
-   "type": "company",
-   "aliases": [
-    "Kl-Kepong Plantation"
-   ],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043175845
-  },
-  "e-pt-adei-plantation-industry": {
-   "name": "PT Adei Plantation & Industry",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-al-hakim-hanafiah": {
-   "name": "Al Hakim Hanafiah",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-patrick-kee-chuan-peng": {
-   "name": "Patrick Kee Chuan Peng",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-shivaganesh-kuppusamy": {
-   "name": "Shivaganesh Kuppusamy",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-thomas-thomas": {
-   "name": "Thomas Thomas",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-goh-keng-ee": {
-   "name": "Goh Keng Ee",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-apputhasamy-rathnam": {
-   "name": "Apputhasamy Rathnam",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-chong-choong-khim": {
-   "name": "Chong Choong Khim",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "e-pt-eagle-high-plantations-tbk": {
-   "name": "PT Eagle High Plantations Tbk",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-pt-adhyaksa-dharmasatya": {
-   "name": "PT Adhyaksa Dharmasatya",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-pt-bumilanggeng-perdanatrada": {
-   "name": "PT Bumilanggeng Perdanatrada",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-eddy-hartanto": {
-   "name": "Eddy Hartanto",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-bastian-purnama": {
-   "name": "Bastian Purnama",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-nicolaas-bernadus-tirtadinata": {
-   "name": "Nicolaas Bernadus Tirtadinata",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "e-arfan-sani": {
-   "name": "Arfan Sani",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
   }
  },
  "links": {
@@ -8990,12 +8990,56 @@
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
   },
-  "l-muskugej-l5o7yt": {
-   "source": "e-kl-kepong-plantation",
+  "l-muskugej-88civu": {
+   "source": "e-goh-keng-ee",
    "target": "e-pt-adei-plantation-industry",
-   "type": "ownership",
-   "value": 95,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-bqauhu": {
+   "source": "e-apputhasamy-rathnam",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-gxer9s": {
+   "source": "e-patrick-kee-chuan-peng",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Presiden Komisaris",
    "date": "2017-06",
    "status": null,
    "seen": [
@@ -9034,12 +9078,12 @@
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
   },
-  "l-muskugej-yxwwh6": {
-   "source": "e-al-hakim-hanafiah",
+  "l-muskugej-k0knqo": {
+   "source": "e-chong-choong-khim",
    "target": "e-pt-adei-plantation-industry",
    "type": "directorship",
    "value": null,
-   "role": "Direktur",
+   "role": "Komisaris",
    "date": "2017-06",
    "status": null,
    "seen": [
@@ -9056,12 +9100,12 @@
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
   },
-  "l-muskugej-gxer9s": {
-   "source": "e-patrick-kee-chuan-peng",
+  "l-muskugej-l5o7yt": {
+   "source": "e-kl-kepong-plantation",
    "target": "e-pt-adei-plantation-industry",
-   "type": "directorship",
-   "value": null,
-   "role": "Presiden Komisaris",
+   "type": "ownership",
+   "value": 95,
+   "role": null,
    "date": "2017-06",
    "status": null,
    "seen": [
@@ -9122,8 +9166,8 @@
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
   },
-  "l-muskugej-88civu": {
-   "source": "e-goh-keng-ee",
+  "l-muskugej-yxwwh6": {
+   "source": "e-al-hakim-hanafiah",
    "target": "e-pt-adei-plantation-industry",
    "type": "directorship",
    "value": null,
@@ -9144,56 +9188,12 @@
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
   },
-  "l-muskugej-bqauhu": {
-   "source": "e-apputhasamy-rathnam",
-   "target": "e-pt-adei-plantation-industry",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
-   "date": "2017-06",
-   "status": null,
-   "seen": [
-    "2017-06"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-     "date": "2017-06"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "l-muskugej-k0knqo": {
-   "source": "e-chong-choong-khim",
-   "target": "e-pt-adei-plantation-industry",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2017-06",
-   "status": null,
-   "seen": [
-    "2017-06"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-     "date": "2017-06"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043146378,
-   "updatedAt": 1791043146378
-  },
-  "l-muskx4f6-dntmfm": {
-   "source": "e-pt-eagle-high-plantations-tbk",
+  "l-muskx4f6-80uuc5": {
+   "source": "e-eddy-hartanto",
    "target": "e-pt-adhyaksa-dharmasatya",
-   "type": "ownership",
-   "value": 99.999999,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
    "date": "2017-06",
    "status": null,
    "seen": [
@@ -9232,8 +9232,30 @@
    "createdAt": 1791043270817,
    "updatedAt": 1791043270817
   },
-  "l-muskx4f6-80uuc5": {
-   "source": "e-eddy-hartanto",
+  "l-muskx4f6-dntmfm": {
+   "source": "e-pt-eagle-high-plantations-tbk",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "ownership",
+   "value": 99.999999,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-mma28d": {
+   "source": "e-arfan-sani",
    "target": "e-pt-adhyaksa-dharmasatya",
    "type": "directorship",
    "value": null,
@@ -9282,28 +9304,6 @@
    "type": "directorship",
    "value": null,
    "role": "Komisaris",
-   "date": "2017-06",
-   "status": null,
-   "seen": [
-    "2017-06"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-     "date": "2017-06"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043270817,
-   "updatedAt": 1791043270817
-  },
-  "l-muskx4f6-mma28d": {
-   "source": "e-arfan-sani",
-   "target": "e-pt-adhyaksa-dharmasatya",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
    "date": "2017-06",
    "status": null,
    "seen": [
