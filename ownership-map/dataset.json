@@ -305,12 +305,12 @@
    "updatedAt": 1790961478929
   },
   "e-hartono": {
-   "name": "HARTONO",
+   "name": "Hartono",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791022547834
   },
   "e-hasudungan-simamora": {
    "name": "Hasudungan Simamora",
@@ -7294,216 +7294,6 @@
   }
  },
  "versions": {
-  "v-mur8l0mf-4zfx": {
-   "at": 1790962084455,
-   "batch": "v-mur8l0mf-4zfx",
-   "summary": "Added PT Kesatuan Mas Abadi and its corporate group to the group Sinarmas Group: 4 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 4,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-lzt4ie",
-     "before": {
-      "source": "e-pt-sari-dumai-sejati",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 70,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     },
-     "after": {
-      "source": "e-pt-sari-dumai-sejati",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 70,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962084442
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-45wjp3",
-     "before": {
-      "source": "e-pt-kutai-refinery-nusantara",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 30,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     },
-     "after": {
-      "source": "e-pt-kutai-refinery-nusantara",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 30,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962084442
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-0emlxr",
-     "before": {
-      "source": "e-daniel-bastian-tandjung",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     },
-     "after": {
-      "source": "e-daniel-bastian-tandjung",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962084442
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-z1ia3r",
-     "before": {
-      "source": "e-tio-bio-kok",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     },
-     "after": {
-      "source": "e-tio-bio-kok",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962084442
-     }
-    }
-   ]
-  },
   "v-mur8v8yv-us63": {
    "at": 1790962561831,
    "batch": "v-mur8v8yv-us63",
@@ -7779,6 +7569,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020961647
+     }
+    }
+   ]
+  },
+  "v-mus8kyh0-hpbw": {
+   "at": 1791022547844,
+   "batch": "v-mus8kyh0-hpbw",
+   "summary": "Renamed HARTONO to Hartono",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-hartono",
+     "before": {
+      "name": "HARTONO",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Hartono",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791022547834
      }
     }
    ]
