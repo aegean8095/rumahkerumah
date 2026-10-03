@@ -995,7 +995,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025749493,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-sylvaduta": {
    "name": "PT Sylvaduta",
@@ -8912,6 +8915,39 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025741094
+     }
+    }
+   ]
+  },
+  "v-musahkvw-7thw": {
+   "at": 1791025749500,
+   "batch": "v-musahkvw-7thw",
+   "summary": "Added the cluster Pulp and Paper: PT Swadaya Perkasa",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-swadaya-perkasa",
+     "before": {
+      "name": "PT Swadaya Perkasa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Swadaya Perkasa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025749493,
+      "clusters": [
+       "Pulp and Paper"
+      ]
      }
     }
    ]
