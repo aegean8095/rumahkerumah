@@ -529,12 +529,12 @@
    "updatedAt": 1790961478929
   },
   "e-muhartati": {
-   "name": "MUHARTATI",
+   "name": "Muhartati",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020961647
   },
   "e-mutanto-juwono": {
    "name": "Mutanto Juwono",
@@ -7294,192 +7294,6 @@
   }
  },
  "versions": {
-  "v-mur8k59v-8bx3": {
-   "at": 1790962043827,
-   "batch": "v-mur8k59v-8bx3",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-sari-dumai-sejati",
-     "before": null,
-     "after": {
-      "name": "PT Sari Dumai Sejati",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-kesatuan-mas-abadi",
-     "before": null,
-     "after": {
-      "name": "PT Kesatuan Mas Abadi",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813,
-      "clusters": [
-       "Forestry"
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-kutai-refinery-nusantara",
-     "before": null,
-     "after": {
-      "name": "PT Kutai Refinery Nusantara",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-daniel-bastian-tandjung",
-     "before": null,
-     "after": {
-      "name": "Daniel Bastian Tandjung",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-tio-bio-kok",
-     "before": null,
-     "after": {
-      "name": "Tio Bio Kok",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-lzt4ie",
-     "before": null,
-     "after": {
-      "source": "e-pt-sari-dumai-sejati",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 70,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-45wjp3",
-     "before": null,
-     "after": {
-      "source": "e-pt-kutai-refinery-nusantara",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "ownership",
-      "value": 30,
-      "role": null,
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-0emlxr",
-     "before": null,
-     "after": {
-      "source": "e-daniel-bastian-tandjung",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mur8k59h-z1ia3r",
-     "before": null,
-     "after": {
-      "source": "e-tio-bio-kok",
-      "target": "e-pt-kesatuan-mas-abadi",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2026-09",
-      "status": null,
-      "seen": [
-       "2026-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
-        "date": "2026-09"
-       }
-      ],
-      "note": "",
-      "createdAt": 1790962043813,
-      "updatedAt": 1790962043813
-     }
-    }
-   ]
-  },
   "v-mur8l0mf-4zfx": {
    "at": 1790962084455,
    "batch": "v-mur8l0mf-4zfx",
@@ -7935,6 +7749,36 @@
       "clusters": [
        "Pulp and Paper"
       ]
+     }
+    }
+   ]
+  },
+  "v-mus7mykd-njm1": {
+   "at": 1791020961661,
+   "batch": "v-mus7mykd-njm1",
+   "summary": "Renamed MUHARTATI to Muhartati",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-muhartati",
+     "before": {
+      "name": "MUHARTATI",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Muhartati",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020961647
      }
     }
    ]
