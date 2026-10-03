@@ -1009,7 +1009,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025780607,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-tanjung-redeb-hutani": {
    "name": "PT Tanjung Redeb Hutani",
@@ -6887,9 +6890,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6898,7 +6899,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0224": {
    "source": "e-petrus-gunarso",
@@ -6912,9 +6913,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6923,7 +6922,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0225": {
    "source": "e-kartika-antono",
@@ -6937,9 +6936,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6948,7 +6945,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0226": {
    "source": "e-sukarman",
@@ -6962,9 +6959,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6973,7 +6968,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0227": {
    "source": "e-pieter-tanuri",
@@ -6987,9 +6982,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6998,7 +6991,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0228": {
    "source": "e-uthan-mokhamad",
@@ -7012,9 +7005,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -7023,7 +7014,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0229": {
    "source": "e-yohanes-bunian",
@@ -7037,9 +7028,7 @@
     "2023-07",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -7048,7 +7037,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025781920
   },
   "l-0230": {
    "source": "e-pt-coltan-plantations",
@@ -8984,6 +8973,413 @@
       "clusters": [
        "Pulp and Paper"
       ]
+     }
+    }
+   ]
+  },
+  "v-musai8we-lf1w": {
+   "at": 1791025780622,
+   "batch": "v-musai8we-lf1w",
+   "summary": "Added the cluster Pulp and Paper: PT Sylvaduta",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-sylvaduta",
+     "before": {
+      "name": "PT Sylvaduta",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Sylvaduta",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025780607,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-musai9wq-f2sk": {
+   "at": 1791025781930,
+   "batch": "v-musai9wq-f2sk",
+   "summary": "Removed PT Sylvaduta from the group Kaltim: 7 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 7,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0223",
+     "before": {
+      "source": "e-pt-multistrada-agro-internasional",
+      "target": "e-pt-sylvaduta",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-multistrada-agro-internasional",
+      "target": "e-pt-sylvaduta",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0224",
+     "before": {
+      "source": "e-petrus-gunarso",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-petrus-gunarso",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0225",
+     "before": {
+      "source": "e-kartika-antono",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-kartika-antono",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0226",
+     "before": {
+      "source": "e-sukarman",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-sukarman",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0227",
+     "before": {
+      "source": "e-pieter-tanuri",
+      "target": "e-pt-sylvaduta",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pieter-tanuri",
+      "target": "e-pt-sylvaduta",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0228",
+     "before": {
+      "source": "e-uthan-mokhamad",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-uthan-mokhamad",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0229",
+     "before": {
+      "source": "e-yohanes-bunian",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-yohanes-bunian",
+      "target": "e-pt-sylvaduta",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2023-07",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025781920
      }
     }
    ]
