@@ -1066,12 +1066,12 @@
    "updatedAt": 1790961478929
   },
   "e-rizaldi": {
-   "name": "RIZALDI",
+   "name": "Rizaldi",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020712489
   },
   "e-rusni-kartina": {
    "name": "Rusni Kartina",
@@ -7285,71 +7285,6 @@
   }
  },
  "versions": {
-  "v-mur8fy2f-psty": {
-   "at": 1790961847863,
-   "batch": "v-mur8fy2f-psty",
-   "summary": "Removed Sutardi from the group Kaltim: 1 relationship",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0201",
-     "before": {
-      "source": "e-sutardi",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961763320
-     },
-     "after": {
-      "source": "e-sutardi",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961847856
-     }
-    }
-   ]
-  },
   "v-mur8g0ti-0vaw": {
    "at": 1790961851430,
    "batch": "v-mur8g0ti-0vaw",
@@ -8001,6 +7936,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020652533
+     }
+    }
+   ]
+  },
+  "v-mus7hmb6-me5v": {
+   "at": 1791020712498,
+   "batch": "v-mus7hmb6-me5v",
+   "summary": "Renamed RIZALDI to Rizaldi",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-rizaldi",
+     "before": {
+      "name": "RIZALDI",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Rizaldi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020712489
      }
     }
    ]
