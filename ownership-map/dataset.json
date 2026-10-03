@@ -1461,6 +1461,46 @@
    "note": "",
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
+  },
+  "e-kutai-refinery-pte-ltd": {
+   "name": "Kutai Refinery Pte Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-apical-sumatera-management-pte-ltd": {
+   "name": "Apical Sumatera Management Pte. Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-peter-setiabudi": {
+   "name": "Peter Setiabudi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-sandi": {
+   "name": "Sandi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-bernard-a-riedo": {
+   "name": "Bernard A Riedo",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
   }
  },
  "links": {
@@ -7423,539 +7463,153 @@
    "note": "",
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
+  },
+  "l-musb5xxd-kl9wdg": {
+   "source": "e-kutai-refinery-pte-ltd",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "ownership",
+   "value": 99.9,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "l-musb5xxd-8vkw9x": {
+   "source": "e-apical-sumatera-management-pte-ltd",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "ownership",
+   "value": 0.1,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "l-musb5xxd-0qrp40": {
+   "source": "e-peter-setiabudi",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "l-musb5xxd-x8v7aw": {
+   "source": "e-sandi",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "l-musb5xxd-zuhbqp": {
+   "source": "e-bernard-a-riedo",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "l-musb5xxd-zno1ys": {
+   "source": "e-tio-bio-kok",
+   "target": "e-pt-kutai-refinery-nusantara",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
   }
  },
  "versions": {
-  "v-musajz5a-n7g1": {
-   "at": 1791025861294,
-   "batch": "v-musajz5a-n7g1",
-   "summary": "Removed PT Kiani Lestari from the group Kaltim: 10 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 10,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0106",
-     "before": {
-      "source": "e-pt-kiani-lestari",
-      "target": "e-pt-tanjung-redep-hutan-tanaman-industri",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2021-06",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-kiani-lestari",
-      "target": "e-pt-tanjung-redep-hutan-tanaman-industri",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2021-06",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0110",
-     "before": {
-      "source": "e-pt-bali-pasific-investama",
-      "target": "e-pt-kiani-lestari",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-bali-pasific-investama",
-      "target": "e-pt-kiani-lestari",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0111",
-     "before": {
-      "source": "e-pt-nusantara-agro-forestry",
-      "target": "e-pt-kiani-lestari",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-nusantara-agro-forestry",
-      "target": "e-pt-kiani-lestari",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0112",
-     "before": {
-      "source": "e-benny-pangbin-gayonie",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-benny-pangbin-gayonie",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0113",
-     "before": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0114",
-     "before": {
-      "source": "e-hendrik-lewerissa",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-hendrik-lewerissa",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0115",
-     "before": {
-      "source": "e-simon-aloysius-mantiri",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-simon-aloysius-mantiri",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0116",
-     "before": {
-      "source": "e-suwitno-adi",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-suwitno-adi",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0117",
-     "before": {
-      "source": "e-wicaksono-aji",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-wicaksono-aji",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0118",
-     "before": {
-      "source": "e-yoelouis-dwiyanto-hermanus",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-yoelouis-dwiyanto-hermanus",
-      "target": "e-pt-kiani-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025861287
-     }
-    }
-   ]
-  },
   "v-musak3d3-8g1f": {
    "at": 1791025866759,
    "batch": "v-musak3d3-8g1f",
@@ -9767,6 +9421,255 @@
       "note": "",
       "createdAt": 1791026850323,
       "updatedAt": 1791026850323
+     }
+    }
+   ]
+  },
+  "v-musb5xy0-x5u2": {
+   "at": 1791026886168,
+   "batch": "v-musb5xy0-x5u2",
+   "summary": "Added 6 rows to Sinarmas Group from Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 11,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-kutai-refinery-pte-ltd",
+     "before": null,
+     "after": {
+      "name": "Kutai Refinery Pte Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-apical-sumatera-management-pte-ltd",
+     "before": null,
+     "after": {
+      "name": "Apical Sumatera Management Pte. Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-peter-setiabudi",
+     "before": null,
+     "after": {
+      "name": "Peter Setiabudi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-sandi",
+     "before": null,
+     "after": {
+      "name": "Sandi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-bernard-a-riedo",
+     "before": null,
+     "after": {
+      "name": "Bernard A Riedo",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-kl9wdg",
+     "before": null,
+     "after": {
+      "source": "e-kutai-refinery-pte-ltd",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "ownership",
+      "value": 99.9,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-8vkw9x",
+     "before": null,
+     "after": {
+      "source": "e-apical-sumatera-management-pte-ltd",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "ownership",
+      "value": 0.1,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-0qrp40",
+     "before": null,
+     "after": {
+      "source": "e-peter-setiabudi",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-x8v7aw",
+     "before": null,
+     "after": {
+      "source": "e-sandi",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-zuhbqp",
+     "before": null,
+     "after": {
+      "source": "e-bernard-a-riedo",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb5xxd-zno1ys",
+     "before": null,
+     "after": {
+      "source": "e-tio-bio-kok",
+      "target": "e-pt-kutai-refinery-nusantara",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Kutai Refinery Nusantara.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
      }
     }
    ]
