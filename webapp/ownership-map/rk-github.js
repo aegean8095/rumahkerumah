@@ -94,13 +94,16 @@
       if ((r.status === 404 || r.status === 422) && /branch/i.test(msg)) return createBranch(text, summary);
       if (r.status === 409 || (r.status === 422 && /sha/i.test(msg))) return { conflict: true };
       if (r.status === 401){ setToken(''); throw { code: 'bad_token' }; }
-      if (r.status === 403 || r.status === 404) throw { code: 'no_access' };
+      if (r.status === 403 || r.status === 404) throw { code: 'no_access', detail: r.status + ' ' + msg, need: r.headers.get('x-accepted-github-permissions') || '' };
       throw { code: 'http_' + r.status, message: msg };
     }
     // First save ever: a new branch holding only the dataset file (no code, no history).
     async function createBranch(text, summary){
       var t = await call('/git/trees', { method: 'POST', body: { tree: [{ path: PATH, mode: '100644', type: 'blob', content: text }] } });
-      if (!t.ok) throw { code: t.status === 403 || t.status === 404 ? 'no_access' : 'http_' + t.status };
+      if (!t.ok){
+        var tm = ''; try { tm = (await t.json()).message || ''; } catch (e){}
+        throw { code: t.status === 403 || t.status === 404 ? 'no_access' : 'http_' + t.status, detail: t.status + ' ' + tm };
+      }
       var tree = await t.json();
       var c = await call('/git/commits', { method: 'POST', body: { message: 'Ownership Map: ' + summary, tree: tree.sha, parents: [] } });
       if (!c.ok) throw { code: 'http_' + c.status };
@@ -206,7 +209,8 @@
       } catch (e){
         var code = e && e.code;
         if (code === 'bad_token') emit('error', 'GitHub rejected the token, so it was removed. Connect again to save.');
-        else if (code === 'no_access') emit('error', 'The token can’t write to ' + OWNER + '/' + REPO + '. It needs Contents: read and write on this repository.');
+        else if (code === 'no_access') emit('error', 'The token can’t write to ' + OWNER + '/' + REPO + '. It needs access to this repository (Only select repositories → rumahkerumah) with Contents: Read and write. After fixing the token on GitHub, choose Save now.' +
+          (e.detail ? ' GitHub said: “' + e.detail.trim() + '”' + (e.need ? ' (needs ' + e.need + ')' : '') + '.' : ''));
         else { emit('offline', 'Couldn’t save to GitHub. Trying again shortly.'); clearTimeout(timer); timer = setTimeout(save, RETRY_DELAY); }
       } finally {
         saving = false;
