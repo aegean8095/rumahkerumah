@@ -2085,6 +2085,54 @@
    "note": "",
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
+  },
+  "e-pt-sampoerna-agro-tbk": {
+   "name": "PT Sampoerna Agro Tbk",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-pt-aek-tarum": {
+   "name": "PT Aek Tarum",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-pt-selapan-permai-lestari": {
+   "name": "PT Selapan Permai Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-parluhutan-sitohang": {
+   "name": "Parluhutan Sitohang",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-zito-mulyabudhi-ubhakti": {
+   "name": "Zito Mulyabudhi Ubhakti",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-eka-dharmajanto-kasih": {
+   "name": "Eka Dharmajanto Kasih",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
   }
  },
  "links": {
@@ -9589,192 +9637,119 @@
    "note": "",
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
+  },
+  "l-musl26gt-7ba2nr": {
+   "source": "e-pt-sampoerna-agro-tbk",
+   "target": "e-pt-aek-tarum",
+   "type": "ownership",
+   "value": 99,
+   "role": null,
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "l-musl26gt-cjyg6s": {
+   "source": "e-pt-selapan-permai-lestari",
+   "target": "e-pt-aek-tarum",
+   "type": "ownership",
+   "value": 1,
+   "role": null,
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "l-musl26gt-ay3obs": {
+   "source": "e-parluhutan-sitohang",
+   "target": "e-pt-aek-tarum",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "l-musl26gt-ph5huv": {
+   "source": "e-zito-mulyabudhi-ubhakti",
+   "target": "e-pt-aek-tarum",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "l-musl26gt-ouoh7n": {
+   "source": "e-eka-dharmajanto-kasih",
+   "target": "e-pt-aek-tarum",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
   }
  },
  "versions": {
-  "v-musb9sie-cy8t": {
-   "at": 1791027065750,
-   "batch": "v-musb9sie-cy8t",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-laksamana-adyaksa",
-     "before": null,
-     "after": {
-      "name": "Laksamana Adyaksa",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-firdaus-mitra-utama",
-     "before": null,
-     "after": {
-      "name": "PT Firdaus Mitra Utama",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-indograha-mandiri",
-     "before": null,
-     "after": {
-      "name": "PT Indograha Mandiri",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-haryanto-wisastra",
-     "before": null,
-     "after": {
-      "name": "Haryanto Wisastra",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-andi-chandra",
-     "before": null,
-     "after": {
-      "name": "Andi Chandra",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb9shn-1wxhfl",
-     "before": null,
-     "after": {
-      "source": "e-laksamana-adyaksa",
-      "target": "e-pt-firdaus-mitra-utama",
-      "type": "ownership",
-      "value": 19.07,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb9shn-gf9ldh",
-     "before": null,
-     "after": {
-      "source": "e-pt-indograha-mandiri",
-      "target": "e-pt-firdaus-mitra-utama",
-      "type": "ownership",
-      "value": 80.93,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb9shn-s7pf7i",
-     "before": null,
-     "after": {
-      "source": "e-haryanto-wisastra",
-      "target": "e-pt-firdaus-mitra-utama",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb9shn-95sx8i",
-     "before": null,
-     "after": {
-      "source": "e-andi-chandra",
-      "target": "e-pt-firdaus-mitra-utama",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027065722,
-      "updatedAt": 1791027065722
-     }
-    }
-   ]
-  },
   "v-musbabnb-puif": {
    "at": 1791027090551,
    "batch": "v-musbabnb-puif",
@@ -12041,6 +12016,229 @@
       "note": "",
       "createdAt": 1791043479369,
       "updatedAt": 1791043479369
+     }
+    }
+   ]
+  },
+  "v-musl26hi-2xxe": {
+   "at": 1791043506774,
+   "batch": "v-musl26hi-2xxe",
+   "summary": "Added 5 rows from Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 11,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-sampoerna-agro-tbk",
+     "before": null,
+     "after": {
+      "name": "PT Sampoerna Agro Tbk",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-aek-tarum",
+     "before": null,
+     "after": {
+      "name": "PT Aek Tarum",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-selapan-permai-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Selapan Permai Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-parluhutan-sitohang",
+     "before": null,
+     "after": {
+      "name": "Parluhutan Sitohang",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-zito-mulyabudhi-ubhakti",
+     "before": null,
+     "after": {
+      "name": "Zito Mulyabudhi Ubhakti",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-eka-dharmajanto-kasih",
+     "before": null,
+     "after": {
+      "name": "Eka Dharmajanto Kasih",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl26gt-7ba2nr",
+     "before": null,
+     "after": {
+      "source": "e-pt-sampoerna-agro-tbk",
+      "target": "e-pt-aek-tarum",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2016-11",
+      "status": null,
+      "seen": [
+       "2016-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+        "date": "2016-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl26gt-cjyg6s",
+     "before": null,
+     "after": {
+      "source": "e-pt-selapan-permai-lestari",
+      "target": "e-pt-aek-tarum",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2016-11",
+      "status": null,
+      "seen": [
+       "2016-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+        "date": "2016-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl26gt-ay3obs",
+     "before": null,
+     "after": {
+      "source": "e-parluhutan-sitohang",
+      "target": "e-pt-aek-tarum",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2016-11",
+      "status": null,
+      "seen": [
+       "2016-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+        "date": "2016-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl26gt-ph5huv",
+     "before": null,
+     "after": {
+      "source": "e-zito-mulyabudhi-ubhakti",
+      "target": "e-pt-aek-tarum",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2016-11",
+      "status": null,
+      "seen": [
+       "2016-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+        "date": "2016-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl26gt-ouoh7n",
+     "before": null,
+     "after": {
+      "source": "e-eka-dharmajanto-kasih",
+      "target": "e-pt-aek-tarum",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2016-11",
+      "status": null,
+      "seen": [
+       "2016-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+        "date": "2016-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043506749,
+      "updatedAt": 1791043506749
      }
     }
    ]
