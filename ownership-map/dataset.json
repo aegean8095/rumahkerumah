@@ -49,12 +49,12 @@
    "updatedAt": 1790961478929
   },
   "e-apical-sumatera-management-pte-ltd": {
-   "name": "Apical Sumatera Management Pte. Ltd",
+   "name": "Apical Sumatera Management Pte Ltd",
    "type": "company",
    "aliases": [],
    "note": "",
    "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
+   "updatedAt": 1791027575625
   },
   "e-aris-marsudiyanto": {
    "name": "Aris Marsudiyanto",
@@ -8256,380 +8256,6 @@
   }
  },
  "versions": {
-  "v-musakisz-ffm8": {
-   "at": 1791025886771,
-   "batch": "v-musakisz-ffm8",
-   "summary": "Removed PT Hutan Berau Lestari from the group Kaltim: 7 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 7,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0146",
-     "before": {
-      "source": "e-heri-santoso",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-heri-santoso",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0147",
-     "before": {
-      "source": "e-herry-wijaya",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-herry-wijaya",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0148",
-     "before": {
-      "source": "e-hari-sumitro",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-hari-sumitro",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0149",
-     "before": {
-      "source": "e-edie-herjadi",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-edie-herjadi",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0150",
-     "before": {
-      "source": "e-yulius-oetomo",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-yulius-oetomo",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0151",
-     "before": {
-      "source": "e-pt-satya-multi-prakarsa",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "ownership",
-      "value": 38,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-satya-multi-prakarsa",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "ownership",
-      "value": 38,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0152",
-     "before": {
-      "source": "e-pt-tritunggal-eka-perkasa",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "ownership",
-      "value": 38,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-tritunggal-eka-perkasa",
-      "target": "e-pt-hutan-berau-lestari",
-      "type": "ownership",
-      "value": 38,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-05",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025886761
-     }
-    }
-   ]
-  },
   "v-musakqhu-kiii": {
    "at": 1791025896738,
    "batch": "v-musakqhu-kiii",
@@ -10205,6 +9831,36 @@
       "note": "",
       "createdAt": 1791027119945,
       "updatedAt": 1791027119945
+     }
+    }
+   ]
+  },
+  "v-musbkpxq-qz9a": {
+   "at": 1791027575630,
+   "batch": "v-musbkpxq-qz9a",
+   "summary": "Renamed Apical Sumatera Management Pte. Ltd to Apical Sumatera Management Pte Ltd",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-apical-sumatera-management-pte-ltd",
+     "before": {
+      "name": "Apical Sumatera Management Pte. Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791026886145
+     },
+     "after": {
+      "name": "Apical Sumatera Management Pte Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026886145,
+      "updatedAt": 1791027575625
      }
     }
    ]
