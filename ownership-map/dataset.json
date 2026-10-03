@@ -1541,6 +1541,49 @@
    "note": "",
    "createdAt": 1791026958424,
    "updatedAt": 1791026958424
+  },
+  "e-pt-april-garuda-nusantara": {
+   "name": "PT April Garuda Nusantara",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "e-pt-damai-setiatama-timber": {
+   "name": "PT Damai Setiatama Timber",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632,
+   "clusters": [
+    "Forestry"
+   ]
+  },
+  "e-pt-april-garuda-perkasa": {
+   "name": "PT April Garuda Perkasa",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "e-riyadin-hendratno": {
+   "name": "Riyadin Hendratno",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "e-sukma-dewantoro": {
+   "name": "Sukma Dewantoro",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
   }
  },
  "links": {
@@ -7735,539 +7778,97 @@
    "note": "",
    "createdAt": 1791026958424,
    "updatedAt": 1791026958424
+  },
+  "l-musb848g-8uaty7": {
+   "source": "e-pt-april-garuda-nusantara",
+   "target": "e-pt-damai-setiatama-timber",
+   "type": "ownership",
+   "value": 69,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "l-musb848g-tefgdr": {
+   "source": "e-pt-april-garuda-perkasa",
+   "target": "e-pt-damai-setiatama-timber",
+   "type": "ownership",
+   "value": 31,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "l-musb848g-19dpvr": {
+   "source": "e-riyadin-hendratno",
+   "target": "e-pt-damai-setiatama-timber",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "l-musb848g-zin5sj": {
+   "source": "e-sukma-dewantoro",
+   "target": "e-pt-damai-setiatama-timber",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
   }
  },
  "versions": {
-  "v-musak43b-burh": {
-   "at": 1791025867703,
-   "batch": "v-musak43b-burh",
-   "summary": "Removed PT Tanjung Redeb Hutani from the group Kaltim: 10 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 10,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0096",
-     "before": {
-      "source": "e-benny-pangbin-gayonie",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-benny-pangbin-gayonie",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0097",
-     "before": {
-      "source": "e-eddy-rahardjo-hadisiswojo",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-eddy-rahardjo-hadisiswojo",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0098",
-     "before": {
-      "source": "e-simon-aloysius-mantiri",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-simon-aloysius-mantiri",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0099",
-     "before": {
-      "source": "e-sonny-engko",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-sonny-engko",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0100",
-     "before": {
-      "source": "e-sugeng-uripno",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-sugeng-uripno",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0101",
-     "before": {
-      "source": "e-aris-marsudiyanto",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-aris-marsudiyanto",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0102",
-     "before": {
-      "source": "e-mutanto-juwono",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-mutanto-juwono",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0103",
-     "before": {
-      "source": "e-erwien-kurniana-yogasara",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-erwien-kurniana-yogasara",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0104",
-     "before": {
-      "source": "e-pt-pandu-wira-bumi",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-pandu-wira-bumi",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0105",
-     "before": {
-      "source": "e-pt-tanjung-redep-hutan-tanaman-industri",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-tanjung-redep-hutan-tanaman-industri",
-      "target": "e-pt-tanjung-redeb-hutani",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-01",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025867685
-     }
-    }
-   ]
-  },
   "v-musak900-7ijr": {
    "at": 1791025874064,
    "batch": "v-musak900-7ijr",
@@ -9948,6 +9549,192 @@
       "note": "",
       "createdAt": 1791026958424,
       "updatedAt": 1791026958424
+     }
+    }
+   ]
+  },
+  "v-musb848z-7hi9": {
+   "at": 1791026987651,
+   "batch": "v-musb848z-7hi9",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-april-garuda-nusantara",
+     "before": null,
+     "after": {
+      "name": "PT April Garuda Nusantara",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-damai-setiatama-timber",
+     "before": null,
+     "after": {
+      "name": "PT Damai Setiatama Timber",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632,
+      "clusters": [
+       "Forestry"
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-april-garuda-perkasa",
+     "before": null,
+     "after": {
+      "name": "PT April Garuda Perkasa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-riyadin-hendratno",
+     "before": null,
+     "after": {
+      "name": "Riyadin Hendratno",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-sukma-dewantoro",
+     "before": null,
+     "after": {
+      "name": "Sukma Dewantoro",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb848g-8uaty7",
+     "before": null,
+     "after": {
+      "source": "e-pt-april-garuda-nusantara",
+      "target": "e-pt-damai-setiatama-timber",
+      "type": "ownership",
+      "value": 69,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb848g-tefgdr",
+     "before": null,
+     "after": {
+      "source": "e-pt-april-garuda-perkasa",
+      "target": "e-pt-damai-setiatama-timber",
+      "type": "ownership",
+      "value": 31,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb848g-19dpvr",
+     "before": null,
+     "after": {
+      "source": "e-riyadin-hendratno",
+      "target": "e-pt-damai-setiatama-timber",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb848g-zin5sj",
+     "before": null,
+     "after": {
+      "source": "e-sukma-dewantoro",
+      "target": "e-pt-damai-setiatama-timber",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026987632,
+      "updatedAt": 1791026987632
      }
     }
    ]
