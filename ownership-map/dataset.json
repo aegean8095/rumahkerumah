@@ -1155,12 +1155,12 @@
    "updatedAt": 1790961478929
   },
   "e-soeprijadi": {
-   "name": "SOEPRIJADI",
+   "name": "Soeprijadi",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791023599738
   },
   "e-soepriyatno": {
    "name": "SOEPRIYATNO",
@@ -7294,36 +7294,6 @@
   }
  },
  "versions": {
-  "v-mus7hmb6-me5v": {
-   "at": 1791020712498,
-   "batch": "v-mus7hmb6-me5v",
-   "summary": "Renamed RIZALDI to Rizaldi",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-rizaldi",
-     "before": {
-      "name": "RIZALDI",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Rizaldi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791020712489
-     }
-    }
-   ]
-  },
   "v-mus7ihdv-2py0": {
    "at": 1791020752771,
    "batch": "v-mus7ihdv-2py0",
@@ -7599,6 +7569,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791023576657
+     }
+    }
+   ]
+  },
+  "v-mus97i4p-6fnw": {
+   "at": 1791023599753,
+   "batch": "v-mus97i4p-6fnw",
+   "summary": "Renamed SOEPRIJADI to Soeprijadi",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-soeprijadi",
+     "before": {
+      "name": "SOEPRIJADI",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Soeprijadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791023599738
      }
     }
    ]
