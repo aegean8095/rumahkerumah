@@ -97,12 +97,12 @@
    "updatedAt": 1790961478929
   },
   "e-bujung": {
-   "name": "BUJUNG",
+   "name": "Bujung",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790994017978
   },
   "e-cheah-seng-keong": {
    "name": "Cheah Seng Keong",
@@ -7154,36 +7154,6 @@
   }
  },
  "versions": {
-  "v-murq0tki-umi7": {
-   "at": 1790991375282,
-   "batch": "v-murq0tki-umi7",
-   "summary": "Renamed KUSTINAH to Kustinah",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-kustinah",
-     "before": {
-      "name": "KUSTINAH",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Kustinah",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790991375268
-     }
-    }
-   ]
-  },
   "v-murq12j9-oss6": {
    "at": 1790991386901,
    "batch": "v-murq12j9-oss6",
@@ -7465,6 +7435,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1790992148811
+     }
+    }
+   ]
+  },
+  "v-murrlgq2-vgfg": {
+   "at": 1790994018026,
+   "batch": "v-murrlgq2-vgfg",
+   "summary": "Renamed BUJUNG to Bujung",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-bujung",
+     "before": {
+      "name": "BUJUNG",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Bujung",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790994017978
      }
     }
    ]
