@@ -1186,12 +1186,12 @@
    "updatedAt": 1790961478929
   },
   "e-sugiono": {
-   "name": "SUGIONO",
+   "name": "Sugiono",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020752767
   },
   "e-sukarman": {
    "name": "Sukarman",
@@ -7285,71 +7285,6 @@
   }
  },
  "versions": {
-  "v-mur8g0ti-0vaw": {
-   "at": 1790961851430,
-   "batch": "v-mur8g0ti-0vaw",
-   "summary": "Removed Soenardi Winarto from the group Kaltim: 1 relationship",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0204",
-     "before": {
-      "source": "e-soenardi-winarto",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961763320
-     },
-     "after": {
-      "source": "e-soenardi-winarto",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961851420
-     }
-    }
-   ]
-  },
   "v-mur8gasz-l49c": {
    "at": 1790961864371,
    "batch": "v-mur8gasz-l49c",
@@ -7966,6 +7901,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020712489
+     }
+    }
+   ]
+  },
+  "v-mus7ihdv-2py0": {
+   "at": 1791020752771,
+   "batch": "v-mus7ihdv-2py0",
+   "summary": "Renamed SUGIONO to Sugiono",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-sugiono",
+     "before": {
+      "name": "SUGIONO",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Sugiono",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020752767
      }
     }
    ]
