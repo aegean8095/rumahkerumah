@@ -2196,61 +2196,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791043727954,
-   "updatedAt": 1791043727954,
+   "updatedAt": 1791043790451,
    "country": "Indonesia",
    "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-14217.AH.01.01.Tahun 2011"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-10884.AH.01.02.Tahun 2013"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.10-52739"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-01928.40.21.2014"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0003390.AH.01.02.Tahun 2015"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0013826"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0924809"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0964298"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0991656"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0031310"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0007528.AH.01.02.Tahun 2016"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0011261"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "03.093.653.8-031.000"
     }
    ]
   },
@@ -10088,2367 +10040,30 @@
   }
  },
  "versions": {
-  "v-musbkpxq-qz9a": {
-   "at": 1791027575630,
-   "batch": "v-musbkpxq-qz9a",
-   "summary": "Renamed Apical Sumatera Management Pte. Ltd to Apical Sumatera Management Pte Ltd",
+  "v-musl84ny-nf3k": {
+   "at": 1791043784350,
+   "batch": "v-musl84ny-nf3k",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
    "part": 1,
    "parts": 1,
    "changeCount": 1,
    "changes": [
-    {
-     "kind": "entity",
-     "id": "e-apical-sumatera-management-pte-ltd",
-     "before": {
-      "name": "Apical Sumatera Management Pte. Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026886145,
-      "updatedAt": 1791026886145
-     },
-     "after": {
-      "name": "Apical Sumatera Management Pte Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026886145,
-      "updatedAt": 1791027575625
-     }
-    }
-   ]
-  },
-  "v-muscnnhm-iz5c": {
-   "at": 1791029392042,
-   "batch": "v-muscnnhm-iz5c",
-   "summary": "Added 5 rows from Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 11,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-bakti-persada-alam",
-     "before": null,
-     "after": {
-      "name": "PT Bakti Persada Alam",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-acacia-andalan-utama",
-     "before": null,
-     "after": {
-      "name": "PT Acacia Andalan Utama",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-rimba-persada-hijau",
-     "before": null,
-     "after": {
-      "name": "PT Rimba Persada Hijau",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-supriyadi",
-     "before": null,
-     "after": {
-      "name": "Supriyadi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-wilibrudus-budi-artanto",
-     "before": null,
-     "after": {
-      "name": "Wilibrudus Budi Artanto",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-edwin-tjandra",
-     "before": null,
-     "after": {
-      "name": "Edwin Tjandra",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscnngo-817vqd",
-     "before": null,
-     "after": {
-      "source": "e-pt-bakti-persada-alam",
-      "target": "e-pt-acacia-andalan-utama",
-      "type": "ownership",
-      "value": 90,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscnngo-mlsu1n",
-     "before": null,
-     "after": {
-      "source": "e-pt-rimba-persada-hijau",
-      "target": "e-pt-acacia-andalan-utama",
-      "type": "ownership",
-      "value": 10,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscnngo-ax9ucb",
-     "before": null,
-     "after": {
-      "source": "e-supriyadi",
-      "target": "e-pt-acacia-andalan-utama",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscnngo-4pmpld",
-     "before": null,
-     "after": {
-      "source": "e-wilibrudus-budi-artanto",
-      "target": "e-pt-acacia-andalan-utama",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscnngo-ettml0",
-     "before": null,
-     "after": {
-      "source": "e-edwin-tjandra",
-      "target": "e-pt-acacia-andalan-utama",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029392008,
-      "updatedAt": 1791029392008
-     }
-    }
-   ]
-  },
-  "v-muscplxz-volt": {
-   "at": 1791029483351,
-   "batch": "v-muscplxz-volt",
-   "summary": "Added 15 rows from Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 31,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-coaltrade-services-international-pte-ltd",
-     "before": null,
-     "after": {
-      "name": "Coaltrade Services International Pte Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-adaro-indonesia",
-     "before": null,
-     "after": {
-      "name": "PT Adaro Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-dianlia-setyamukti",
-     "before": null,
-     "after": {
-      "name": "PT Dianlia Setyamukti",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-alam-tri-abadi",
-     "before": null,
-     "after": {
-      "name": "PT Alam Tri Abadi",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-viscaya-investments",
-     "before": null,
-     "after": {
-      "name": "PT Viscaya Investments",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-egat-international-company-limited",
-     "before": null,
-     "after": {
-      "name": "Egat International Company Limited",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-julius-aslan",
-     "before": null,
-     "after": {
-      "name": "Julius Aslan",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-budi-rachman",
-     "before": null,
-     "after": {
-      "name": "Budi Rachman",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-mohammad-syah-indra-aman",
-     "before": null,
-     "after": {
-      "name": "Mohammad Syah Indra Aman",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-hendri-tamrin",
-     "before": null,
-     "after": {
-      "name": "Hendri Tamrin",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-christian-ariano-rachmat",
-     "before": null,
-     "after": {
-      "name": "Christian Ariano Rachmat",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-garilbaldi-thohir",
-     "before": null,
-     "after": {
-      "name": "Garilbaldi Thohir",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-chia-ah-hoo",
-     "before": null,
-     "after": {
-      "name": "Chia Ah Hoo",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-david-tendian",
-     "before": null,
-     "after": {
-      "name": "David Tendian",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-luckman",
-     "before": null,
-     "after": {
-      "name": "Luckman",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-ari-hariadi",
-     "before": null,
-     "after": {
-      "name": "Ari Hariadi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-p8h4qm",
-     "before": null,
-     "after": {
-      "source": "e-coaltrade-services-international-pte-ltd",
-      "target": "e-pt-adaro-indonesia",
-      "type": "ownership",
-      "value": 0,
-      "role": null,
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-vp0mlv",
-     "before": null,
-     "after": {
-      "source": "e-pt-dianlia-setyamukti",
-      "target": "e-pt-adaro-indonesia",
-      "type": "ownership",
-      "value": 5.16,
-      "role": null,
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-z0c4ll",
-     "before": null,
-     "after": {
-      "source": "e-pt-alam-tri-abadi",
-      "target": "e-pt-adaro-indonesia",
-      "type": "ownership",
-      "value": 54.11,
-      "role": null,
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-c8a91i",
-     "before": null,
-     "after": {
-      "source": "e-pt-viscaya-investments",
-      "target": "e-pt-adaro-indonesia",
-      "type": "ownership",
-      "value": 29.19,
-      "role": null,
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-n0m1tj",
-     "before": null,
-     "after": {
-      "source": "e-egat-international-company-limited",
-      "target": "e-pt-adaro-indonesia",
-      "type": "ownership",
-      "value": 11.53,
-      "role": null,
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-msc2ik",
-     "before": null,
-     "after": {
-      "source": "e-julius-aslan",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-281qen",
-     "before": null,
-     "after": {
-      "source": "e-budi-rachman",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-dxb0kv",
-     "before": null,
-     "after": {
-      "source": "e-mohammad-syah-indra-aman",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-b3hj97",
-     "before": null,
-     "after": {
-      "source": "e-hendri-tamrin",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-0cuwfn",
-     "before": null,
-     "after": {
-      "source": "e-christian-ariano-rachmat",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-5bzujk",
-     "before": null,
-     "after": {
-      "source": "e-garilbaldi-thohir",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Presiden Komisaris",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-6dj1ut",
-     "before": null,
-     "after": {
-      "source": "e-chia-ah-hoo",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Presiden Direktur",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-jfiqke",
-     "before": null,
-     "after": {
-      "source": "e-david-tendian",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-nnxxg8",
-     "before": null,
-     "after": {
-      "source": "e-luckman",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muscplwe-qznnwx",
-     "before": null,
-     "after": {
-      "source": "e-ari-hariadi",
-      "target": "e-pt-adaro-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-02",
-      "status": null,
-      "seen": [
-       "2017-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
-        "date": "2017-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     }
-    }
-   ]
-  },
-  "v-muskugfb-7yqt": {
-   "at": 1791043146407,
-   "batch": "v-muskugfb-7yqt",
-   "summary": "Added 9 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 18,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-kl-kepong-plantation",
-     "before": null,
-     "after": {
-      "name": "Kl-Kepong Plantation",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-adei-plantation-industry",
-     "before": null,
-     "after": {
-      "name": "PT Adei Plantation & Industry",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-al-hakim-hanafiah",
-     "before": null,
-     "after": {
-      "name": "Al Hakim Hanafiah",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-patrick-kee-chuan-peng",
-     "before": null,
-     "after": {
-      "name": "Patrick Kee Chuan Peng",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-shivaganesh-kuppusamy",
-     "before": null,
-     "after": {
-      "name": "Shivaganesh Kuppusamy",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-thomas-thomas",
-     "before": null,
-     "after": {
-      "name": "Thomas Thomas",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-goh-keng-ee",
-     "before": null,
-     "after": {
-      "name": "Goh Keng Ee",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-apputhasamy-rathnam",
-     "before": null,
-     "after": {
-      "name": "Apputhasamy Rathnam",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-chong-choong-khim",
-     "before": null,
-     "after": {
-      "name": "Chong Choong Khim",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-l5o7yt",
-     "before": null,
-     "after": {
-      "source": "e-kl-kepong-plantation",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "ownership",
-      "value": 95,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-j51fyy",
-     "before": null,
-     "after": {
-      "source": "e-al-hakim-hanafiah",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "ownership",
-      "value": 5,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-yxwwh6",
-     "before": null,
-     "after": {
-      "source": "e-al-hakim-hanafiah",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-gxer9s",
-     "before": null,
-     "after": {
-      "source": "e-patrick-kee-chuan-peng",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Presiden Komisaris",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-r9dyr0",
-     "before": null,
-     "after": {
-      "source": "e-shivaganesh-kuppusamy",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-viptd2",
-     "before": null,
-     "after": {
-      "source": "e-thomas-thomas",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Presiden Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-88civu",
-     "before": null,
-     "after": {
-      "source": "e-goh-keng-ee",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-bqauhu",
-     "before": null,
-     "after": {
-      "source": "e-apputhasamy-rathnam",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskugej-k0knqo",
-     "before": null,
-     "after": {
-      "source": "e-chong-choong-khim",
-      "target": "e-pt-adei-plantation-industry",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     }
-    }
-   ]
-  },
-  "v-muskv35e-xs1y": {
-   "at": 1791043175858,
-   "batch": "v-muskv35e-xs1y",
-   "summary": "Renamed Kl-Kepong Plantation to Kl-Kepong Plantation Sdn Bhd",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-kl-kepong-plantation",
-     "before": {
-      "name": "Kl-Kepong Plantation",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043146378
-     },
-     "after": {
-      "name": "Kl-Kepong Plantation Sdn Bhd",
-      "type": "company",
-      "aliases": [
-       "Kl-Kepong Plantation"
-      ],
-      "note": "",
-      "createdAt": 1791043146378,
-      "updatedAt": 1791043175845
-     }
-    }
-   ]
-  },
-  "v-muskx4fv-m7o9": {
-   "at": 1791043270843,
-   "batch": "v-muskx4fv-m7o9",
-   "summary": "Added 6 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 13,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-eagle-high-plantations-tbk",
-     "before": null,
-     "after": {
-      "name": "PT Eagle High Plantations Tbk",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-adhyaksa-dharmasatya",
-     "before": null,
-     "after": {
-      "name": "PT Adhyaksa Dharmasatya",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-bumilanggeng-perdanatrada",
-     "before": null,
-     "after": {
-      "name": "PT Bumilanggeng Perdanatrada",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-eddy-hartanto",
-     "before": null,
-     "after": {
-      "name": "Eddy Hartanto",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-bastian-purnama",
-     "before": null,
-     "after": {
-      "name": "Bastian Purnama",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-nicolaas-bernadus-tirtadinata",
-     "before": null,
-     "after": {
-      "name": "Nicolaas Bernadus Tirtadinata",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-arfan-sani",
-     "before": null,
-     "after": {
-      "name": "Arfan Sani",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-dntmfm",
-     "before": null,
-     "after": {
-      "source": "e-pt-eagle-high-plantations-tbk",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "ownership",
-      "value": 99.999999,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-8o73aq",
-     "before": null,
-     "after": {
-      "source": "e-pt-bumilanggeng-perdanatrada",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "ownership",
-      "value": 0.000001,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-80uuc5",
-     "before": null,
-     "after": {
-      "source": "e-eddy-hartanto",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-qhk0rj",
-     "before": null,
-     "after": {
-      "source": "e-bastian-purnama",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-zl8t19",
-     "before": null,
-     "after": {
-      "source": "e-nicolaas-bernadus-tirtadinata",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-muskx4f6-mma28d",
-     "before": null,
-     "after": {
-      "source": "e-arfan-sani",
-      "target": "e-pt-adhyaksa-dharmasatya",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043270817,
-      "updatedAt": 1791043270817
-     }
-    }
-   ]
-  },
-  "v-musl1ld1-1ygr": {
-   "at": 1791043479397,
-   "batch": "v-musl1ld1-1ygr",
-   "summary": "Added 9 rows from Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 18,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-adimulia-agrolestari",
-     "before": null,
-     "after": {
-      "name": "PT Adimulia Agrolestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-adimulia-palmo-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Adimulia Palmo Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-adi-widjaja",
-     "before": null,
-     "after": {
-      "name": "Adi Widjaja",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-david-vence-turangan",
-     "before": null,
-     "after": {
-      "name": "David Vence Turangan",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-muliani-hendro",
-     "before": null,
-     "after": {
-      "name": "Muliani Hendro",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-hadi-ngadiman",
-     "before": null,
-     "after": {
-      "name": "Hadi Ngadiman",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-frank-wijaya",
-     "before": null,
-     "after": {
-      "name": "Frank Wijaya",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-susan-wijaya",
-     "before": null,
-     "after": {
-      "name": "Susan Wijaya",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-cinthya",
-     "before": null,
-     "after": {
-      "name": "Cinthya",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-i5dbrg",
-     "before": null,
-     "after": {
-      "source": "e-pt-adimulia-agrolestari",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "ownership",
-      "value": 99.97,
-      "role": null,
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-03do9d",
-     "before": null,
-     "after": {
-      "source": "e-adi-widjaja",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "ownership",
-      "value": 0.03,
-      "role": null,
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-xtf6ah",
-     "before": null,
-     "after": {
-      "source": "e-adi-widjaja",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris Utama",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-gl28qr",
-     "before": null,
-     "after": {
-      "source": "e-david-vence-turangan",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-s1jy8o",
-     "before": null,
-     "after": {
-      "source": "e-muliani-hendro",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-b5160a",
-     "before": null,
-     "after": {
-      "source": "e-hadi-ngadiman",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-spm7ps",
-     "before": null,
-     "after": {
-      "source": "e-frank-wijaya",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-e0fu8q",
-     "before": null,
-     "after": {
-      "source": "e-susan-wijaya",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl1lc9-vrnrae",
-     "before": null,
-     "after": {
-      "source": "e-cinthya",
-      "target": "e-pt-adimulia-palmo-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2018-04",
-      "status": null,
-      "seen": [
-       "2018-04"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-        "date": "2018-04"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043479369,
-      "updatedAt": 1791043479369
-     }
-    }
-   ]
-  },
-  "v-musl26hi-2xxe": {
-   "at": 1791043506774,
-   "batch": "v-musl26hi-2xxe",
-   "summary": "Added 5 rows from Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 11,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-sampoerna-agro-tbk",
-     "before": null,
-     "after": {
-      "name": "PT Sampoerna Agro Tbk",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-aek-tarum",
-     "before": null,
-     "after": {
-      "name": "PT Aek Tarum",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-selapan-permai-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Selapan Permai Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-parluhutan-sitohang",
-     "before": null,
-     "after": {
-      "name": "Parluhutan Sitohang",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-zito-mulyabudhi-ubhakti",
-     "before": null,
-     "after": {
-      "name": "Zito Mulyabudhi Ubhakti",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-eka-dharmajanto-kasih",
-     "before": null,
-     "after": {
-      "name": "Eka Dharmajanto Kasih",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl26gt-7ba2nr",
-     "before": null,
-     "after": {
-      "source": "e-pt-sampoerna-agro-tbk",
-      "target": "e-pt-aek-tarum",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2016-11",
-      "status": null,
-      "seen": [
-       "2016-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-        "date": "2016-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl26gt-cjyg6s",
-     "before": null,
-     "after": {
-      "source": "e-pt-selapan-permai-lestari",
-      "target": "e-pt-aek-tarum",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2016-11",
-      "status": null,
-      "seen": [
-       "2016-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-        "date": "2016-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl26gt-ay3obs",
-     "before": null,
-     "after": {
-      "source": "e-parluhutan-sitohang",
-      "target": "e-pt-aek-tarum",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": "2016-11",
-      "status": null,
-      "seen": [
-       "2016-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-        "date": "2016-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl26gt-ph5huv",
-     "before": null,
-     "after": {
-      "source": "e-zito-mulyabudhi-ubhakti",
-      "target": "e-pt-aek-tarum",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2016-11",
-      "status": null,
-      "seen": [
-       "2016-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-        "date": "2016-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl26gt-ouoh7n",
-     "before": null,
-     "after": {
-      "source": "e-eka-dharmajanto-kasih",
-      "target": "e-pt-aek-tarum",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2016-11",
-      "status": null,
-      "seen": [
-       "2016-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-        "date": "2016-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043506749,
-      "updatedAt": 1791043506749
-     }
-    }
-   ]
-  },
-  "v-musl2zgn-fr75": {
-   "at": 1791043544327,
-   "batch": "v-musl2zgn-fr75",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-bintang-utama-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Bintang Utama Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-agam-sempurna",
-     "before": null,
-     "after": {
-      "name": "PT Agam Sempurna",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-super-mitra-nusantara-abadi",
-     "before": null,
-     "after": {
-      "name": "PT Super Mitra Nusantara Abadi",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-jajang-suherlan",
-     "before": null,
-     "after": {
-      "name": "Jajang Suherlan",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-kirmadi",
-     "before": null,
-     "after": {
-      "name": "Kirmadi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl2zfn-kcwnxu",
-     "before": null,
-     "after": {
-      "source": "e-pt-bintang-utama-lestari",
-      "target": "e-pt-agam-sempurna",
-      "type": "ownership",
-      "value": 98.8,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl2zfn-fqp883",
-     "before": null,
-     "after": {
-      "source": "e-pt-super-mitra-nusantara-abadi",
-      "target": "e-pt-agam-sempurna",
-      "type": "ownership",
-      "value": 1.2,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl2zfn-q5jtcq",
-     "before": null,
-     "after": {
-      "source": "e-jajang-suherlan",
-      "target": "e-pt-agam-sempurna",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musl2zfn-h4zcxl",
-     "before": null,
-     "after": {
-      "source": "e-kirmadi",
-      "target": "e-pt-agam-sempurna",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791043544291,
-      "updatedAt": 1791043544291
-     }
-    }
-   ]
-  },
-  "v-musl6x5x-x1pc": {
-   "at": 1791043727973,
-   "batch": "v-musl6x5x-x1pc",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-bukit-muria-jaya-karton",
-     "before": null,
-     "after": {
-      "name": "PT Bukit Muria Jaya Karton",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043727954,
-      "country": "Indonesia",
-      "address": "MENARA CITICON LT. 18, JL. LETJEND S PARMAN KAV 72",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-60517.AH.01.01.Tahun 2013"
-       }
-      ]
-     }
-    },
     {
      "kind": "entity",
      "id": "e-pt-agra-bareksa-indonesia",
-     "before": null,
-     "after": {
+     "before": {
       "name": "PT Agra Bareksa Indonesia",
       "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954,
+      "updatedAt": 1791043783894,
       "country": "Indonesia",
       "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
       "identities": [
        {
         "kind": "Company registration no.",
         "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-10884.AH.01.02.Tahun 2013"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.10-52739"
        },
        {
         "kind": "Company registration no.",
@@ -12491,171 +10106,796 @@
         "number": "03.093.653.8-031.000"
        }
       ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-sapta-prima-persada",
-     "before": null,
+     },
      "after": {
-      "name": "PT Sapta Prima Persada",
+      "name": "PT Agra Bareksa Indonesia",
       "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954,
+      "updatedAt": 1791043784344,
       "country": "Indonesia",
-      "address": "JL. JENDRAL A.YANI NO 22 PANJUNAN"
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-frankie-adrianov-justinus",
-     "before": null,
-     "after": {
-      "name": "Frankie Adrianov Justinus",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043727954,
-      "country": "Indonesia",
-      "address": "TAMAN BRAWIJAYA JALAN GANDARIA NOMOR 3",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
       "identities": [
        {
-        "kind": "KTP / NIK",
-        "number": "3603282811700005"
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0003390.AH.01.02.Tahun 2015"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0013826"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
        }
       ]
      }
-    },
+    }
+   ]
+  },
+  "v-musl851f-uaql": {
+   "at": 1791043784835,
+   "batch": "v-musl851f-uaql",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
     {
      "kind": "entity",
-     "id": "e-hendrik-suherman",
-     "before": null,
-     "after": {
-      "name": "Hendrik Suherman",
-      "type": "person",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954,
+      "updatedAt": 1791043784344,
       "country": "Indonesia",
-      "address": "Jl. Buana Biru Besar Blok E1 /36",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
       "identities": [
        {
-        "kind": "KTP / NIK",
-        "number": "3578312105620001"
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0003390.AH.01.02.Tahun 2015"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0013826"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043784818,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0013826"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
        }
       ]
      }
-    },
+    }
+   ]
+  },
+  "v-musl85fq-3tmn": {
+   "at": 1791043785350,
+   "batch": "v-musl85fq-3tmn",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
     {
-     "kind": "link",
-     "id": "l-musl6x5f-kask2n",
-     "before": null,
-     "after": {
-      "source": "e-pt-bukit-muria-jaya-karton",
-      "target": "e-pt-agra-bareksa-indonesia",
-      "type": "ownership",
-      "value": 99.99986,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954
+      "updatedAt": 1791043784818,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0013826"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043785341,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
      }
-    },
+    }
+   ]
+  },
+  "v-musl85t6-28j3": {
+   "at": 1791043785834,
+   "batch": "v-musl85t6-28j3",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
     {
-     "kind": "link",
-     "id": "l-musl6x5f-kv6ttm",
-     "before": null,
-     "after": {
-      "source": "e-pt-sapta-prima-persada",
-      "target": "e-pt-agra-bareksa-indonesia",
-      "type": "ownership",
-      "value": 0.00014,
-      "role": null,
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954
+      "updatedAt": 1791043785341,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043785831,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
      }
-    },
+    }
+   ]
+  },
+  "v-musl868h-tw9i": {
+   "at": 1791043786385,
+   "batch": "v-musl868h-tw9i",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
     {
-     "kind": "link",
-     "id": "l-musl6x5f-ryk78b",
-     "before": null,
-     "after": {
-      "source": "e-frankie-adrianov-justinus",
-      "target": "e-pt-agra-bareksa-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954
+      "updatedAt": 1791043785831,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043786373,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
      }
-    },
+    }
+   ]
+  },
+  "v-musl86l8-gvf3": {
+   "at": 1791043786844,
+   "batch": "v-musl86l8-gvf3",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
     {
-     "kind": "link",
-     "id": "l-musl6x5f-9982wh",
-     "before": null,
-     "after": {
-      "source": "e-hendrik-suherman",
-      "target": "e-pt-agra-bareksa-indonesia",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2017-06",
-      "status": null,
-      "seen": [
-       "2017-06"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-        "date": "2017-06"
-       }
-      ],
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
       "note": "",
       "createdAt": 1791043727954,
-      "updatedAt": 1791043727954
+      "updatedAt": 1791043786373,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043786815,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-musl86zs-rbfs": {
+   "at": 1791043787368,
+   "batch": "v-musl86zs-rbfs",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043786815,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043787355,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-musl87g1-xixk": {
+   "at": 1791043787953,
+   "batch": "v-musl87g1-xixk",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043787355,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043787941,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-musl881s-j9wb": {
+   "at": 1791043788736,
+   "batch": "v-musl881s-j9wb",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043787941,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043788733,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-musl89dg-wsvj": {
+   "at": 1791043790452,
+   "batch": "v-musl89dg-wsvj",
+   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043788733,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043790451,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       }
+      ]
      }
     }
    ]
