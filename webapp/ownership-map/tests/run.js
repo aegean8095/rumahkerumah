@@ -862,6 +862,34 @@ const tests = {
     ok(csv.includes('section,label,value') && csv.includes('Overview,companies,') && csv.includes('Data coverage,'), 'CSV has the sections');
     eq(p.errors, [], 'page errors');
   },
+  async 'shots: layout screenshots of forms and tables (only with SHOTDIR)'(){
+    const dir = process.env.SHOTDIR; if (!dir) return;
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.setViewportSize({ width: 1440, height: 900 }); await sleep(600);
+    const shot = async (name, el) => { if (el){ const h = await p.$(el); if (h) return h.screenshot({ path: path.join(dir, name + '.png') }); } return p.screenshot({ path: path.join(dir, name + '.png') }); };
+    await p.evaluate(() => window.OwnershipMapTabs.show('map')); await sleep(500);
+    await p.click('#dataToggle').catch(() => {}); await sleep(300);
+    await shot('sidebar-data', '#inputPanel');
+    await shot('sidebar-dataset', '#datasetPanel');
+    await shot('sidebar-groups', '#groupsPanel');
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(800);
+    await p.setViewportSize({ width: 1440, height: 2400 }); await sleep(500);
+    await shot('detail-entity', '#detailPanel');
+    await p.setViewportSize({ width: 1440, height: 900 }); await sleep(300);
+    await p.click('[data-act="edit-name"]').catch(() => {}); await sleep(400);
+    await shot('detail-edit', '#detailPanel');
+    const lid = await p.evaluate(() => [...OwnershipMap.master.links.keys()][0]);
+    await p.evaluate(l => OwnershipMap.selectLink(l), lid); await sleep(600);
+    await shot('detail-link', '#detailPanel');
+    await p.evaluate(() => window.OwnershipMapTabs.show('table')); await sleep(600); await shot('tab-table');
+    await p.click('#tableView [data-kind="links"]'); await sleep(400); await shot('tab-table-links');
+    await p.evaluate(() => window.OwnershipMapTabs.show('quality')); await sleep(900); await shot('tab-quality');
+    await p.evaluate(() => window.OwnershipMapTabs.show('map')); await sleep(500);
+    await p.click('#connectBtn').catch(() => {}); await sleep(400); await shot('connect');
+    await p.keyboard.press('Escape'); await p.click('#asofBtn').catch(() => {}); await sleep(400); await shot('asof');
+  },
 };
 
 (async () => {

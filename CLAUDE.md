@@ -242,6 +242,16 @@ Working efficiently (token use):
 - `importRows` takes `opts.profiles` (nameKey → {country, address, ids}): a value given replaces the recorded one (the document is newer), ID numbers are added without duplicates; one person in both lists gets the IDs of both rows. Saved in the same commit as the relationships, so one undo removes both
 - PDF test extended (prompt, review fields, kinds made standard, typed-in details, values saved)
 
+### 2026-10-03 — Ownership Map: layout symmetry pass (forms and tables)
+
+- Reviewed every form and table from screenshots (new screenshot-only test `shots`, runs only with `SHOTDIR=…`); fixes are overrides at the end of `rk-ui.css`
+- View bar: centred over the visible map when the detail panel is open, icons only then (it clipped "Directorship" and the Timeline group at 1440 px), wraps rather than clips
+- Find connection: as tall as its content (was a tall empty panel), fields and button in one column, round swap button on the seam
+- As-of bar: fixed readable width, centred over the visible map above the legend and zoom bar (was squeezed to ~180 px)
+- Detail panel tools: 3 equal columns (Only this · Relations · Network / In table · Connection… · Report, full wording in tooltips)
+- Profile ID kind on its own line; relationship Sources: reference full width, date + Add below; Dataset buttons a 2 × 2 grid with shorter labels (Relations CSV, Entities CSV, Back up, Restore)
+- Known, left as is: the Data panel shows both the fold chevron and its own Add data / Hide button
+
 ---
 
 ## Notes

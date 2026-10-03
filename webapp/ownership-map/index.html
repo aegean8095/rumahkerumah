@@ -1036,10 +1036,10 @@
         <ul class="cite-list" id="sourcesList"></ul>
       </details>
       <div class="action-row" id="datasetActions" hidden>
-        <button type="button" class="btn" id="exportCsvBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Relationships CSV</span></button>
-        <button type="button" class="btn" id="exportEntitiesCsvBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Entities CSV</span></button>
-        <button type="button" class="btn" id="backupBtn"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Back up dataset</span></button>
-        <button type="button" class="btn" id="restoreBackupBtn"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Restore from backup</span></button>
+        <button type="button" class="btn" id="exportCsvBtn" title="Download the relationships as CSV"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Relations CSV</span></button>
+        <button type="button" class="btn" id="exportEntitiesCsvBtn" title="Download the entities as CSV"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Entities CSV</span></button>
+        <button type="button" class="btn" id="backupBtn" title="Download the whole dataset as one backup file"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="btn-label">Back up</span></button>
+        <button type="button" class="btn" id="restoreBackupBtn" title="Replace the dataset in this browser with a backup file"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Restore</span></button>
         <input type="file" id="restoreBackupInput" accept="application/json,.json" hidden>
       </div>
       <p class="history-note" id="backupNote" hidden></p>

@@ -25,12 +25,12 @@
       tools.innerHTML =
         '<div class="rk-tool-row"><span class="rk-tool-label">Focus</span>' +
           '<button type="button" class="chip-btn" data-rk="focus0" title="Hide everything except this entity">Only this</button>' +
-          '<button type="button" class="chip-btn" data-rk="focus1" title="This entity and everyone directly related to it">With relations</button>' +
-          '<button type="button" class="chip-btn" data-rk="focusAll" title="Everything connected to it, through any number of steps">Whole network</button></div>' +
+          '<button type="button" class="chip-btn" data-rk="focus1" title="This entity and everyone directly related to it">Relations</button>' +
+          '<button type="button" class="chip-btn" data-rk="focusAll" title="Everything connected to it, through any number of steps">Network</button></div>' +
         '<div class="rk-tool-row">' +
-          '<button type="button" class="chip-btn" data-rk="table">Open in table</button>' +
-          '<button type="button" class="chip-btn" data-rk="connect">Find connection…</button>' +
-          (isCo && window.OwnershipMapReport ? '<button type="button" class="chip-btn" data-rk="report">Company report</button>' : '') + '</div>';
+          '<button type="button" class="chip-btn" data-rk="table" title="Open this entity in the Table tab">In table</button>' +
+          '<button type="button" class="chip-btn" data-rk="connect" title="Find how it is connected to another entity">Connection…</button>' +
+          (isCo && window.OwnershipMapReport ? '<button type="button" class="chip-btn" data-rk="report" title="Printable company report">Report</button>' : '') + '</div>';
       anchor.insertAdjacentElement('afterend', tools);
       var note = Array.from(panel.querySelectorAll('.detail-block')).find(function(b){ var h = b.querySelector('h4'); return h && h.textContent.trim() === 'Note'; });
       if (note) tools.insertAdjacentElement('afterend', note);
