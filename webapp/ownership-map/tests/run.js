@@ -480,6 +480,63 @@ const tests = {
     eq(await shown(), total, 'all groups back');
     eq(p.errors, [], 'page errors');
   },
+  async 'map: hover highlights neighbourhood; Timeline filter drops entities without relations'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    const expect = await p.evaluate(id => { const s = new Set([id]); OwnershipMap.graph.links.forEach(l => { const [a, b] = OwnershipMap.linkEnds(l); if (a === id) s.add(b); if (b === id) s.add(a); }); return s.size; }, id);
+    const pt = await p.evaluate(id => { const g = d3.selectAll('g.node').filter(d => d.id === id).node(); const r = g.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; }, id);
+    await p.mouse.move(pt.x, pt.y); await sleep(500);
+    const hl = await p.evaluate(() => ({ svg: document.getElementById('graph').classList.contains('hl'), lit: document.querySelectorAll('g.node.hl-on').length,
+      dimmed: [...document.querySelectorAll('g.node:not(.hl-on)')].filter(g => parseFloat(getComputedStyle(g).opacity) < 0.3).length, total: document.querySelectorAll('g.node').length }));
+    ok(hl.svg, 'highlight mode on'); eq(hl.lit, expect, 'entity + neighbours lit'); eq(hl.dimmed, hl.total - expect, 'everything else dimmed');
+    await p.mouse.move(5, 5); await sleep(500);
+    ok(!(await p.evaluate(() => document.getElementById('graph').classList.contains('hl'))), 'highlight clears when the pointer leaves');
+    // Timeline filter now drops entities with no relation of that kind, like Shareholding does
+    const prev = await p.evaluate(() => OwnershipMap.graph.links.filter(l => l.status === 'previous').length);
+    await p.click('.filter-btn[data-filter="previous"]'); await sleep(2000);
+    const shown = await p.evaluate(() => ({ nodes: document.querySelectorAll('g.node').length, edges: document.querySelectorAll('g.edge').length }));
+    eq(shown.edges, prev, 'previous relations drawn');
+    ok(shown.nodes <= prev * 2, 'no floating entities: ' + shown.nodes + ' entities for ' + prev + ' relations');
+    await p.click('.filter-btn[data-filter="all"]'); await sleep(1500);
+    eq(p.errors, [], 'page errors');
+  },
+  async 'select: shift-click, shift-drag box, focus, hide, assign group (saved)'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const ids = await p.evaluate(() => { const E = [...OwnershipMap.master.entities]; return ['Flora Nuansa Hijau', 'Inspired Medal', 'Olympia Medal'].map(n => E.find(([, e]) => e.name.includes(n))[0]); });
+    const center = id => p.evaluate(id => { const g = d3.selectAll('g.node').filter(d => d.id === id).node(); const r = g.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; }, id);
+    // Shift+click two entities
+    for (const id of ids.slice(0, 2)){ const c = await center(id); await p.keyboard.down('Shift'); await p.mouse.click(c.x, c.y); await p.keyboard.up('Shift'); }
+    await sleep(400);
+    ok(await p.isVisible('#selectionBar'), 'selection bar appears');
+    eq(await p.$$eval('g.node.multi-sel', g => g.length), 2, 'two selected');
+    ok(!(await p.isVisible('#detailPanel')), 'shift-click does not open the detail');
+    ok(await p.isVisible('#selectionBar [data-sel="connect"]'), 'Find connection offered for exactly two');
+    // Shift+drag box around a third entity adds it
+    const c3 = await center(ids[2]);
+    await p.keyboard.down('Shift'); await p.mouse.move(c3.x - 25, c3.y - 25); await p.mouse.down(); await p.mouse.move(c3.x + 25, c3.y + 25, { steps: 5 }); await p.mouse.up(); await p.keyboard.up('Shift'); await sleep(400);
+    ok(await p.$$eval('g.node.multi-sel', g => g.length) >= 3, 'box adds entities');
+    // Assign a group: every relationship of the selected entities gets it, and it is saved
+    await p.click('#selectionBar [data-sel="group"]'); await p.fill('#selectionBar input[name="group"]', 'Test Group'); await p.click('#selectionBar .sel-assign .btn'); await sleep(1500);
+    const sel = new Set(ids);
+    const res = await p.evaluate(selIds => { const sel = new Set(selIds); const L = [...OwnershipMap.master.links.values()]; const mine = L.filter(l => sel.has(l.source) || sel.has(l.target)); return { mine: mine.length, tagged: mine.filter(l => (l.groups || []).includes('Test Group')).length, others: L.filter(l => !(sel.has(l.source) || sel.has(l.target)) && (l.groups || []).includes('Test Group')).length }; }, [...sel]);
+    ok(res.mine > 0 && res.tagged === res.mine && res.others === 0, 'group added to exactly the selected entities\' relationships ' + JSON.stringify(res));
+    ok(/Added to Test Group/.test(await p.textContent('#selectionBar .sel-msg')), 'confirmation shown');
+    // Focus the selection, then Esc clears the selection
+    await p.click('#selectionBar [data-sel="focus"]'); await sleep(1500);
+    ok(await p.$$eval('g.node', g => g.length) <= 3, 'focus keeps only the selected entities');
+    await p.click('#showHiddenBtn'); await sleep(1500);
+    await p.keyboard.press('Escape'); await sleep(300);
+    ok(!(await p.isVisible('#selectionBar')), 'Esc clears the selection');
+    // Hide
+    const c = await center(ids[0]); await p.keyboard.down('Shift'); await p.mouse.click(c.x, c.y); await p.keyboard.up('Shift'); await sleep(300);
+    const before = await p.$$eval('g.node', g => g.length); await p.click('#selectionBar [data-sel="hide"]'); await sleep(1500);
+    eq(await p.$$eval('g.node', g => g.length), before - 1, 'hide removes the selected entity');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {

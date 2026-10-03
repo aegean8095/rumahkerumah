@@ -1,4 +1,4 @@
-<!doctype html><html><head><title>Ownership Map</title><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="stylesheet" href="rk-tabs.css"></head><body>
+<!doctype html><html><head><title>Ownership Map</title><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="stylesheet" href="rk-tabs.css"><link rel="stylesheet" href="rk-ui.css"></head><body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
@@ -1714,6 +1714,8 @@
   let editingCiteIdx = null;             // which source of the open relationship is being edited
   let masterMode = false;                // the shared dataset is the source of the map
   let previewMode = false;               // pasted rows drawn on their own, not yet added
+  let asOfKey = null;                    // month (year*12+month) the structure is shown as of; null = now
+  let asOfUndated = true;                // keep relationships without a date while viewing as of a month
   let groupFilter = new Set();           // company groups shown; empty = all, '' = no group
   let clusterFilter = new Set();         // commodity clusters shown; empty = all, '' = not labelled
   let viewTransform = d3.zoomIdentity;   // survives redraws (filter, hide, resize)
@@ -1783,9 +1785,10 @@
   // Focus: hide every entity outside `id`'s neighbourhood. depth 0 = the entity
   // alone, 1 = with its direct relations, Infinity = everything it connects to.
   // Follows the Relationships and Timeline filters; "Show all" undoes it.
-  function focusOn(id, depth){
-    const keep = new Set([id]);
-    let frontier = [id];
+  function focusOn(id, depth){ focusOnSet([id], depth); }
+  function focusOnSet(ids, depth){
+    const keep = new Set(ids);
+    let frontier = Array.from(keep);
     for (let d = 0; d < depth && frontier.length; d++){
       const next = [];
       frontier.forEach(f => neighborsOf(f).forEach(n => { if (!keep.has(n)){ keep.add(n); next.push(n); } }));
@@ -1797,6 +1800,13 @@
     updateHiddenBadge();
     fitPending = true;                    // frame what is left
     viewTouched = false;
+    if (graph.nodes.length) drawGraph();
+  }
+
+  function hideMany(ids){
+    ids.forEach(id => hiddenIds.add(id));
+    if (selectedId && hiddenIds.has(selectedId)){ selectedId = null; els.detailPanel.hidden = true; }
+    updateHiddenBadge();
     if (graph.nodes.length) drawGraph();
   }
 
@@ -1932,13 +1942,14 @@
   function openMapMenu(event){
     event.preventDefault();
     closeContextMenu();
-    const narrowed = hiddenIds.size > 0 || typeFilter !== 'all' || statusFilter !== 'all';
+    const narrowed = hiddenIds.size > 0 || typeFilter !== 'all' || statusFilter !== 'all' || asOfKey != null;
     const grouped = groupFilter.size > 0 || clusterFilter.size > 0;
     mapMenu.querySelector('[data-action="show-everything"]').disabled = !narrowed;
     mapMenu.querySelector('[data-action="show-groups"]').hidden = !grouped;
     placeMenu(mapMenu, event);
   }
   function showEverything(){
+    if (asOfKey != null) setAsOf(null);
     hiddenIds.clear();
     updateHiddenBadge();
     setTypeFilter('all', false);
@@ -2367,9 +2378,9 @@
       const [s, t] = linkEnds(l);
       return visibleIds.has(s) && visibleIds.has(t) && linkPassesFilter(l);
     });
-    // With Shareholding or Directorship selected, entities left without any
-    // relationship of that kind drop off the map instead of floating alone.
-    if (typeFilter !== 'all'){
+    // With Shareholding, Directorship, Recent or Previous selected, entities left
+    // without any relationship of that kind drop off the map instead of floating alone.
+    if (typeFilter !== 'all' || statusFilter !== 'all'){
       const linked = new Set();
       visibleLinks.forEach(l => { const [s, t] = linkEnds(l); linked.add(s); linked.add(t); });
       visibleNodes = visibleNodes.filter(n => linked.has(n.id));
@@ -4087,14 +4098,44 @@
       deg.set(d.target, (deg.get(d.target) || 0) + 1);
     });
     inferStatuses(links);
+    let shownLinks = links;
+    if (asOfKey != null){
+      // As of a month: only relationships in force then, each counted as current,
+      // so ownership chains and beneficial owners are as they stood.
+      shownLinks = links.filter(l => inForceAt(l, asOfKey));
+      shownLinks.forEach(l => { l.status = 'recent'; });
+      deg.clear();
+      shownLinks.forEach(l => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
+    }
     const nodes = [];
     Array.from(master.entities.keys()).sort().forEach(id => {
-      if ((gf || cf) && !deg.has(id) && !(cf && !gf && inClusters(id, cf))) return;
+      if ((gf || cf || asOfKey != null) && !deg.has(id) && !(cf && !gf && inClusters(id, cf))) return;
       const e = master.entities.get(id);
       nodes.push({ id, name: e.name, type: e.type || inferType(e.name), degree: deg.get(id) || 0, clusters: (e.clusters || []).slice(),
         outside: !!(cf && isCompanyRec(e) && !inClusters(id, cf)) });
     });
-    return { nodes, links, errors: [], warnings: [] };
+    return { nodes, links: shownLinks, errors: [], warnings: [] };
+  }
+
+  // In force at a month: from the first date seen, to the last date seen if it has since
+  // been superseded (previous), otherwise to today. No dates at all: kept or not by a setting.
+  function inForceAt(l, key){
+    if (!l.seen || !l.seen.length) return asOfUndated;
+    const first = dateSortKey(l.seen[0]), last = dateSortKey(l.seen[l.seen.length - 1]);
+    return key >= first && (l.status === 'previous' ? key <= last : true);
+  }
+  function setAsOf(key, includeUndated){
+    asOfKey = key == null ? null : key;
+    if (includeUndated != null) asOfUndated = !!includeUndated;
+    if (!viewTouched) fitPending = true;
+    scheduleMasterRefresh();
+    document.dispatchEvent(new CustomEvent('om:asof', { detail: { key: asOfKey, undated: asOfUndated } }));
+  }
+  // The whole dataset as a graph, ignoring group, commodity and as-of filters.
+  function fullGraph(){
+    const g = groupFilter, c = clusterFilter, a = asOfKey;
+    groupFilter = new Set(); clusterFilter = new Set(); asOfKey = null;
+    try { return graphFromMaster(); } finally { groupFilter = g; clusterFilter = c; asOfKey = a; }
   }
 
   // Redraws after a data change while keeping where entities sit, what is
@@ -6328,7 +6369,9 @@
     entityName, nodeName, nameKey, looseKey, inferType, canonRole, linkEnds, linkKey, seenOf, fmtMonth,
     linkPassesFilter, formatDate, dateSortKey, ownershipFlags,
     profileRef, effectiveStakes, escapeHtml,
-    focusNode, selectNode, selectLink, centerOnNode, focusOn, showAllNodes,
+    focusNode, selectNode, selectLink, centerOnNode, focusOn, focusOnSet, hideMany, showAllNodes,
+    setAsOf, getAsOf: () => ({ key: asOfKey, undated: asOfUndated }), fullGraph, refreshMap: scheduleMasterRefresh,
+    hiddenIds: () => hiddenIds, neighborsOf, parseDateToken,
     mergeEntities, commitChanges, reportWrite, withBusy,
   };
 
@@ -6350,4 +6393,5 @@
 <script src="rk-backup.js"></script>
 <script src="rk-tabs.js"></script>
 <script src="rk-quality.js"></script>
+<script src="rk-map.js"></script>
 </body></html>
