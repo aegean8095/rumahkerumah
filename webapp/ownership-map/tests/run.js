@@ -119,6 +119,8 @@ async function reload(p){
     await p.evaluate(() => window.rumahkerumahDB.ready.catch(() => {}));
     await sleep(1200);
     if (await p.evaluate(() => typeof d3 !== 'undefined') || attempt === 3) return;
+    // This attempt's errors come from the missing CDN script, not the app: drop them before retrying.
+    if (p.errors) p.errors = p.errors.filter(m => !/d3 is not defined/.test(m));
   }
 }
 const counts = p => p.evaluate(() => { const x = rumahkerumahDB.export(); return [Object.keys(x.entities || {}).length, Object.keys(x.links || {}).length]; });
@@ -434,6 +436,48 @@ const tests = {
     await p.click('#dataToggle').catch(() => {});
     await p.focus('#dataInput'); await p.keyboard.press('l'); await sleep(300);
     ok(/full/.test(await p.getAttribute('#labelModeBtn', 'title')), 'typing L in a text box does not switch');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'map menu: right-click on empty space shows everything again'(){
+    const gh = fakeGitHub(); const d = clone(SEED);
+    Object.values(d.links).slice(0, 5).forEach(l => { l.groups = ['Other']; });   // a second group to filter on
+    gh.set(d);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(400);
+    const shown = () => p.$$eval('g.node', gs => gs.length);
+    const total = await shown();
+    const emptySpot = () => p.evaluate(() => {             // a point of the map with no entity or line under it
+      const r = document.getElementById('graph').getBoundingClientRect();
+      for (let y = r.top + 120; y < r.bottom - 60; y += 23) for (let x = r.left + 40; x < r.right - 40; x += 23){
+        const el = document.elementFromPoint(x, y);
+        if (el && el.id === 'graph') return { x, y };
+      }
+      return null;
+    });
+    const rightClick = async () => { const pt = await emptySpot(); ok(pt, 'found empty map space'); await p.mouse.click(pt.x, pt.y, { button: 'right' }); await sleep(300); };
+    // nothing hidden yet: the item is there but off
+    await rightClick(); ok(await p.isVisible('#mapContextMenu'), 'menu opens on empty space');
+    ok(await p.$eval('#mapContextMenu [data-action="show-everything"]', b => b.disabled), 'nothing to show yet');
+    await p.keyboard.press('Escape'); ok(!(await p.isVisible('#mapContextMenu')), 'Escape closes it');
+    // hide by focusing, and narrow with the Shareholding filter
+    await p.evaluate(() => { const id = [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]; OwnershipMap.focusOn(id, 1); });
+    await p.click('.view-bar [data-type="ownership"]'); await sleep(1500);
+    ok((await shown()) < total, 'narrowed first');
+    await rightClick(); await p.click('#mapContextMenu [data-action="show-everything"]'); await sleep(1500);
+    eq(await shown(), total, 'every entity back');
+    ok(await p.$eval('.view-bar [data-type="all"]', b => b.classList.contains('active')), 'Relationships back to All');
+    eq(await p.isVisible('#hiddenBadge'), false, 'no hidden entities left');
+    // a relation keeps the browser menu; an entity gets its own menu
+    const edgePt = await p.evaluate(() => { const g = document.querySelector('g.edge path'); const b = g.getBoundingClientRect(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; });
+    await p.evaluate(pt => { const el = document.querySelector('g.edge'); el.dispatchEvent(new MouseEvent('contextmenu', { bubbles: true, cancelable: true, clientX: pt.x, clientY: pt.y })); }, edgePt);
+    await sleep(200); ok(!(await p.isVisible('#mapContextMenu')), 'no map menu on a relation');
+    // group filter: the extra item shows and clears it
+    await p.evaluate(() => { const box = [...document.querySelectorAll('.group-option input')].find(i => i.value === 'Other' || /Other/.test(i.closest('label').textContent)); box && box.click(); });
+    await sleep(1500);
+    ok((await shown()) < total, 'group filter narrows');
+    await rightClick(); ok(await p.isVisible('#mapContextMenu [data-action="show-groups"]'), 'group item offered');
+    await p.click('#mapContextMenu [data-action="show-groups"]'); await sleep(1800);
+    eq(await shown(), total, 'all groups back');
     eq(p.errors, [], 'page errors');
   },
 };

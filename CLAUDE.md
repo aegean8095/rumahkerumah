@@ -173,6 +173,12 @@ Working efficiently (token use):
 - In `index.html`: section "Relation labels" before the node context menu; the edge label text checks `labelMode`. Switching full ↔ short redraws the map (label sizes change)
 - 1 new test; all 19 pass
 
+### 2026-10-03 — Ownership Map: right-click menu on empty map space
+
+- Right-click where there is no entity or relation: *Show all entities and relations* (clears hidden/focused entities, Relationships and Timeline back to All, refits; greyed out when nothing is narrowed), *Show all company groups and commodities too* (only when a group or commodity filter is on), *Fit the map to the view*
+- Relations, panels and the Table / Data quality tabs keep the browser's own menu. In `index.html`: `#mapContextMenu`, `openMapMenu`, `showEverything`, shared `placeMenu`, next to the node context menu
+- Tests: 1 new (20 total). The occasional "quality: counts" failure was the d3 CDN failing on a reload; `reload()` in `tests/run.js` now drops those errors when it retries
+
 ---
 
 ## Notes

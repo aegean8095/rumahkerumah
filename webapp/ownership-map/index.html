@@ -1179,6 +1179,12 @@
       </div>
     </div>
     <div class="tooltip" id="tooltip" hidden></div>
+    <div class="context-menu" id="mapContextMenu" hidden role="menu" aria-label="Map">
+      <button type="button" data-action="show-everything" role="menuitem">Show all entities and relations</button>
+      <button type="button" data-action="show-groups" role="menuitem" hidden>Show all company groups and commodities too</button>
+      <span class="context-sep" role="separator"></span>
+      <button type="button" data-action="fit" role="menuitem">Fit the map to the view</button>
+    </div>
     <div class="context-menu" id="nodeContextMenu" hidden role="menu">
       <button type="button" data-action="focus-0" role="menuitem">Focus on this entity</button>
       <button type="button" data-action="focus-1" role="menuitem">Focus on it and its direct relations</button>
@@ -1906,13 +1912,52 @@
   // ---------- Node context menu ----------
   let contextNodeId = null;
 
+  const mapMenu = document.getElementById('mapContextMenu');
   function closeContextMenu(){
     els.contextMenu.hidden = true;
+    mapMenu.hidden = true;
     contextNodeId = null;
   }
+  function placeMenu(menu, event){
+    const wrapRect = els.canvasWrap.getBoundingClientRect();
+    menu.hidden = false;
+    const menuRect = menu.getBoundingClientRect();
+    const x = Math.min(event.clientX - wrapRect.left, wrapRect.width - menuRect.width - 8);
+    const y = Math.min(event.clientY - wrapRect.top, wrapRect.height - menuRect.height - 8);
+    menu.style.left = Math.max(8, x) + 'px';
+    menu.style.top = Math.max(8, y) + 'px';
+  }
+
+  // Right-click on empty map space: bring back whatever is hidden or filtered out.
+  function openMapMenu(event){
+    event.preventDefault();
+    closeContextMenu();
+    const narrowed = hiddenIds.size > 0 || typeFilter !== 'all' || statusFilter !== 'all';
+    const grouped = groupFilter.size > 0 || clusterFilter.size > 0;
+    mapMenu.querySelector('[data-action="show-everything"]').disabled = !narrowed;
+    mapMenu.querySelector('[data-action="show-groups"]').hidden = !grouped;
+    placeMenu(mapMenu, event);
+  }
+  function showEverything(){
+    hiddenIds.clear();
+    updateHiddenBadge();
+    setTypeFilter('all', false);
+    setStatusFilter('all', false);
+    fitPending = true; viewTouched = false;
+    if (graph.nodes.length) drawGraph();
+  }
+  mapMenu.addEventListener('click', (event) => {
+    const btn = event.target.closest('button[data-action]');
+    if (!btn || btn.disabled) return;
+    if (btn.dataset.action === 'show-everything') showEverything();
+    else if (btn.dataset.action === 'show-groups'){ hiddenIds.clear(); updateHiddenBadge(); setTypeFilter('all', false); setStatusFilter('all', false); clearMapFilters(); }
+    else if (btn.dataset.action === 'fit') fitView(true);
+    closeContextMenu();
+  });
 
   function openContextMenu(event, id){
     event.preventDefault();
+    mapMenu.hidden = true;
     contextNodeId = id;
     const wrapRect = els.canvasWrap.getBoundingClientRect();
     const hasHiddenNeighbor = Array.from(neighborsOf(id)).some(nid => hiddenIds.has(nid));
@@ -1940,13 +1985,19 @@
     closeContextMenu();
   });
   document.addEventListener('click', (event) => {
-    if (!els.contextMenu.hidden && !els.contextMenu.contains(event.target)) closeContextMenu();
+    if ((!els.contextMenu.hidden && !els.contextMenu.contains(event.target)) || (!mapMenu.hidden && !mapMenu.contains(event.target))) closeContextMenu();
   });
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeContextMenu();
   });
   els.canvasWrap.addEventListener('contextmenu', (event) => {
-    if (!event.target.closest('g.node') && !els.contextMenu.contains(event.target)) closeContextMenu();
+    const t = event.target;
+    if (t.closest('g.node')) return;                          // the entity menu handles it
+    if (t.closest('.context-menu')) return;
+    closeContextMenu();
+    // Relations, panels and the tables keep the browser's own menu.
+    if (t.closest('g.edge') || t.closest('.overlay') || els.canvasWrap.classList.contains('table-mode') || els.canvasWrap.classList.contains('is-empty')) return;
+    openMapMenu(event);
   });
 
   // Size follows how many entities this one controls (an effective stake over
