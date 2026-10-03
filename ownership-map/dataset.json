@@ -1624,6 +1624,49 @@
    "note": "",
    "createdAt": 1791027065722,
    "updatedAt": 1791027065722
+  },
+  "e-pt-foresta-hijau-lestari": {
+   "name": "PT Foresta Hijau Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "e-pt-tarakan-chip-mill": {
+   "name": "PT Tarakan Chip Mill",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536,
+   "clusters": [
+    "Forestry"
+   ]
+  },
+  "e-pt-anugrah-hijau-lestari": {
+   "name": "PT Anugrah Hijau Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "e-andang-priadi": {
+   "name": "Andang Priadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "e-wiendi": {
+   "name": "Wiendi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
   }
  },
  "links": {
@@ -7994,227 +8037,97 @@
    "note": "",
    "createdAt": 1791027065722,
    "updatedAt": 1791027065722
+  },
+  "l-musbabmw-v9vw05": {
+   "source": "e-pt-foresta-hijau-lestari",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "ownership",
+   "value": 99.6,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "l-musbabmw-d968ah": {
+   "source": "e-pt-anugrah-hijau-lestari",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "ownership",
+   "value": 0.4,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "l-musbabmw-o8rws7": {
+   "source": "e-andang-priadi",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "l-musbabmw-iu4ldn": {
+   "source": "e-wiendi",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
   }
  },
  "versions": {
-  "v-musak9o7-km8u": {
-   "at": 1791025874935,
-   "batch": "v-musak9o7-km8u",
-   "summary": "Removed PT Seroja Universum Narwastu from the group Kaltim: 4 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 4,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0219",
-     "before": {
-      "source": "e-ahmad-syaiful",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "ownership",
-      "value": 70,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-ahmad-syaiful",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "ownership",
-      "value": 70,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025874932
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0220",
-     "before": {
-      "source": "e-santiana",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "ownership",
-      "value": 30,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-santiana",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "ownership",
-      "value": 30,
-      "role": null,
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025874932
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0221",
-     "before": {
-      "source": "e-rizaldi",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-rizaldi",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025874932
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0222",
-     "before": {
-      "source": "e-rustam-evendi",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-rustam-evendi",
-      "target": "e-pt-seroja-universum-narwastu",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-08"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025874932
-     }
-    }
-   ]
-  },
   "v-musakfg4-685p": {
    "at": 1791025882420,
    "batch": "v-musakfg4-685p",
@@ -10013,6 +9926,192 @@
       "note": "",
       "createdAt": 1791027065722,
       "updatedAt": 1791027065722
+     }
+    }
+   ]
+  },
+  "v-musbabnb-puif": {
+   "at": 1791027090551,
+   "batch": "v-musbabnb-puif",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-foresta-hijau-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Foresta Hijau Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-tarakan-chip-mill",
+     "before": null,
+     "after": {
+      "name": "PT Tarakan Chip Mill",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536,
+      "clusters": [
+       "Forestry"
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-anugrah-hijau-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Anugrah Hijau Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-andang-priadi",
+     "before": null,
+     "after": {
+      "name": "Andang Priadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-wiendi",
+     "before": null,
+     "after": {
+      "name": "Wiendi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbabmw-v9vw05",
+     "before": null,
+     "after": {
+      "source": "e-pt-foresta-hijau-lestari",
+      "target": "e-pt-tarakan-chip-mill",
+      "type": "ownership",
+      "value": 99.6,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbabmw-d968ah",
+     "before": null,
+     "after": {
+      "source": "e-pt-anugrah-hijau-lestari",
+      "target": "e-pt-tarakan-chip-mill",
+      "type": "ownership",
+      "value": 0.4,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbabmw-o8rws7",
+     "before": null,
+     "after": {
+      "source": "e-andang-priadi",
+      "target": "e-pt-tarakan-chip-mill",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbabmw-iu4ldn",
+     "before": null,
+     "after": {
+      "source": "e-wiendi",
+      "target": "e-pt-tarakan-chip-mill",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027090536,
+      "updatedAt": 1791027090536
      }
     }
    ]
