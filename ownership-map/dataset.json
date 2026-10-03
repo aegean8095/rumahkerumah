@@ -898,7 +898,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025723385,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-pandu-wira-bumi": {
    "name": "PT Pandu Wira Bumi",
@@ -8630,6 +8633,39 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025328799
+     }
+    }
+   ]
+  },
+  "v-musah0qu-rgig": {
+   "at": 1791025723398,
+   "batch": "v-musah0qu-rgig",
+   "summary": "Added the cluster Pulp and Paper: PT Oceanias Timber Products",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-oceanias-timber-products",
+     "before": {
+      "name": "PT Oceanias Timber Products",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Oceanias Timber Products",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025723385,
+      "clusters": [
+       "Pulp and Paper"
+      ]
      }
     }
    ]
