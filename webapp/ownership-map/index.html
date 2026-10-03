@@ -619,6 +619,18 @@
   .rv-status.change{ color: #9a5316; font-weight: 500; }
   .rv-computed{ display: block; font-size: 10.5px; color: var(--ink-400); margin-top: 2px; }
   .rv-del{ appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-400); width: 24px; height: 24px; border-radius: 50%; }
+  .rv-term{ white-space: nowrap; }
+  .rv-term span{ margin: 0 4px; color: var(--ink-400); }
+  .rv-table input.tm{ width: 78px; font-variant-numeric: tabular-nums; }
+  .rv-table select.st{ width: 96px; }
+  .rv-table tr:not(.rv-sub) > td:nth-child(2){ min-width: 160px; }
+  .rv-table tr:not(.rv-sub) > td.rv-status{ min-width: 118px; }
+  .rv-table input[data-f="role"]{ width: 100%; min-width: 130px; }
+  .rv-table td, .rv-table th{ padding-left: 6px; padding-right: 6px; }
+  .rv-table tr:not(.rv-sub) > td:nth-child(2) input{ width: 100%; }
+  .rv-table .kind{ width: 112px; }
+  .rv-table .num{ width: 72px; }
+  .edit-term{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .rv-table tr.rv-sub td{ border-top: 0; padding-top: 0; padding-bottom: 10px; }
   .rv-details{ display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr) minmax(0, 2fr); gap: 6px 8px; }
   .rv-details label{ display: flex; flex-direction: column; gap: 3px; font-size: 11px; font-weight: 600; color: var(--ink-400); }
@@ -4849,12 +4861,21 @@
           value: l.type === 'ownership' ? (typeof l.value === 'number' ? l.value : null) : null,
           role: l.type === 'directorship' ? (l.role || null) : null,
           date: null, status: l.explicitStatus || null };
+        if (l.start) data.start = l.start;
+        if (l.end) data.end = l.end;
         setSeen(data, (l.seen || []).map(dateKeyStr));
         const k = linkKey(data);
         let id = byKey.get(k);
         if (id){
           const cur = working.get(id) || clone(master.links.get(id)) || Object.assign({}, data, { groups: [], citations: [], note: '', createdAt: now });
           cur.groups = cur.groups || []; cur.citations = cur.citations || [];
+          // A document says whether the relationship is still in place: a former one becomes previous;
+          // a current one clears an earlier "previous" when this document is at least as new as its dates.
+          const latestBefore = seenOf(cur).length ? dateSortKey(parseDateToken(seenOf(cur).slice(-1)[0])) : -Infinity;
+          if (l.explicitStatus === 'previous') cur.status = 'previous';
+          else if (l.current && cur.status === 'previous' && data.seen.length && dateSortKey(parseDateToken(data.seen[data.seen.length - 1])) >= latestBefore) cur.status = null;
+          if (data.start && (!cur.start || dateSortKey(parseDateToken(data.start)) < dateSortKey(parseDateToken(cur.start)))) cur.start = data.start;
+          if (data.end) cur.end = data.end;
           setSeen(cur, seenOf(cur).concat(data.seen));
           if (group && !cur.groups.includes(group)) cur.groups.push(group);
           if (citation && !cur.citations.some(c => c.text === citation.text && (c.date || null) === citation.date)) cur.citations.push(Object.assign({}, citation));
@@ -5026,6 +5047,7 @@
         (isOwn ? '<dt>Stake</dt><dd>' + (typeof d.value === 'number' ? d.value + '%' : 'Not recorded') + '</dd>' : '<dt>Role</dt><dd>' + escapeHtml(d.role || '') + '</dd>') +
         '<dt>' + (gl && gl.seen && gl.seen.length > 1 ? 'Dates seen' : 'Date') + '</dt><dd>' +
           (gl && gl.seen && gl.seen.length ? gl.seen.map(formatDate).join(', ') : (dateObj ? formatDate(dateObj) : 'Not recorded')) + '</dd>' +
+        (m && (m.start || m.end) ? '<dt>' + (isOwn ? 'Held' : 'Term') + '</dt><dd>' + escapeHtml((m.start ? fmtMonth(m.start) : 'start not given') + ' – ' + (m.end ? fmtMonth(m.end) : 'no end given')) + '</dd>' : '') +
         '<dt>Status</dt><dd>' + (status === 'previous' ? 'Previous' : 'Recent') +
           (explicit ? ', as recorded' : dateObj ? ', from the dates' : '') + '</dd>' +
       '</dl>';
@@ -5102,6 +5124,10 @@
       '<label class="field-l" data-for="directorship"' + (own ? ' hidden' : '') + '>Role<input class="well" name="role" value="' + escapeHtml(m.role || '') + '" placeholder="e.g. President Director" autocomplete="off"></label>' +
       '<div class="edit-row">' +
         '<label class="field-l">Status<select class="well" name="status">' + ownStatusOpt('', 'From the dates', m.status || '') + ownStatusOpt('recent', 'Recent', m.status || '') + ownStatusOpt('previous', 'Previous', m.status || '') + '</select></label>' +
+      '</div>' +
+      '<div class="edit-row edit-term">' +
+        '<label class="field-l">' + (own ? 'Held from' : 'Term from') + '<input class="well" name="start" value="' + escapeHtml(m.start || '') + '" placeholder="YYYY-MM" inputmode="numeric" autocomplete="off"></label>' +
+        '<label class="field-l">Until<input class="well" name="end" value="' + escapeHtml(m.end || '') + '" placeholder="YYYY-MM" inputmode="numeric" autocomplete="off"></label>' +
       '</div>' +
       '<p class="form-msg" role="alert"></p>' +
       '<div class="action-row"><button type="submit" class="btn btn--primary">Save</button><button type="button" class="link-btn" data-act="link-edit-cancel">Cancel</button></div>' +
@@ -5198,6 +5224,15 @@
       role = form.elements.role.value.trim().replace(/\s+/g, ' ') || 'Director/Commissioner';
     }
     const after = Object.assign(clone(m), { type, value, role, status });
+    // Term: start and end are kept on the relationship; a start, and an end already past, also count as dates seen.
+    const tok = v => { v = String(v || '').trim(); return v === '' ? '' : (parseDateToken(v) ? dateKeyStr(parseDateToken(v)) : null); };
+    const start = tok(form.elements.start && form.elements.start.value), end = tok(form.elements.end && form.elements.end.value);
+    if (start === null || end === null){ formMsg(form, 'Write the term dates as YYYY-MM or YYYY.'); (start === null ? form.elements.start : form.elements.end).focus(); return; }
+    if (start && end && dateSortKey(parseDateToken(end)) < dateSortKey(parseDateToken(start))){ formMsg(form, 'The term ends before it starts.'); form.elements.end.focus(); return; }
+    if (start) after.start = start; else delete after.start;
+    if (end) after.end = end; else delete after.end;
+    const nowKey = dateSortKey({ year: new Date().getFullYear(), month: new Date().getMonth() + 1 });
+    setSeen(after, seenOf(after).concat([start, end && dateSortKey(parseDateToken(end)) <= nowKey ? end : ''].filter(Boolean)));
     const key = linkKey(after);
     let dup = null;
     master.links.forEach((d, lid) => { if (lid !== id && linkKey(d) === key) dup = lid; });
@@ -5207,6 +5242,7 @@
     if (type === 'ownership' && m.value !== value) parts.push('stake ' + (typeof m.value === 'number' ? m.value + '%' : 'not recorded') + ' to ' + (value === null ? 'not recorded' : value + '%'));
     if (type === 'directorship' && m.role !== role) parts.push('role to ' + role);
     if ((m.status || null) !== status) parts.push('status to ' + (status || 'from the dates'));
+    if ((m.start || '') !== (start || '') || (m.end || '') !== (end || '')) parts.push('term to ' + (start || '?') + ' – ' + (end || '?'));
     editingLink = false;
     if (!parts.length){ selectLink(id, { quiet: true }); return; }
     after.updatedAt = Date.now();
@@ -5870,8 +5906,9 @@
     'Reply with only one JSON object of this shape:',
     '{"company": "PT Example Indonesia", "document": "Profil Perusahaan (AHU)", "document_date": "2025-12",',
     ' "company_profile": {"country": "Indonesia", "address": "Jl. Sudirman No. 1, Jakarta Pusat 10220", "ids": [{"kind": "Company registration no.", "number": "AHU-0012345.AH.01.01.Tahun 2015"}, {"kind": "NPWP (tax no.)", "number": "01.234.567.8-901.000"}]},',
-    ' "shareholders": [{"name": "PT Holding Example", "kind": "company", "shares": 9500, "percent": 95, "percent_computed": true, "country": "Indonesia", "address": null, "ids": [{"kind": "NPWP (tax no.)", "number": "02.345.678.9-012.000"}]}],',
-    ' "board": [{"name": "Budi Santoso", "role": "Direktur Utama", "country": "Indonesia", "address": "Jl. Melati 5, Bandung", "ids": [{"kind": "KTP / NIK", "number": "3273010101800001"}]}],',
+    ' "shareholders": [{"name": "PT Holding Example", "kind": "company", "shares": 9500, "percent": 95, "percent_computed": true, "since": "2019-02", "until": null, "status": "current", "country": "Indonesia", "address": null, "ids": [{"kind": "NPWP (tax no.)", "number": "02.345.678.9-012.000"}]}],',
+    ' "board": [{"name": "Budi Santoso", "role": "Direktur Utama", "since": "2021-06", "until": "2026-06", "status": "current", "country": "Indonesia", "address": "Jl. Melati 5, Bandung", "ids": [{"kind": "KTP / NIK", "number": "3273010101800001"}]},',
+    '           {"name": "Andi Wijaya", "role": "Direktur", "since": "2016-03", "until": "2021-06", "status": "former", "country": null, "address": null, "ids": []}],',
     ' "warnings": ["The second page is partly unreadable."]}',
     '',
     'Rules:',
@@ -5884,6 +5921,11 @@
     '- If the document covers more than one company, extract only the main company and say so in warnings.',
     '- warnings: anything unreadable, uncertain or inconsistent, such as stakes that do not add up to 100%. Use an empty list when there is nothing to report.',
     '- If no shareholders or board can be found, return empty lists and explain why in warnings.',
+    '- Timeline: give every shareholder and board member "since", "until" and "status".',
+    '  since: when the person took office or the holder acquired the shares (appointment date, "mulai menjabat", the date of the deed or of the share transfer), as YYYY-MM, or YYYY if only the year is given; null when not stated.',
+    '  until: when the term ends or ended ("masa jabatan berakhir", "sampai dengan", resignation, or the date the shares were transferred away), same format; null when not stated. A term end in the future is still given.',
+    '  status: "former" when the document shows the person or holder is no longer in place (a history section such as "riwayat pengurus" or "riwayat pemegang saham", an older deed that a later one replaced, a resignation, or an end date before the document date); otherwise "current".',
+    '- If the document lists earlier boards or shareholders (history, or several deeds), include those people too with status "former" and their dates. List a person twice if they held two different roles or stakes over time.',
     '- company_profile, and country / address / ids on every shareholder and board member: copy them only when the document states them.',
     '- country: for a company, where it is incorporated (an Indonesian PT or CV is "Indonesia"); for a person, the nationality given (WNI is "Indonesia"; WNA: the country named). Use English country names. null when not stated.',
     '- address: the full address as written (street, number, RT/RW, kelurahan, kecamatan, city, postcode), on one line. null when not given.',
@@ -6048,6 +6090,12 @@
     });
     return out;
   }
+  const monthTok = v => { const t = String(v || '').trim(); const m = t.match(/^(\d{4})(?:[-/.](\d{1,2}))?/); if (!m) return ''; const mo = m[2] ? Math.min(12, Math.max(1, +m[2])) : 0; return mo ? m[1] + '-' + String(mo).padStart(2, '0') : m[1]; };
+  const termOf = (x, docDate) => {
+    const since = monthTok(x && x.since), until = monthTok(x && x.until);
+    const ended = until && docDate && dateSortKey(parseDateToken(until)) < dateSortKey(parseDateToken(docDate));
+    return { since, until, state: (x && x.status === 'former') || ended ? 'former' : 'current' };
+  };
   const profOf = x => ({ country: String((x && x.country) || '').trim(), address: String((x && x.address) || '').replace(/\s+/g, ' ').trim(), ids: idsText(x && x.ids) });
   function startReview(out, input, label){
     const o = out && typeof out === 'object' ? out : {};
@@ -6069,9 +6117,9 @@
       cCountry: profOf(o.company_profile).country, cAddress: profOf(o.company_profile).address, cIds: profOf(o.company_profile).ids,
       shareholders: (Array.isArray(o.shareholders) ? o.shareholders : []).filter(x => x && x.name).map(x => {
         const kind = x.kind === 'person' ? 'person' : (x.kind === 'company' ? 'company' : inferType(tidyName(x.name)));
-        return Object.assign({ on: true, name: kind === 'person' ? tidyPerson(tidyName(x.name)) : tidyName(x.name), kind, percent: num(x.percent), computed: !!x.percent_computed }, profOf(x));
+        return Object.assign({ on: true, name: kind === 'person' ? tidyPerson(tidyName(x.name)) : tidyName(x.name), kind, percent: num(x.percent), computed: !!x.percent_computed }, termOf(x, docDate), profOf(x));
       }),
-      board: (Array.isArray(o.board) ? o.board : []).filter(x => x && x.name).map(x => Object.assign({ on: true, name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) }, profOf(x))),
+      board: (Array.isArray(o.board) ? o.board : []).filter(x => x && x.name).map(x => Object.assign({ on: true, name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) }, termOf(x, docDate), profOf(x))),
       warnings: (Array.isArray(o.warnings) ? o.warnings : []).map(String).filter(Boolean),
     };
     if (input.truncated) review.warnings.push('The PDF was long; only its first part was read.');
@@ -6099,14 +6147,18 @@
       '<td><select class="well kind" data-f="kind" aria-label="Type"><option value="company"' + (x.kind === 'company' ? ' selected' : '') + '>Company</option><option value="person"' + (x.kind === 'person' ? ' selected' : '') + '>Individual</option></select></td>' +
       '<td><input class="well num" data-f="percent" type="number" min="0" max="100" step="any" inputmode="decimal" value="' + (x.percent == null ? '' : x.percent) + '" placeholder="n/a" aria-label="Shareholding %">' +
         (x.computed ? '<span class="rv-computed">from share counts</span>' : '') + '</td>' +
+      '<td class="rv-term"><input class="well tm" data-f="since" value="' + escapeHtml(x.since || '') + '" placeholder="YYYY-MM" aria-label="From" inputmode="numeric"><span>–</span><input class="well tm" data-f="until" value="' + escapeHtml(x.until || '') + '" placeholder="YYYY-MM" aria-label="Until" inputmode="numeric"></td>' +
+      '<td><select class="well st" data-f="state" aria-label="Current or former"><option value="current"' + (x.state !== 'former' ? ' selected' : '') + '>Current</option><option value="former"' + (x.state === 'former' ? ' selected' : '') + '>Former</option></select></td>' +
       '<td class="rv-status" data-status></td>' +
-      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('sh', x, i, 5)).join('');
+      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('sh', x, i, 7)).join('');
     const bdRows = r.board.map((x, i) => '<tr data-k="bd" data-i="' + i + '"' + (x.on ? '' : ' class="off"') + '>' +
       '<td><input type="checkbox" data-f="on" ' + (x.on ? 'checked' : '') + ' aria-label="Add this row"></td>' +
       '<td><input class="well" data-f="name" value="' + escapeHtml(x.name) + '" aria-label="Name">' + moreBtn(x) + '</td>' +
       '<td><input class="well" data-f="role" value="' + escapeHtml(x.role) + '" aria-label="Role" placeholder="e.g. Direktur"></td>' +
+      '<td class="rv-term"><input class="well tm" data-f="since" value="' + escapeHtml(x.since || '') + '" placeholder="YYYY-MM" aria-label="From" inputmode="numeric"><span>–</span><input class="well tm" data-f="until" value="' + escapeHtml(x.until || '') + '" placeholder="YYYY-MM" aria-label="Until" inputmode="numeric"></td>' +
+      '<td><select class="well st" data-f="state" aria-label="Current or former"><option value="current"' + (x.state !== 'former' ? ' selected' : '') + '>Current</option><option value="former"' + (x.state === 'former' ? ' selected' : '') + '>Former</option></select></td>' +
       '<td class="rv-status" data-status></td>' +
-      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('bd', x, i, 4)).join('');
+      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('bd', x, i, 6)).join('');
     els.reviewBody.innerHTML =
       '<div class="rv-meta">' +
         '<label>Company<input class="well" data-meta="company" value="' + escapeHtml(r.company) + '" placeholder="PT …"><span class="rv-match" id="rvCompanyMatch"></span></label>' +
@@ -6122,16 +6174,16 @@
       '<datalist id="rvCountries">' + ['Indonesia', 'Singapore', 'Malaysia', 'Hong Kong', 'China', 'Japan', 'South Korea', 'Netherlands', 'United Kingdom', 'British Virgin Islands', 'Cayman Islands', 'Mauritius', 'Seychelles', 'Samoa', 'Labuan', 'Australia', 'United States'].map(c => '<option value="' + c + '">').join('') + '</datalist>' +
       (r.warnings.length ? '<ul class="rv-warn">' + r.warnings.map(w => '<li>' + escapeHtml(w) + '</li>').join('') + '</ul>' : '') +
       '<section class="rv-section"><h3>Shareholders <span>' + r.shareholders.length + ' found</span></h3>' +
-        '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">%</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
-        (shRows || '<tr><td colspan="6" class="rv-status">None found.</td></tr>') + '</tbody></table></div>' +
+        '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">%</th><th scope="col">Held from – until</th><th scope="col">Now</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
+        (shRows || '<tr><td colspan="8" class="rv-status">None found.</td></tr>') + '</tbody></table></div>' +
         '<p class="rv-sum" id="rvSum"></p>' +
         '<button type="button" class="link-btn rv-add" data-add="sh">Add a shareholder</button></section>' +
       '<section class="rv-section"><h3>Directors and commissioners <span>' + r.board.length + ' found</span></h3>' +
-        '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Role</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
-        (bdRows || '<tr><td colspan="5" class="rv-status">None found.</td></tr>') + '</tbody></table></div>' +
+        '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Role</th><th scope="col">Term from – until</th><th scope="col">Now</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
+        (bdRows || '<tr><td colspan="7" class="rv-status">None found.</td></tr>') + '</tbody></table></div>' +
         '<button type="button" class="link-btn rv-add" data-add="bd">Add a director or commissioner</button></section>' +
       '<p class="rv-gone" id="rvGone" hidden></p>';
-    els.reviewFoot.innerHTML = '<span class="rv-foot-note">' + (r.mode === 'images' ? 'Read from page images. ' : 'Read from the PDF’s text. ') + 'Nothing is added until you approve.</span>' +
+    els.reviewFoot.innerHTML = '<span class="rv-foot-note">' + (r.mode === 'images' ? 'Read from page images. ' : 'Read from the PDF’s text. ') + 'Former rows are recorded as previous, with their dates. Nothing is added until you approve.</span>' +
       '<button type="button" class="link-btn" data-rv="discard">Discard</button>' +
       '<button type="button" class="btn btn--primary" data-rv="approve" id="rvApprove">Add to dataset</button>';
     updateReviewStatus();
@@ -6183,7 +6235,8 @@
       if (!x.on || !n){ setStatus(tr, '', x.on ? 'Name needed' : 'Left out'); return; }
       if (hid) seenIds.ownership.add(hid);
       count++;
-      if (typeof x.percent === 'number'){ sum += x.percent; known++; }
+      if (typeof x.percent === 'number' && x.state !== 'former'){ sum += x.percent; known++; }
+      if (x.state === 'former'){ setStatus(tr, 'same', (hid ? 'Matches ' + entityName(hid) + '; ' : '') + 'recorded as a previous stake' + (x.until ? ' until ' + x.until : '')); return; }
       const ex = linksTo(hid, 'ownership');
       if (!hid) setStatus(tr, 'new', 'New shareholder');
       else if (ex.some(l => l.value === x.percent)) setStatus(tr, 'same', 'Already recorded; adds this date and source');
@@ -6197,6 +6250,7 @@
       if (!x.on || !n){ setStatus(tr, '', x.on ? 'Name needed' : 'Left out'); return; }
       if (hid) seenIds.directorship.add(hid);
       count++;
+      if (x.state === 'former'){ setStatus(tr, 'same', (hid ? 'Matches ' + entityName(hid) + '; ' : '') + 'recorded as a previous role' + (x.until ? ' until ' + x.until : '')); return; }
       const ex = linksTo(hid, 'directorship');
       const same = ex.find(l => canonRole(l.role).toLowerCase() === canonRole(x.role || 'Director/Commissioner').toLowerCase());
       if (!hid) setStatus(tr, 'new', 'New person');
@@ -6207,7 +6261,7 @@
     const sumEl = document.getElementById('rvSum');
     if (sumEl){
       const v = Math.round(sum * 100) / 100;
-      sumEl.textContent = known ? 'Stakes add up to ' + v + '%' + (Math.abs(v - 100) > 0.01 ? ', not 100%. Check the figures.' : '.') : '';
+      sumEl.textContent = known ? 'Current stakes add up to ' + v + '%' + (Math.abs(v - 100) > 0.01 ? ', not 100%. Check the figures.' : '.') : '';
       sumEl.classList.toggle('off', known > 0 && Math.abs(v - 100) > 0.01);
     }
     // Relationships already recorded for this company that this document does not list.
@@ -6270,8 +6324,8 @@
     }
     const add = event.target.closest('[data-add]');
     if (add){
-      if (add.dataset.add === 'sh') review.shareholders.push({ on: true, name: '', kind: 'company', percent: null, computed: false, country: '', address: '', ids: '' });
-      else review.board.push({ on: true, name: '', role: '', country: '', address: '', ids: '' });
+      if (add.dataset.add === 'sh') review.shareholders.push({ on: true, name: '', kind: 'company', percent: null, computed: false, since: '', until: '', state: 'current', country: '', address: '', ids: '' });
+      else review.board.push({ on: true, name: '', role: '', since: '', until: '', state: 'current', country: '', address: '', ids: '' });
       const k = add.dataset.add, i = (k === 'sh' ? review.shareholders : review.board).length - 1;
       renderReview('tr[data-k="' + k + '"][data-i="' + i + '"] input[data-f="name"]');
     }
@@ -6282,7 +6336,7 @@
     const t = event.target, tr = t.closest('tr[data-k]');
     if (!tr || !t.dataset.f) return;
     const row = (tr.dataset.k === 'sh' ? review.shareholders : review.board)[+tr.dataset.i];
-    if (t.dataset.f === 'on') row.on = t.checked; else if (t.dataset.f === 'kind') row.kind = t.value;
+    if (t.dataset.f === 'on') row.on = t.checked; else if (t.dataset.f === 'kind') row.kind = t.value; else if (t.dataset.f === 'state') row.state = t.value;
     updateReviewStatus();
   });
 
@@ -6294,6 +6348,18 @@
     const date = r.date || '';
     const q = v => '"' + String(v).replace(/"/g, '') + '"';
     const lines = [], kinds = new Map([[nameKey(company), 'company']]), profiles = new Map();
+    // Each row's timeline: the dates it was in place (from, the document date or until) and whether it still is.
+    const timeline = new Map();
+    const docKey = date ? dateSortKey(parseDateToken(date)) : Infinity;
+    const addTimeline = (n, type, what, x) => {
+      const since = parseDateToken(monthTok(x.since)) ? monthTok(x.since) : '', until = parseDateToken(monthTok(x.until)) ? monthTok(x.until) : '';
+      const former = x.state === 'former';
+      const seen = [];
+      if (since) seen.push(since);
+      if (former){ if (until) seen.push(until); else if (!since && date) seen.push(date); }
+      else { if (date) seen.push(date); if (until && dateSortKey(parseDateToken(until)) <= docKey) seen.push(until); }
+      timeline.set(nameKey(normalizeName(n, false)) + '|' + type + '|' + what, { seen, former, start: since || null, end: until || null });
+    };
     const addProfile = (n, x) => {
       const p = { country: String(x.country || '').trim(), address: String(x.address || '').trim(), ids: parseIds(x.ids) };
       if (!p.country && !p.address && !p.ids.length) return;
@@ -6306,20 +6372,30 @@
     r.shareholders.forEach(x => {
       const n = tidyName(x.name);
       if (!x.on || !n || nameKey(n) === nameKey(company)) return;
-      lines.push(q(n) + ',' + q(company) + ',ownership,' + (typeof x.percent === 'number' ? x.percent : '') + (date ? ',' + date : ''));
+      lines.push(q(n) + ',' + q(company) + ',ownership,' + (typeof x.percent === 'number' ? x.percent : '') + (x.state === 'former' ? ',previous' : ''));
+      addTimeline(n, 'ownership', typeof x.percent === 'number' ? String(x.percent) : '', x);
       kinds.set(nameKey(n), x.kind === 'person' ? 'person' : 'company');
       addProfile(n, x);
     });
     r.board.forEach(x => {
       const n = tidyName(x.name);
       if (!x.on || !n || nameKey(n) === nameKey(company)) return;
-      lines.push(q(n) + ',' + q(company) + ',directorship,' + q(x.role.trim() || 'Director/Commissioner') + (date ? ',' + date : ''));
+      lines.push(q(n) + ',' + q(company) + ',directorship,' + q(x.role.trim() || 'Director/Commissioner') + (x.state === 'former' ? ',previous' : ''));
+      addTimeline(n, 'directorship', canonRole(x.role.trim() || 'Director/Commissioner').toLowerCase(), x);
       if (!kinds.has(nameKey(n))) kinds.set(nameKey(n), 'person');
       addProfile(n, x);
     });
     if (!lines.length) return;
     const parsed = parse(lines.join('\n'), { mode: 'standard', tidy: false });
     parsed.nodes.forEach(n => { if (kinds.has(n.id)) n.type = kinds.get(n.id); });
+    parsed.links.forEach(l => {
+      const t = timeline.get(l.source + '|' + l.type + '|' + (l.type === 'ownership' ? (typeof l.value === 'number' ? String(l.value) : '') : canonRole(l.role).toLowerCase()));
+      if (!t) return;
+      l.seen = t.seen.map(parseDateToken).filter(Boolean);
+      l.date = l.seen.length ? l.seen[l.seen.length - 1] : null;
+      l.explicitStatus = t.former ? 'previous' : null; l.status = l.explicitStatus;
+      l.current = !t.former; l.start = t.start; l.end = t.end;
+    });
     const btn = document.getElementById('rvApprove');
     if (btn){ btn.disabled = true; btn.textContent = 'Adding…'; }
     const res = await importRows({ parsed, group: r.group.trim(), source: r.source.trim(), sdate: date || null, cluster: (r.cluster || '').trim(), profiles });

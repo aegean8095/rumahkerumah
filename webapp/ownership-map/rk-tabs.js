@@ -87,6 +87,7 @@
       { key: 'what', label: 'Stake / role' },
       { key: 'status', label: 'Status' },
       { key: 'dates', label: 'Dates seen' },
+      { key: 'term', label: 'Term', title: 'Held from – until, as recorded from the documents' },
       { key: 'groups', label: 'Groups', wrap: true },
       { key: 'sources', label: 'Sources', wrap: true },
     ],
@@ -152,6 +153,7 @@
         whatSort: l.type === 'ownership' ? (typeof l.value === 'number' ? l.value : -1) : OM.canonRole(l.role || ''),
         status: l.status === 'previous' ? 'Previous' : 'Recent',
         dates: datesText(l.seen), datesSort: dateKey(l.date),
+        term: (m.start || m.end) ? (m.start ? OM.fmtMonth(m.start) : '?') + ' – ' + (m.end ? OM.fmtMonth(m.end) : 'open') : '',
         groups: (m.groups || []).slice().sort().join('; '),
         sources: cites.join('; '),
       };

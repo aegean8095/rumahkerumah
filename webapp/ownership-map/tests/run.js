@@ -76,7 +76,9 @@ const DS_ANSWER = { company: 'PT Contoh Uji Indonesia', document: 'Profil Perusa
   company_profile: { country: 'Indonesia', address: 'Jl. Sudirman No. 1, Jakarta Pusat', ids: [{ kind: 'Company registration no.', number: 'AHU-0012345.AH.01.01.Tahun 2015' }, { kind: 'NPWP', number: '01.234.567.8-901.000' }] },
   shareholders: [{ name: 'PT Induk Uji', kind: 'company', shares: 95, percent: 95, country: 'Singapore', address: null, ids: [] },
     { name: 'Budi Santoso', kind: 'person', shares: 5, percent: 5, country: 'Indonesia', address: 'Jl. Melati 5, Bandung', ids: [{ kind: 'NIK', number: '3273010101800001' }] }],
-  board: [{ name: 'Budi Santoso', role: 'Direktur Utama', ids: [{ kind: 'NPWP (tax no.)', number: '09.876.543.2-101.000' }] }, { name: 'Siti Aminah', role: 'Komisaris Utama' }], warnings: [] };
+  board: [{ name: 'Budi Santoso', role: 'Direktur Utama', since: '2021-06-15', until: '2029-06', status: 'current', ids: [{ kind: 'NPWP (tax no.)', number: '09.876.543.2-101.000' }] },
+    { name: 'Siti Aminah', role: 'Komisaris Utama', since: '2021', until: null, status: 'current' },
+    { name: 'Andi Wijaya', role: 'Direktur', since: '2016-03', until: '2021-06', status: 'former' }], warnings: [] };
 function fakeDeepSeek(log){
   return async r => {
     const q = r.request();
@@ -255,8 +257,35 @@ const tests = {
     await p.click('tr[data-k="bd"][data-i="1"] [data-more]'); await sleep(200);
     await p.fill('tr.rv-sub[data-k="bd"][data-i="1"] [data-f="country"]', 'Malaysia');
     await p.fill('tr.rv-sub[data-k="bd"][data-i="1"] [data-f="ids"]', 'Passport: A1234567');
+    // timeline read from the document
+    eq([await p.inputValue('tr[data-k="bd"][data-i="0"]:not(.rv-sub) [data-f="since"]'), await p.inputValue('tr[data-k="bd"][data-i="0"]:not(.rv-sub) [data-f="until"]')], ['2021-06', '2029-06'], 'term read, day dropped');
+    eq(await p.inputValue('tr[data-k="bd"][data-i="2"]:not(.rv-sub) [data-f="state"]'), 'former', 'former director marked former');
+    ok(/previous role until 2021-06/.test(await p.textContent('tr[data-k="bd"][data-i="2"]:not(.rv-sub) [data-status]')), 'former row explains it is recorded as previous');
     if (process.env.SHOT) await p.screenshot({ path: process.env.SHOT });
     await p.click('#rvApprove'); await sleep(2500);
+    const tl = await p.evaluate(() => { const byName = n => [...OwnershipMap.master.entities].find(([, e]) => e.name === n)[0];
+      const co = byName('PT Contoh Uji Indonesia'); const lk = (n, type) => [...OwnershipMap.master.links.values()].find(l => l.source === byName(n) && l.target === co && l.type === type);
+      const g = (n, type) => OwnershipMap.graph.links.find(l => OwnershipMap.linkEnds(l)[0] === byName(n) && OwnershipMap.linkEnds(l)[1] === co && l.type === type);
+      const b = lk('Budi Santoso', 'directorship'), a = lk('Andi Wijaya', 'directorship'), s = lk('Siti Aminah', 'directorship');
+      return { b: [b.start, b.end, b.seen, b.status || null], a: [a.start, a.end, a.seen, a.status], s: [s.start, s.seen],
+        ga: g('Andi Wijaya', 'directorship').status, gb: g('Budi Santoso', 'directorship').status }; });
+    eq(tl.b, ['2021-06', '2029-06', ['2021-06', '2026-09'], null], 'current director: term kept, start and document date seen, future end not seen');
+    eq(tl.a, ['2016-03', '2021-06', ['2016-03', '2021-06'], 'previous'], 'former director: term dates seen, recorded as previous');
+    eq(tl.s, ['2021', ['2021', '2026-09']], 'year-only start kept');
+    eq([tl.ga, tl.gb], ['previous', 'recent'], 'map statuses follow the timeline');
+    // the term shows in the relationship detail and can be edited there
+    const aid = await p.evaluate(() => { const by = n => [...OwnershipMap.master.entities].find(([, e]) => e.name === n)[0];
+      return [...OwnershipMap.master.links].find(([, l]) => l.source === by('Andi Wijaya') && l.target === by('PT Contoh Uji Indonesia'))[0]; });
+    await p.evaluate(id => OwnershipMap.selectLink(id), aid); await sleep(600);
+    ok(/Term\s*Mar 2016 – Jun 2021/.test(await p.textContent('#detailPanel')), 'term shown in the detail');
+    await p.click('[data-act="link-edit"]'); await sleep(300);
+    await p.fill('form[data-form="link-edit"] [name="end"]', '2015-01');
+    await p.click('form[data-form="link-edit"] button[type="submit"]'); await sleep(300);
+    ok(/ends before it starts/.test(await p.textContent('form[data-form="link-edit"] .form-msg')), 'end before start refused');
+    await p.fill('form[data-form="link-edit"] [name="end"]', '2021-08');
+    await p.click('form[data-form="link-edit"] button[type="submit"]'); await sleep(1200);
+    const ed = await p.evaluate(id => { const l = OwnershipMap.master.links.get(id); return [l.end, l.seen]; }, aid);
+    eq(ed, ['2021-08', ['2016-03', '2021-06', '2021-08']], 'edited end saved and seen');
     const prof = await p.evaluate(() => { const by = n => [...OwnershipMap.master.entities.values()].find(e => e.name === n) || {};
       return { c: by('PT Contoh Uji Indonesia'), h: by('PT Induk Uji'), b: by('Budi Santoso'), s: by('Siti Aminah') }; });
     eq([prof.c.country, prof.c.address], ['Indonesia', 'Jl. Sudirman No. 1, Jakarta Pusat'], 'company profile saved');

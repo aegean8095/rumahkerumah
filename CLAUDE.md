@@ -252,6 +252,14 @@ Working efficiently (token use):
 - Profile ID kind on its own line; relationship Sources: reference full width, date + Add below; Dataset buttons a 2 × 2 grid with shorter labels (Relations CSV, Entities CSV, Back up, Restore)
 - Known, left as is: the Data panel shows both the fold chevron and its own Add data / Hide button
 
+### 2026-10-03 — Ownership Map: tenure and timeline from documents
+
+- `EXTRACT_PROMPT` asks for `since`, `until` and `status` ("current" / "former") on every shareholder and board member (appointment / "mulai menjabat", "masa jabatan berakhir", deed or transfer dates; history sections such as "riwayat pengurus" listed as former)
+- Review sheet: "Term from – until" (YYYY-MM or YYYY) and "Now" (Current / Former) columns; a row whose end is before the document date starts as Former; Former rows say they will be recorded as previous; the stake total counts current rows only
+- Recording: a link keeps `start` / `end`; its dates seen are the start plus the document date (current) or the end (former); a future term end is kept but not counted as seen. Former rows are recorded with status previous; a current row clears an earlier "previous" when the document is at least as new as the recorded dates. So the as-of slider, Timeline filter and status inference follow the tenure
+- Relationship detail shows Term (or Held) and the edit form has Term from / Until (end before start refused; start and a past end also become dates seen). Relationships table has a Term column
+- PDF test extended (term read, former row, recorded dates and statuses, term editing)
+
 ---
 
 ## Notes
