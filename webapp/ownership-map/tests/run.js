@@ -634,6 +634,42 @@ const tests = {
     eq(await p.$$eval('#tvTable tbody tr[data-i]', r => r.length), 1, 'one row');
     eq(p.errors, [], 'page errors');
   },
+  async 'as-of: slider shows the structure in force in a month; Now restores; Data quality leaves the past'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const L = Object.values(SEED.links);
+    const undated = L.filter(l => !(l.seen || []).length).length;
+    const drawn = () => p.evaluate(() => ({ nodes: document.querySelectorAll('g.node').length, edges: document.querySelectorAll('g.edge').length }));
+    eq((await drawn()).edges, 235, 'all relationships before using the slider');
+    await p.click('#asofBtn'); ok(await p.isVisible('#asofBar'), 'bar opens from the toolbar');
+    const lim = await p.evaluate(() => ({ min: +document.getElementById('asofRange').min, max: +document.getElementById('asofRange').max }));
+    ok(lim.min < lim.max, 'range from the earliest date to now');
+    const setKey = async (k, undatedOn) => { await p.evaluate(([k, u]) => { const r = document.getElementById('asofRange'); const c = document.getElementById('asofUndated'); c.checked = u; r.value = k; r.dispatchEvent(new Event('change', { bubbles: true })); }, [k, undatedOn]); await sleep(2200); };
+    // before every recorded date: only undated relationships remain (or none when they are left out)
+    await setKey(lim.min, true); const early = await drawn(); eq(early.edges >= undated, true, 'before the first date at least the undated ones remain');
+    await setKey(lim.min, false); let e2 = await drawn(); ok(e2.edges <= early.edges, 'leaving undated out never adds relationships');
+    // a month in the middle: compare with the rule applied independently to the seed dates
+    const mid = Math.round((lim.min + lim.max) / 2);
+    await setKey(mid, true);
+    const expected = await p.evaluate(mid => { const g = OwnershipMap.fullGraph(); return g.links.filter(l => { if (!l.seen.length) return true; const f = OwnershipMap.dateSortKey(l.seen[0]), z = OwnershipMap.dateSortKey(l.seen[l.seen.length - 1]); return mid >= f && (l.status === 'previous' ? mid <= z : true); }).length; }, mid);
+    const midDrawn = await drawn(); eq(midDrawn.edges, expected, 'relationships in force at the middle month');
+    ok(midDrawn.nodes <= midDrawn.edges * 2 && midDrawn.nodes > 0, 'only entities that have a relationship then: ' + midDrawn.nodes);
+    ok(/as of|Structure as of/i.test(await p.textContent('#asofBar')) && !/now/i.test(await p.textContent('#asofLabel')), 'label shows the month: ' + await p.textContent('#asofLabel'));
+    // the Table follows, and says so
+    await p.click('[data-tab="table"]'); await sleep(600);
+    ok(/as of/.test(await p.textContent('#tvCount')), 'table count says as of: ' + await p.textContent('#tvCount'));
+    // Data quality judges the present
+    await p.click('[data-tab="quality"]'); await sleep(900);
+    eq(await p.evaluate(() => OwnershipMap.getAsOf().key), null, 'Data quality leaves the past');
+    await p.click('[data-tab="map"]'); await sleep(1500);
+    eq((await drawn()).edges, 235, 'back to every relationship');
+    // Now button, after going back in time
+    await p.click('#asofBtn'); await sleep(300); await setKey(mid, true);
+    await p.click('[data-asof="now"]'); await sleep(2000);
+    eq((await drawn()).edges, 235, 'Now restores everything');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {

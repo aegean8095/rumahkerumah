@@ -197,7 +197,9 @@
     rows = all.filter(function(r){ return matches(r, cols, q); })
       .sort(function(a, b){ return compare(a, b, st.key, st.dir) || compare(a, b, kind === 'entities' ? 'name' : 'source', 1); });
     $('tvCaption').textContent = kind === 'entities' ? 'Entities on the map' : 'Relationships on the map';
-    $('tvCount').textContent = (rows.length === all.length ? all.length : rows.length + ' of ' + all.length) + ' ' + (kind === 'entities' ? 'entities' : 'relationships');
+    var asOf = OM.getAsOf && OM.getAsOf().key, asOfText = '';
+    if (asOf != null){ var y = Math.floor((asOf - 1) / 12), m = asOf - y * 12; asOfText = ' · as of ' + OM.formatDate({ year: y, month: m }); }
+    $('tvCount').textContent = (rows.length === all.length ? all.length : rows.length + ' of ' + all.length) + ' ' + (kind === 'entities' ? 'entities' : 'relationships') + asOfText;
     thead.innerHTML = '<tr>' + cols.map(function(c){
       var s = st.key === c.key ? ' aria-sort="' + (st.dir > 0 ? 'ascending' : 'descending') + '"' : '';
       return '<th scope="col" class="' + (c.num ? 'num' : '') + '" data-sort="' + c.key + '"' + s + (c.title ? ' title="' + esc(c.title) + '"' : '') +
@@ -219,6 +221,7 @@
     wrap.classList.toggle('table-mode', tab !== 'map');
     panel.hidden = tab !== 'table' || empty;
     Object.keys(extra).forEach(function(id){ extra[id].panel.hidden = tab !== id || empty; });
+    document.dispatchEvent(new CustomEvent('om:tab', { detail: { tab: tab } }));
     if (empty) return;
     if (tab === 'table') render();
     else if (extra[tab]) extra[tab].show();

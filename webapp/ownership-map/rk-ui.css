@@ -72,3 +72,22 @@ g.node.multi-sel .node-label{ font-weight: 700; }
 .rk-detail-tools{ display: flex; flex-direction: column; gap: 6px; margin: 4px 0 2px; padding: 10px 12px; border-radius: var(--r-md); background: var(--bg); }
 .rk-tool-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .rk-tool-label{ font-size: 12px; font-weight: 600; color: var(--ink-600); margin-right: 2px; }
+
+/* ---------- As-of slider (rk-time.js) ---------- */
+.canvas-toolbar .icon-btn.is-on{ background: var(--accent-focus-soft); color: var(--accent-focus); }
+.asof-bar{
+  left: 276px; right: 250px; bottom: 14px; z-index: calc(var(--z-sheet) + 1); padding: 10px 16px 8px; border-radius: 14px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.canvas-wrap.detail-open .asof-bar{ right: calc(min(368px, 100% - 28px) + 262px); }
+.asof-bar[hidden]{ display: none; }
+.asof-top{ display: flex; align-items: center; gap: 10px; }
+.asof-title{ font-size: 12.5px; color: var(--ink-600); }
+.asof-title b{ font-size: 15px; color: var(--ink-900); font-weight: 600; margin-left: 4px; }
+.asof-count{ font-family: var(--font-data); font-size: 11.5px; color: var(--ink-400); margin-left: auto; }
+.asof-bar input[type="range"]{ width: 100%; accent-color: var(--accent-focus); margin: 2px 0 0; }
+.asof-ticks{ position: relative; height: 14px; margin: 0 8px; }
+.asof-ticks span{ position: absolute; transform: translateX(-50%); font-family: var(--font-data); font-size: 10.5px; color: var(--ink-400); }
+.asof-foot{ display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+.asof-foot .check-row{ font-size: 12px; }
+.asof-note{ font-size: 11.5px; color: var(--ink-400); }
