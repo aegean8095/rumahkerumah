@@ -97,12 +97,12 @@
    "updatedAt": 1790961478929
   },
   "e-bujung": {
-   "name": "Bujung",
+   "name": "BUJUNG",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790994017978
+   "updatedAt": 1790961478929
   },
   "e-cheah-seng-keong": {
    "name": "Cheah Seng Keong",
@@ -159,6 +159,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-daniel-bastian-tandjung": {
+   "name": "Daniel Bastian Tandjung",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962043813
   },
   "e-djohan-tobing": {
    "name": "Djohan Tobing",
@@ -297,12 +305,12 @@
    "updatedAt": 1790961478929
   },
   "e-hartono": {
-   "name": "Hartono",
+   "name": "HARTONO",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991295432
+   "updatedAt": 1790961478929
   },
   "e-hasudungan-simamora": {
    "name": "Hasudungan Simamora",
@@ -449,12 +457,12 @@
    "updatedAt": 1790961478929
   },
   "e-kustinah": {
-   "name": "Kustinah",
+   "name": "KUSTINAH",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991375268
+   "updatedAt": 1790961478929
   },
   "e-lam-kah-kuan": {
    "name": "Lam Kah Kuan",
@@ -497,12 +505,12 @@
    "updatedAt": 1790961478929
   },
   "e-moleonoto": {
-   "name": "MOLEONOTO",
+   "name": "Moleonoto",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961824308
   },
   "e-muhamad-sobirin": {
    "name": "Muhamad Sobirin",
@@ -718,10 +726,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790992025103,
-   "clusters": [
-    "Pulp and Paper"
-   ]
+   "updatedAt": 1790961478929
   },
   "e-pt-hutan-tiara-lestari": {
    "name": "PT Hutan Tiara Lestari",
@@ -737,10 +742,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991963732,
-   "clusters": [
-    "Pulp and Paper"
-   ]
+   "updatedAt": 1790961478929
   },
   "e-pt-hutani-cipta-bersama": {
    "name": "PT Hutani Cipta Bersama",
@@ -798,6 +800,17 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-kesatuan-mas-abadi": {
+   "name": "PT Kesatuan Mas Abadi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962043813,
+   "clusters": [
+    "Forestry"
+   ]
+  },
   "e-pt-kiani-lestari": {
    "name": "PT Kiani Lestari",
    "type": "company",
@@ -813,6 +826,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-kutai-refinery-nusantara": {
+   "name": "PT Kutai Refinery Nusantara",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962043813
   },
   "e-pt-maju-hijau-lestari": {
    "name": "PT Maju Hijau Lestari",
@@ -844,10 +865,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991988815,
-   "clusters": [
-    "Pulp and Paper"
-   ]
+   "updatedAt": 1790961478929
   },
   "e-pt-multistrada-agro-internasional": {
    "name": "PT Multistrada Agro Internasional",
@@ -903,10 +921,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991950465,
-   "clusters": [
-    "Pulp and Paper"
-   ]
+   "updatedAt": 1790961478929
   },
   "e-pt-salim-ivomas-pratama": {
    "name": "PT Salim Ivomas Pratama",
@@ -915,6 +930,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-sari-dumai-sejati": {
+   "name": "PT Sari Dumai Sejati",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962043813
   },
   "e-pt-satya-multi-prakarsa": {
    "name": "PT Satya Multi Prakarsa",
@@ -938,10 +961,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991409896,
-   "clusters": [
-    "Pulp and Paper"
-   ]
+   "updatedAt": 1790961478929
   },
   "e-pt-sumalindo-alam-lestari": {
    "name": "PT Sumalindo Alam Lestari",
@@ -949,7 +969,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961881472,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-swadaya-perkasa": {
    "name": "PT Swadaya Perkasa",
@@ -1013,7 +1036,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961871904,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-wana-tirta-lestari": {
    "name": "PT Wana Tirta Lestari",
@@ -1040,12 +1066,12 @@
    "updatedAt": 1790961478929
   },
   "e-rizaldi": {
-   "name": "Rizaldi",
+   "name": "RIZALDI",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991386867
+   "updatedAt": 1790961478929
   },
   "e-rusni-kartina": {
    "name": "Rusni Kartina",
@@ -1064,12 +1090,12 @@
    "updatedAt": 1790961478929
   },
   "e-santiana": {
-   "name": "Santiana",
+   "name": "SANTIANA",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991437172
+   "updatedAt": 1790961478929
   },
   "e-siet-lin-lee": {
    "name": "Siet Lin Lee",
@@ -1120,20 +1146,20 @@
    "updatedAt": 1790961478929
   },
   "e-soeprijadi": {
-   "name": "Soeprijadi",
+   "name": "SOEPRIJADI",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790992148811
+   "updatedAt": 1790961478929
   },
   "e-soepriyatno": {
-   "name": "Soepriyatno",
+   "name": "SOEPRIYATNO",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991256508
+   "updatedAt": 1790961478929
   },
   "e-sonny-engko": {
    "name": "Sonny Engko",
@@ -1173,7 +1199,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991238290
+   "updatedAt": 1790962561826
   },
   "e-sutardi": {
    "name": "Sutardi",
@@ -1181,7 +1207,7 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790991491061
+   "updatedAt": 1790961812120
   },
   "e-suwitno-adi": {
    "name": "Suwitno Adi",
@@ -1222,6 +1248,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-tio-bio-kok": {
+   "name": "Tio Bio Kok",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962043813
   },
   "e-tje-hwa": {
    "name": "Tje Hwa",
@@ -6015,7 +6049,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6025,7 +6059,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0191": {
    "source": "e-sutardi",
@@ -6040,7 +6074,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6050,7 +6084,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0192": {
    "source": "e-phillipus-darma-phiong",
@@ -6065,7 +6099,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6075,7 +6109,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0193": {
    "source": "e-tan-agustinus",
@@ -6090,7 +6124,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6100,7 +6134,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0194": {
    "source": "e-soenardi-winarto",
@@ -6115,7 +6149,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6125,7 +6159,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0195": {
    "source": "e-axton-salim",
@@ -6140,7 +6174,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6150,7 +6184,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0196": {
    "source": "e-moleonoto",
@@ -6165,7 +6199,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6175,7 +6209,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0197": {
    "source": "e-pt-mentari-pertiwi",
@@ -6190,7 +6224,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6200,7 +6234,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0198": {
    "source": "e-pt-salim-ivomas-pratama",
@@ -6215,7 +6249,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6225,7 +6259,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0199": {
    "source": "e-pt-perusahaan-perkebunan-london-sumatra-indonesia",
@@ -6240,7 +6274,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6250,7 +6284,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0200": {
    "source": "e-benny-tjoeng",
@@ -6265,7 +6299,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6275,7 +6309,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961837536
   },
   "l-0201": {
    "source": "e-sutardi",
@@ -6290,7 +6324,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6300,7 +6334,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961847856
   },
   "l-0202": {
    "source": "e-phillipus-darma-phiong",
@@ -6315,7 +6349,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6325,7 +6359,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961840080
   },
   "l-0203": {
    "source": "e-tan-agustinus",
@@ -6340,7 +6374,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6350,7 +6384,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961845466
   },
   "l-0204": {
    "source": "e-soenardi-winarto",
@@ -6365,7 +6399,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6375,7 +6409,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961851420
   },
   "l-0205": {
    "source": "e-axton-salim",
@@ -6390,7 +6424,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6400,7 +6434,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961834852
   },
   "l-0206": {
    "source": "e-moleonoto",
@@ -6415,7 +6449,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6425,7 +6459,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961843146
   },
   "l-0207": {
    "source": "e-pt-mentari-pertiwi",
@@ -6440,7 +6474,8 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Kaltim",
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6450,7 +6485,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961763320
   },
   "l-0208": {
    "source": "e-pt-sumalindo-alam-lestari",
@@ -6465,7 +6500,7 @@
     "2024-08"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -6475,7 +6510,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1790961765636
   },
   "l-0209": {
    "source": "e-rahardjo-benyamin",
@@ -7151,52 +7186,313 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "l-mur8k59h-0emlxr": {
+   "source": "e-daniel-bastian-tandjung",
+   "target": "e-pt-kesatuan-mas-abadi",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2026-09",
+   "status": null,
+   "seen": [
+    "2026-09"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+     "date": "2026-09"
+    }
+   ],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962084442
+  },
+  "l-mur8k59h-45wjp3": {
+   "source": "e-pt-kutai-refinery-nusantara",
+   "target": "e-pt-kesatuan-mas-abadi",
+   "type": "ownership",
+   "value": 30,
+   "role": null,
+   "date": "2026-09",
+   "status": null,
+   "seen": [
+    "2026-09"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+     "date": "2026-09"
+    }
+   ],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962084442
+  },
+  "l-mur8k59h-lzt4ie": {
+   "source": "e-pt-sari-dumai-sejati",
+   "target": "e-pt-kesatuan-mas-abadi",
+   "type": "ownership",
+   "value": 70,
+   "role": null,
+   "date": "2026-09",
+   "status": null,
+   "seen": [
+    "2026-09"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+     "date": "2026-09"
+    }
+   ],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962084442
+  },
+  "l-mur8k59h-z1ia3r": {
+   "source": "e-tio-bio-kok",
+   "target": "e-pt-kesatuan-mas-abadi",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2026-09",
+   "status": null,
+   "seen": [
+    "2026-09"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+     "date": "2026-09"
+    }
+   ],
+   "note": "",
+   "createdAt": 1790962043813,
+   "updatedAt": 1790962084442
   }
  },
  "versions": {
-  "v-murq12j9-oss6": {
-   "at": 1790991386901,
-   "batch": "v-murq12j9-oss6",
-   "summary": "Renamed RIZALDI to Rizaldi",
+  "v-mur8fw86-p8ia": {
+   "at": 1790961845478,
+   "batch": "v-mur8fw86-p8ia",
+   "summary": "Removed Tan Agustinus from the group Kaltim: 1 relationship",
    "part": 1,
    "parts": 1,
    "changeCount": 1,
    "changes": [
     {
-     "kind": "entity",
-     "id": "e-rizaldi",
+     "kind": "link",
+     "id": "l-0203",
      "before": {
-      "name": "RIZALDI",
-      "type": "person",
-      "aliases": [],
+      "source": "e-tan-agustinus",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
+      "updatedAt": 1790961763320
      },
      "after": {
-      "name": "Rizaldi",
-      "type": "person",
-      "aliases": [],
+      "source": "e-tan-agustinus",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790991386867
+      "updatedAt": 1790961845466
      }
     }
    ]
   },
-  "v-murq1kal-rsae": {
-   "at": 1790991409917,
-   "batch": "v-murq1kal-rsae",
-   "summary": "Added the cluster Pulp and Paper: PT Seroja Universum Narwastu",
+  "v-mur8fy2f-psty": {
+   "at": 1790961847863,
+   "batch": "v-mur8fy2f-psty",
+   "summary": "Removed Sutardi from the group Kaltim: 1 relationship",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0201",
+     "before": {
+      "source": "e-sutardi",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961763320
+     },
+     "after": {
+      "source": "e-sutardi",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961847856
+     }
+    }
+   ]
+  },
+  "v-mur8g0ti-0vaw": {
+   "at": 1790961851430,
+   "batch": "v-mur8g0ti-0vaw",
+   "summary": "Removed Soenardi Winarto from the group Kaltim: 1 relationship",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0204",
+     "before": {
+      "source": "e-soenardi-winarto",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961763320
+     },
+     "after": {
+      "source": "e-soenardi-winarto",
+      "target": "e-pt-wana-kaltim-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-08",
+      "status": null,
+      "seen": [
+       "2023-10",
+       "2024-08"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961851420
+     }
+    }
+   ]
+  },
+  "v-mur8gasz-l49c": {
+   "at": 1790961864371,
+   "batch": "v-mur8gasz-l49c",
+   "summary": "Added the cluster Forestry: PT Sumalindo Alam Lestari",
    "part": 1,
    "parts": 1,
    "changeCount": 1,
    "changes": [
     {
      "kind": "entity",
-     "id": "e-pt-seroja-universum-narwastu",
+     "id": "e-pt-sumalindo-alam-lestari",
      "before": {
-      "name": "PT Seroja Universum Narwastu",
+      "name": "PT Sumalindo Alam Lestari",
       "type": "company",
       "aliases": [],
       "note": "",
@@ -7204,12 +7500,45 @@
       "updatedAt": 1790961478929
      },
      "after": {
-      "name": "PT Seroja Universum Narwastu",
+      "name": "PT Sumalindo Alam Lestari",
       "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790991409896,
+      "updatedAt": 1790961864365,
+      "clusters": [
+       "Forestry"
+      ]
+     }
+    }
+   ]
+  },
+  "v-mur8ggmd-zmuf": {
+   "at": 1790961871909,
+   "batch": "v-mur8ggmd-zmuf",
+   "summary": "Added the cluster Pulp and Paper: PT Wana Kaltim Lestari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-wana-kaltim-lestari",
+     "before": {
+      "name": "PT Wana Kaltim Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Wana Kaltim Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961871904,
       "clusters": [
        "Pulp and Paper"
       ]
@@ -7217,92 +7546,67 @@
     }
    ]
   },
-  "v-murq25c7-0xzc": {
-   "at": 1790991437191,
-   "batch": "v-murq25c7-0xzc",
-   "summary": "Renamed SANTIANA to Santiana",
+  "v-mur8gjup-b1mx": {
+   "at": 1790961876097,
+   "batch": "v-mur8gjup-b1mx",
+   "summary": "Removed the cluster Forestry: PT Sumalindo Alam Lestari",
    "part": 1,
    "parts": 1,
    "changeCount": 1,
    "changes": [
     {
      "kind": "entity",
-     "id": "e-santiana",
+     "id": "e-pt-sumalindo-alam-lestari",
      "before": {
-      "name": "SANTIANA",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Santiana",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790991437172
-     }
-    }
-   ]
-  },
-  "v-murq3ax8-fz9g": {
-   "at": 1790991491084,
-   "batch": "v-murq3ax8-fz9g",
-   "summary": "Renamed SUTARDI to Sutardi",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-sutardi",
-     "before": {
-      "name": "SUTARDI",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Sutardi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790991491061
-     }
-    }
-   ]
-  },
-  "v-murqd5en-4lkv": {
-   "at": 1790991950495,
-   "batch": "v-murqd5en-4lkv",
-   "summary": "Added the cluster Pulp and Paper: PT Phoenix Resources International",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-phoenix-resources-international",
-     "before": {
-      "name": "PT Phoenix Resources International",
+      "name": "PT Sumalindo Alam Lestari",
       "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
+      "updatedAt": 1790961864365,
+      "clusters": [
+       "Forestry"
+      ]
      },
      "after": {
-      "name": "PT Phoenix Resources International",
+      "name": "PT Sumalindo Alam Lestari",
       "type": "company",
       "aliases": [],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790991950465,
+      "updatedAt": 1790961876081,
+      "clusters": []
+     }
+    }
+   ]
+  },
+  "v-mur8go0c-8hkq": {
+   "at": 1790961881484,
+   "batch": "v-mur8go0c-8hkq",
+   "summary": "Added the cluster Pulp and Paper: PT Sumalindo Alam Lestari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-sumalindo-alam-lestari",
+     "before": {
+      "name": "PT Sumalindo Alam Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961876081,
+      "clusters": []
+     },
+     "after": {
+      "name": "PT Sumalindo Alam Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961881472,
       "clusters": [
        "Pulp and Paper"
       ]
@@ -7310,118 +7614,415 @@
     }
    ]
   },
-  "v-murqdfna-7u0f": {
-   "at": 1790991963766,
-   "batch": "v-murqdfna-7u0f",
-   "summary": "Added the cluster Pulp and Paper: PT Hutani Bumi Sejahtera",
+  "v-mur8k59v-8bx3": {
+   "at": 1790962043827,
+   "batch": "v-mur8k59v-8bx3",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
    "part": 1,
    "parts": 1,
-   "changeCount": 1,
+   "changeCount": 9,
    "changes": [
     {
      "kind": "entity",
-     "id": "e-pt-hutani-bumi-sejahtera",
-     "before": {
-      "name": "PT Hutani Bumi Sejahtera",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
+     "id": "e-pt-sari-dumai-sejati",
+     "before": null,
      "after": {
-      "name": "PT Hutani Bumi Sejahtera",
+      "name": "PT Sari Dumai Sejati",
       "type": "company",
       "aliases": [],
       "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790991963732,
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-kesatuan-mas-abadi",
+     "before": null,
+     "after": {
+      "name": "PT Kesatuan Mas Abadi",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813,
       "clusters": [
-       "Pulp and Paper"
+       "Forestry"
       ]
      }
-    }
-   ]
-  },
-  "v-murqdyzg-vzoy": {
-   "at": 1790991988828,
-   "batch": "v-murqdyzg-vzoy",
-   "summary": "Added the cluster Pulp and Paper: PT Mitra Foresta Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
+    },
     {
      "kind": "entity",
-     "id": "e-pt-mitra-foresta-lestari",
-     "before": {
-      "name": "PT Mitra Foresta Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
+     "id": "e-pt-kutai-refinery-nusantara",
+     "before": null,
      "after": {
-      "name": "PT Mitra Foresta Lestari",
+      "name": "PT Kutai Refinery Nusantara",
       "type": "company",
       "aliases": [],
       "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790991988815,
-      "clusters": [
-       "Pulp and Paper"
-      ]
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-daniel-bastian-tandjung",
+     "before": null,
+     "after": {
+      "name": "Daniel Bastian Tandjung",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-tio-bio-kok",
+     "before": null,
+     "after": {
+      "name": "Tio Bio Kok",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-lzt4ie",
+     "before": null,
+     "after": {
+      "source": "e-pt-sari-dumai-sejati",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 70,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-45wjp3",
+     "before": null,
+     "after": {
+      "source": "e-pt-kutai-refinery-nusantara",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 30,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-0emlxr",
+     "before": null,
+     "after": {
+      "source": "e-daniel-bastian-tandjung",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-z1ia3r",
+     "before": null,
+     "after": {
+      "source": "e-tio-bio-kok",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
      }
     }
    ]
   },
-  "v-murqer15-djgy": {
-   "at": 1790992025177,
-   "batch": "v-murqer15-djgy",
-   "summary": "Added the cluster Pulp and Paper: PT Hutan Berau Lestari",
+  "v-mur8l0mf-4zfx": {
+   "at": 1790962084455,
+   "batch": "v-mur8l0mf-4zfx",
+   "summary": "Added PT Kesatuan Mas Abadi and its corporate group to the group Sinarmas Group: 4 relationships",
    "part": 1,
    "parts": 1,
-   "changeCount": 1,
+   "changeCount": 4,
    "changes": [
     {
-     "kind": "entity",
-     "id": "e-pt-hutan-berau-lestari",
+     "kind": "link",
+     "id": "l-mur8k59h-lzt4ie",
      "before": {
-      "name": "PT Hutan Berau Lestari",
-      "type": "company",
-      "aliases": [],
+      "source": "e-pt-sari-dumai-sejati",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 70,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
       "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
      },
      "after": {
-      "name": "PT Hutan Berau Lestari",
-      "type": "company",
-      "aliases": [],
+      "source": "e-pt-sari-dumai-sejati",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 70,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
       "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790992025103,
-      "clusters": [
-       "Pulp and Paper"
-      ]
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962084442
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-45wjp3",
+     "before": {
+      "source": "e-pt-kutai-refinery-nusantara",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 30,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     },
+     "after": {
+      "source": "e-pt-kutai-refinery-nusantara",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "ownership",
+      "value": 30,
+      "role": null,
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962084442
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-0emlxr",
+     "before": {
+      "source": "e-daniel-bastian-tandjung",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     },
+     "after": {
+      "source": "e-daniel-bastian-tandjung",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962084442
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-mur8k59h-z1ia3r",
+     "before": {
+      "source": "e-tio-bio-kok",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962043813
+     },
+     "after": {
+      "source": "e-tio-bio-kok",
+      "target": "e-pt-kesatuan-mas-abadi",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2026-09",
+      "status": null,
+      "seen": [
+       "2026-09"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. September 2026. “PT Kesatuan Mas Abadi.” Corporate profile.",
+        "date": "2026-09"
+       }
+      ],
+      "note": "",
+      "createdAt": 1790962043813,
+      "updatedAt": 1790962084442
      }
     }
    ]
   },
-  "v-murqhegl-vf2u": {
-   "at": 1790992148853,
-   "batch": "v-murqhegl-vf2u",
-   "summary": "Renamed SOEPRIJADI to Soeprijadi",
+  "v-mur8v8yv-us63": {
+   "at": 1790962561831,
+   "batch": "v-mur8v8yv-us63",
+   "summary": "Renamed SUKARMAN to Sukarman",
    "part": 1,
    "parts": 1,
    "changeCount": 1,
    "changes": [
     {
      "kind": "entity",
-     "id": "e-soeprijadi",
+     "id": "e-sukarman",
      "before": {
-      "name": "SOEPRIJADI",
+      "name": "SUKARMAN",
       "type": "person",
       "aliases": [],
       "note": "",
@@ -7429,42 +8030,12 @@
       "updatedAt": 1790961478929
      },
      "after": {
-      "name": "Soeprijadi",
+      "name": "Sukarman",
       "type": "person",
       "aliases": [],
       "note": "",
       "createdAt": 1790961478929,
-      "updatedAt": 1790992148811
-     }
-    }
-   ]
-  },
-  "v-murrlgq2-vgfg": {
-   "at": 1790994018026,
-   "batch": "v-murrlgq2-vgfg",
-   "summary": "Renamed BUJUNG to Bujung",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-bujung",
-     "before": {
-      "name": "BUJUNG",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Bujung",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790994017978
+      "updatedAt": 1790962561826
      }
     }
    ]
