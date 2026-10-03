@@ -622,7 +622,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025896735,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-andalan-agri-mitra": {
    "name": "PT Andalan Agri Mitra",
@@ -3022,9 +3025,7 @@
    "date": null,
    "status": null,
    "seen": [],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3033,7 +3034,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025898191
   },
   "l-0067": {
    "source": "e-goodwood-bcl-sdn-bhd",
@@ -7185,141 +7186,6 @@
   }
  },
  "versions": {
-  "v-musajou8-7j66": {
-   "at": 1791025847936,
-   "batch": "v-musajou8-7j66",
-   "summary": "Added the cluster Pulp and Paper: PT Phoenix Resources International",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-phoenix-resources-international",
-     "before": {
-      "name": "PT Phoenix Resources International",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Phoenix Resources International",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025847925,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
-  "v-musajqkw-tsyo": {
-   "at": 1791025850192,
-   "batch": "v-musajqkw-tsyo",
-   "summary": "Removed PT Phoenix Resources International from the group Kaltim: 2 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 2,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0063",
-     "before": {
-      "source": "e-chung-hua-united-capital-sdn-bhd",
-      "target": "e-pt-phoenix-resources-international",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-chung-hua-united-capital-sdn-bhd",
-      "target": "e-pt-phoenix-resources-international",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025850163
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0064",
-     "before": {
-      "source": "e-chung-hua-united-resources-sdn-bhd",
-      "target": "e-pt-phoenix-resources-international",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-chung-hua-united-resources-sdn-bhd",
-      "target": "e-pt-phoenix-resources-international",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025850163
-     }
-    }
-   ]
-  },
   "v-musajxuj-tdwe": {
    "at": 1791025859611,
    "batch": "v-musajxuj-tdwe",
@@ -9285,6 +9151,95 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025886761
+     }
+    }
+   ]
+  },
+  "v-musakqhu-kiii": {
+   "at": 1791025896738,
+   "batch": "v-musakqhu-kiii",
+   "summary": "Added the cluster Pulp and Paper: PT Adindo Hutani Lestari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-adindo-hutani-lestari",
+     "before": {
+      "name": "PT Adindo Hutani Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Adindo Hutani Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025896735,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-musakrm8-4lu3": {
+   "at": 1791025898192,
+   "batch": "v-musakrm8-4lu3",
+   "summary": "Removed PT Adindo Hutani Lestari from the group Kaltim: 1 relationship",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0066",
+     "before": {
+      "source": "e-bioenergy-enterprises-sdn-bhd",
+      "target": "e-pt-adindo-hutani-lestari",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-bioenergy-enterprises-sdn-bhd",
+      "target": "e-pt-adindo-hutani-lestari",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025898191
      }
     }
    ]
