@@ -440,6 +440,22 @@
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
   },
+  "e-frankie-adrianov-justinus": {
+   "name": "Frankie Adrianov Justinus",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "TAMAN BRAWIJAYA JALAN GANDARIA NOMOR 3",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3603282811700005"
+    }
+   ]
+  },
   "e-frans-juli-santoso": {
    "name": "Frans Juli Santoso",
    "type": "person",
@@ -583,6 +599,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-hendrik-suherman": {
+   "name": "Hendrik Suherman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "Jl. Buana Biru Besar Blok E1 /36",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3578312105620001"
+    }
+   ]
   },
   "e-heri-santoso": {
    "name": "Heri Santoso",
@@ -1101,6 +1133,22 @@
    "createdAt": 1791043544291,
    "updatedAt": 1791043544291
   },
+  "e-pt-agra-bareksa-indonesia": {
+   "name": "PT Agra Bareksa Indonesia",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043790451,
+   "country": "Indonesia",
+   "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-14217.AH.01.01.Tahun 2011"
+    }
+   ]
+  },
   "e-pt-alam-tri-abadi": {
    "name": "PT Alam Tri Abadi",
    "type": "company",
@@ -1242,6 +1290,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-bukit-muria-jaya-karton": {
+   "name": "PT Bukit Muria Jaya Karton",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "MENARA CITICON LT. 18, JL. LETJEND S PARMAN KAV 72",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-60517.AH.01.01.Tahun 2013"
+    }
+   ]
   },
   "e-pt-bumilanggeng-perdanatrada": {
    "name": "PT Bumilanggeng Perdanatrada",
@@ -1597,6 +1661,16 @@
    "note": "",
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
+  },
+  "e-pt-sapta-prima-persada": {
+   "name": "PT Sapta Prima Persada",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "JL. JENDRAL A.YANI NO 22 PANJUNAN"
   },
   "e-pt-sari-dumai-sejati": {
    "name": "PT Sari Dumai Sejati",
@@ -2173,80 +2247,6 @@
    "note": "",
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
-  },
-  "e-pt-bukit-muria-jaya-karton": {
-   "name": "PT Bukit Muria Jaya Karton",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043727954,
-   "country": "Indonesia",
-   "address": "MENARA CITICON LT. 18, JL. LETJEND S PARMAN KAV 72",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-60517.AH.01.01.Tahun 2013"
-    }
-   ]
-  },
-  "e-pt-agra-bareksa-indonesia": {
-   "name": "PT Agra Bareksa Indonesia",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043790451,
-   "country": "Indonesia",
-   "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-14217.AH.01.01.Tahun 2011"
-    }
-   ]
-  },
-  "e-pt-sapta-prima-persada": {
-   "name": "PT Sapta Prima Persada",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043727954,
-   "country": "Indonesia",
-   "address": "JL. JENDRAL A.YANI NO 22 PANJUNAN"
-  },
-  "e-frankie-adrianov-justinus": {
-   "name": "Frankie Adrianov Justinus",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043727954,
-   "country": "Indonesia",
-   "address": "TAMAN BRAWIJAYA JALAN GANDARIA NOMOR 3",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "3603282811700005"
-    }
-   ]
-  },
-  "e-hendrik-suherman": {
-   "name": "Hendrik Suherman",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043727954,
-   "country": "Indonesia",
-   "address": "Jl. Buana Biru Besar Blok E1 /36",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "3578312105620001"
-    }
-   ]
   }
  },
  "links": {
@@ -3162,9 +3162,7 @@
     "2022-09",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3173,7 +3171,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791045265849
   },
   "l-0038": {
    "source": "e-hillrise-commercial-inc",
@@ -5205,9 +5203,7 @@
     "2008-02",
     "2019-03"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5216,7 +5212,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791045263162
   },
   "l-0125": {
    "source": "e-soepriyatno",
@@ -5305,9 +5301,7 @@
     "2007-01",
     "2019-03"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5316,7 +5310,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791045263162
   },
   "l-0129": {
    "source": "e-krisnha-dwi-soedarmo",
@@ -9950,6 +9944,28 @@
    "createdAt": 1791043544291,
    "updatedAt": 1791043544291
   },
+  "l-musl6x5f-9982wh": {
+   "source": "e-hendrik-suherman",
+   "target": "e-pt-agra-bareksa-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954
+  },
   "l-musl6x5f-kask2n": {
    "source": "e-pt-bukit-muria-jaya-karton",
    "target": "e-pt-agra-bareksa-indonesia",
@@ -10015,267 +10031,9 @@
    "note": "",
    "createdAt": 1791043727954,
    "updatedAt": 1791043727954
-  },
-  "l-musl6x5f-9982wh": {
-   "source": "e-hendrik-suherman",
-   "target": "e-pt-agra-bareksa-indonesia",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
-   "date": "2017-06",
-   "status": null,
-   "seen": [
-    "2017-06"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
-     "date": "2017-06"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043727954,
-   "updatedAt": 1791043727954
   }
  },
  "versions": {
-  "v-musl84ny-nf3k": {
-   "at": 1791043784350,
-   "batch": "v-musl84ny-nf3k",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043783894,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-01928.40.21.2014"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0003390.AH.01.02.Tahun 2015"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0013826"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0924809"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043784344,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0003390.AH.01.02.Tahun 2015"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0013826"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0924809"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
-  "v-musl851f-uaql": {
-   "at": 1791043784835,
-   "batch": "v-musl851f-uaql",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043784344,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0003390.AH.01.02.Tahun 2015"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0013826"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0924809"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043784818,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0013826"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0924809"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl85fq-3tmn": {
    "at": 1791043785350,
    "batch": "v-musl85fq-3tmn",
@@ -10896,6 +10654,182 @@
         "number": "AHU-14217.AH.01.01.Tahun 2011"
        }
       ]
+     }
+    }
+   ]
+  },
+  "v-musm3tq5-4e4e": {
+   "at": 1791045263165,
+   "batch": "v-musm3tq5-4e4e",
+   "summary": "Removed Edhy Prabowo from the group Kaltim: 2 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 2,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0124",
+     "before": {
+      "source": "e-edhy-prabowo",
+      "target": "e-pt-bali-pasific-investama",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2019-03",
+      "status": null,
+      "seen": [
+       "2008-02",
+       "2019-03"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-edhy-prabowo",
+      "target": "e-pt-bali-pasific-investama",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2019-03",
+      "status": null,
+      "seen": [
+       "2008-02",
+       "2019-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791045263162
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0128",
+     "before": {
+      "source": "e-edhy-prabowo",
+      "target": "e-pt-nusantara-agro-forestry",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2019-03",
+      "status": null,
+      "seen": [
+       "2007-01",
+       "2019-03"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-edhy-prabowo",
+      "target": "e-pt-nusantara-agro-forestry",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2019-03",
+      "status": null,
+      "seen": [
+       "2007-01",
+       "2019-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791045263162
+     }
+    }
+   ]
+  },
+  "v-musm3vsr-mufq": {
+   "at": 1791045265851,
+   "batch": "v-musm3vsr-mufq",
+   "summary": "Removed Green Meadows Fiber Product Ltd from the group Kaltim: 1 relationship",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0037",
+     "before": {
+      "source": "e-green-meadows-fiber-product-ltd",
+      "target": "e-pt-borneo-hijau-lestari",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2022-09",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-green-meadows-fiber-product-ltd",
+      "target": "e-pt-borneo-hijau-lestari",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2022-09",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791045265849
      }
     }
    ]
