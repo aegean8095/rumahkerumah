@@ -46,7 +46,7 @@ function fakeGitHub(){
   gh.route = async r => {
     const q = r.request(), m = q.method(), p = new URL(q.url()).pathname.replace('/repos/aegean8095/rumahkerumah', '');
     if (m === 'OPTIONS') return r.fulfill({ status: 204, headers: cors });
-    const auth = q.headers().authorization || '', good = auth === 'Bearer good-token';
+    const auth = q.headers().authorization || '', good = auth === 'Bearer github_pat_GOOD000000000000000000000000';
     const J = (st, b, h) => r.fulfill({ status: st, headers: Object.assign({ 'content-type': 'application/json' }, cors, h || {}), body: JSON.stringify(b) });
     if (auth && !good) return J(401, { message: 'Bad credentials' });
     if (p === '' && m === 'GET') return J(200, { full_name: 'aegean8095/rumahkerumah' });
@@ -182,7 +182,7 @@ const tests = {
   },
   async 'github: connect, autosave, save history'(){
     const gh = fakeGitHub(); gh.set(SEED);
-    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.accept('good-token'));
+    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.accept('github_pat_GOOD000000000000000000000000'));
     await p.click('#ghConnectBtn'); await sleep(500);
     await addEntity(p, 'e-saved');
     ok(/Unsaved|Saving/.test(await ghStatus(p)), 'pending shown');
@@ -192,7 +192,7 @@ const tests = {
   },
   async 'github: another device saved, reload picks it up'(){
     const gh = fakeGitHub(); gh.set(SEED);
-    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx);
+    const { ctx } = await context({ gh, token: 'github_pat_GOOD000000000000000000000000' }); const p = await open(ctx);
     const d = gh.data(); d.entities['e-other'] = { name: 'PT Other', type: 'company', aliases: [] }; gh.set(d);
     await reload(p); await sleep(2500);
     ok(await has(p, 'e-other'), 'other device change loaded');
@@ -211,22 +211,22 @@ const tests = {
     const { ctx } = await context({ gh }); const p = await open(ctx, d => d.dismiss());
     await addEntity(p, 'e-keep'); await sleep(300);
     const d = gh.data(); d.entities['e-lost'] = { name: 'PT Lost', type: 'company', aliases: [] }; gh.set(d);
-    await p.evaluate(() => localStorage.setItem('rk-github-token', 'good-token'));
+    await p.evaluate(() => localStorage.setItem('rk-github-token', 'github_pat_GOOD000000000000000000000000'));
     await reload(p); await sleep(4000);
     ok(gh.data().entities['e-keep'] && !gh.data().entities['e-lost'], 'browser version saved over GitHub');
   },
   async 'github: missing branch is created on first save'(){
     const gh = fakeGitHub(); gh.branch = false;
-    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx); await sleep(2500);
+    const { ctx } = await context({ gh, token: 'github_pat_GOOD000000000000000000000000' }); const p = await open(ctx); await sleep(2500);
     ok(gh.branch && gh.file, 'branch created');
     eq([Object.keys(gh.data().entities).length, Object.keys(gh.data().links).length], [165, 235], 'seed saved');
   },
   async 'github: bad token and read-only token explain themselves'(){
     const gh = fakeGitHub(); gh.set(SEED);
-    const a = await open((await context({ gh, token: 'bad-token' })).ctx);
+    const a = await open((await context({ gh, token: 'github_pat_BAD0000000000000000000000000' })).ctx);
     ok(/rejected/.test(await ghStatus(a)), 'bad token message');
     const gh2 = fakeGitHub(); gh2.set(SEED); gh2.forbid = true;
-    const b = await open((await context({ gh: gh2, token: 'good-token' })).ctx);
+    const b = await open((await context({ gh: gh2, token: 'github_pat_GOOD000000000000000000000000' })).ctx);
     await addEntity(b, 'e-x'); await b.evaluate(() => rumahkerumahGitHub.saveNow()); await sleep(800);
     ok(/contents=write/.test(await ghStatus(b)), 'read-only token message names the missing permission');
   },
@@ -304,7 +304,7 @@ const tests = {
     const age = t => { const d = latest(t); if (!d) return null; const [y, m] = d.split('-').map(Number); return nowKey - (y * 12 + m); };
     const stale = mo => [...targets].filter(t => age(t) == null || age(t) >= mo).length;
     const gh = fakeGitHub(); gh.set(SEED);
-    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx, d => d.accept());
+    const { ctx } = await context({ gh, token: 'github_pat_GOOD000000000000000000000000' }); const p = await open(ctx, d => d.accept());
     await p.click('[data-tab="quality"]'); await sleep(800);
     const count = async check => { const h = await p.$$eval('.qa-check h4', hs => hs.map(h => h.innerText.replace(/\s+/g, ' ').trim())); const x = h.find(t => t.startsWith(check)); return x ? +x.split(' ').pop() : 0; };
     eq(await count('No directors or commissioners recorded'), noBoard, 'no board');
@@ -363,6 +363,18 @@ const tests = {
     await p.setViewportSize({ width: 390, height: 800 }); await p.evaluate(() => window.OwnershipMapTabs.show('quality')); await sleep(800);
     ok(await p.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), 'no sideways page scroll on a phone');
     console.log('      (1,000 entities: Data quality ' + Math.round(ms) + ' ms, Table ' + Math.round(tms) + ' ms)');
+  },
+  async 'github: connect explains a wrong paste, a blocked network and a rejected token'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    let answer = '';
+    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.accept(answer));
+    const tryToken = async t => { answer = t; await p.click('#ghConnectBtn'); await sleep(700); return ghStatus(p); };
+    ok(/doesn’t look like a GitHub token/.test(await tryToken('my laptop token')), 'token name instead of value');
+    ok(/rejected that token/.test(await tryToken('github_pat_BAD0000000000000000000000000')), 'rejected token');
+    ok(/Saved to GitHub|Connected/.test(await tryToken('  "github_pat_GOOD000000000000000000000000"\n')), 'spaces and quotes around a good token are fine');
+    await p.evaluate(() => rumahkerumahGitHub.disconnect());
+    await ctx.unroute(GH + '**'); await ctx.route(GH + '**', r => r.abort('blockedbyclient'));
+    ok(/couldn’t reach api.github.com/.test(await tryToken('github_pat_GOOD000000000000000000000000')), 'blocked network');
   },
 };
 

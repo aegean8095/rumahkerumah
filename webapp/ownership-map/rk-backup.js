@@ -110,7 +110,15 @@
     var t = window.prompt('Paste your GitHub fine-grained token (Contents: read and write on rumahkerumah).\nIt is kept in this browser only.');
     if (!t) return;
     try { await G.connect(t); render(); }
-    catch (e){ statusEl.textContent = 'GitHub rejected that token. Check that it was copied whole and has not expired.'; statusEl.classList.add('is-error'); }
+    catch (e){
+      var code = e && e.code;
+      statusEl.textContent =
+        code === 'not_a_token' ? 'That doesn’t look like a GitHub token. A token starts with github_pat_ (or ghp_) and is shown only once, right after you generate it — paste that value, not the token’s name.' :
+        code === 'network' ? 'This browser couldn’t reach api.github.com, so the token wasn’t checked. A firewall, VPN, proxy or browser extension (ad or privacy blocker) may be blocking it; allow api.github.com and try again.' :
+        code === 'http' ? 'GitHub answered with an error (' + e.status + '). Try again in a minute.' :
+        'GitHub rejected that token: it was not copied whole, has expired, or was deleted or regenerated. Generate a new token and paste it right away.';
+      statusEl.classList.add('is-error');
+    }
   });
   saveBtn.addEventListener('click', function(){ G.saveNow(); });
   discBtn.addEventListener('click', function(){

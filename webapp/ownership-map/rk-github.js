@@ -249,11 +249,16 @@
       state: function(){ return state; },
       subscribe: function(fn){ subs.push(fn); fn(state); },
       connect: async function(token){
-        token = (token || '').trim();
+        // Pasting often brings spaces, line breaks or quotes along.
+        token = (token || '').replace(/\s+/g, '').replace(/^["'“”‘’]+|["'“”‘’]+$/g, '');
         if (!token) return false;
+        if (!/^(github_pat_|ghp_|gho_|ghu_)[A-Za-z0-9_]{20,}$/.test(token)) throw { code: 'not_a_token' };
         setToken(token);
-        var r = await call('');
+        var r;
+        try { r = await call(''); }
+        catch (e){ setToken(''); throw { code: 'network' }; }
         if (r.status === 401){ setToken(''); throw { code: 'bad_token' }; }
+        if (!r.ok && r.status !== 403 && r.status !== 404){ setToken(''); throw { code: 'http', status: r.status }; }
         if (await dirty()) schedule(500); else emit('saved', '', { savedAt: (await db.getMeta('ghSavedAt')) || 0 });
         return true;
       },

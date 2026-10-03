@@ -156,6 +156,11 @@ Working efficiently (token use):
 - Dataset texts updated for GitHub saving. 2 new tests (counts checked against the seed independently, marks, sync, threshold, CSV, merge, 1,000 entities, phone); all 16 pass
 - Not done: reversed dates (the data model stores sorted dates, so they cannot occur)
 
+### 2026-10-03 — Clearer GitHub connect errors
+
+- Connect told every failure apart as "GitHub rejected that token". Now: not a token (e.g. the token's name pasted), api.github.com unreachable (firewall, VPN, blocker extension), GitHub error, or a really rejected token
+- Spaces, line breaks and quotes around a pasted token are removed. 1 new test (17 total)
+
 ---
 
 ## Notes
