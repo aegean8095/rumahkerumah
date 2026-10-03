@@ -221,6 +221,13 @@ Working efficiently (token use):
 - Bars are plain CSS (no chart library); names open the detail panel; "Statistics CSV" saves every figure as section, label, value. The as-of bar hides on this tab like on Table
 - 1 new test (checks the figures against the graph itself, the Kaltim group size, the Timeline filter, CSV); 30 total
 
+### 2026-10-03 — Ownership Map: charts on the Statistics tab
+
+- `rk-stats.js` now draws charts (plain HTML/CSS, no library): KPI tiles + three split bars (entities, relationship types, status) in Overview; meters for Data coverage; columns on a one-hue ordinal ramp for Ownership concentration (unmeasurable buckets in gray, values on the caps); stacked columns current/previous for Relationships by year first seen (every year between the first and last, empty years as zero); ranked bars with the value at the tip for the top lists; stacked bars companies/individuals for groups; gray "Not recorded" in Countries
+- Palette validated with the dataviz validator (blue `#2a78d6` / orange `#eb6834` categorical; ordinal ramp `#86b6ef → #1c5cab`); colours are role tokens on `.st-view` in `rk-ui.css`. App is light-only, so no dark set
+- Every mark has a tooltip on hover and keyboard focus (value first, label after; text set with `textContent`); every card has a Table button that swaps the chart for its table twin
+- Stats test extended (columns, table switch, tooltip); reads the concentration from the table twin
+
 ---
 
 ## Notes

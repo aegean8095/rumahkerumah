@@ -44,7 +44,7 @@
       var ends = OM.linkEnds(l), m = OM.master.links.get(l.id) || {};
       (l.status === 'previous' ? (prev++, 0) : (cur++, 0));
       if ((m.citations || []).length) withSource++;
-      if (l.seen && l.seen.length){ withDate++; var y = yearOf(l.seen[0]); if (y) inc(years, y); }
+      if (l.seen && l.seen.length){ withDate++; var y = yearOf(l.seen[0]); if (y){ if (!years.has(y)) years.set(y, { cur: 0, prev: 0 }); years.get(y)[l.status === 'previous' ? 'prev' : 'cur']++; } }
       inc(degree, ends[0]); inc(degree, ends[1]);
       (m.groups || []).forEach(function(g){
         if (!groups.has(g)) groups.set(g, { ents: new Set(), links: 0 });
@@ -127,24 +127,102 @@
     var countries = new Map();
     nodes.forEach(function(n){ inc(countries, ((OM.master.entities.get(n.id) || {}).country || '').trim() || 'Not recorded'); });
     S.countries = Array.from(countries.entries()).sort(function(a, b){ return (a[0] === 'Not recorded') - (b[0] === 'Not recorded') || b[1] - a[1] || a[0].localeCompare(b[0]); });
-    S.years = Array.from(years.entries()).sort(function(a, b){ return a[0] - b[0]; });
+    S.years = [];
+    if (years.size){
+      var ys = Array.from(years.keys()), y0 = Math.min.apply(null, ys), y1 = Math.max.apply(null, ys);
+      for (var yy = y0; yy <= y1; yy++) S.years.push([yy, years.get(yy) || { cur: 0, prev: 0 }]);
+    }
     return S;
   }
 
-  // ---------- html ----------
+  // ---------- charts (plain HTML + CSS; colours are role tokens in rk-ui.css) ----------
+  // Forms: KPI tiles and two-part split bars (overview), meters (coverage), columns on an
+  // ordinal ramp (concentration), stacked columns (years), ranked bars (top lists),
+  // stacked bars (groups). Every chart has a table twin behind the card's Table button,
+  // and every mark shows its value on hover or keyboard focus.
   function nameBtn(id){ return '<button type="button" class="link-btn st-ent" data-ent="' + esc(id) + '">' + esc(OM.entityName(id)) + '</button>'; }
-  function bars(rows, opts){
-    opts = opts || {}; var mx = Math.max.apply(null, rows.map(function(r){ return r.value; }).concat([1]));
-    if (!rows.length) return '<p class="st-none">Nothing to show.</p>';
-    return '<ul class="st-bars">' + rows.map(function(r){
-      return '<li><span class="st-label">' + (r.html || esc(r.label)) + '</span><span class="st-track"><i style="width:' + Math.max(1, Math.round(r.value / mx * 100)) + '%"></i></span><b>' + esc(r.text != null ? r.text : String(r.value)) + '</b></li>';
+  function tipAttr(value, label){ return ' tabindex="0" data-tip-v="' + esc(String(value)) + '" data-tip-l="' + esc(label) + '"'; }
+  function nf(n){ return Number(n).toLocaleString('en-US'); }
+  function niceMax(mx){
+    if (mx <= 4) return { max: Math.max(1, mx), step: 1 };
+    var raw = mx / 4, mag = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / mag;
+    var step = (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * mag;
+    return { max: Math.ceil(mx / step) * step, step: step };
+  }
+  function legend(items){
+    return '<ul class="st-legend">' + items.map(function(i){ return '<li><i class="st-sw ' + i.cls + '"></i>' + esc(i.label) + (i.value != null ? ' <b>' + esc(nf(i.value)) + '</b>' : '') + '</li>'; }).join('') + '</ul>';
+  }
+  // one 100% bar split into two parts, with a legend that carries the numbers
+  function split(title, a, b){
+    var t = a.value + b.value, pa = t ? a.value / t * 100 : 0;
+    return '<div class="st-split"><div class="st-split-top"><span>' + esc(title) + '</span><span class="st-muted">' + nf(t) + '</span></div>' +
+      '<div class="st-split-bar">' +
+        (a.value ? '<i class="s1" style="flex-basis:' + pa + '%"' + tipAttr(nf(a.value) + ' (' + Math.round(pa) + '%)', a.label) + '></i>' : '') +
+        (b.value ? '<i class="s2" style="flex-basis:' + (100 - pa) + '%"' + tipAttr(nf(b.value) + ' (' + Math.round(100 - pa) + '%)', b.label) + '></i>' : '') +
+      '</div>' + legend([{ cls: 's1', label: a.label, value: a.value }, { cls: 's2', label: b.label, value: b.value }]) + '</div>';
+  }
+  function meters(rows){
+    return '<ul class="st-meters">' + rows.map(function(r){
+      var p = pc(r[1], r[2]);
+      return '<li><span class="st-m-label">' + esc(r[0]) + '</span><span class="st-m-val"><b>' + p + '%</b> <span class="st-muted">' + nf(r[1]) + ' of ' + nf(r[2]) + '</span></span>' +
+        '<span class="st-m-track"' + tipAttr(p + '% (' + nf(r[1]) + ' of ' + nf(r[2]) + ')', r[0]) + '><i style="width:' + p + '%"></i></span></li>';
     }).join('') + '</ul>';
   }
-  function entRows(list, one, many){ return list.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: x[1] + ' ' + (x[1] === 1 ? one : many) }; }); }
-  function card(title, body, hint, wide){
-    return '<section class="st-card' + (wide ? ' wide' : '') + '"><h3>' + esc(title) + '</h3>' + (hint ? '<p class="st-hint">' + esc(hint) + '</p>' : '') + body + '</section>';
+  // ranked horizontal bars, one series: value at the tip
+  function ranked(rows){
+    if (!rows.length) return '<p class="st-none">Nothing to show yet.</p>';
+    var mx = Math.max.apply(null, rows.map(function(r){ return r.value; }).concat([1]));
+    return '<ul class="st-rank">' + rows.map(function(r){
+      return '<li><span class="st-r-label">' + (r.html || esc(r.label)) + '</span><span class="st-r-bar">' +
+        '<i class="' + (r.muted ? 'mut' : 's1') + '" style="width:' + Math.max(0.8, r.value / mx * 84) + '%"' + tipAttr(r.text, r.label) + '></i><b>' + esc(r.short != null ? r.short : nf(r.value)) + '</b></span></li>';
+    }).join('') + '</ul>';
   }
-  function kpi(n, label){ return '<div class="st-kpi"><b>' + esc(String(n)) + '</b><span>' + esc(label) + '</span></div>'; }
+  // vertical columns; each column is a list of segments [{v, cls, label}] stacked from the baseline
+  function columns(cols, opts){
+    opts = opts || {};
+    if (!cols.length) return '<p class="st-none">Nothing to show yet.</p>';
+    var mx = Math.max.apply(null, cols.map(function(c){ return c.segs.reduce(function(a, x){ return a + x.v; }, 0); }).concat([1]));
+    var sc = niceMax(mx), ticks = [];
+    for (var v = 0; v <= sc.max + 1e-9; v += sc.step) ticks.push(v);
+    var every = cols.length > 16 ? Math.ceil(cols.length / 12) : 1;
+    var h = '<div class="st-cols' + (cols.length > 10 ? ' dense' : '') + '"><div class="st-c-plot">' +
+      ticks.map(function(t){ return '<span class="st-c-grid" style="bottom:' + (t / sc.max * 100) + '%"><em>' + nf(t) + '</em></span>'; }).join('') +
+      '<div class="st-c-bars">' + cols.map(function(c){
+        var tot = c.segs.reduce(function(a, x){ return a + x.v; }, 0);
+        var tip = c.segs.length > 1 ? c.segs.map(function(x){ return x.label + ' ' + nf(x.v); }).join(' · ') : nf(tot);
+        return '<div class="st-c-col"' + tipAttr(tip, c.label) + '><div class="st-c-stack" style="height:' + (tot / sc.max * 100) + '%">' +
+          (opts.capLabels && tot ? '<b class="st-c-cap">' + nf(tot) + '</b>' : '') +
+          c.segs.slice().reverse().map(function(x){ return x.v ? '<i class="' + x.cls + '" style="flex-grow:' + x.v + '"></i>' : ''; }).join('') + '</div></div>';
+      }).join('') + '</div></div>' +
+      '<div class="st-c-x">' + cols.map(function(c, i){ return '<span>' + (i % every === 0 ? esc(c.label) : '') + '</span>'; }).join('') + '</div></div>';
+    return h;
+  }
+  // horizontal stacked bars (two parts), total at the tip
+  function stacked(rows, a, b){
+    if (!rows.length) return '<p class="st-none">Nothing to show yet.</p>';
+    var mx = Math.max.apply(null, rows.map(function(r){ return r.a + r.b; }).concat([1]));
+    return legend([{ cls: 's1', label: a }, { cls: 's2', label: b }]) + '<ul class="st-rank">' + rows.map(function(r){
+      var t = r.a + r.b;
+      return '<li><span class="st-r-label">' + esc(r.label) + '</span><span class="st-r-bar"><span class="st-r-stack" style="width:' + Math.max(0.8, t / mx * 84) + '%">' +
+        (r.a ? '<i class="s1" style="flex-grow:' + r.a + '"' + tipAttr(nf(r.a), r.label + ' · ' + a) + '></i>' : '') +
+        (r.b ? '<i class="s2" style="flex-grow:' + r.b + '"' + tipAttr(nf(r.b), r.label + ' · ' + b) + '></i>' : '') + '</span><b>' + nf(t) + '</b></span></li>';
+    }).join('') + '</ul>';
+  }
+  function tableHtml(head, rows){
+    return '<table class="st-table"><thead><tr>' + head.map(function(c, i){ return '<th' + (i ? ' class="num"' : '') + '>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>' +
+      rows.map(function(r){ return '<tr>' + r.map(function(c, i){ return '<td' + (i ? ' class="num"' : '') + '>' + esc(String(c)) + '</td>'; }).join('') + '</tr>'; }).join('') + '</tbody></table>';
+  }
+  var showTable = {};
+  function card(id, title, chart, hint, table, wide){
+    var t = !!showTable[id];
+    return '<section class="st-card' + (wide ? ' wide' : '') + (t ? ' show-table' : '') + '" data-card="' + id + '"><div class="st-card-head"><h3>' + esc(title) + '</h3>' +
+      (table ? '<button type="button" class="chip-btn st-tv-btn" data-tv="' + id + '" aria-pressed="' + t + '">' + (t ? 'Chart' : 'Table') + '</button>' : '') + '</div>' +
+      (hint ? '<p class="st-hint">' + esc(hint) + '</p>' : '') + '<div class="st-chart">' + chart + '</div>' + (table ? '<div class="st-tablev">' + table + '</div>' : '') + '</section>';
+  }
+  function kpi(n, label){ return '<div class="st-kpi"><b>' + esc(nf(n)) + '</b><span>' + esc(label) + '</span></div>'; }
+  function plural(n, one, many){ return nf(n) + ' ' + (n === 1 ? one : many); }
+  function entRanked(list, one, many){ return list.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: plural(x[1], one, many) }; }); }
+  function entTable(list, col){ return tableHtml(['Name', col], list.map(function(x){ return [OM.entityName(x[0]), x[1]]; })); }
 
   var last = null;
   function render(){
@@ -153,26 +231,63 @@
     var asOf = OM.getAsOf().key != null ? ' · as of a past month' : '';
     $('stScope').textContent = S.nodes + ' entities · ' + S.links + ' relationships on the map now' + asOf + '. Filters apply.';
     var h = '<div class="st-grid">';
-    h += card('Overview', '<div class="st-kpis">' + kpi(S.companies, 'companies') + kpi(S.people, 'individuals') + kpi(S.own, 'shareholdings') + kpi(S.dir, 'board roles') +
-      kpi(S.cur, 'current') + kpi(S.prev, 'previous') + kpi(S.bo, 'beneficial owners (over 25%)') + kpi(S.openTop, 'owners not recorded') + '</div>',
-      'Beneficial owner: an individual with over 25%, directly or through companies. Owner not recorded: a company that owns others but has no recorded owner.', true);
-    h += card('Data coverage', bars(S.coverage.map(function(c){ return { label: c[0], value: pc(c[1], c[2]), text: pc(c[1], c[2]) + '%  (' + c[1] + ' of ' + c[2] + ')' }; })), 'Share of the data that is filled in. Low values show where research is still needed.');
-    h += card('Ownership concentration', bars(S.concentration.map(function(b){ return { label: b[0], value: b[1] }; })), 'Companies grouped by the size of their largest direct shareholder (current stakes only).');
-    h += card('Who controls most', bars(entRows(S.controllers, 'company', 'companies')), 'Individuals by the number of companies they control with over 50% effective ownership. ' + S.controllingPeople + (S.controllingPeople === 1 ? ' individual controls' : ' individuals control') + ' at least one.');
-    h += card('Largest beneficial owners', bars(S.boList.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: x[1] + '%' }; })), 'Highest effective stake an individual holds in any one company.');
-    h += card('Most holdings', bars(entRows(S.holdersTop, 'holding', 'holdings')), 'Companies holding shares in the most other companies.');
-    h += card('Boards', '<div class="st-kpis small">' + kpi(S.boardAvg, 'average board size') + kpi(S.interlock, 'people on 2+ boards') + kpi(S.seatPeople, 'people with a seat') + '</div>' +
-      '<h4>Most board seats</h4>' + bars(entRows(S.seatTop, 'seat', 'seats')), 'Current directors and commissioners only.');
-    h += card('Largest boards', bars(entRows(S.boardTop, 'member', 'members')) + '<h4>Roles</h4>' + bars(S.roles.map(function(r){ return { label: r[0], value: r[1] }; })));
-    h += card('Most connected', bars(entRows(S.connTop, 'link', 'links')), 'Entities with the most relationships of any kind.');
-    h += card('Company groups', S.groups.length ? '<table class="st-table"><thead><tr><th>Group</th><th class="num">Entities</th><th class="num">Companies</th><th class="num">Individuals</th><th class="num">Relationships</th></tr></thead><tbody>' +
-      S.groups.map(function(g){ return '<tr><td>' + esc(g.name) + '</td><td class="num">' + g.ents + '</td><td class="num">' + g.companies + '</td><td class="num">' + g.people + '</td><td class="num">' + g.links + '</td></tr>'; }).join('') + '</tbody></table>' : '<p class="st-none">No groups yet.</p>', null, true);
-    h += card('Countries', bars(S.countries.map(function(c){ return { label: c[0], value: c[1] }; })), 'Entities by country (jurisdiction) from their Profile.');
-    h += card('Relationships by year first seen', bars(S.years.map(function(y){ return { label: String(y[0]), value: y[1] }; })), 'The year of the earliest date recorded for each relationship. Undated relationships are not counted.');
+    h += card('overview', 'Overview',
+      '<div class="st-kpis">' + kpi(S.companies, 'companies') + kpi(S.people, 'individuals') + kpi(S.own, 'shareholdings') + kpi(S.dir, 'board roles') +
+        kpi(S.cur, 'current') + kpi(S.prev, 'previous') + kpi(S.bo, 'beneficial owners (over 25%)') + kpi(S.openTop, 'owners not recorded') + '</div>' +
+      '<div class="st-splits">' + split('Entities', { label: 'Companies', value: S.companies }, { label: 'Individuals', value: S.people }) +
+        split('Relationships', { label: 'Shareholdings', value: S.own }, { label: 'Board roles', value: S.dir }) +
+        split('Status', { label: 'Current', value: S.cur }, { label: 'Previous', value: S.prev }) + '</div>',
+      'Beneficial owner: an individual with over 25%, directly or through companies. Owner not recorded: a company that owns others but has no recorded owner.', null, true);
+    h += card('coverage', 'Data coverage', meters(S.coverage), 'Share of the data that is filled in. Short bars show where research is still needed.',
+      tableHtml(['Measure', 'Share', 'Count', 'Of'], S.coverage.map(function(c){ return [c[0], pc(c[1], c[2]) + '%', c[1], c[2]]; })));
+    var ramp = ['mut', 'mut', 'o1', 'o2', 'o3', 'o4'], short = ['None recorded', '% unknown', 'Under 25%', '25–50%', '50–75%', 'Over 75%'];
+    h += card('concentration', 'Ownership concentration',
+      columns(S.concentration.map(function(b, i){ return { label: short[i], segs: [{ v: b[1], cls: ramp[i], label: b[0] }] }; }), { capLabels: true }),
+      'Companies by the size of their largest direct shareholder (current stakes). Gray: the size cannot be measured.',
+      tableHtml(['Largest direct holder', 'Companies'], S.concentration.map(function(b){ return [b[0], b[1]]; })));
+    h += card('control', 'Who controls most', ranked(entRanked(S.controllers, 'company', 'companies')),
+      'Individuals by the number of companies they control with over 50% effective ownership. ' + plural(S.controllingPeople, 'individual controls', 'individuals control') + ' at least one.', entTable(S.controllers, 'Companies controlled'));
+    h += card('bo', 'Largest beneficial owners', ranked(S.boList.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: x[1] + '%', short: x[1] + '%' }; })),
+      'Highest effective stake an individual holds in any one company.', tableHtml(['Name', 'Highest effective stake (%)'], S.boList.map(function(x){ return [OM.entityName(x[0]), x[1]]; })));
+    h += card('holdings', 'Most holdings', ranked(entRanked(S.holdersTop, 'holding', 'holdings')), 'Companies holding shares in the most other companies.', entTable(S.holdersTop, 'Holdings'));
+    h += card('boards', 'Boards', '<div class="st-kpis small">' + kpi(S.boardAvg, 'average board size') + kpi(S.interlock, 'people on 2+ boards') + kpi(S.seatPeople, 'people with a seat') + '</div>' +
+      '<h4>Most board seats</h4>' + ranked(entRanked(S.seatTop, 'seat', 'seats')), 'Current directors and commissioners only.', entTable(S.seatTop, 'Seats'));
+    h += card('boardsize', 'Largest boards', ranked(entRanked(S.boardTop, 'member', 'members')) + '<h4>Roles</h4>' + ranked(S.roles.map(function(r){ return { label: r[0], value: r[1], text: nf(r[1]) }; })), null,
+      tableHtml(['Company or role', 'Count'], S.boardTop.map(function(x){ return [OM.entityName(x[0]), x[1]]; }).concat(S.roles.map(function(r){ return ['Role: ' + r[0], r[1]]; }))));
+    h += card('connected', 'Most connected', ranked(entRanked(S.connTop, 'relationship', 'relationships')), 'Entities with the most relationships of any kind.', entTable(S.connTop, 'Relationships'));
+    h += card('years', 'Relationships by year first seen',
+      columns(S.years.map(function(y){ return { label: String(y[0]), segs: [{ v: y[1].cur, cls: 's1', label: 'Current' }, { v: y[1].prev, cls: 's2', label: 'Previous' }] }; })) +
+        (S.years.length ? legend([{ cls: 's1', label: 'Current' }, { cls: 's2', label: 'Previous' }]) : ''),
+      'The year of the earliest date recorded for each relationship, split by its status now. Undated relationships are not counted.',
+      tableHtml(['Year', 'Current', 'Previous', 'Total'], S.years.map(function(y){ return [y[0], y[1].cur, y[1].prev, y[1].cur + y[1].prev]; })), true);
+    h += card('groups', 'Company groups', stacked(S.groups.map(function(g){ return { label: g.name, a: g.companies, b: g.people }; }), 'Companies', 'Individuals'),
+      'Entities in each group. A group counts every entity on its relationships.',
+      tableHtml(['Group', 'Entities', 'Companies', 'Individuals', 'Relationships'], S.groups.map(function(g){ return [g.name, g.ents, g.companies, g.people, g.links]; })));
+    h += card('countries', 'Countries', ranked(S.countries.map(function(c){ return { label: c[0], value: c[1], text: plural(c[1], 'entity', 'entities'), muted: c[0] === 'Not recorded' }; })),
+      'Entities by country (jurisdiction) from their Profile. Gray: not recorded yet.', tableHtml(['Country', 'Entities'], S.countries));
     panel.querySelector('#stBody').innerHTML = h + '</div>';
   }
 
+  // one tooltip for every mark: value first, label after; same on keyboard focus
+  var tip = document.createElement('div'); tip.className = 'st-tip'; tip.hidden = true; tip.setAttribute('role', 'tooltip');
+  var tipV = document.createElement('b'), tipL = document.createElement('span'); tip.appendChild(tipV); tip.appendChild(tipL);
+  panel.appendChild(tip);
+  function showTip(el, x, y){
+    tipV.textContent = el.dataset.tipV; tipL.textContent = el.dataset.tipL; tip.hidden = false;
+    var pr = panel.getBoundingClientRect(), w = tip.offsetWidth, hgt = tip.offsetHeight;
+    if (x == null){ var r = el.getBoundingClientRect(); x = r.left + r.width / 2; y = r.top; }
+    tip.style.left = Math.min(Math.max(8, x - pr.left - w / 2), pr.width - w - 8) + 'px';
+    tip.style.top = Math.max(8, y - pr.top - hgt - 10) + 'px';
+  }
+  panel.addEventListener('pointermove', function(e){ var el = e.target.closest('[data-tip-v]'); if (el) showTip(el, e.clientX, e.clientY); else tip.hidden = true; });
+  panel.addEventListener('pointerleave', function(){ tip.hidden = true; });
+  panel.addEventListener('focusin', function(e){ var el = e.target.closest('[data-tip-v]'); if (el) showTip(el); });
+  panel.addEventListener('focusout', function(){ tip.hidden = true; });
+  panel.addEventListener('scroll', function(){ tip.hidden = true; }, true);
+
   $('stBody').addEventListener('click', function(e){
+    var t = e.target.closest('[data-tv]');
+    if (t){ var id = t.dataset.tv, c = t.closest('.st-card'); showTable[id] = !showTable[id]; c.classList.toggle('show-table', showTable[id]); t.textContent = showTable[id] ? 'Chart' : 'Table'; t.setAttribute('aria-pressed', String(showTable[id])); return; }
     var b = e.target.closest('[data-ent]'); if (b) OM.selectNode(b.dataset.ent);
   });
   $('stExport').addEventListener('click', function(){
@@ -191,7 +306,7 @@
     S.connTop.forEach(function(x){ add('Most connected', OM.entityName(x[0]), x[1]); });
     S.groups.forEach(function(g){ add('Groups: entities / companies / individuals / relationships', g.name, [g.ents, g.companies, g.people, g.links].join(' / ')); });
     S.countries.forEach(function(c){ add('Countries', c[0], c[1]); });
-    S.years.forEach(function(y){ add('Relationships by year first seen', y[0], y[1]); });
+    S.years.forEach(function(y){ add('Relationships by year first seen (current / previous)', y[0], y[1].cur + ' / ' + y[1].prev); });
     var cell = function(v){ var s = v == null ? '' : String(v); return /[",\n;]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob(['﻿' + rows.map(function(r){ return r.map(cell).join(','); }).join('\n')], { type: 'text/csv;charset=utf-8' }));

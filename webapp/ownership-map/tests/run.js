@@ -793,7 +793,7 @@ const tests = {
     const { ctx } = await context({ gh }); const p = await open(ctx);
     await p.evaluate(() => window.OwnershipMapTabs.show('stats')); await sleep(800);
     ok(await p.isVisible('#statsView') && !(await p.isVisible('.map-legend')), 'Statistics tab shown, map chrome hidden');
-    if (process.env.SHOT) await p.screenshot({ path: process.env.SHOT });
+    if (process.env.SHOT){ const vs = p.viewportSize(); await p.setViewportSize({ width: 1440, height: 2600 }); await sleep(800); await p.screenshot({ path: process.env.SHOT }); await p.setViewportSize(vs); await sleep(400); }
     // ground truth from the graph itself
     const truth = await p.evaluate(() => { const g = OwnershipMap.graph, L = g.links.filter(OwnershipMap.linkPassesFilter);
       const comps = g.nodes.filter(n => n.type === 'company').length;
@@ -808,7 +808,14 @@ const tests = {
     ok((await p.textContent('#stScope')).includes(truth.n + ' entities') && (await p.textContent('#stScope')).includes(truth.links + ' relationships'), 'scope line');
     // concentration buckets add up to the companies and "Over 50% to 75%" + "Over 75%" matches
     const conc = await p.evaluate(() => { const c = [...document.querySelectorAll('.st-card')].find(x => x.querySelector('h3').textContent === 'Ownership concentration');
-      return [...c.querySelectorAll('li')].map(li => ({ l: li.querySelector('.st-label').textContent, v: +li.querySelector('b').textContent })); });
+      return [...c.querySelectorAll('.st-tablev tbody tr')].map(tr => ({ l: tr.cells[0].textContent, v: +tr.cells[1].textContent })); });
+    eq(await p.$$eval('[data-card="concentration"] .st-c-col', c => c.length), 6, 'six concentration columns');
+    // chart / table switch, tooltip on hover
+    await p.click('[data-tv="coverage"]'); await sleep(200);
+    ok(await p.isVisible('[data-card="coverage"] .st-tablev') && !(await p.isVisible('[data-card="coverage"] .st-chart')), 'Table button shows the table twin');
+    await p.click('[data-tv="coverage"]'); await sleep(200);
+    await p.hover('[data-card="concentration"] .st-c-col:last-child'); await sleep(200);
+    ok(await p.isVisible('.st-tip') && /Over 75%/.test(await p.textContent('.st-tip')), 'tooltip shows on a column');
     eq(conc.reduce((a, b) => a + b.v, 0), truth.comps, 'buckets cover every company');
     eq(conc.filter(x => /50% to 75|Over 75/.test(x.l)).reduce((a, b) => a + b.v, 0), truth.over50, 'companies with a holder over 50%');
     // group table
