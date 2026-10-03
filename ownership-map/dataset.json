@@ -24,6 +24,22 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-andang-priadi": {
+   "name": "Andang Priadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "e-andi-chandra": {
+   "name": "Andi Chandra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
   "e-antonius-silalahi": {
    "name": "Antonius Silalahi",
    "type": "person",
@@ -31,6 +47,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-apical-sumatera-management-pte-ltd": {
+   "name": "Apical Sumatera Management Pte. Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
   },
   "e-aris-marsudiyanto": {
    "name": "Aris Marsudiyanto",
@@ -79,6 +103,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-bernard-a-riedo": {
+   "name": "Bernard A Riedo",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-bestadrian-prawiro-theng": {
+   "name": "Bestadrian Prawiro Theng",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
   },
   "e-bioenergy-enterprises-sdn-bhd": {
    "name": "Bioenergy Enterprises Sdn Bhd",
@@ -240,6 +280,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-euro-link-management-ltd": {
+   "name": "Euro-Link Management Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
   "e-frans-juli-santoso": {
    "name": "Frans Juli Santoso",
    "type": "person",
@@ -247,6 +295,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-global-advance-bio-energy-co-ltd": {
+   "name": "Global Advance Bio Energy Co Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-global-resources-oils-and-fats-industries-ltd": {
+   "name": "Global Resources Oils And Fats Industries Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
   },
   "e-goodwood-bcl-sdn-bhd": {
    "name": "Goodwood Bcl Sdn Bhd",
@@ -311,6 +375,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1791022547834
+  },
+  "e-haryanto-wisastra": {
+   "name": "Haryanto Wisastra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
   },
   "e-hasudungan-simamora": {
    "name": "Hasudungan Simamora",
@@ -408,6 +480,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-jeffrey-nicholas-eliezer-laoh": {
+   "name": "Jeffrey Nicholas Eliezer Laoh",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
   "e-johannes-lembong": {
    "name": "Johannes Lembong",
    "type": "person",
@@ -432,6 +512,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-juni-edi-darmatuah-sinaga": {
+   "name": "Juni Edi Darmatuah Sinaga",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
   "e-kartika-antono": {
    "name": "Kartika Antono",
    "type": "person",
@@ -448,6 +536,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-krisman-p-sitinjak": {
+   "name": "Krisman P Sitinjak",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
   "e-krisnha-dwi-soedarmo": {
    "name": "Krisnha Dwi Soedarmo",
    "type": "person",
@@ -463,6 +559,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1791023576657
+  },
+  "e-kutai-refinery-pte-ltd": {
+   "name": "Kutai Refinery Pte Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
+  "e-laksamana-adyaksa": {
+   "name": "Laksamana Adyaksa",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
   },
   "e-lam-kah-kuan": {
    "name": "Lam Kah Kuan",
@@ -495,6 +607,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-meadows-essence-sdn-bhd": {
+   "name": "Meadows Essence Sdn Bhd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "e-meadows-ocean-sdn-bhd": {
+   "name": "Meadows Ocean Sdn Bhd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
   },
   "e-mohamad-hasan": {
    "name": "Mohamad Hasan",
@@ -568,6 +696,22 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pengarapen-gurusinga": {
+   "name": "Pengarapen Gurusinga",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-peter-setiabudi": {
+   "name": "Peter Setiabudi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
   "e-petrus-gunarso": {
    "name": "Petrus Gunarso",
    "type": "person",
@@ -627,6 +771,14 @@
     "Pulp and Paper"
    ]
   },
+  "e-pt-alamas-karya-sejati": {
+   "name": "PT Alamas Karya Sejati",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
   "e-pt-andalan-agri-mitra": {
    "name": "PT Andalan Agri Mitra",
    "type": "company",
@@ -634,6 +786,46 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-anugrah-hijau-lestari": {
+   "name": "PT Anugrah Hijau Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "e-pt-april-garuda-nusantara": {
+   "name": "PT April Garuda Nusantara",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "e-pt-april-garuda-perkasa": {
+   "name": "PT April Garuda Perkasa",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
+  "e-pt-asianagri-riau-jambi": {
+   "name": "PT Asianagri Riau Jambi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-pt-asianagro-lestari": {
+   "name": "PT Asianagro Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
   },
   "e-pt-asripersada-anugerah-mulia": {
    "name": "PT Asripersada Anugerah Mulia",
@@ -713,6 +905,25 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-damai-setiatama-timber": {
+   "name": "PT Damai Setiatama Timber",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632,
+   "clusters": [
+    "Forestry"
+   ]
+  },
+  "e-pt-firdaus-mitra-utama": {
+   "name": "PT Firdaus Mitra Utama",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
   "e-pt-flora-nuansa-hijau": {
    "name": "PT Flora Nuansa Hijau",
    "type": "company",
@@ -720,6 +931,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-foresta-hijau-lestari": {
+   "name": "PT Foresta Hijau Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
   },
   "e-pt-global-tanaman-lestari": {
    "name": "PT Global Tanaman Lestari",
@@ -772,6 +991,14 @@
    "clusters": [
     "Pulp and Paper"
    ]
+  },
+  "e-pt-indograha-mandiri": {
+   "name": "PT Indograha Mandiri",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
   },
   "e-pt-indosubur-sukses-makmur": {
    "name": "PT Indosubur Sukses Makmur",
@@ -891,6 +1118,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-mukti-artha-yoga": {
+   "name": "PT Mukti Artha Yoga",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
   "e-pt-multistrada-agro-internasional": {
    "name": "PT Multistrada Agro Internasional",
    "type": "company",
@@ -906,6 +1141,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-nusantara-kalimantan-lestari": {
+   "name": "PT Nusantara Kalimantan Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
   },
   "e-pt-oceanias-timber-products": {
    "name": "PT Oceanias Timber Products",
@@ -1051,6 +1294,17 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-tarakan-chip-mill": {
+   "name": "PT Tarakan Chip Mill",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536,
+   "clusters": [
+    "Forestry"
+   ]
+  },
   "e-pt-tritunggal-eka-perkasa": {
    "name": "PT Tritunggal Eka Perkasa",
    "type": "company",
@@ -1110,6 +1364,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-riyadin-hendratno": {
+   "name": "Riyadin Hendratno",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
   "e-rizaldi": {
    "name": "Rizaldi",
    "type": "person",
@@ -1134,6 +1396,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-sandi": {
+   "name": "Sandi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026886145,
+   "updatedAt": 1791026886145
+  },
   "e-santiana": {
    "name": "Santiana",
    "type": "person",
@@ -1141,6 +1411,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1791020773421
+  },
+  "e-segen-simamora": {
+   "name": "Segen Simamora",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
   },
   "e-siet-lin-lee": {
    "name": "Siet Lin Lee",
@@ -1246,6 +1524,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790962561826
   },
+  "e-sukma-dewantoro": {
+   "name": "Sukma Dewantoro",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
+  },
   "e-sutardi": {
    "name": "Sutardi",
    "type": "person",
@@ -1342,6 +1628,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-wiendi": {
+   "name": "Wiendi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
   "e-winny-salim": {
    "name": "Winny Salim",
    "type": "person",
@@ -1413,300 +1707,6 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
-  },
-  "e-global-resources-oils-and-fats-industries-ltd": {
-   "name": "Global Resources Oils And Fats Industries Ltd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-pt-alamas-karya-sejati": {
-   "name": "PT Alamas Karya Sejati",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-euro-link-management-ltd": {
-   "name": "Euro-Link Management Ltd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-global-advance-bio-energy-co-ltd": {
-   "name": "Global Advance Bio Energy Co Ltd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-bestadrian-prawiro-theng": {
-   "name": "Bestadrian Prawiro Theng",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-jeffrey-nicholas-eliezer-laoh": {
-   "name": "Jeffrey Nicholas Eliezer Laoh",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "e-kutai-refinery-pte-ltd": {
-   "name": "Kutai Refinery Pte Ltd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
-  },
-  "e-apical-sumatera-management-pte-ltd": {
-   "name": "Apical Sumatera Management Pte. Ltd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
-  },
-  "e-peter-setiabudi": {
-   "name": "Peter Setiabudi",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
-  },
-  "e-sandi": {
-   "name": "Sandi",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
-  },
-  "e-bernard-a-riedo": {
-   "name": "Bernard A Riedo",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026886145,
-   "updatedAt": 1791026886145
-  },
-  "e-pt-asianagro-lestari": {
-   "name": "PT Asianagro Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
-  },
-  "e-pt-mukti-artha-yoga": {
-   "name": "PT Mukti Artha Yoga",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
-  },
-  "e-pt-asianagri-riau-jambi": {
-   "name": "PT Asianagri Riau Jambi",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
-  },
-  "e-krisman-p-sitinjak": {
-   "name": "Krisman P Sitinjak",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
-  },
-  "e-pengarapen-gurusinga": {
-   "name": "Pengarapen Gurusinga",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
-  },
-  "e-pt-april-garuda-nusantara": {
-   "name": "PT April Garuda Nusantara",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632
-  },
-  "e-pt-damai-setiatama-timber": {
-   "name": "PT Damai Setiatama Timber",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632,
-   "clusters": [
-    "Forestry"
-   ]
-  },
-  "e-pt-april-garuda-perkasa": {
-   "name": "PT April Garuda Perkasa",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632
-  },
-  "e-riyadin-hendratno": {
-   "name": "Riyadin Hendratno",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632
-  },
-  "e-sukma-dewantoro": {
-   "name": "Sukma Dewantoro",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632
-  },
-  "e-laksamana-adyaksa": {
-   "name": "Laksamana Adyaksa",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "e-pt-firdaus-mitra-utama": {
-   "name": "PT Firdaus Mitra Utama",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "e-pt-indograha-mandiri": {
-   "name": "PT Indograha Mandiri",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "e-haryanto-wisastra": {
-   "name": "Haryanto Wisastra",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "e-andi-chandra": {
-   "name": "Andi Chandra",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "e-pt-foresta-hijau-lestari": {
-   "name": "PT Foresta Hijau Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
-  "e-pt-tarakan-chip-mill": {
-   "name": "PT Tarakan Chip Mill",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536,
-   "clusters": [
-    "Forestry"
-   ]
-  },
-  "e-pt-anugrah-hijau-lestari": {
-   "name": "PT Anugrah Hijau Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
-  "e-andang-priadi": {
-   "name": "Andang Priadi",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
-  "e-wiendi": {
-   "name": "Wiendi",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
-  "e-meadows-ocean-sdn-bhd": {
-   "name": "Meadows Ocean Sdn Bhd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
-  },
-  "e-pt-nusantara-kalimantan-lestari": {
-   "name": "PT Nusantara Kalimantan Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
-  },
-  "e-meadows-essence-sdn-bhd": {
-   "name": "Meadows Essence Sdn Bhd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
-  },
-  "e-juni-edi-darmatuah-sinaga": {
-   "name": "Juni Edi Darmatuah Sinaga",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
-  },
-  "e-segen-simamora": {
-   "name": "Segen Simamora",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
   }
  },
  "links": {
@@ -7478,54 +7478,6 @@
    "createdAt": 1790962043813,
    "updatedAt": 1790962084442
   },
-  "l-musb56ab-6gf3cl": {
-   "source": "e-global-resources-oils-and-fats-industries-ltd",
-   "target": "e-pt-sari-dumai-sejati",
-   "type": "ownership",
-   "value": 54.29,
-   "role": null,
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [
-    "Sinarmas Group"
-   ],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "l-musb56ab-ar4nj5": {
-   "source": "e-pt-alamas-karya-sejati",
-   "target": "e-pt-sari-dumai-sejati",
-   "type": "ownership",
-   "value": 42.19,
-   "role": null,
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [
-    "Sinarmas Group"
-   ],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
   "l-musb56ab-2nccnj": {
    "source": "e-euro-link-management-ltd",
    "target": "e-pt-sari-dumai-sejati",
@@ -7555,6 +7507,78 @@
    "target": "e-pt-sari-dumai-sejati",
    "type": "ownership",
    "value": 0.18,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-6gf3cl": {
+   "source": "e-global-resources-oils-and-fats-industries-ltd",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 54.29,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-a63oss": {
+   "source": "e-tio-bio-kok",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-ar4nj5": {
+   "source": "e-pt-alamas-karya-sejati",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 42.19,
    "role": null,
    "date": "2023-02",
    "status": null,
@@ -7646,36 +7670,12 @@
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
   },
-  "l-musb56ab-a63oss": {
-   "source": "e-tio-bio-kok",
-   "target": "e-pt-sari-dumai-sejati",
+  "l-musb5xxd-0qrp40": {
+   "source": "e-peter-setiabudi",
+   "target": "e-pt-kutai-refinery-nusantara",
    "type": "directorship",
    "value": null,
-   "role": "Komisaris",
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [
-    "Sinarmas Group"
-   ],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791026850323,
-   "updatedAt": 1791026850323
-  },
-  "l-musb5xxd-kl9wdg": {
-   "source": "e-kutai-refinery-pte-ltd",
-   "target": "e-pt-kutai-refinery-nusantara",
-   "type": "ownership",
-   "value": 99.9,
-   "role": null,
+   "role": "Direktur Utama",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -7718,12 +7718,12 @@
    "createdAt": 1791026886145,
    "updatedAt": 1791026886145
   },
-  "l-musb5xxd-0qrp40": {
-   "source": "e-peter-setiabudi",
+  "l-musb5xxd-kl9wdg": {
+   "source": "e-kutai-refinery-pte-ltd",
    "target": "e-pt-kutai-refinery-nusantara",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur Utama",
+   "type": "ownership",
+   "value": 99.9,
+   "role": null,
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -7766,12 +7766,12 @@
    "createdAt": 1791026886145,
    "updatedAt": 1791026886145
   },
-  "l-musb5xxd-zuhbqp": {
-   "source": "e-bernard-a-riedo",
+  "l-musb5xxd-zno1ys": {
+   "source": "e-tio-bio-kok",
    "target": "e-pt-kutai-refinery-nusantara",
    "type": "directorship",
    "value": null,
-   "role": "Direktur",
+   "role": "Komisaris",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -7790,12 +7790,12 @@
    "createdAt": 1791026886145,
    "updatedAt": 1791026886145
   },
-  "l-musb5xxd-zno1ys": {
-   "source": "e-tio-bio-kok",
+  "l-musb5xxd-zuhbqp": {
+   "source": "e-bernard-a-riedo",
    "target": "e-pt-kutai-refinery-nusantara",
    "type": "directorship",
    "value": null,
-   "role": "Komisaris",
+   "role": "Direktur",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -7858,6 +7858,28 @@
    "createdAt": 1791026958424,
    "updatedAt": 1791026958424
   },
+  "l-musb7hp5-o42bfu": {
+   "source": "e-pengarapen-gurusinga",
+   "target": "e-pt-mukti-artha-yoga",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
   "l-musb7hp5-sqdzis": {
    "source": "e-krisman-p-sitinjak",
    "target": "e-pt-mukti-artha-yoga",
@@ -7880,12 +7902,12 @@
    "createdAt": 1791026958424,
    "updatedAt": 1791026958424
   },
-  "l-musb7hp5-o42bfu": {
-   "source": "e-pengarapen-gurusinga",
-   "target": "e-pt-mukti-artha-yoga",
+  "l-musb848g-19dpvr": {
+   "source": "e-riyadin-hendratno",
+   "target": "e-pt-damai-setiatama-timber",
    "type": "directorship",
    "value": null,
-   "role": "Komisaris",
+   "role": "Direktur",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -7894,13 +7916,13 @@
    "groups": [],
    "citations": [
     {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
      "date": "2023-02"
     }
    ],
    "note": "",
-   "createdAt": 1791026958424,
-   "updatedAt": 1791026958424
+   "createdAt": 1791026987632,
+   "updatedAt": 1791026987632
   },
   "l-musb848g-8uaty7": {
    "source": "e-pt-april-garuda-nusantara",
@@ -7930,28 +7952,6 @@
    "type": "ownership",
    "value": 31,
    "role": null,
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791026987632,
-   "updatedAt": 1791026987632
-  },
-  "l-musb848g-19dpvr": {
-   "source": "e-riyadin-hendratno",
-   "target": "e-pt-damai-setiatama-timber",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -8012,6 +8012,28 @@
    "createdAt": 1791027065722,
    "updatedAt": 1791027065722
   },
+  "l-musb9shn-95sx8i": {
+   "source": "e-andi-chandra",
+   "target": "e-pt-firdaus-mitra-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
   "l-musb9shn-gf9ldh": {
    "source": "e-pt-indograha-mandiri",
    "target": "e-pt-firdaus-mitra-utama",
@@ -8056,78 +8078,12 @@
    "createdAt": 1791027065722,
    "updatedAt": 1791027065722
   },
-  "l-musb9shn-95sx8i": {
-   "source": "e-andi-chandra",
-   "target": "e-pt-firdaus-mitra-utama",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791027065722,
-   "updatedAt": 1791027065722
-  },
-  "l-musbabmw-v9vw05": {
-   "source": "e-pt-foresta-hijau-lestari",
-   "target": "e-pt-tarakan-chip-mill",
-   "type": "ownership",
-   "value": 99.6,
-   "role": null,
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
   "l-musbabmw-d968ah": {
    "source": "e-pt-anugrah-hijau-lestari",
    "target": "e-pt-tarakan-chip-mill",
    "type": "ownership",
    "value": 0.4,
    "role": null,
-   "date": "2023-02",
-   "status": null,
-   "seen": [
-    "2023-02"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
-     "date": "2023-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791027090536,
-   "updatedAt": 1791027090536
-  },
-  "l-musbabmw-o8rws7": {
-   "source": "e-andang-priadi",
-   "target": "e-pt-tarakan-chip-mill",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
    "date": "2023-02",
    "status": null,
    "seen": [
@@ -8166,27 +8122,49 @@
    "createdAt": 1791027090536,
    "updatedAt": 1791027090536
   },
-  "l-musbaybt-fi9pa6": {
-   "source": "e-meadows-ocean-sdn-bhd",
-   "target": "e-pt-nusantara-kalimantan-lestari",
-   "type": "ownership",
-   "value": 97.19,
-   "role": null,
-   "date": "2025-11",
+  "l-musbabmw-o8rws7": {
+   "source": "e-andang-priadi",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
    "status": null,
    "seen": [
-    "2025-11"
+    "2023-02"
    ],
    "groups": [],
    "citations": [
     {
-     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-     "date": "2025-11"
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
     }
    ],
    "note": "",
-   "createdAt": 1791027119945,
-   "updatedAt": 1791027119945
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
+  },
+  "l-musbabmw-v9vw05": {
+   "source": "e-pt-foresta-hijau-lestari",
+   "target": "e-pt-tarakan-chip-mill",
+   "type": "ownership",
+   "value": 99.6,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Tarakan Chip Mill.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027090536,
+   "updatedAt": 1791027090536
   },
   "l-musbaybt-1iatjb": {
    "source": "e-meadows-essence-sdn-bhd",
@@ -8216,6 +8194,28 @@
    "type": "directorship",
    "value": null,
    "role": "Direktur",
+   "date": "2025-11",
+   "status": null,
+   "seen": [
+    "2025-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+     "date": "2025-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "l-musbaybt-fi9pa6": {
+   "source": "e-meadows-ocean-sdn-bhd",
+   "target": "e-pt-nusantara-kalimantan-lestari",
+   "type": "ownership",
+   "value": 97.19,
+   "role": null,
    "date": "2025-11",
    "status": null,
    "seen": [
