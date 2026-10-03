@@ -16,7 +16,9 @@
   function load(k, d){ try { return localStorage.getItem(k) || d; } catch (e){ return d; } }
   function store(k, v){ try { localStorage.setItem(k, v); } catch (e){} }
 
-  var tab = load(TAB_KEY, 'map');             // 'map' | 'table'
+  var wanted = load(TAB_KEY, 'map');          // the tab last chosen (may belong to a module still loading)
+  var tab = 'map';                            // 'map' | 'table' | an added tab
+  var extra = {};                             // tabs added by other modules: id -> { panel, show }
   var kind = load(KIND_KEY, 'entities');      // 'entities' | 'links'
   var sort = { entities: { key: 'name', dir: 1 }, links: { key: 'target', dir: 1 } };
   var query = '', dirty = true, rows = [], selected = null;
@@ -207,17 +209,36 @@
   }
 
   // ---------- Switching ----------
-  function setTab(t){
-    tab = t === 'table' ? 'table' : 'map';
-    store(TAB_KEY, tab);
+  function setTab(t, chosen){
+    tab = t === 'table' || extra[t] ? t : 'map';
+    if (chosen){ wanted = tab; store(TAB_KEY, tab); }
     tabs.querySelectorAll('[data-tab]').forEach(function(b){
       var on = b.dataset.tab === tab; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
-    wrap.classList.toggle('table-mode', tab === 'table');
-    panel.hidden = tab !== 'table';
+    var empty = wrap.classList.contains('is-empty');
+    wrap.classList.toggle('table-mode', tab !== 'map');
+    panel.hidden = tab !== 'table' || empty;
+    Object.keys(extra).forEach(function(id){ extra[id].panel.hidden = tab !== id || empty; });
+    if (empty) return;
     if (tab === 'table') render();
+    else if (extra[tab]) extra[tab].show();
   }
-  tabs.addEventListener('click', function(e){ var b = e.target.closest('[data-tab]'); if (b) setTab(b.dataset.tab); });
+  tabs.addEventListener('click', function(e){ var b = e.target.closest('[data-tab]'); if (b) setTab(b.dataset.tab, true); });
+  // Other modules add a tab with its own panel (an .overlay.table-view section in the map area).
+  window.OwnershipMapTabs = {
+    add: function(def){
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'layout-btn'; b.dataset.tab = def.id; b.title = def.title || '';
+      b.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#' + def.icon + '"/></svg><span class="btn-label">' + esc(def.label) + '</span>';
+      tabs.appendChild(b);
+      def.panel.hidden = true;
+      wrap.appendChild(def.panel);
+      extra[def.id] = { panel: def.panel, show: def.show || function(){} };
+      if (wanted === def.id) setTab(def.id);
+    },
+    current: function(){ return tab; },
+    show: function(id){ setTab(id, true); },
+  };
   panel.querySelector('[aria-label="Table"]').addEventListener('click', function(e){
     var b = e.target.closest('[data-kind]'); if (!b) return;
     kind = b.dataset.kind; store(KIND_KEY, kind); selected = null; render();
@@ -235,10 +256,10 @@
   function openRow(r, onMap){
     selected = r.id;
     if (kind === 'entities'){
-      if (onMap){ setTab('map'); OM.focusNode(r.id); }
+      if (onMap){ setTab('map', true); OM.focusNode(r.id); }
       else OM.selectNode(r.id);
     } else {
-      if (onMap){ setTab('map'); OM.selectLink(r.id); OM.centerOnNode(r.targetId); }
+      if (onMap){ setTab('map', true); OM.selectLink(r.id); OM.centerOnNode(r.targetId); }
       else OM.selectLink(r.id);
     }
     if (!onMap) tbody.querySelectorAll('tr.selected').forEach(function(tr){ tr.classList.remove('selected'); });
@@ -272,11 +293,11 @@
     if (tab === 'table' && !panel.hidden) render();
   });
   // While the empty state shows (no data yet) there is nothing to tabulate.
+  var wasEmpty = null;
   new MutationObserver(function(){
-    if (wrap.classList.contains('is-empty')) panel.hidden = true;
-    else if (tab === 'table'){ panel.hidden = false; if (dirty) render(); }
+    var empty = wrap.classList.contains('is-empty');
+    if (empty !== wasEmpty){ wasEmpty = empty; setTab(tab); }
   }).observe(wrap, { attributes: true, attributeFilter: ['class'] });
 
-  setTab(tab);
-  if (wrap.classList.contains('is-empty')) panel.hidden = true;
+  setTab(wanted);
 })();

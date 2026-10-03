@@ -31,7 +31,9 @@
 
   btn.addEventListener('click', function(){
     var data = window.rumahkerumahDB.export();
-    var json = JSON.stringify({ entities: data.entities || {}, links: data.links || {}, versions: data.versions || {} }, null, 1);
+    var out = { entities: data.entities || {}, links: data.links || {}, versions: data.versions || {} };
+    if (data.reviews && Object.keys(data.reviews).length) out.reviews = data.reviews;
+    var json = JSON.stringify(out, null, 1);
     var stamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));

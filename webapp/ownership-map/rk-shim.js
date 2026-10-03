@@ -78,7 +78,10 @@
   // The three collections that make up a dataset file (seed, backup, GitHub).
   function snapshot(){
     var x = exportAll();
-    return { entities: x.entities || {}, links: x.links || {}, versions: x.versions || {} };
+    var out = { entities: x.entities || {}, links: x.links || {}, versions: x.versions || {} };
+    // Review marks of the Data quality tab (rk-quality.js); left out while empty so older files compare equal.
+    if (x.reviews && Object.keys(x.reviews).length) out.reviews = x.reviews;
+    return out;
   }
   // Swaps the whole local dataset for obj. live: the app is already running, so tell it.
   async function applyDataset(obj, live){
@@ -87,10 +90,10 @@
       keys.forEach(function(k){ if (String(k).indexOf(META) !== 0) s.delete(k); });
     });
     cols = {};
-    await importAll({ entities: obj.entities || {}, links: obj.links || {}, versions: obj.versions || {} }, true);
+    await importAll({ entities: obj.entities || {}, links: obj.links || {}, versions: obj.versions || {}, reviews: obj.reviews || {} }, true);
     await setMeta('seeded', Date.now());
     if (live){
-      ['entities', 'links', 'versions'].forEach(notify);
+      ['entities', 'links', 'versions', 'reviews'].forEach(notify);
       if (chan) try { chan.postMessage({ reload: true }); } catch (e){}
     }
   }

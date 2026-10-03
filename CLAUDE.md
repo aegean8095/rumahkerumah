@@ -59,7 +59,8 @@ Files:
 | `rk-shim.js` | Replaces the claude.ai runtime: `db` (IndexedDB, tab sync), `downloads`, `sample` (DeepSeek). |
 | `rk-github.js` | GitHub sync of the dataset (branch `ownership-map-data`, file `ownership-map/dataset.json`). |
 | `rk-backup.js` | Back up / restore buttons and the "Saved on GitHub" block. |
-| `rk-tabs.js` + `rk-tabs.css` | Map / Table tabs: Entities and Relationships tables (sort, search, CSV, row → detail panel or map). |
+| `rk-tabs.js` + `rk-tabs.css` | Map / Table tabs: Entities and Relationships tables (sort, search, CSV, row → detail panel or map). `window.OwnershipMapTabs.add()` lets other modules add a tab. |
+| `rk-quality.js` | Data quality tab: 5 categories of findings, Checked / Ignore / note marks (collection `reviews`, synced), worklist CSV. Styles in `rk-tabs.css`. |
 | `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
 | `data/seed.json` | Fallback data (built by `shadow-corporate/build_seed.py`). |
 
@@ -145,6 +146,15 @@ Working efficiently (token use):
 - Follows the group, cluster, relationship and timeline filters; sort per column, text filter, CSV of the rows shown; row opens the detail panel, map-pin button jumps to the map
 - Phone: table scrolls sideways with the name column pinned. Add-on API gained `linkPassesFilter`, `formatDate`, `dateSortKey`
 - UI kept in English for consistency; "Data quality" tab comes with phase 2. 2 new tests; all 14 pass
+
+### 2026-10-03 — Ownership Map: Data quality tab (plan phases 2–4)
+
+- New `rk-quality.js`: tab "Data quality" with findings in 5 categories — incomplete company data (no shareholders, no board, stakes without %, no source, no date), possible duplicates (same or near-identical names, two current stakes/roles for one pair), group network (owners not recorded, no beneficial owner >25%, no group, people linking groups, group split into parts), possible data errors (stakes ≠100%, impossible %, board role that reads like a stake, company typed as individual, ownership loops), profile update needed (latest data older than a limit, default 12 months, set in the tab)
+- Each finding: entity links (open the detail panel), Merge for duplicates, Read newer profile PDF for stale ones, Checked / Ignore / note. Marks are stored in the dataset (`reviews`) and saved to GitHub; a mark lapses when the data behind it changes
+- Summary chips per category, "Show checked and ignored", worklist CSV of open findings; the sidebar Checks panel links to the tab
+- Speed: label decluttering in `index.html` (`declutterEdgeLabels`) now uses a grid instead of comparing every pair — a 1,000-entity map froze ~25 s before, now ~0.1 s for that step
+- Dataset texts updated for GitHub saving. 2 new tests (counts checked against the seed independently, marks, sync, threshold, CSV, merge, 1,000 entities, phone); all 16 pass
+- Not done: reversed dates (the data model stores sorted dates, so they cannot occur)
 
 ---
 

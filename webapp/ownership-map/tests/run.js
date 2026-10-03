@@ -111,6 +111,16 @@ async function open(ctx, dialog){
     await p.close();                                 // d3 CDN hiccup: try again
   }
 }
+// Reload, and reload again if the d3 CDN failed this time.
+async function reload(p){
+  for (let attempt = 1; ; attempt++){
+    await p.reload();
+    await p.waitForFunction(() => window.rumahkerumahDB, null, { timeout: 15000 });
+    await p.evaluate(() => window.rumahkerumahDB.ready.catch(() => {}));
+    await sleep(1200);
+    if (await p.evaluate(() => typeof d3 !== 'undefined') || attempt === 3) return;
+  }
+}
 const counts = p => p.evaluate(() => { const x = rumahkerumahDB.export(); return [Object.keys(x.entities || {}).length, Object.keys(x.links || {}).length]; });
 const ghStatus = p => p.textContent('#ghStatus');
 const addEntity = (p, id) => p.evaluate(async id => { const db = await window.claude.use('db'); await db.doc('entities/' + id).set({ name: 'PT ' + id, type: 'company', aliases: [] }); }, id);
@@ -138,7 +148,7 @@ const tests = {
     await p.evaluate(async () => { const db = await window.claude.use('db'), x = rumahkerumahDB.export();
       for (const id of Object.keys(x.links)) await db.doc('links/' + id).delete();
       for (const id of Object.keys(x.entities)) await db.doc('entities/' + id).delete(); });
-    await p.reload(); await sleep(2500);
+    await reload(p); await sleep(2500);
     eq(await counts(p), [0, 0], 'emptied dataset stays empty');
   },
   async 'edit: add rows, undo from history'(){
@@ -184,7 +194,7 @@ const tests = {
     const gh = fakeGitHub(); gh.set(SEED);
     const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx);
     const d = gh.data(); d.entities['e-other'] = { name: 'PT Other', type: 'company', aliases: [] }; gh.set(d);
-    await p.reload(); await sleep(2500);
+    await reload(p); await sleep(2500);
     ok(await has(p, 'e-other'), 'other device change loaded');
   },
   async 'github: conflict, keep GitHub (browser copy downloaded)'(){
@@ -193,7 +203,7 @@ const tests = {
     await addEntity(p, 'e-local'); await sleep(300);
     const d = gh.data(); d.entities['e-remote'] = { name: 'PT Remote', type: 'company', aliases: [] }; gh.set(d);
     const dl = p.waitForEvent('download', { timeout: 15000 });
-    await p.reload(); await dl; await sleep(2500);
+    await reload(p); await dl; await sleep(2500);
     ok(await has(p, 'e-remote') && !(await has(p, 'e-local')), 'GitHub version taken');
   },
   async 'github: conflict, keep this browser (saved over GitHub)'(){
@@ -202,7 +212,7 @@ const tests = {
     await addEntity(p, 'e-keep'); await sleep(300);
     const d = gh.data(); d.entities['e-lost'] = { name: 'PT Lost', type: 'company', aliases: [] }; gh.set(d);
     await p.evaluate(() => localStorage.setItem('rk-github-token', 'good-token'));
-    await p.reload(); await sleep(4000);
+    await reload(p); await sleep(4000);
     ok(gh.data().entities['e-keep'] && !gh.data().entities['e-lost'], 'browser version saved over GitHub');
   },
   async 'github: missing branch is created on first save'(){
@@ -269,7 +279,7 @@ const tests = {
     await p.click('#tvTable tbody tr[data-i="0"] [data-onmap]'); await sleep(600);
     ok(!(await p.isVisible('#tableView')) && await p.isVisible('#graph'), 'map button goes to the map');
     // remembered
-    await p.click('[data-tab="table"]'); await p.reload(); await sleep(2500);
+    await p.click('[data-tab="table"]'); await reload(p); await sleep(2500);
     ok(await p.isVisible('#tableView'), 'table tab remembered');
     eq(p.errors, [], 'page errors');
   },
@@ -281,6 +291,78 @@ const tests = {
     const m = await p.evaluate(() => { const s = document.getElementById('tvScroll'); return { scrolls: s.scrollWidth > s.clientWidth, page: document.documentElement.scrollWidth <= window.innerWidth + 1,
       sticky: getComputedStyle(document.querySelector('#tvTable td')).position }; });
     ok(m.scrolls && m.page && m.sticky === 'sticky', 'phone layout ' + JSON.stringify(m));
+  },
+  async 'quality: counts match the data, marks persist and sync, threshold, CSV'(){
+    // Independent counts straight from the seed file.
+    const E = SEED.entities, L = Object.values(SEED.links);
+    const co = id => E[id].type === 'company';
+    const targets = new Set(L.filter(l => co(l.target)).map(l => l.target));
+    const ownIn = new Set(L.filter(l => l.type === 'ownership').map(l => l.target)), dirIn = new Set(L.filter(l => l.type === 'directorship').map(l => l.target));
+    const noBoard = [...targets].filter(t => ownIn.has(t) && !dirIn.has(t)).length, noOwner = [...targets].filter(t => !ownIn.has(t)).length;
+    const now = new Date(), nowKey = now.getFullYear() * 12 + now.getMonth() + 1;
+    const latest = t => L.filter(l => l.target === t && l.date).map(l => l.date).sort().pop();
+    const age = t => { const d = latest(t); if (!d) return null; const [y, m] = d.split('-').map(Number); return nowKey - (y * 12 + m); };
+    const stale = mo => [...targets].filter(t => age(t) == null || age(t) >= mo).length;
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx, d => d.accept());
+    await p.click('[data-tab="quality"]'); await sleep(800);
+    const count = async check => { const h = await p.$$eval('.qa-check h4', hs => hs.map(h => h.innerText.replace(/\s+/g, ' ').trim())); const x = h.find(t => t.startsWith(check)); return x ? +x.split(' ').pop() : 0; };
+    eq(await count('No directors or commissioners recorded'), noBoard, 'no board');
+    eq(await count('No shareholders recorded'), noOwner, 'no shareholders');
+    eq(await count('Latest data older than 12 months') + await count('No date on its data'), stale(12), 'stale at 12 months');
+    ok(await count('Very similar names') >= 1, 'similar names found');
+    // mark one Checked with a note: hidden, counted, kept after reload, saved to GitHub
+    const first = p.locator('#qa-incomplete .qa-item').first(); const key = await first.getAttribute('data-key');
+    await first.locator('[data-act="note"]').click(); await sleep(200);
+    await p.fill('[data-note-form] input', 'asked the registry'); await p.click('[data-note-form] .btn'); await sleep(600);
+    eq(await count('No directors or commissioners recorded'), noBoard - 1, 'checked item leaves the open list');
+    eq(await p.textContent('#qaReviewedN'), '1', 'reviewed counter');
+    await p.evaluate(() => rumahkerumahGitHub.saveNow()); await sleep(800);
+    ok(Object.keys(gh.data().reviews || {}).length === 1, 'review saved to GitHub');
+    await reload(p); await sleep(2500); await p.click('[data-tab="quality"]').catch(() => {}); await sleep(600);
+    eq(await count('No directors or commissioners recorded'), noBoard - 1, 'mark kept after reload');
+    await p.check('#qaShowReviewed'); await sleep(400);
+    ok(/asked the registry/.test(await p.textContent('[data-key="' + key + '"]')), 'note shown on the reviewed item');
+    await p.click('[data-key="' + key + '"] [data-act="reopen"]'); await sleep(600);
+    eq(await p.textContent('#qaReviewedN'), '0', 'reopened');
+    await p.uncheck('#qaShowReviewed');
+    // threshold
+    await p.fill('#qaStale', '30'); await p.dispatchEvent('#qaStale', 'change'); await sleep(500);
+    eq(await count('Latest data older than 30 months') + await count('No date on its data'), stale(30), 'stale at 30 months');
+    // worklist CSV = every open finding
+    const openN = await p.$$eval('#qaChips b', bs => bs.reduce((s, b) => s + +b.textContent, 0));
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#qaExport')]);
+    eq(fs.readFileSync(await dl.path(), 'utf8').trim().split('\n').length - 1 >= openN, true, 'worklist has every open finding');
+    // merge a duplicate
+    const before = (await counts(p))[0];
+    await p.click('#qa-duplicates [data-act="merge"]'); await sleep(1500);
+    eq((await counts(p))[0], before - 1, 'merge removes one entity');
+    // the sidebar Checks panel links here
+    await p.click('[data-tab="map"]'); await p.evaluate(() => document.querySelector('.qa-from-checks').click()); await sleep(400);
+    ok(await p.isVisible('#qualityView'), 'Checks panel opens the tab');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'quality: 1,000 entities render fast; phone width fits'(){
+    const big = { entities: {}, links: {}, versions: {} };
+    for (let i = 0; i < 300; i++) big.entities['e-c' + i] = { name: 'PT Perusahaan Uji ' + i, type: 'company', aliases: [] };
+    for (let i = 0; i < 700; i++) big.entities['e-p' + i] = { name: 'Orang Uji Nomor ' + i, type: 'person', aliases: [] };
+    let n = 0;
+    for (let i = 0; i < 300; i++){
+      const t = 'e-c' + i, d = '20' + (19 + i % 7) + '-0' + (1 + i % 9);
+      big.links['l' + n++] = { source: 'e-c' + ((i * 7 + 1) % 300), target: t, type: 'ownership', value: 60, role: null, status: null, seen: [d], date: d, groups: ['G' + (i % 5)], citations: [] };
+      big.links['l' + n++] = { source: 'e-p' + (i % 700), target: t, type: 'ownership', value: 40, role: null, status: null, seen: [d], date: d, groups: ['G' + (i % 5)], citations: [] };
+      for (let k = 0; k < 4; k++) big.links['l' + n++] = { source: 'e-p' + ((i * 3 + k) % 700), target: t, type: 'directorship', value: null, role: 'Director', status: null, seen: [d], date: d, groups: ['G' + (i % 5)], citations: [{ text: 'test', date: null }] };
+    }
+    const gh = fakeGitHub(); gh.set(big);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await sleep(3000);
+    const ms = await p.evaluate(() => new Promise(r => { const t = performance.now(); window.OwnershipMapTabs.show('quality'); requestAnimationFrame(() => r(performance.now() - t)); }));
+    ok(ms < 3000, 'quality tab rendered in ' + Math.round(ms) + ' ms');
+    const tms = await p.evaluate(() => new Promise(r => { const t = performance.now(); window.OwnershipMapTabs.show('table'); requestAnimationFrame(() => r(performance.now() - t)); }));
+    ok(tms < 1500, 'table tab rendered in ' + Math.round(tms) + ' ms');
+    await p.setViewportSize({ width: 390, height: 800 }); await p.evaluate(() => window.OwnershipMapTabs.show('quality')); await sleep(800);
+    ok(await p.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), 'no sideways page scroll on a phone');
+    console.log('      (1,000 entities: Data quality ' + Math.round(ms) + ' ms, Table ' + Math.round(tms) + ' ms)');
   },
 };
 

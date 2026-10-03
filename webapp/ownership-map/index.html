@@ -840,7 +840,7 @@
       </div>
       <button type="button" class="icon-btn panel-toggle" id="panelCloseBtn" aria-label="Hide the control panel" title="Hide panel" aria-controls="sidebar" aria-expanded="true"><svg class="icon"><use href="#i-panel"/></svg></button>
       <p class="eyebrow">Corporate structure analysis</p>
-      <p class="tagline">Shareholdings and director or commissioner roles between entities, kept in a dataset in this browser, with sources, notes and history.</p>
+      <p class="tagline">Shareholdings and director or commissioner roles between entities, kept in one dataset saved on GitHub, with sources, notes and history.</p>
     </header>
 
     <section class="panel" id="groupsPanel" aria-labelledby="groupsHeading" hidden>
@@ -2851,24 +2851,48 @@
         n.dx = Math.max(-MAX_NUDGE, Math.min(MAX_NUDGE, n.dx));
         n.dy = Math.max(-MAX_NUDGE, Math.min(MAX_NUDGE, n.dy));
       };
+      // Only boxes sharing a grid cell can overlap, so each pass compares neighbours
+      // instead of every pair (a large map has thousands of labels).
+      const CELL = 80;
+      const cellsOf = b => {
+        const out = [];
+        for (let x = Math.floor(b[0] / CELL); x <= Math.floor(b[2] / CELL); x++)
+          for (let y = Math.floor(b[1] / CELL); y <= Math.floor(b[3] / CELL); y++) out.push(x + ',' + y);
+        return out;
+      };
+      const obstacleGrid = new Map();
+      obstacles.forEach((ob, k) => cellsOf(ob).forEach(c => {
+        if (!obstacleGrid.has(c)) obstacleGrid.set(c, []);
+        obstacleGrid.get(c).push(k);
+      }));
       for (let iter = 0; iter < 40; iter++){
         let moved = false;
         items.forEach(it => {
-          obstacles.forEach(ob => {
-            const m = push(box(it), ob);
+          const near = new Set();
+          cellsOf(box(it)).forEach(c => (obstacleGrid.get(c) || []).forEach(k => near.add(k)));
+          near.forEach(k => {
+            const m = push(box(it), obstacles[k]);
             if (m){ it.d._labelNudge.dx += m.dx; it.d._labelNudge.dy += m.dy; clampNudge(it.d._labelNudge); moved = true; }
           });
         });
-        for (let i = 0; i < items.length; i++){
-          for (let j = i + 1; j < items.length; j++){
-            const m = push(box(items[i]), box(items[j]));
-            if (!m) continue;
-            items[i].d._labelNudge.dx += m.dx / 2; items[i].d._labelNudge.dy += m.dy / 2;
-            items[j].d._labelNudge.dx -= m.dx / 2; items[j].d._labelNudge.dy -= m.dy / 2;
-            clampNudge(items[i].d._labelNudge); clampNudge(items[j].d._labelNudge);
-            moved = true;
-          }
-        }
+        const itemGrid = new Map();
+        items.forEach((it, i) => cellsOf(box(it)).forEach(c => {
+          if (!itemGrid.has(c)) itemGrid.set(c, []);
+          itemGrid.get(c).push(i);
+        }));
+        const pairs = new Set();
+        itemGrid.forEach(list => {
+          for (let a = 0; a < list.length; a++) for (let b = a + 1; b < list.length; b++) pairs.add(list[a] * items.length + list[b]);
+        });
+        Array.from(pairs).sort((x, y) => x - y).forEach(pair => {
+          const i = Math.floor(pair / items.length), j = pair % items.length;
+          const m = push(box(items[i]), box(items[j]));
+          if (!m) return;
+          items[i].d._labelNudge.dx += m.dx / 2; items[i].d._labelNudge.dy += m.dy / 2;
+          items[j].d._labelNudge.dx -= m.dx / 2; items[j].d._labelNudge.dy -= m.dy / 2;
+          clampNudge(items[i].d._labelNudge); clampNudge(items[j].d._labelNudge);
+          moved = true;
+        });
         if (!moved) break;
       }
       edgeGroups.select('g.edge-label').attr('transform', d =>
@@ -6118,7 +6142,7 @@
     els.parseBtn.classList.remove('btn--primary');
     els.parseBtn.classList.add('btn');
     els.dataHint.textContent = 'Paste rows, name the company group and the source, then add them to the dataset. Preview draws them on their own first.';
-    els.datasetHint.textContent = 'The dataset is kept only in this browser. Back it up regularly: a backup file can be restored here, on another device, or committed as data/seed.json. The latest 10 changes are kept in the history and can be undone.';
+    els.datasetHint.textContent = 'The dataset is saved on GitHub (see Saved on GitHub below) and kept in this browser as a working copy, so it also works offline. The latest 10 changes are kept in the history and can be undone.';
     let gotE = false, gotL = false;
     const onErr = (e) => {
       els.datasetStatus.classList.add('has-error');
@@ -6182,7 +6206,7 @@
     get preview(){ return previewMode; },
     groupFilter: () => effectiveGroupFilter(), clusterFilter: () => effectiveClusterFilter(),
     entityName, nodeName, nameKey, looseKey, inferType, canonRole, linkEnds, linkKey, seenOf, fmtMonth,
-    linkPassesFilter, formatDate, dateSortKey,
+    linkPassesFilter, formatDate, dateSortKey, ownershipFlags,
     profileRef, effectiveStakes, escapeHtml,
     focusNode, selectNode, selectLink, centerOnNode,
     mergeEntities, commitChanges, reportWrite, withBusy,
@@ -6205,4 +6229,5 @@
 </script>
 <script src="rk-backup.js"></script>
 <script src="rk-tabs.js"></script>
+<script src="rk-quality.js"></script>
 </body></html>
