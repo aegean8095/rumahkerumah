@@ -14,6 +14,9 @@ Static version of the Ownership Map artifact, built to run from GitHub Pages. No
 - **Note on keys**: localStorage belongs to the whole `aegean8095.github.io` domain, so other GitHub Pages sites of this account could read the DeepSeek key and the GitHub token. Keep the token limited to this repo's contents.
 - Console helpers: `rumahkerumahDB.export()`, `.import(obj)`, `.replace(obj)`, `.reset()` (clears this browser and reloads from GitHub).
 
+## Tests
+`node webapp/ownership-map/tests/run.js` (from the repo root; needs Playwright + Chromium). Fakes GitHub and DeepSeek; pass a word to run only matching tests, e.g. `github`.
+
 ## Publish on GitHub Pages
 Settings → Pages → Deploy from a branch → this branch, folder `/ (root)`.
 The app is then at `https://aegean8095.github.io/rumahkerumah/webapp/ownership-map/`.

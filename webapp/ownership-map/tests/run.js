@@ -1,0 +1,252 @@
+#!/usr/bin/env node
+/* Browser tests for the standalone Ownership Map (webapp/ownership-map).
+ *
+ *   node webapp/ownership-map/tests/run.js            # all tests
+ *   node webapp/ownership-map/tests/run.js github     # only tests whose name contains "github"
+ *
+ * Needs Playwright with a Chromium (uses /opt/pw-browsers/chromium when present).
+ * Serves the app from a built-in static server and fakes api.github.com and
+ * api.deepseek.com, so nothing real is read or written. CDN scripts (d3, pdf.js,
+ * fonts) load from the network; a page whose d3 failed to load is retried.
+ */
+'use strict';
+const http = require('http'), fs = require('fs'), path = require('path'), { execSync } = require('child_process');
+
+function loadPlaywright(){
+  try { return require('playwright'); } catch (e){}
+  return require(path.join(execSync('npm root -g').toString().trim(), 'playwright'));
+}
+const { chromium } = loadPlaywright();
+const APP = path.resolve(__dirname, '..');
+const SEED = JSON.parse(fs.readFileSync(path.join(APP, 'data/seed.json'), 'utf8'));
+const GH = 'https://api.github.com/repos/aegean8095/rumahkerumah';
+const FILE = 'ownership-map/dataset.json';
+const clone = o => JSON.parse(JSON.stringify(o));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// ---------- static server ----------
+const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.css': 'text/css' };
+function serve(){
+  const server = http.createServer((req, res) => {
+    const p = path.join(APP, decodeURIComponent(new URL(req.url, 'http://x').pathname));
+    if (!p.startsWith(APP) || !fs.existsSync(p) || fs.statSync(p).isDirectory()){ res.writeHead(404); return res.end(); }
+    res.writeHead(200, { 'content-type': TYPES[path.extname(p)] || 'application/octet-stream' });
+    fs.createReadStream(p).pipe(res);
+  });
+  return new Promise(r => server.listen(0, () => r(server)));
+}
+
+// ---------- fake GitHub (contents API + git data API used by rk-github.js) ----------
+function fakeGitHub(){
+  const gh = { branch: true, file: null, n: 0, puts: 0, forbid: false };
+  gh.set = obj => { gh.file = { sha: 'sha' + (++gh.n), text: JSON.stringify(obj) }; };
+  gh.data = () => JSON.parse(gh.file.text);
+  const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'GET,PUT,POST',
+    'access-control-expose-headers': 'x-accepted-github-permissions' };
+  gh.route = async r => {
+    const q = r.request(), m = q.method(), p = new URL(q.url()).pathname.replace('/repos/aegean8095/rumahkerumah', '');
+    if (m === 'OPTIONS') return r.fulfill({ status: 204, headers: cors });
+    const auth = q.headers().authorization || '', good = auth === 'Bearer good-token';
+    const J = (st, b, h) => r.fulfill({ status: st, headers: Object.assign({ 'content-type': 'application/json' }, cors, h || {}), body: JSON.stringify(b) });
+    if (auth && !good) return J(401, { message: 'Bad credentials' });
+    if (p === '' && m === 'GET') return J(200, { full_name: 'aegean8095/rumahkerumah' });
+    if (p === '/contents/' + FILE && m === 'GET'){
+      if (!gh.branch || !gh.file) return J(404, { message: 'Not Found' });
+      return J(200, { sha: gh.file.sha, content: Buffer.from(gh.file.text).toString('base64') });
+    }
+    if (p === '/contents/' + FILE && m === 'PUT'){
+      if (!good) return J(401, { message: 'Requires authentication' });
+      if (gh.forbid) return J(403, { message: 'Resource not accessible by personal access token' }, { 'x-accepted-github-permissions': 'contents=write' });
+      const b = JSON.parse(q.postData()); gh.puts++;
+      if (!gh.branch) return J(404, { message: 'Branch ownership-map-data not found' });
+      if (gh.file && b.sha !== gh.file.sha) return J(409, { message: 'sha mismatch' });
+      gh.file = { sha: 'sha' + (++gh.n), text: Buffer.from(b.content, 'base64').toString() };
+      return J(200, { content: { sha: gh.file.sha } });
+    }
+    if (p === '/git/trees' && m === 'POST'){ gh.pending = JSON.parse(q.postData()).tree[0].content; return J(201, { sha: 't1', tree: [{ path: FILE, sha: 'blob1' }] }); }
+    if (p === '/git/commits' && m === 'POST') return J(201, { sha: 'c1' });
+    if (p === '/git/refs' && m === 'POST'){ gh.branch = true; gh.file = { sha: 'blob1', text: gh.pending }; return J(201, {}); }
+    return J(404, { message: 'unhandled ' + m + ' ' + p });
+  };
+  return gh;
+}
+
+// ---------- fake DeepSeek ----------
+const DS_ANSWER = { company: 'PT Contoh Uji Indonesia', document: 'Profil Perusahaan (AHU)', document_date: '2026-09',
+  shareholders: [{ name: 'PT Induk Uji', kind: 'company', shares: 95, percent: 95 }, { name: 'Budi Santoso', kind: 'person', shares: 5, percent: 5 }],
+  board: [{ name: 'Budi Santoso', role: 'Direktur Utama' }, { name: 'Siti Aminah', role: 'Komisaris Utama' }], warnings: [] };
+function fakeDeepSeek(log){
+  return async r => {
+    const q = r.request();
+    const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST' };
+    if (q.method() === 'OPTIONS') return r.fulfill({ status: 204, headers: cors });
+    log.push({ auth: q.headers().authorization, body: JSON.parse(q.postData()) });
+    r.fulfill({ status: 200, contentType: 'application/json', headers: cors,
+      body: JSON.stringify({ choices: [{ message: { content: JSON.stringify(DS_ANSWER) } }], usage: { prompt_tokens: 1, completion_tokens: 1 } }) });
+  };
+}
+
+// ---------- harness ----------
+let browser, base;
+async function context(opts){
+  opts = opts || {};
+  const ctx = await browser.newContext({ ignoreHTTPSErrors: true, acceptDownloads: true, viewport: { width: 1300, height: 900 } });
+  const gh = opts.gh || fakeGitHub();
+  await ctx.route(GH + '**', gh.route);
+  if (opts.ds) await ctx.route('https://api.deepseek.com/**', fakeDeepSeek(opts.ds));
+  if (opts.token) await ctx.addInitScript(t => { try { if (!localStorage.getItem('rk-github-token')) localStorage.setItem('rk-github-token', t); } catch (e){} }, opts.token);
+  return { ctx, gh };
+}
+async function open(ctx, dialog){
+  for (let attempt = 1; ; attempt++){
+    const p = await ctx.newPage();
+    p.errors = [];
+    p.on('pageerror', e => p.errors.push(e.message));
+    p.on('dialog', d => (dialog || (x => x.accept()))(d, p));
+    await p.goto(base + '/index.html');
+    await p.waitForFunction(() => window.rumahkerumahDB, null, { timeout: 15000 });
+    await p.evaluate(() => window.rumahkerumahDB.ready.catch(() => {}));
+    await sleep(1200);
+    if (await p.evaluate(() => typeof d3 !== 'undefined') || attempt === 3) return p;
+    await p.close();                                 // d3 CDN hiccup: try again
+  }
+}
+const counts = p => p.evaluate(() => { const x = rumahkerumahDB.export(); return [Object.keys(x.entities || {}).length, Object.keys(x.links || {}).length]; });
+const ghStatus = p => p.textContent('#ghStatus');
+const addEntity = (p, id) => p.evaluate(async id => { const db = await window.claude.use('db'); await db.doc('entities/' + id).set({ name: 'PT ' + id, type: 'company', aliases: [] }); }, id);
+const has = (p, id) => p.evaluate(id => !!rumahkerumahDB.export().entities[id], id);
+function eq(a, b, what){ if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error(what + ': expected ' + JSON.stringify(b) + ', got ' + JSON.stringify(a)); }
+function ok(v, what){ if (!v) throw new Error(what); }
+
+// ---------- tests ----------
+const tests = {
+  async 'load: fresh browser reads GitHub, not the seed'(){
+    const gh = fakeGitHub(); const d = clone(SEED); d.entities['e-only-remote'] = { name: 'PT Only Remote', type: 'company', aliases: [] }; gh.set(d);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    eq(await counts(p), [166, 235], 'counts');
+    ok(/165|166/.test(await p.textContent('.map-summary')), 'map summary shows the data');
+    ok(await p.evaluate(() => !!window.OwnershipMap && window.OwnershipMap.ready), 'OwnershipMap add-on API ready');
+    const fired = await p.evaluate(() => new Promise(r => { document.addEventListener('om:change', () => r(true), { once: true });
+      window.claude.use('db').then(db => db.doc('entities/e-ping').set({ name: 'PT Ping', type: 'company', aliases: [] })); setTimeout(() => r(false), 3000); }));
+    ok(fired, 'om:change fires');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'seed: used when GitHub has no file, only once'(){
+    const gh = fakeGitHub(); gh.branch = false;
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    eq(await counts(p), [165, 235], 'seed loaded');
+    await p.evaluate(async () => { const db = await window.claude.use('db'), x = rumahkerumahDB.export();
+      for (const id of Object.keys(x.links)) await db.doc('links/' + id).delete();
+      for (const id of Object.keys(x.entities)) await db.doc('entities/' + id).delete(); });
+    await p.reload(); await sleep(2500);
+    eq(await counts(p), [0, 0], 'emptied dataset stays empty');
+  },
+  async 'edit: add rows, undo from history'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.click('#dataToggle').catch(() => {});
+    await p.fill('#dataInput', 'PT Uji Satu, PT Uji Dua, ownership, 70\nAndi Uji, PT Uji Dua, Direktur');
+    await p.fill('#importGroup', 'Uji'); await p.click('#addBtn'); await sleep(1500);
+    eq(await counts(p), [168, 237], 'after add');
+    const restore = p.locator('#historyList button[data-action="restore"]').first();
+    await restore.click(); await sleep(400); await restore.click(); await sleep(2500);
+    eq(await counts(p), [165, 235], 'after undo');
+  },
+  async 'tabs: two tabs of one browser stay in sync'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const a = await open(ctx), b = await open(ctx);
+    await addEntity(a, 'e-tab'); await sleep(1000);
+    ok(await has(b, 'e-tab'), 'second tab sees the write');
+  },
+  async 'backup: download, restore, reject a wrong file'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#backupBtn')]);
+    const file = path.join(require('os').tmpdir(), 'om-backup-' + Date.now() + '.json'); await dl.saveAs(file);
+    await addEntity(p, 'e-after-backup'); await sleep(500);
+    await Promise.all([p.waitForNavigation({ timeout: 20000 }), p.setInputFiles('#restoreBackupInput', file)]); await sleep(2500);
+    eq(await counts(p), [165, 235], 'restored');
+    const bad = file + '.bad.json'; fs.writeFileSync(bad, '{"x":1}');
+    await p.setInputFiles('#restoreBackupInput', bad); await sleep(800);
+    ok(/not an Ownership Map backup/.test(await p.textContent('#datasetStatus')), 'wrong file rejected');
+  },
+  async 'github: connect, autosave, save history'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.accept('good-token'));
+    await p.click('#ghConnectBtn'); await sleep(500);
+    await addEntity(p, 'e-saved');
+    ok(/Unsaved|Saving/.test(await ghStatus(p)), 'pending shown');
+    await p.evaluate(() => rumahkerumahGitHub.saveNow()); await sleep(800);
+    ok(gh.data().entities['e-saved'], 'saved to GitHub');
+    ok(/Saved to GitHub/.test(await ghStatus(p)), 'saved shown');
+  },
+  async 'github: another device saved, reload picks it up'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx);
+    const d = gh.data(); d.entities['e-other'] = { name: 'PT Other', type: 'company', aliases: [] }; gh.set(d);
+    await p.reload(); await sleep(2500);
+    ok(await has(p, 'e-other'), 'other device change loaded');
+  },
+  async 'github: conflict, keep GitHub (browser copy downloaded)'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await addEntity(p, 'e-local'); await sleep(300);
+    const d = gh.data(); d.entities['e-remote'] = { name: 'PT Remote', type: 'company', aliases: [] }; gh.set(d);
+    const dl = p.waitForEvent('download', { timeout: 15000 });
+    await p.reload(); await dl; await sleep(2500);
+    ok(await has(p, 'e-remote') && !(await has(p, 'e-local')), 'GitHub version taken');
+  },
+  async 'github: conflict, keep this browser (saved over GitHub)'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.dismiss());
+    await addEntity(p, 'e-keep'); await sleep(300);
+    const d = gh.data(); d.entities['e-lost'] = { name: 'PT Lost', type: 'company', aliases: [] }; gh.set(d);
+    await p.evaluate(() => localStorage.setItem('rk-github-token', 'good-token'));
+    await p.reload(); await sleep(4000);
+    ok(gh.data().entities['e-keep'] && !gh.data().entities['e-lost'], 'browser version saved over GitHub');
+  },
+  async 'github: missing branch is created on first save'(){
+    const gh = fakeGitHub(); gh.branch = false;
+    const { ctx } = await context({ gh, token: 'good-token' }); const p = await open(ctx); await sleep(2500);
+    ok(gh.branch && gh.file, 'branch created');
+    eq([Object.keys(gh.data().entities).length, Object.keys(gh.data().links).length], [165, 235], 'seed saved');
+  },
+  async 'github: bad token and read-only token explain themselves'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const a = await open((await context({ gh, token: 'bad-token' })).ctx);
+    ok(/rejected/.test(await ghStatus(a)), 'bad token message');
+    const gh2 = fakeGitHub(); gh2.set(SEED); gh2.forbid = true;
+    const b = await open((await context({ gh: gh2, token: 'good-token' })).ctx);
+    await addEntity(b, 'e-x'); await b.evaluate(() => rumahkerumahGitHub.saveNow()); await sleep(800);
+    ok(/contents=write/.test(await ghStatus(b)), 'read-only token message names the missing permission');
+  },
+  async 'pdf: text PDF read through DeepSeek, rows shown for review'(){
+    const gh = fakeGitHub(); gh.set(SEED); const ds = [];
+    const { ctx } = await context({ gh, ds });
+    const maker = await ctx.newPage();
+    await maker.setContent('<h1>Profil Perusahaan</h1><p>' + 'PT Contoh Uji Indonesia. Pemegang saham: PT Induk Uji 95 persen, Budi Santoso 5 persen. Direktur Utama Budi Santoso. Komisaris Utama Siti Aminah. '.repeat(6) + '</p>');
+    const pdf = path.join(require('os').tmpdir(), 'om-test-' + Date.now() + '.pdf'); await maker.pdf({ path: pdf }); await maker.close();
+    const p = await open(ctx, d => d.accept('sk-test-key'));
+    await p.setInputFiles('#pdfInput', pdf);
+    await p.waitForFunction(() => /Shareholders/.test((document.querySelector('.review-sheet') || {}).innerText || ''), null, { timeout: 40000 });
+    eq(ds.length, 1, 'one DeepSeek call'); eq(ds[0].auth, 'Bearer sk-test-key', 'key sent');
+    ok(ds[0].body.messages[1].content.includes('PT Induk Uji'), 'PDF text sent');
+  },
+};
+
+(async () => {
+  const filter = process.argv[2] || '';
+  const exe = '/opt/pw-browsers/chromium';
+  browser = await chromium.launch(fs.existsSync(exe) ? { executablePath: exe } : {});
+  const server = await serve(); base = 'http://localhost:' + server.address().port;
+  let failed = 0;
+  for (const [name, fn] of Object.entries(tests)){
+    if (filter && !name.includes(filter)) continue;
+    const t0 = Date.now();
+    try { await fn(); console.log('PASS  ' + name + '  (' + ((Date.now() - t0) / 1000).toFixed(1) + 's)'); }
+    catch (e){ failed++; console.log('FAIL  ' + name + '\n      ' + (e && e.message || e)); }
+  }
+  await browser.close(); server.close();
+  console.log(failed ? failed + ' failed' : 'all passed');
+  process.exit(failed ? 1 : 0);
+})();

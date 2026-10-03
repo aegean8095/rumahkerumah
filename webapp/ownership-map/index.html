@@ -2211,6 +2211,7 @@
   // opts.morph: glide entities from where they are to the new layout.
   function drawGraph(opts){
     opts = opts || {};
+    notifyAddons();
     if (simulation) simulation.stop();
     if (morphTimer){ morphTimer.stop(); morphTimer = null; }
     const token = ++drawToken;
@@ -3995,6 +3996,7 @@
     refreshTimer = setTimeout(() => {
       rebuildIndex();
       renderMasterUi();
+      notifyAddons();
       if (!master.ready || previewMode) return;
       els.mapLoading.hidden = true;
       if (!master.links.size && els.dataBody.hidden) setDataOpen(true, false);
@@ -6163,6 +6165,27 @@
     if (lg === 'closed') els.mapLegend.open = false;
     else if (lg === 'open' && window.innerWidth > 860) els.mapLegend.open = true;
   } catch(e) {}
+
+  // ---------- Add-on API (rk-*.js) ----------
+  // New features live in their own files and use this instead of reaching into
+  // this script. Read-only views of the state plus the existing actions; listen
+  // for 'om:change' on document to redraw after data, filters or the map change.
+  let addonFrame = 0;
+  function notifyAddons(){
+    if (addonFrame) return;
+    addonFrame = requestAnimationFrame(() => { addonFrame = 0; document.dispatchEvent(new CustomEvent('om:change')); });
+  }
+  window.OwnershipMap = {
+    get master(){ return master; },                 // entities / links Maps, versions, ready
+    get graph(){ return graph; },                   // what the map shows now (filters applied); links carry status
+    get ready(){ return masterMode && master.ready; },
+    get preview(){ return previewMode; },
+    groupFilter: () => effectiveGroupFilter(), clusterFilter: () => effectiveClusterFilter(),
+    entityName, nodeName, nameKey, looseKey, inferType, canonRole, linkEnds, linkKey, seenOf, fmtMonth,
+    profileRef, effectiveStakes, escapeHtml,
+    focusNode, selectNode, selectLink, centerOnNode,
+    mergeEntities, commitChanges, reportWrite, withBusy,
+  };
 
   loadPrefs();
   initMaster();

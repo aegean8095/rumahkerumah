@@ -47,6 +47,38 @@ rumahkerumah/
 | 4 | `research-and-second-brain/` | Research notes, analysis, references, and knowledge base. |
 | 5 | `personal/` | Personal workspace and notes. |
 
+## Ownership Map — read this before touching `webapp/ownership-map/`
+
+**Do not read `index.html` whole** (~345 kB, ~6,200 lines). Find the part you need with
+`grep -n "^  // ----" webapp/ownership-map/index.html` (section headers) or `grep -n "function NAME"`, then read only that range.
+
+Files:
+| File | What it is |
+|---|---|
+| `index.html` | The original artifact (map, panels, parsing, editing, history, checks, PDF review). Change it as little as possible. |
+| `rk-shim.js` | Replaces the claude.ai runtime: `db` (IndexedDB, tab sync), `downloads`, `sample` (DeepSeek). |
+| `rk-github.js` | GitHub sync of the dataset (branch `ownership-map-data`, file `ownership-map/dataset.json`). |
+| `rk-backup.js` | Back up / restore buttons and the "Saved on GitHub" block. |
+| `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
+| `data/seed.json` | Fallback data (built by `shadow-corporate/build_seed.py`). |
+
+Sections of `index.html` (search the header text): DOM (`els.*` lookups), Parsing (`parse`, `nameKey`, `inferType`, `canonRole`),
+Graph state (`graph`, `linkEnds`), Layout / filters, Detail panel (`selectNode`), Navigation (`focusNode`, `centerOnNode`),
+Shared master dataset (`master`, `entityName`, `linkKey`, `graphFromMaster`, `scheduleMasterRefresh`), Writing (`commitChanges`, `withBusy`),
+Import (`importRows`), Edit forms (`mergeEntities`), History, CSV export, Checks (`renderChecks`, `looseKey`), Sources overview,
+Reading a company profile PDF (`readDocument`, `EXTRACT_PROMPT`), Start-up (`initMaster`), Add-on API.
+
+**New features go in their own `rk-*.js` file**, loaded after the main script, using `window.OwnershipMap`
+(read-only `master`, `graph`, `ready`, filters, plus `entityName`, `focusNode`, `selectNode`, `selectLink`, `mergeEntities`,
+`commitChanges`, …; see "Add-on API" at the end of the main script). Redraw on the `om:change` event on `document`.
+Only add a line to that API object when a feature needs something new.
+
+Working efficiently (token use):
+- Work one plan phase per session; agree open decisions before starting so nothing is redone.
+- Run `tests/run.js` (or a filtered part) instead of writing throwaway test scripts; add a test there for each new feature.
+- Routine edits (copy, a column, logs) are fine on Sonnet; keep Opus for design and hard bugs.
+- Update Notion (page "Ownership Map — Catatan Status") and this log once, at the end of a session.
+
 ## Session Log
 
 ### 2026-02-04 — Initial setup
@@ -98,6 +130,12 @@ rumahkerumah/
 - Conflicts between devices are detected (blob sha); the user picks a version and the other one is downloaded as a backup
 - Dataset panel: "Saved on GitHub" block (status, Connect / Save now / Disconnect, links to the file and its history)
 - Tested in Chromium against a mocked GitHub API: fresh load, autosave, two tabs, another device, both conflict choices, missing branch, bad token
+
+### 2026-10-03 — Token-saving groundwork for Ownership Map work
+
+- Added the "Ownership Map — read this before…" section above: code map, file roles, working rules
+- `index.html`: add-on API `window.OwnershipMap` and an `om:change` event (fired after data or map changes), so new features can live in separate `rk-*.js` files
+- `tests/run.js`: one permanent browser test suite (12 tests, fake GitHub and DeepSeek, built-in server); all passing
 
 ---
 
