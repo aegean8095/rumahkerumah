@@ -756,7 +756,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020941797,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-indosubur-sukses-makmur": {
    "name": "PT Indosubur Sukses Makmur",
@@ -7291,40 +7294,6 @@
   }
  },
  "versions": {
-  "v-mur8go0c-8hkq": {
-   "at": 1790961881484,
-   "batch": "v-mur8go0c-8hkq",
-   "summary": "Added the cluster Pulp and Paper: PT Sumalindo Alam Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-sumalindo-alam-lestari",
-     "before": {
-      "name": "PT Sumalindo Alam Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961876081,
-      "clusters": []
-     },
-     "after": {
-      "name": "PT Sumalindo Alam Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961881472,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-mur8k59v-8bx3": {
    "at": 1790962043827,
    "batch": "v-mur8k59v-8bx3",
@@ -7930,6 +7899,39 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020927609,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-mus7mj8o-pvm9": {
+   "at": 1791020941800,
+   "batch": "v-mus7mj8o-pvm9",
+   "summary": "Added the cluster Pulp and Paper: PT Hutani Cipta Bersama",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-hutani-cipta-bersama",
+     "before": {
+      "name": "PT Hutani Cipta Bersama",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Hutani Cipta Bersama",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020941797,
       "clusters": [
        "Pulp and Paper"
       ]
