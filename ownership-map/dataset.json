@@ -1413,6 +1413,54 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-global-resources-oils-and-fats-industries-ltd": {
+   "name": "Global Resources Oils And Fats Industries Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-pt-alamas-karya-sejati": {
+   "name": "PT Alamas Karya Sejati",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-euro-link-management-ltd": {
+   "name": "Euro-Link Management Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-global-advance-bio-energy-co-ltd": {
+   "name": "Global Advance Bio Energy Co Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-bestadrian-prawiro-theng": {
+   "name": "Bestadrian Prawiro Theng",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "e-jeffrey-nicholas-eliezer-laoh": {
+   "name": "Jeffrey Nicholas Eliezer Laoh",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
   }
  },
  "links": {
@@ -7183,42 +7231,201 @@
    "note": "",
    "createdAt": 1790962043813,
    "updatedAt": 1790962084442
+  },
+  "l-musb56ab-6gf3cl": {
+   "source": "e-global-resources-oils-and-fats-industries-ltd",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 54.29,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-ar4nj5": {
+   "source": "e-pt-alamas-karya-sejati",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 42.19,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-2nccnj": {
+   "source": "e-euro-link-management-ltd",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 3.34,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-4dtznl": {
+   "source": "e-global-advance-bio-energy-co-ltd",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "ownership",
+   "value": 0.18,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-ll8ndh": {
+   "source": "e-bestadrian-prawiro-theng",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-qp3qa5": {
+   "source": "e-jeffrey-nicholas-eliezer-laoh",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-xyoap9": {
+   "source": "e-daniel-bastian-tandjung",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
+  },
+  "l-musb56ab-a63oss": {
+   "source": "e-tio-bio-kok",
+   "target": "e-pt-sari-dumai-sejati",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [
+    "Sinarmas Group"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026850323,
+   "updatedAt": 1791026850323
   }
  },
  "versions": {
-  "v-musajxuj-tdwe": {
-   "at": 1791025859611,
-   "batch": "v-musajxuj-tdwe",
-   "summary": "Added the cluster Pulp and Paper: PT Kiani Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-kiani-lestari",
-     "before": {
-      "name": "PT Kiani Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Kiani Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025859599,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-musajz5a-n7g1": {
    "at": 1791025861294,
    "batch": "v-musajz5a-n7g1",
@@ -9240,6 +9447,326 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025898191
+     }
+    }
+   ]
+  },
+  "v-musb56ay-1vjv": {
+   "at": 1791026850346,
+   "batch": "v-musb56ay-1vjv",
+   "summary": "Added 8 rows to Sinarmas Group from Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 14,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-global-resources-oils-and-fats-industries-ltd",
+     "before": null,
+     "after": {
+      "name": "Global Resources Oils And Fats Industries Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-alamas-karya-sejati",
+     "before": null,
+     "after": {
+      "name": "PT Alamas Karya Sejati",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-euro-link-management-ltd",
+     "before": null,
+     "after": {
+      "name": "Euro-Link Management Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-global-advance-bio-energy-co-ltd",
+     "before": null,
+     "after": {
+      "name": "Global Advance Bio Energy Co Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-bestadrian-prawiro-theng",
+     "before": null,
+     "after": {
+      "name": "Bestadrian Prawiro Theng",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-jeffrey-nicholas-eliezer-laoh",
+     "before": null,
+     "after": {
+      "name": "Jeffrey Nicholas Eliezer Laoh",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-6gf3cl",
+     "before": null,
+     "after": {
+      "source": "e-global-resources-oils-and-fats-industries-ltd",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "ownership",
+      "value": 54.29,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-ar4nj5",
+     "before": null,
+     "after": {
+      "source": "e-pt-alamas-karya-sejati",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "ownership",
+      "value": 42.19,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-2nccnj",
+     "before": null,
+     "after": {
+      "source": "e-euro-link-management-ltd",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "ownership",
+      "value": 3.34,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-4dtznl",
+     "before": null,
+     "after": {
+      "source": "e-global-advance-bio-energy-co-ltd",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "ownership",
+      "value": 0.18,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-ll8ndh",
+     "before": null,
+     "after": {
+      "source": "e-bestadrian-prawiro-theng",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-qp3qa5",
+     "before": null,
+     "after": {
+      "source": "e-jeffrey-nicholas-eliezer-laoh",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-xyoap9",
+     "before": null,
+     "after": {
+      "source": "e-daniel-bastian-tandjung",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb56ab-a63oss",
+     "before": null,
+     "after": {
+      "source": "e-tio-bio-kok",
+      "target": "e-pt-sari-dumai-sejati",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [
+       "Sinarmas Group"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026850323,
+      "updatedAt": 1791026850323
      }
     }
    ]
