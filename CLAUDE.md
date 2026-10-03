@@ -61,6 +61,13 @@ Files:
 | `rk-backup.js` | Back up / restore buttons and the "Saved on GitHub" block. |
 | `rk-tabs.js` + `rk-tabs.css` | Map / Table tabs: Entities and Relationships tables (sort, search, CSV, row → detail panel or map). `window.OwnershipMapTabs.add()` lets other modules add a tab. |
 | `rk-quality.js` | Data quality tab: 5 categories of findings, Checked / Ignore / note marks (collection `reviews`, synced), worklist CSV. Styles in `rk-tabs.css`. |
+| `rk-map.js` | Hover highlight of an entity's neighbourhood, pinned highlight (`OwnershipMapHL`), multi-select (Shift/Ctrl-click, Shift-drag box) with the action bar (Focus, Hide, Assign group, Find connection). |
+| `rk-connect.js` | Connection finder: shortest relationship chains between two entities, indirect stake, show on map (`OwnershipMapConnect.open`). |
+| `rk-detail.js` | Entity detail additions: Focus buttons, Open in table, Find connection, Company report; Note block moved up. |
+| `rk-time.js` | "As of" month slider (`OM.setAsOf`): structure in force in a month, estimated from dates seen. |
+| `rk-report.js` | Printable company report (`OwnershipMapReport.open`), print CSS in `rk-ui.css`. |
+| `rk-status.js` | Save status chip in the top capsule (Saved / Saving / Unsaved / Offline / Not connected). |
+| `rk-ui.css` | Styles for the modules above. |
 | `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
 | `data/seed.json` | Fallback data (built by `shadow-corporate/build_seed.py`). |
 
@@ -72,7 +79,7 @@ Reading a company profile PDF (`readDocument`, `EXTRACT_PROMPT`), Start-up (`ini
 
 **New features go in their own `rk-*.js` file**, loaded after the main script, using `window.OwnershipMap`
 (read-only `master`, `graph`, `ready`, filters, plus `entityName`, `focusNode`, `selectNode`, `selectLink`, `mergeEntities`,
-`commitChanges`, …; see "Add-on API" at the end of the main script). Redraw on the `om:change` event on `document`.
+`commitChanges`, `focusOnSet`, `hideMany`, `setAsOf`, `fullGraph` (whole dataset, no filters), …; see "Add-on API" at the end of the main script). Redraw on the `om:change` event on `document`.
 Only add a line to that API object when a feature needs something new.
 
 Working efficiently (token use):
@@ -178,6 +185,20 @@ Working efficiently (token use):
 - Right-click where there is no entity or relation: *Show all entities and relations* (clears hidden/focused entities, Relationships and Timeline back to All, refits; greyed out when nothing is narrowed), *Show all company groups and commodities too* (only when a group or commodity filter is on), *Fit the map to the view*
 - Relations, panels and the Table / Data quality tabs keep the browser's own menu. In `index.html`: `#mapContextMenu`, `openMapMenu`, `showEverything`, shared `placeMenu`, next to the node context menu
 - Tests: 1 new (20 total). The occasional "quality: counts" failure was the d3 CDN failing on a reload; `reload()` in `tests/run.js` now drops those errors when it retries
+
+### 2026-10-03 — Ownership Map: eight UX changes
+
+- **Hover highlight** (`rk-map.js`): pointing at an entity dims everything but it, its relations and neighbours
+- **Timeline filter** (`index.html`, `drawGraph`): Recent/Previous now drop entities left without relations, like the Relationships filter (before: 149 of 165 floating dots in Previous)
+- **Save status chip** (`rk-status.js`) in the top capsule; click connects / saves now
+- **Multi-select** (`rk-map.js`): Shift/Ctrl+click, Shift+drag box; bar with Focus, Focus + relations, Hide, Assign group (adds the group to every relationship of the selected entities through `commitChanges`), Find connection for two
+- **Connection finder** (`rk-connect.js`): shortest chains in the whole dataset, written step by step, indirect stake for pure ownership chains, Show only this / Light up on map
+- **Detail panel** (`rk-detail.js`): Focus buttons, Open in table (`OwnershipMapTabs.openTable`), Find connection, Company report; Note moved to the top
+- **As-of slider** (`rk-time.js`, hook in `graphFromMaster`): shows relationships in force in a month; each counts as current then, so chains and beneficial owners are as of that month. In force from the first date seen; superseded ones until the last date seen, others until now; undated ones optional. Data quality always leaves the past
+- **Company report** (`rk-report.js`): shareholders, direct + indirect holders (checked against the detail panel's own calculation), beneficial owners, board, holdings, shared directors, points to check, sources; Print / Save as PDF with print CSS (tested: pdftotext, 2 pages)
+- Add-on API grew: `focusOnSet`, `hideMany`, `setAsOf`/`getAsOf`, `fullGraph`, `refreshMap`, `hiddenIds`, `neighborsOf`, `selectedEntityId`. Event `om:asof`, `om:tab`
+- Not done (not requested): the view bar still clips its last buttons at 1366–1536 px, and the Dataset panel still says nothing about a failed GitHub load
+- 27 tests
 
 ---
 
