@@ -537,6 +537,103 @@ const tests = {
     eq(await p.$$eval('g.node', g => g.length), before - 1, 'hide removes the selected entity');
     eq(p.errors, [], 'page errors');
   },
+  async 'status chip: not connected, saved, unsaved, offline, click to connect'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    let answer = '';
+    const { ctx } = await context({ gh }); const p = await open(ctx, d => d.accept(answer));
+    const chip = async () => (await p.textContent('#saveChip .save-text')).trim();
+    ok(await p.isVisible('#saveChip'), 'chip is in the top capsule');
+    ok(/Not connected/.test(await chip()), 'not connected: ' + await chip());
+    answer = 'github_pat_GOOD000000000000000000000000';
+    await p.click('#saveChip'); await sleep(1200);                    // click connects
+    ok(/Saved|Connected/.test(await chip()), 'connected: ' + await chip());
+    await addEntity(p, 'e-chip'); await sleep(400);
+    ok(/Unsaved/.test(await chip()), 'unsaved after an edit: ' + await chip());
+    await p.click('#saveChip'); await sleep(1200);                    // click saves now
+    ok(/Saved/.test(await chip()) && gh.data().entities['e-chip'], 'saved after clicking: ' + await chip());
+    await ctx.unroute(GH + '**'); await ctx.route(GH + '**', r => r.abort('connectionfailed'));
+    await addEntity(p, 'e-chip2'); await p.click('#saveChip'); await sleep(1500);
+    ok(/Offline/.test(await chip()), 'offline when GitHub is unreachable: ' + await chip());
+    ok(await p.$eval('#saveChip', c => c.classList.contains('is-warn')), 'warning colour');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'connect: finds shortest chains, writes them out, indirect stake, show on map'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    // Expected answers computed independently, straight from the seed file.
+    const L = Object.values(SEED.links), name = id => SEED.entities[id].name;
+    const adj = new Map(); L.forEach(l => { [[l.source, l.target], [l.target, l.source]].forEach(([a, b]) => { if (!adj.has(a)) adj.set(a, new Set()); adj.get(a).add(b); }); });
+    const bfs = (a, b) => { const d = new Map([[a, 0]]), q = [a], ways = new Map([[a, 1]]); while (q.length){ const x = q.shift(); for (const y of adj.get(x) || []){ if (!d.has(y)){ d.set(y, d.get(x) + 1); ways.set(y, ways.get(x)); q.push(y); } else if (d.get(y) === d.get(x) + 1) ways.set(y, ways.get(y) + ways.get(x)); } } return d.has(b) ? { len: d.get(b), ways: ways.get(b) } : null; };
+    // a pair at distance 3 or more, and one pure two-step ownership chain with known stakes
+    const ids = Object.keys(SEED.entities); let far = null;
+    for (const a of ids.slice(0, 60)){ for (const b of ids){ const r = bfs(a, b); if (r && r.len >= 3){ far = { a, b, r }; break; } } if (far) break; }
+    ok(far, 'test data has a distant pair');
+    const own = L.filter(l => l.type === 'ownership' && typeof l.value === 'number');
+    let chain = null; for (const l1 of own){ const l2 = own.find(x => x.target === l1.source && x.source !== l1.target); if (l2){ chain = { top: l2.source, mid: l1.source, bottom: l1.target, v: l2.value * l1.value / 100 }; break; } }
+    ok(chain, 'test data has a two-step ownership chain');
+    // open from the toolbar button and search by typing names
+    await p.click('#connectBtn'); ok(await p.isVisible('#connectPanel'), 'panel opens from the toolbar');
+    await p.fill('#cnFrom', name(far.a)); await p.fill('#cnTo', name(far.b)); await p.click('#cnForm .btn'); await sleep(500);
+    const sum = (await p.textContent('.cn-summary')).replace(/\s+/g, ' ');
+    ok(new RegExp('^' + far.r.ways + ' shortest connection').test(sum.trim()) || far.r.ways > 8, 'number of shortest chains: ' + sum + ' (expected ' + far.r.ways + ')');
+    ok(sum.includes(far.r.len + ' step'), 'steps: ' + sum + ' (expected ' + far.r.len + ')');
+    eq(await p.$$eval('div.cn-path:first-of-type li', li => li.length), far.r.len, 'one written line per step');
+    // indirect stake equals the product computed here
+    await p.fill('#cnFrom', name(chain.top)); await p.fill('#cnTo', name(chain.bottom)); await p.click('#cnForm .btn'); await sleep(500);
+    const ind = await p.textContent('.cn-ind');
+    const shown = parseFloat((ind.match(/about\s+([\d.]+)%/) || [])[1]);
+    ok(Math.abs(shown - chain.v) < 0.01, 'indirect stake ' + shown + '% vs ' + chain.v + '%');
+    // show only this chain on the map
+    await p.click('div.cn-path:first-of-type [data-cn="only"]'); await sleep(1500);
+    eq(await p.$$eval('g.node', g => g.length), 3, 'map shows only the three entities of the chain');
+    await p.click('#showHiddenBtn'); await sleep(1200);
+    // light it up in context: the rest dims
+    await p.click('div.cn-path:first-of-type [data-cn="light"]'); await sleep(1500);
+    ok(await p.evaluate(() => document.getElementById('graph').classList.contains('hl') && document.querySelectorAll('g.node.hl-on').length === 3), 'chain lit, rest dimmed');
+    // unknown name and same entity
+    await p.fill('#cnFrom', 'Nama yang tidak ada'); await p.click('#cnForm .btn'); await sleep(300);
+    ok(/No entity called/.test(await p.textContent('.cn-none')), 'unknown name explained');
+    // opened from the selection bar with exactly two entities selected
+    await p.click('[data-cn="close"]'); await sleep(200);
+    ok(!(await p.evaluate(() => document.getElementById('graph').classList.contains('hl'))), 'closing clears the highlight');
+    await p.evaluate(a => window.OwnershipMapHL.select(a), [chain.top, chain.bottom]); await sleep(400);
+    await p.click('#selectionBar [data-sel="connect"]'); await sleep(600);
+    ok(await p.isVisible('#connectPanel') && (await p.inputValue('#cnFrom')) === name(chain.top), 'selection bar opens it with both names filled');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'detail: focus buttons, open in table, note moved up and still saves'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    const expect = await p.evaluate(id => { const nb = x => { const s = new Set(); OwnershipMap.graph.links.forEach(l => { const [a, b] = OwnershipMap.linkEnds(l); if (a === x) s.add(b); if (b === x) s.add(a); }); return s; };
+      const one = new Set([id, ...nb(id)]), all = new Set([id]); let q = [id]; while (q.length){ const n = []; q.forEach(x => nb(x).forEach(y => { if (!all.has(y)){ all.add(y); n.push(y); } })); q = n; } return { one: one.size, all: all.size, total: OwnershipMap.graph.nodes.length }; }, id);
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(700);
+    ok(await p.isVisible('.rk-detail-tools'), 'tools row is in the detail panel');
+    // the Note block now comes right after the tools, before "Owned by"
+    const order = await p.$$eval('#detailPanel h4', hs => hs.map(h => h.textContent.trim()));
+    ok(order.indexOf('Note') < order.indexOf('Owned by') || order.indexOf('Owned by') < 0 || order.indexOf('Note') === 0, 'Note comes first: ' + order.join(' | '));
+    ok((await p.evaluate(() => document.querySelector('.rk-detail-tools').nextElementSibling.querySelector('h4').textContent.trim())) === 'Note', 'Note block sits under the tools');
+    const shown = () => p.$$eval('g.node', g => g.length);
+    await p.click('[data-rk="focus0"]'); await sleep(1500); eq(await shown(), 1, 'only this');
+    await p.click('#showHiddenBtn'); await sleep(1200); await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(500);
+    await p.click('[data-rk="focus1"]'); await sleep(1500); eq(await shown(), expect.one, 'with relations');
+    await p.click('#showHiddenBtn'); await sleep(1200); await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(500);
+    await p.click('[data-rk="focusAll"]'); await sleep(1500); eq(await shown(), expect.all, 'whole network');
+    await p.click('#showHiddenBtn'); await sleep(1200);
+    // the moved note still saves
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(500);
+    await p.fill('#entityNote', 'catatan uji'); await p.click('[data-act="note-save"]'); await sleep(1200);
+    eq(await p.evaluate(id => OwnershipMap.master.entities.get(id).note, id), 'catatan uji', 'note saved after being moved');
+    // open in table: table tab, filtered to this entity
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(500);
+    await p.click('[data-rk="table"]'); await sleep(900);
+    ok(await p.isVisible('#tableView'), 'table tab opens');
+    eq(await p.inputValue('#tvSearch'), 'PT Flora Nuansa Hijau', 'search prefilled');
+    eq(await p.$$eval('#tvTable tbody tr[data-i]', r => r.length), 1, 'one row');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {

@@ -22,3 +22,53 @@ g.node.multi-sel .node-label{ font-weight: 700; }
 .sel-assign .btn{ padding: 6px 12px; font-size: 12.5px; }
 .sel-hint, .sel-msg{ font-size: 12px; color: var(--ink-400); }
 .sel-msg{ flex: 1 1 100%; color: var(--accent-dir); }
+
+/* ---------- Save status chip (rk-status.js) ---------- */
+.save-chip{
+  appearance: none; border: 1px solid var(--border-soft); background: rgba(255,255,255,.7); color: var(--ink-600); cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 500; padding: 3px 10px 3px 8px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px;
+  transition: background .2s var(--ease), border-color .2s var(--ease);
+}
+.save-chip:hover{ background: #fff; border-color: var(--border); }
+.save-chip[hidden]{ display: none; }
+.save-dot{ width: 8px; height: 8px; border-radius: 50%; background: var(--line-muted); flex: 0 0 auto; }
+.save-chip.is-ok .save-dot{ background: var(--accent-dir); }
+.save-chip.is-warn .save-dot{ background: #d68a1b; }
+.save-chip.is-bad{ border-color: rgba(163,54,31,.4); color: var(--danger); }
+.save-chip.is-bad .save-dot{ background: var(--danger); }
+.save-chip.is-busy .save-dot{ background: var(--accent-focus); animation: save-pulse 1s ease-in-out infinite; }
+@keyframes save-pulse{ 50%{ opacity: .3; } }
+@media (prefers-reduced-motion: reduce){ .save-chip.is-busy .save-dot{ animation: none; } }
+
+/* ---------- Connection finder (rk-connect.js) ---------- */
+.connect-panel{
+  top: calc(var(--map-top-h, 92px) + 22px); left: 14px; bottom: 64px; width: min(400px, calc(100% - 28px)); z-index: var(--z-sheet);
+  background: var(--panel); display: flex; flex-direction: column; overflow: hidden; -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.connect-panel[hidden]{ display: none; }
+.cn-head{ display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 0 16px; }
+.cn-head h3{ font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+.cn-form{ display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; padding: 10px 16px 12px; border-bottom: 1px solid var(--border-soft); }
+.cn-form .field-l{ display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 600; color: var(--ink-600); }
+.cn-form .field-l:first-child{ grid-column: 1; }
+.cn-swap{ grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+.cn-form .field-l:nth-of-type(2){ grid-column: 1; }
+.cn-form .check-row, .cn-form .btn{ grid-column: 1 / -1; }
+.cn-form .btn{ justify-content: center; }
+.cn-results{ overflow-y: auto; padding: 10px 16px 16px; flex: 1 1 auto; }
+.cn-summary{ margin: 0 0 8px; font-size: 12.5px; color: var(--ink-600); }
+.cn-summary b{ font-family: var(--font-data); color: var(--ink-900); }
+.cn-none{ margin: 4px 0; font-size: 12.5px; line-height: 1.55; color: var(--ink-600); }
+.cn-path{ padding: 10px 12px; margin-bottom: 8px; border-radius: var(--r-md); background: var(--bg); }
+.cn-path ol{ margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; line-height: 1.5; }
+.cn-ent{ font-weight: 500; text-align: left; }
+.cn-and{ font-size: 11px; color: var(--ink-400); }
+.cn-tag{ font-size: 11px; color: var(--ink-400); border: 1px solid var(--border); border-radius: var(--r-sm); padding: 0 4px; }
+.cn-when{ font-family: var(--font-data); font-size: 11px; color: var(--ink-400); }
+.cn-ind{ margin: 8px 0 0; font-size: 12.5px; color: var(--accent-own); }
+.cn-actions{ display: flex; gap: 6px; margin-top: 8px; }
+
+/* ---------- Entity detail additions (rk-detail.js) ---------- */
+.rk-detail-tools{ display: flex; flex-direction: column; gap: 6px; margin: 4px 0 2px; padding: 10px 12px; border-radius: var(--r-md); background: var(--bg); }
+.rk-tool-row{ display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.rk-tool-label{ font-size: 12px; font-weight: 600; color: var(--ink-600); margin-right: 2px; }

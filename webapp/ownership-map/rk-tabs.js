@@ -237,6 +237,12 @@
       if (wanted === def.id) setTab(def.id);
     },
     current: function(){ return tab; },
+    // Show the Table tab on one of its tables, filtered by a text.
+    openTable: function(k, q){
+      kind = k === 'links' ? 'links' : 'entities'; store(KIND_KEY, kind);
+      query = q || ''; var i = $('tvSearch'); if (i) i.value = query;
+      selected = null; setTab('table', true); $('tvScroll').scrollTop = 0;
+    },
     show: function(id){ setTab(id, true); },
   };
   panel.querySelector('[aria-label="Table"]').addEventListener('click', function(e){
