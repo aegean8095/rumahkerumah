@@ -600,6 +600,12 @@ const tests = {
     await p.evaluate(a => window.OwnershipMapHL.select(a), [chain.top, chain.bottom]); await sleep(400);
     await p.click('#selectionBar [data-sel="connect"]'); await sleep(600);
     ok(await p.isVisible('#connectPanel') && (await p.inputValue('#cnFrom')) === name(chain.top), 'selection bar opens it with both names filled');
+    // Regression: switching to another tab while the panel is open once froze the page (an observer re-triggering itself)
+    await p.click('[data-tab="table"]'); await sleep(600);
+    ok(await p.evaluate(() => 1 + 1) === 2, 'page still responds after opening the Table tab');
+    ok(!(await p.isVisible('#connectPanel')), 'the panel closes in the Table tab');
+    await p.click('[data-tab="map"]'); await sleep(500);
+    ok(!(await p.isVisible('#connectPanel')) && !(await p.evaluate(() => document.getElementById('map').classList.contains('cn-open'))), 'and stays closed on the map');
     eq(p.errors, [], 'page errors');
   },
   async 'detail: focus buttons, open in table, note moved up and still saves'(){

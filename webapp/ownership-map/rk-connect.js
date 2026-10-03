@@ -171,7 +171,11 @@
   function close(){ panel.hidden = true; wrap.classList.remove('cn-open'); if (window.OwnershipMapHL) window.OwnershipMapHL.clear(); }
   window.OwnershipMapConnect = { open: open, close: close };
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !panel.hidden && panel.contains(document.activeElement)) close(); });
-  new MutationObserver(function(){ if (wrap.classList.contains('table-mode')){ panel.hidden = true; wrap.classList.remove('cn-open'); } }).observe(wrap, { attributes: true, attributeFilter: ['class'] });
+  // Only act while the panel is open: removing a class that is not there still rewrites the
+  // attribute, which would trigger this observer again, endlessly.
+  new MutationObserver(function(){
+    if (!panel.hidden && wrap.classList.contains('table-mode')){ panel.hidden = true; wrap.classList.remove('cn-open'); }
+  }).observe(wrap, { attributes: true, attributeFilter: ['class'] });
 
   // ---------- toolbar button ----------
   var sprite = document.querySelector('svg.sprite');
