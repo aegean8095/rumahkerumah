@@ -457,12 +457,12 @@
    "updatedAt": 1790961478929
   },
   "e-kustinah": {
-   "name": "KUSTINAH",
+   "name": "Kustinah",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791023576657
   },
   "e-lam-kah-kuan": {
    "name": "Lam Kah Kuan",
@@ -7294,36 +7294,6 @@
   }
  },
  "versions": {
-  "v-mus7gc1i-uoee": {
-   "at": 1791020652534,
-   "batch": "v-mus7gc1i-uoee",
-   "summary": "Renamed YUDIANA to Yudiana",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-yudiana",
-     "before": {
-      "name": "YUDIANA",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Yudiana",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791020652533
-     }
-    }
-   ]
-  },
   "v-mus7hmb6-me5v": {
    "at": 1791020712498,
    "batch": "v-mus7hmb6-me5v",
@@ -7599,6 +7569,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791023564687
+     }
+    }
+   ]
+  },
+  "v-mus970bq-d5kz": {
+   "at": 1791023576678,
+   "batch": "v-mus970bq-d5kz",
+   "summary": "Renamed KUSTINAH to Kustinah",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-kustinah",
+     "before": {
+      "name": "KUSTINAH",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Kustinah",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791023576657
      }
     }
    ]
