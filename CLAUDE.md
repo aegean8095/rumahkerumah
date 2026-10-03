@@ -30,7 +30,7 @@ rumahkerumah/
 │   └── 02i2025r.csv                       #    Deforestation research data 2025
 │
 ├── webapp/                                # 6) Static web apps for GitHub Pages
-│   └── ownership-map/                     #    Ownership Map (index.html + rk-shim.js)
+│   └── ownership-map/                     #    Ownership Map (index.html + rk-*.js); data on branch ownership-map-data
 │
 ├── research-and-second-brain/             # 4) Research notes & second brain
 │
@@ -90,6 +90,14 @@ rumahkerumah/
 - UI text no longer mentions Claude or a shared dataset; PDF picker accepts PDFs only, clearer message for scans
 - `.nojekyll` moved to the repo root (Pages serves the root)
 - Tested in Chromium: seed once, tab sync, backup/restore, add + undo, PDF flow with mocked API
+
+### 2026-10-03 — Ownership Map saves to GitHub
+
+- New `rk-github.js`: the dataset is kept in `ownership-map/dataset.json` on the data-only branch `ownership-map-data` (orphan branch, created with the seed data)
+- Loaded on open without a token; saved ~8 s after each change with a fine-grained token (Contents: read/write on this repo) entered in the browser
+- Conflicts between devices are detected (blob sha); the user picks a version and the other one is downloaded as a backup
+- Dataset panel: "Saved on GitHub" block (status, Connect / Save now / Disconnect, links to the file and its history)
+- Tested in Chromium against a mocked GitHub API: fresh load, autosave, two tabs, another device, both conflict choices, missing branch, bad token
 
 ---
 

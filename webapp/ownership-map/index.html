@@ -1031,6 +1031,26 @@
         <input type="file" id="restoreBackupInput" accept="application/json,.json" hidden>
       </div>
       <p class="history-note" id="backupNote" hidden></p>
+      <div class="field" id="ghBlock" hidden>
+        <span class="field-label">Saved on GitHub</span>
+        <p class="hint" id="ghStatus" aria-live="polite"></p>
+        <div class="action-row">
+          <button type="button" class="btn" id="ghConnectBtn"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Connect GitHub</span></button>
+          <button type="button" class="btn" id="ghSaveBtn" hidden><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg><span class="btn-label">Save now</span></button>
+          <button type="button" class="text-btn text-btn--sm" id="ghDisconnectBtn" hidden><span class="btn-label">Disconnect</span></button>
+        </div>
+        <p class="history-note"><a class="link-btn" id="ghFileLink" target="_blank" rel="noopener">Dataset file</a> · <a class="link-btn" id="ghHistoryLink" target="_blank" rel="noopener">Save history</a></p>
+        <details class="help" id="ghHelp">
+          <summary>How to connect</summary>
+          <ul>
+            <li>Open <a class="link-btn" href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>.</li>
+            <li>Repository access: <b>Only select repositories</b> → <code>rumahkerumah</code>.</li>
+            <li>Repository permissions: <b>Contents</b> → <b>Read and write</b>. Nothing else.</li>
+            <li>Generate the token, copy it, choose Connect GitHub here and paste it.</li>
+            <li>The token stays in this browser only. Connect once per browser or device.</li>
+          </ul>
+        </details>
+      </div>
       <p class="parse-status" id="datasetStatus" aria-live="polite"></p>
       <div class="field" id="historyBlock" hidden>
         <span class="field-label">History</span>
@@ -1165,6 +1185,7 @@
   </main>
 </div>
 
+<script src="rk-github.js"></script>
 <script src="rk-shim.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>

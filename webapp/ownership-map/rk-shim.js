@@ -1,15 +1,16 @@
 /* Standalone replacement for the claude.ai artifact runtime (window.claude.use).
  * Lets the Ownership Map run as a static site (GitHub Pages):
- *   - 'db'        Firestore-like store kept in this browser's IndexedDB. Seeded from
- *                 data/seed.json on the very first visit only (a flag is kept), so a
- *                 dataset the user empties stays empty. Open tabs stay in sync through
- *                 BroadcastChannel. Persistent storage is requested on the first edit.
+ *   - 'db'        Firestore-like store kept in this browser's IndexedDB, which is the working
+ *                 copy. rk-github.js (loaded first) syncs it with a JSON file on GitHub: it is
+ *                 pulled on open and saved after every change. Without GitHub, a fresh browser
+ *                 starts from data/seed.json (first visit only; a flag is kept). Open tabs stay
+ *                 in sync through BroadcastChannel. Persistent storage is requested on the first edit.
  *   - 'downloads' saves a file through a normal browser download.
  *   - 'sample'    reads documents with the DeepSeek API (OpenAI-compatible, called straight from the
  *                 browser). The API key is typed in by the user, kept in localStorage and never in the repo.
  *                 Text PDFs only; scans (images) are not supported.
  * Console helpers: rumahkerumahDB.export(), rumahkerumahDB.import(obj), rumahkerumahDB.replace(obj),
- *                  rumahkerumahDB.reset() (also reloads the seed),
+ *                  rumahkerumahDB.reset() (clears this browser; reloads from GitHub or the seed),
  *                  rumahkerumahAI.clearKey()
  */
 (function(){
@@ -39,6 +40,7 @@
   var chan = null;          // BroadcastChannel to the other open tabs
   try { chan = new BroadcastChannel('rk-ownership-map'); } catch (e){}
   var persistAsked = false;
+  var gh = null;            // GitHub sync (rk-github.js), if loaded
 
   function col(name){ return cols[name] || (cols[name] = new Map()); }
   function clone(o){ return o == null ? o : JSON.parse(JSON.stringify(o)); }
@@ -54,7 +56,9 @@
       if (k.indexOf(META) === 0){ meta[k.slice(META.length)] = vals[i]; return; }
       var p = k.split('/'); col(p[0]).set(p.slice(1).join('/'), vals[i]);
     });
-    if (!meta.seeded){
+    if (window.rkGitHubSync) gh = window.rkGitHubSync(syncApi);
+    if (gh) await gh.onLoad(meta);
+    if (!(await getMeta('seeded'))){
       // First visit: load the seed into an empty store. A store that already holds
       // data (from before this flag existed) is only marked, never overwritten.
       if (!col('entities').size && !col('links').size){
@@ -64,10 +68,34 @@
         } catch (e){ /* no seed: start empty */ }
       }
       await setMeta('seeded', Date.now());
+      if (gh) await gh.afterSeed();
     }
     if (chan) chan.onmessage = onRemote;
   }
   function setMeta(k, v){ return idbDo(idb, 'readwrite', function(s){ return s.put(v, META + k); }); }
+  function getMeta(k){ return idbDo(idb, 'readonly', function(s){ return s.get(META + k); }); }
+  function dataSize(){ return col('entities').size + col('links').size; }
+  // The three collections that make up a dataset file (seed, backup, GitHub).
+  function snapshot(){
+    var x = exportAll();
+    return { entities: x.entities || {}, links: x.links || {}, versions: x.versions || {} };
+  }
+  // Swaps the whole local dataset for obj. live: the app is already running, so tell it.
+  async function applyDataset(obj, live){
+    var keys = await idbDo(idb, 'readonly', function(s){ return s.getAllKeys(); });
+    await idbDo(idb, 'readwrite', function(s){
+      keys.forEach(function(k){ if (String(k).indexOf(META) !== 0) s.delete(k); });
+    });
+    cols = {};
+    await importAll({ entities: obj.entities || {}, links: obj.links || {}, versions: obj.versions || {} }, true);
+    await setMeta('seeded', Date.now());
+    if (live){
+      ['entities', 'links', 'versions'].forEach(notify);
+      if (chan) try { chan.postMessage({ reload: true }); } catch (e){}
+    }
+  }
+  var syncApi = { snapshot: snapshot, applyDataset: applyDataset, getMeta: function(k){ return getMeta(k); },
+    setMeta: function(k, v){ return setMeta(k, v); }, dataSize: dataSize };
 
   // Another tab wrote: its IndexedDB write is done, mirror it here.
   function onRemote(ev){
@@ -105,26 +133,21 @@
     col(c).set(id, v);
     var p = idbDo(idb, 'readwrite', function(s){ return s.put(v, c + '/' + id); })
       .then(function(r){ tell(c, id, v); return r; });
-    if (!quiet){ notify(c); askPersist(); }
+    if (!quiet){ notify(c); askPersist(); if (gh) gh.changed(); }
     return p;
   }
   function del(c, id){
     col(c).delete(id);
     var p = idbDo(idb, 'readwrite', function(s){ return s.delete(c + '/' + id); })
       .then(function(r){ tell(c, id, null); return r; });
-    notify(c); askPersist();
+    notify(c); askPersist(); if (gh) gh.changed();
     return p;
   }
   // Replaces the whole dataset (entities, links, history) with obj, then reloads every tab.
   async function replaceAll(obj){
     if (!obj || typeof obj !== 'object' || (!obj.entities && !obj.links)) throw new Error('not a dataset file');
-    var keys = await idbDo(idb, 'readonly', function(s){ return s.getAllKeys(); });
-    await idbDo(idb, 'readwrite', function(s){
-      keys.forEach(function(k){ if (String(k).indexOf(META) !== 0) s.delete(k); });
-    });
-    cols = {};
-    await importAll({ entities: obj.entities || {}, links: obj.links || {}, versions: obj.versions || {} }, true);
-    await setMeta('seeded', Date.now());
+    await applyDataset(obj, false);
+    if (gh) await gh.changed(true);    // the restored dataset is saved to GitHub after the reload
     if (chan) try { chan.postMessage({ reload: true }); } catch (e){}
     location.reload();
   }

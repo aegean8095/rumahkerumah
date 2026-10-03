@@ -64,3 +64,57 @@
   window.rumahkerumahDB.ready.then(renderNote, function(){});
   new MutationObserver(renderNote).observe(actions, { attributes: true, attributeFilter: ['hidden'] });
 })();
+
+/* "Saved on GitHub" block: status of the GitHub sync (rk-github.js) and its buttons.
+ * rumahkerumahGitHub exists once the shim has opened the local store. */
+(window.rumahkerumahDB ? window.rumahkerumahDB.ready : Promise.reject()).then(function(){
+  'use strict';
+  var G = window.rumahkerumahGitHub;
+  var $ = function(id){ return document.getElementById(id); };
+  var block = $('ghBlock'), statusEl = $('ghStatus'), actions = $('datasetActions');
+  if (!G || !block) return;
+  var connectBtn = $('ghConnectBtn'), saveBtn = $('ghSaveBtn'), discBtn = $('ghDisconnectBtn');
+  $('ghFileLink').href = G.fileUrl;
+  $('ghHistoryLink').href = G.historyUrl;
+
+  function ago(ms){
+    if (!ms) return '';
+    var s = Math.round((Date.now() - ms) / 1000);
+    if (s < 60) return 'just now';
+    if (s < 3600) return Math.round(s / 60) + ' min ago';
+    try { return new Date(ms).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch (e){ return ''; }
+  }
+  function render(st){
+    st = st || G.state();
+    var on = G.connected();
+    connectBtn.hidden = on; saveBtn.hidden = !on; discBtn.hidden = !on;
+    $('ghHelp').hidden = on;
+    var text;
+    switch (st.phase === 'error' ? 'error' : on ? st.phase : 'local'){
+      case 'pending': text = 'Unsaved changes. Saving to GitHub in a few seconds…'; break;
+      case 'saving': text = 'Saving to GitHub…'; break;
+      case 'saved': text = 'Saved to GitHub' + (st.savedAt ? ' · ' + ago(st.savedAt) : '') + '.'; break;
+      case 'offline': case 'error': text = st.message; break;
+      default: text = on ? 'Connected. Changes are saved to GitHub automatically.' :
+        'Not connected: the latest GitHub version is loaded when the map opens, but changes made here stay in this browser until you connect.';
+    }
+    if (st.message && st.phase === 'saved') text = st.message + ' ' + text;
+    statusEl.textContent = text;
+    statusEl.classList.toggle('parse-status', true);
+    statusEl.classList.toggle('is-error', st.phase === 'error');
+    block.hidden = actions.hidden;
+  }
+  connectBtn.addEventListener('click', async function(){
+    var t = window.prompt('Paste your GitHub fine-grained token (Contents: read and write on rumahkerumah).\nIt is kept in this browser only.');
+    if (!t) return;
+    try { await G.connect(t); render(); }
+    catch (e){ statusEl.textContent = 'GitHub rejected that token. Check that it was copied whole and has not expired.'; statusEl.classList.add('is-error'); }
+  });
+  saveBtn.addEventListener('click', function(){ G.saveNow(); });
+  discBtn.addEventListener('click', function(){
+    if (window.confirm('Disconnect GitHub in this browser? The token is removed here; changes will stay in this browser until you connect again.')){ G.disconnect(); render(); }
+  });
+  G.subscribe(render);
+  setInterval(function(){ if (G.state().phase === 'saved') render(); }, 30000);   // keep "x min ago" fresh
+  new MutationObserver(function(){ render(); }).observe(actions, { attributes: true, attributeFilter: ['hidden'] });
+}, function(){});
