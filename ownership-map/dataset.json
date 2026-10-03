@@ -1501,6 +1501,46 @@
    "note": "",
    "createdAt": 1791026886145,
    "updatedAt": 1791026886145
+  },
+  "e-pt-asianagro-lestari": {
+   "name": "PT Asianagro Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-pt-mukti-artha-yoga": {
+   "name": "PT Mukti Artha Yoga",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-pt-asianagri-riau-jambi": {
+   "name": "PT Asianagri Riau Jambi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-krisman-p-sitinjak": {
+   "name": "Krisman P Sitinjak",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "e-pengarapen-gurusinga": {
+   "name": "Pengarapen Gurusinga",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
   }
  },
  "links": {
@@ -7607,42 +7647,97 @@
    "note": "",
    "createdAt": 1791026886145,
    "updatedAt": 1791026886145
+  },
+  "l-musb7hp5-3fsii9": {
+   "source": "e-pt-asianagro-lestari",
+   "target": "e-pt-mukti-artha-yoga",
+   "type": "ownership",
+   "value": 80,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "l-musb7hp5-8hdf70": {
+   "source": "e-pt-asianagri-riau-jambi",
+   "target": "e-pt-mukti-artha-yoga",
+   "type": "ownership",
+   "value": 20,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "l-musb7hp5-sqdzis": {
+   "source": "e-krisman-p-sitinjak",
+   "target": "e-pt-mukti-artha-yoga",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
+  },
+  "l-musb7hp5-o42bfu": {
+   "source": "e-pengarapen-gurusinga",
+   "target": "e-pt-mukti-artha-yoga",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791026958424,
+   "updatedAt": 1791026958424
   }
  },
  "versions": {
-  "v-musak3d3-8g1f": {
-   "at": 1791025866759,
-   "batch": "v-musak3d3-8g1f",
-   "summary": "Added the cluster Pulp and Paper: PT Tanjung Redeb Hutani",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-tanjung-redeb-hutani",
-     "before": {
-      "name": "PT Tanjung Redeb Hutani",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Tanjung Redeb Hutani",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025866742,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-musak43b-burh": {
    "at": 1791025867703,
    "batch": "v-musak43b-burh",
@@ -9670,6 +9765,189 @@
       "note": "",
       "createdAt": 1791026886145,
       "updatedAt": 1791026886145
+     }
+    }
+   ]
+  },
+  "v-musb7hpq-8jwp": {
+   "at": 1791026958446,
+   "batch": "v-musb7hpq-8jwp",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-asianagro-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Asianagro Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-mukti-artha-yoga",
+     "before": null,
+     "after": {
+      "name": "PT Mukti Artha Yoga",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-asianagri-riau-jambi",
+     "before": null,
+     "after": {
+      "name": "PT Asianagri Riau Jambi",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-krisman-p-sitinjak",
+     "before": null,
+     "after": {
+      "name": "Krisman P Sitinjak",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pengarapen-gurusinga",
+     "before": null,
+     "after": {
+      "name": "Pengarapen Gurusinga",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb7hp5-3fsii9",
+     "before": null,
+     "after": {
+      "source": "e-pt-asianagro-lestari",
+      "target": "e-pt-mukti-artha-yoga",
+      "type": "ownership",
+      "value": 80,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb7hp5-8hdf70",
+     "before": null,
+     "after": {
+      "source": "e-pt-asianagri-riau-jambi",
+      "target": "e-pt-mukti-artha-yoga",
+      "type": "ownership",
+      "value": 20,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb7hp5-sqdzis",
+     "before": null,
+     "after": {
+      "source": "e-krisman-p-sitinjak",
+      "target": "e-pt-mukti-artha-yoga",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb7hp5-o42bfu",
+     "before": null,
+     "after": {
+      "source": "e-pengarapen-gurusinga",
+      "target": "e-pt-mukti-artha-yoga",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791026958424,
+      "updatedAt": 1791026958424
      }
     }
    ]
