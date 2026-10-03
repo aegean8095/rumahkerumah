@@ -662,7 +662,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025739677,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-belantara-pusaka": {
    "name": "PT Belantara Pusaka",
@@ -5735,9 +5738,7 @@
     "2020-09",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5746,7 +5747,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025741094
   },
   "l-0178": {
    "source": "e-ignatius-triaji-cahyadi",
@@ -5760,9 +5761,7 @@
     "2020-09",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5771,7 +5770,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025741094
   },
   "l-0179": {
    "source": "e-pt-asripersada-anugerah-mulia",
@@ -5785,9 +5784,7 @@
     "2020-09",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5796,7 +5793,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025741094
   },
   "l-0180": {
    "source": "e-pt-kemakmuran-bersama-sejati",
@@ -5810,9 +5807,7 @@
     "2020-09",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -5821,7 +5816,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025741094
   },
   "l-0181": {
    "source": "e-ieneke-santoso",
@@ -8666,6 +8661,257 @@
       "clusters": [
        "Pulp and Paper"
       ]
+     }
+    }
+   ]
+  },
+  "v-musahdbi-ed12": {
+   "at": 1791025739694,
+   "batch": "v-musahdbi-ed12",
+   "summary": "Added the cluster Pulp and Paper: PT Belantara Persada",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-belantara-persada",
+     "before": {
+      "name": "PT Belantara Persada",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Belantara Persada",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025739677,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-musaheeh-vqdf": {
+   "at": 1791025741097,
+   "batch": "v-musaheeh-vqdf",
+   "summary": "Removed PT Belantara Persada from the group Kaltim: 4 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 4,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0177",
+     "before": {
+      "source": "e-habel-dodyd-devry",
+      "target": "e-pt-belantara-persada",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-habel-dodyd-devry",
+      "target": "e-pt-belantara-persada",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025741094
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0178",
+     "before": {
+      "source": "e-ignatius-triaji-cahyadi",
+      "target": "e-pt-belantara-persada",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-ignatius-triaji-cahyadi",
+      "target": "e-pt-belantara-persada",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025741094
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0179",
+     "before": {
+      "source": "e-pt-asripersada-anugerah-mulia",
+      "target": "e-pt-belantara-persada",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-asripersada-anugerah-mulia",
+      "target": "e-pt-belantara-persada",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025741094
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0180",
+     "before": {
+      "source": "e-pt-kemakmuran-bersama-sejati",
+      "target": "e-pt-belantara-persada",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-kemakmuran-bersama-sejati",
+      "target": "e-pt-belantara-persada",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2020-09",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025741094
      }
     }
    ]
