@@ -1755,6 +1755,134 @@
    "note": "",
    "createdAt": 1791029392008,
    "updatedAt": 1791029392008
+  },
+  "e-coaltrade-services-international-pte-ltd": {
+   "name": "Coaltrade Services International Pte Ltd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-pt-adaro-indonesia": {
+   "name": "PT Adaro Indonesia",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-pt-dianlia-setyamukti": {
+   "name": "PT Dianlia Setyamukti",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-pt-alam-tri-abadi": {
+   "name": "PT Alam Tri Abadi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-pt-viscaya-investments": {
+   "name": "PT Viscaya Investments",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-egat-international-company-limited": {
+   "name": "Egat International Company Limited",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-julius-aslan": {
+   "name": "Julius Aslan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-budi-rachman": {
+   "name": "Budi Rachman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-mohammad-syah-indra-aman": {
+   "name": "Mohammad Syah Indra Aman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-hendri-tamrin": {
+   "name": "Hendri Tamrin",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-christian-ariano-rachmat": {
+   "name": "Christian Ariano Rachmat",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-garilbaldi-thohir": {
+   "name": "Garilbaldi Thohir",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-chia-ah-hoo": {
+   "name": "Chia Ah Hoo",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-david-tendian": {
+   "name": "David Tendian",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-luckman": {
+   "name": "Luckman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "e-ari-hariadi": {
+   "name": "Ari Hariadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
   }
  },
  "links": {
@@ -8401,65 +8529,339 @@
    "note": "",
    "createdAt": 1791029392008,
    "updatedAt": 1791029392008
+  },
+  "l-muscplwe-p8h4qm": {
+   "source": "e-coaltrade-services-international-pte-ltd",
+   "target": "e-pt-adaro-indonesia",
+   "type": "ownership",
+   "value": 0,
+   "role": null,
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-vp0mlv": {
+   "source": "e-pt-dianlia-setyamukti",
+   "target": "e-pt-adaro-indonesia",
+   "type": "ownership",
+   "value": 5.16,
+   "role": null,
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-z0c4ll": {
+   "source": "e-pt-alam-tri-abadi",
+   "target": "e-pt-adaro-indonesia",
+   "type": "ownership",
+   "value": 54.11,
+   "role": null,
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-c8a91i": {
+   "source": "e-pt-viscaya-investments",
+   "target": "e-pt-adaro-indonesia",
+   "type": "ownership",
+   "value": 29.19,
+   "role": null,
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-n0m1tj": {
+   "source": "e-egat-international-company-limited",
+   "target": "e-pt-adaro-indonesia",
+   "type": "ownership",
+   "value": 11.53,
+   "role": null,
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-msc2ik": {
+   "source": "e-julius-aslan",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-281qen": {
+   "source": "e-budi-rachman",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-dxb0kv": {
+   "source": "e-mohammad-syah-indra-aman",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-b3hj97": {
+   "source": "e-hendri-tamrin",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-0cuwfn": {
+   "source": "e-christian-ariano-rachmat",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-5bzujk": {
+   "source": "e-garilbaldi-thohir",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Presiden Komisaris",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-6dj1ut": {
+   "source": "e-chia-ah-hoo",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Presiden Direktur",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-jfiqke": {
+   "source": "e-david-tendian",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-nnxxg8": {
+   "source": "e-luckman",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
+  },
+  "l-muscplwe-qznnwx": {
+   "source": "e-ari-hariadi",
+   "target": "e-pt-adaro-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-02",
+   "status": null,
+   "seen": [
+    "2017-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+     "date": "2017-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029483294,
+   "updatedAt": 1791029483294
   }
  },
  "versions": {
-  "v-musakrm8-4lu3": {
-   "at": 1791025898192,
-   "batch": "v-musakrm8-4lu3",
-   "summary": "Removed PT Adindo Hutani Lestari from the group Kaltim: 1 relationship",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0066",
-     "before": {
-      "source": "e-bioenergy-enterprises-sdn-bhd",
-      "target": "e-pt-adindo-hutani-lestari",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-bioenergy-enterprises-sdn-bhd",
-      "target": "e-pt-adindo-hutani-lestari",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": null,
-      "status": null,
-      "seen": [],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025898191
-     }
-    }
-   ]
-  },
   "v-musb56ay-1vjv": {
    "at": 1791026850346,
    "batch": "v-musb56ay-1vjv",
@@ -10189,6 +10591,629 @@
       "note": "",
       "createdAt": 1791029392008,
       "updatedAt": 1791029392008
+     }
+    }
+   ]
+  },
+  "v-muscplxz-volt": {
+   "at": 1791029483351,
+   "batch": "v-muscplxz-volt",
+   "summary": "Added 15 rows from Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 31,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-coaltrade-services-international-pte-ltd",
+     "before": null,
+     "after": {
+      "name": "Coaltrade Services International Pte Ltd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-adaro-indonesia",
+     "before": null,
+     "after": {
+      "name": "PT Adaro Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-dianlia-setyamukti",
+     "before": null,
+     "after": {
+      "name": "PT Dianlia Setyamukti",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-alam-tri-abadi",
+     "before": null,
+     "after": {
+      "name": "PT Alam Tri Abadi",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-viscaya-investments",
+     "before": null,
+     "after": {
+      "name": "PT Viscaya Investments",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-egat-international-company-limited",
+     "before": null,
+     "after": {
+      "name": "Egat International Company Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-julius-aslan",
+     "before": null,
+     "after": {
+      "name": "Julius Aslan",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-budi-rachman",
+     "before": null,
+     "after": {
+      "name": "Budi Rachman",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-mohammad-syah-indra-aman",
+     "before": null,
+     "after": {
+      "name": "Mohammad Syah Indra Aman",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-hendri-tamrin",
+     "before": null,
+     "after": {
+      "name": "Hendri Tamrin",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-christian-ariano-rachmat",
+     "before": null,
+     "after": {
+      "name": "Christian Ariano Rachmat",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-garilbaldi-thohir",
+     "before": null,
+     "after": {
+      "name": "Garilbaldi Thohir",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-chia-ah-hoo",
+     "before": null,
+     "after": {
+      "name": "Chia Ah Hoo",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-david-tendian",
+     "before": null,
+     "after": {
+      "name": "David Tendian",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-luckman",
+     "before": null,
+     "after": {
+      "name": "Luckman",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ari-hariadi",
+     "before": null,
+     "after": {
+      "name": "Ari Hariadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-p8h4qm",
+     "before": null,
+     "after": {
+      "source": "e-coaltrade-services-international-pte-ltd",
+      "target": "e-pt-adaro-indonesia",
+      "type": "ownership",
+      "value": 0,
+      "role": null,
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-vp0mlv",
+     "before": null,
+     "after": {
+      "source": "e-pt-dianlia-setyamukti",
+      "target": "e-pt-adaro-indonesia",
+      "type": "ownership",
+      "value": 5.16,
+      "role": null,
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-z0c4ll",
+     "before": null,
+     "after": {
+      "source": "e-pt-alam-tri-abadi",
+      "target": "e-pt-adaro-indonesia",
+      "type": "ownership",
+      "value": 54.11,
+      "role": null,
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-c8a91i",
+     "before": null,
+     "after": {
+      "source": "e-pt-viscaya-investments",
+      "target": "e-pt-adaro-indonesia",
+      "type": "ownership",
+      "value": 29.19,
+      "role": null,
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-n0m1tj",
+     "before": null,
+     "after": {
+      "source": "e-egat-international-company-limited",
+      "target": "e-pt-adaro-indonesia",
+      "type": "ownership",
+      "value": 11.53,
+      "role": null,
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-msc2ik",
+     "before": null,
+     "after": {
+      "source": "e-julius-aslan",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-281qen",
+     "before": null,
+     "after": {
+      "source": "e-budi-rachman",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-dxb0kv",
+     "before": null,
+     "after": {
+      "source": "e-mohammad-syah-indra-aman",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-b3hj97",
+     "before": null,
+     "after": {
+      "source": "e-hendri-tamrin",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-0cuwfn",
+     "before": null,
+     "after": {
+      "source": "e-christian-ariano-rachmat",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-5bzujk",
+     "before": null,
+     "after": {
+      "source": "e-garilbaldi-thohir",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Presiden Komisaris",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-6dj1ut",
+     "before": null,
+     "after": {
+      "source": "e-chia-ah-hoo",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Presiden Direktur",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-jfiqke",
+     "before": null,
+     "after": {
+      "source": "e-david-tendian",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-nnxxg8",
+     "before": null,
+     "after": {
+      "source": "e-luckman",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscplwe-qznnwx",
+     "before": null,
+     "after": {
+      "source": "e-ari-hariadi",
+      "target": "e-pt-adaro-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-02",
+      "status": null,
+      "seen": [
+       "2017-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2017. “PT Adaro Indonesia.” Corporate profile.",
+        "date": "2017-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
      }
     }
    ]
