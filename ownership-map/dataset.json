@@ -1883,6 +1883,78 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-kl-kepong-plantation": {
+   "name": "Kl-Kepong Plantation",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-pt-adei-plantation-industry": {
+   "name": "PT Adei Plantation & Industry",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-al-hakim-hanafiah": {
+   "name": "Al Hakim Hanafiah",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-patrick-kee-chuan-peng": {
+   "name": "Patrick Kee Chuan Peng",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-shivaganesh-kuppusamy": {
+   "name": "Shivaganesh Kuppusamy",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-thomas-thomas": {
+   "name": "Thomas Thomas",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-goh-keng-ee": {
+   "name": "Goh Keng Ee",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-apputhasamy-rathnam": {
+   "name": "Apputhasamy Rathnam",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "e-chong-choong-khim": {
+   "name": "Chong Choong Khim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
   }
  },
  "links": {
@@ -8859,329 +8931,207 @@
    "note": "",
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
+  },
+  "l-muskugej-l5o7yt": {
+   "source": "e-kl-kepong-plantation",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "ownership",
+   "value": 95,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-j51fyy": {
+   "source": "e-al-hakim-hanafiah",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "ownership",
+   "value": 5,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-yxwwh6": {
+   "source": "e-al-hakim-hanafiah",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-gxer9s": {
+   "source": "e-patrick-kee-chuan-peng",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Presiden Komisaris",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-r9dyr0": {
+   "source": "e-shivaganesh-kuppusamy",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-viptd2": {
+   "source": "e-thomas-thomas",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Presiden Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-88civu": {
+   "source": "e-goh-keng-ee",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-bqauhu": {
+   "source": "e-apputhasamy-rathnam",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
+  },
+  "l-muskugej-k0knqo": {
+   "source": "e-chong-choong-khim",
+   "target": "e-pt-adei-plantation-industry",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043146378,
+   "updatedAt": 1791043146378
   }
  },
  "versions": {
-  "v-musb56ay-1vjv": {
-   "at": 1791026850346,
-   "batch": "v-musb56ay-1vjv",
-   "summary": "Added 8 rows to Sinarmas Group from Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 14,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-global-resources-oils-and-fats-industries-ltd",
-     "before": null,
-     "after": {
-      "name": "Global Resources Oils And Fats Industries Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-alamas-karya-sejati",
-     "before": null,
-     "after": {
-      "name": "PT Alamas Karya Sejati",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-euro-link-management-ltd",
-     "before": null,
-     "after": {
-      "name": "Euro-Link Management Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-global-advance-bio-energy-co-ltd",
-     "before": null,
-     "after": {
-      "name": "Global Advance Bio Energy Co Ltd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-bestadrian-prawiro-theng",
-     "before": null,
-     "after": {
-      "name": "Bestadrian Prawiro Theng",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-jeffrey-nicholas-eliezer-laoh",
-     "before": null,
-     "after": {
-      "name": "Jeffrey Nicholas Eliezer Laoh",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-6gf3cl",
-     "before": null,
-     "after": {
-      "source": "e-global-resources-oils-and-fats-industries-ltd",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "ownership",
-      "value": 54.29,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-ar4nj5",
-     "before": null,
-     "after": {
-      "source": "e-pt-alamas-karya-sejati",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "ownership",
-      "value": 42.19,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-2nccnj",
-     "before": null,
-     "after": {
-      "source": "e-euro-link-management-ltd",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "ownership",
-      "value": 3.34,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-4dtznl",
-     "before": null,
-     "after": {
-      "source": "e-global-advance-bio-energy-co-ltd",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "ownership",
-      "value": 0.18,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-ll8ndh",
-     "before": null,
-     "after": {
-      "source": "e-bestadrian-prawiro-theng",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-qp3qa5",
-     "before": null,
-     "after": {
-      "source": "e-jeffrey-nicholas-eliezer-laoh",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-xyoap9",
-     "before": null,
-     "after": {
-      "source": "e-daniel-bastian-tandjung",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb56ab-a63oss",
-     "before": null,
-     "after": {
-      "source": "e-tio-bio-kok",
-      "target": "e-pt-sari-dumai-sejati",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [
-       "Sinarmas Group"
-      ],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Sari Dumai Sejati.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026850323,
-      "updatedAt": 1791026850323
-     }
-    }
-   ]
-  },
   "v-musb5xy0-x5u2": {
    "at": 1791026886168,
    "batch": "v-musb5xy0-x5u2",
@@ -11214,6 +11164,376 @@
       "note": "",
       "createdAt": 1791029483294,
       "updatedAt": 1791029483294
+     }
+    }
+   ]
+  },
+  "v-muskugfb-7yqt": {
+   "at": 1791043146407,
+   "batch": "v-muskugfb-7yqt",
+   "summary": "Added 9 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 18,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-kl-kepong-plantation",
+     "before": null,
+     "after": {
+      "name": "Kl-Kepong Plantation",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-adei-plantation-industry",
+     "before": null,
+     "after": {
+      "name": "PT Adei Plantation & Industry",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-al-hakim-hanafiah",
+     "before": null,
+     "after": {
+      "name": "Al Hakim Hanafiah",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-patrick-kee-chuan-peng",
+     "before": null,
+     "after": {
+      "name": "Patrick Kee Chuan Peng",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-shivaganesh-kuppusamy",
+     "before": null,
+     "after": {
+      "name": "Shivaganesh Kuppusamy",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-thomas-thomas",
+     "before": null,
+     "after": {
+      "name": "Thomas Thomas",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-goh-keng-ee",
+     "before": null,
+     "after": {
+      "name": "Goh Keng Ee",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-apputhasamy-rathnam",
+     "before": null,
+     "after": {
+      "name": "Apputhasamy Rathnam",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-chong-choong-khim",
+     "before": null,
+     "after": {
+      "name": "Chong Choong Khim",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-l5o7yt",
+     "before": null,
+     "after": {
+      "source": "e-kl-kepong-plantation",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "ownership",
+      "value": 95,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-j51fyy",
+     "before": null,
+     "after": {
+      "source": "e-al-hakim-hanafiah",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "ownership",
+      "value": 5,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-yxwwh6",
+     "before": null,
+     "after": {
+      "source": "e-al-hakim-hanafiah",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-gxer9s",
+     "before": null,
+     "after": {
+      "source": "e-patrick-kee-chuan-peng",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Presiden Komisaris",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-r9dyr0",
+     "before": null,
+     "after": {
+      "source": "e-shivaganesh-kuppusamy",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-viptd2",
+     "before": null,
+     "after": {
+      "source": "e-thomas-thomas",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Presiden Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-88civu",
+     "before": null,
+     "after": {
+      "source": "e-goh-keng-ee",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-bqauhu",
+     "before": null,
+     "after": {
+      "source": "e-apputhasamy-rathnam",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskugej-k0knqo",
+     "before": null,
+     "after": {
+      "source": "e-chong-choong-khim",
+      "target": "e-pt-adei-plantation-industry",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adei Plantation & Industry.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043146378,
+      "updatedAt": 1791043146378
      }
     }
    ]
