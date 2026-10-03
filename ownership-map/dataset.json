@@ -1346,12 +1346,12 @@
    "updatedAt": 1790961478929
   },
   "e-yudiana": {
-   "name": "YUDIANA",
+   "name": "Yudiana",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020652533
   },
   "e-yulius-oetomo": {
    "name": "Yulius Oetomo",
@@ -7285,71 +7285,6 @@
   }
  },
  "versions": {
-  "v-mur8fw86-p8ia": {
-   "at": 1790961845478,
-   "batch": "v-mur8fw86-p8ia",
-   "summary": "Removed Tan Agustinus from the group Kaltim: 1 relationship",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0203",
-     "before": {
-      "source": "e-tan-agustinus",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961763320
-     },
-     "after": {
-      "source": "e-tan-agustinus",
-      "target": "e-pt-wana-kaltim-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-08",
-      "status": null,
-      "seen": [
-       "2023-10",
-       "2024-08"
-      ],
-      "groups": [
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961845466
-     }
-    }
-   ]
-  },
   "v-mur8fy2f-psty": {
    "at": 1790961847863,
    "batch": "v-mur8fy2f-psty",
@@ -8036,6 +7971,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1790962561826
+     }
+    }
+   ]
+  },
+  "v-mus7gc1i-uoee": {
+   "at": 1791020652534,
+   "batch": "v-mus7gc1i-uoee",
+   "summary": "Renamed YUDIANA to Yudiana",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-yudiana",
+     "before": {
+      "name": "YUDIANA",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Yudiana",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020652533
      }
     }
    ]
