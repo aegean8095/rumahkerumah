@@ -971,7 +971,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025799760,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-seroja-universum-narwastu": {
    "name": "PT Seroja Universum Narwastu",
@@ -6540,9 +6543,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6551,7 +6552,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0210": {
    "source": "e-djohan-tobing",
@@ -6565,9 +6566,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6576,7 +6575,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0211": {
    "source": "e-maya-zulfani",
@@ -6590,9 +6589,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6601,7 +6598,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0212": {
    "source": "e-muhammad-saleh-selamat",
@@ -6615,9 +6612,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6626,7 +6621,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0213": {
    "source": "e-sik-rommy-wongso",
@@ -6640,9 +6635,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6651,7 +6644,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0214": {
    "source": "e-sik-rudy-wongso",
@@ -6665,9 +6658,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6676,7 +6667,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0215": {
    "source": "e-sik-ronny-wongso",
@@ -6690,9 +6681,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6701,7 +6690,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0216": {
    "source": "e-jono-istiyono",
@@ -6715,9 +6704,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6726,7 +6713,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0217": {
    "source": "e-herta-par",
@@ -6740,9 +6727,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6751,7 +6736,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0218": {
    "source": "e-pt-inhutani",
@@ -6765,9 +6750,7 @@
     "2024-08",
     "2024-11"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -6776,7 +6759,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025801508
   },
   "l-0219": {
    "source": "e-ahmad-syaiful",
@@ -7287,676 +7270,6 @@
   }
  },
  "versions": {
-  "v-musa8jew-xg3d": {
-   "at": 1791025327688,
-   "batch": "v-musa8jew-xg3d",
-   "summary": "Added PT Oceanias Timber Products and its corporate group to the group Salim Group: 12 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 12,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0134",
-     "before": {
-      "source": "e-katharina-seraphina",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-katharina-seraphina",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0135",
-     "before": {
-      "source": "e-edward-saputera",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-edward-saputera",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0136",
-     "before": {
-      "source": "e-teddy-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-teddy-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0137",
-     "before": {
-      "source": "e-sudarmo-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-sudarmo-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0138",
-     "before": {
-      "source": "e-winny-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-winny-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0139",
-     "before": {
-      "source": "e-janti-tutty-sujarti",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-janti-tutty-sujarti",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0140",
-     "before": {
-      "source": "e-kustinah",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-kustinah",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0141",
-     "before": {
-      "source": "e-johannes-lembong",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-johannes-lembong",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0142",
-     "before": {
-      "source": "e-aylen-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-aylen-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0143",
-     "before": {
-      "source": "e-nathania-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-nathania-salim",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0144",
-     "before": {
-      "source": "e-pt-hutan-tiara-lestari",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": 47,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-hutan-tiara-lestari",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": 47,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0145",
-     "before": {
-      "source": "e-pt-kendeka-jaya",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-kendeka-jaya",
-      "target": "e-pt-oceanias-timber-products",
-      "type": "ownership",
-      "value": null,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2024-03",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim",
-       "Salim Group"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025327669
-     }
-    }
-   ]
-  },
   "v-musa8ka4-g6ms": {
    "at": 1791025328812,
    "batch": "v-musa8ka4-g6ms",
@@ -9380,6 +8693,569 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025781920
+     }
+    }
+   ]
+  },
+  "v-musaino9-1gn6": {
+   "at": 1791025799769,
+   "batch": "v-musaino9-1gn6",
+   "summary": "Added the cluster Pulp and Paper: PT Segara Indochem",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-segara-indochem",
+     "before": {
+      "name": "PT Segara Indochem",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Segara Indochem",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025799760,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-musaip0q-9v9u": {
+   "at": 1791025801514,
+   "batch": "v-musaip0q-9v9u",
+   "summary": "Removed PT Segara Indochem from the group Kaltim: 10 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 10,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0209",
+     "before": {
+      "source": "e-rahardjo-benyamin",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-rahardjo-benyamin",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0210",
+     "before": {
+      "source": "e-djohan-tobing",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-djohan-tobing",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0211",
+     "before": {
+      "source": "e-maya-zulfani",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-maya-zulfani",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0212",
+     "before": {
+      "source": "e-muhammad-saleh-selamat",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-muhammad-saleh-selamat",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0213",
+     "before": {
+      "source": "e-sik-rommy-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 13,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-sik-rommy-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 13,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0214",
+     "before": {
+      "source": "e-sik-rudy-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 13,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-sik-rudy-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 13,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0215",
+     "before": {
+      "source": "e-sik-ronny-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-sik-ronny-wongso",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0216",
+     "before": {
+      "source": "e-jono-istiyono",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-jono-istiyono",
+      "target": "e-pt-segara-indochem",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0217",
+     "before": {
+      "source": "e-herta-par",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-herta-par",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0218",
+     "before": {
+      "source": "e-pt-inhutani",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 20,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-inhutani",
+      "target": "e-pt-segara-indochem",
+      "type": "ownership",
+      "value": 20,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025801508
      }
     }
    ]
