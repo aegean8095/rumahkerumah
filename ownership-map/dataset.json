@@ -1707,6 +1707,54 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-bakti-persada-alam": {
+   "name": "PT Bakti Persada Alam",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "e-pt-acacia-andalan-utama": {
+   "name": "PT Acacia Andalan Utama",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "e-pt-rimba-persada-hijau": {
+   "name": "PT Rimba Persada Hijau",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "e-supriyadi": {
+   "name": "Supriyadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "e-wilibrudus-budi-artanto": {
+   "name": "Wilibrudus Budi Artanto",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "e-edwin-tjandra": {
+   "name": "Edwin Tjandra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
   }
  },
  "links": {
@@ -8253,42 +8301,109 @@
    "note": "",
    "createdAt": 1791027119945,
    "updatedAt": 1791027119945
+  },
+  "l-muscnngo-817vqd": {
+   "source": "e-pt-bakti-persada-alam",
+   "target": "e-pt-acacia-andalan-utama",
+   "type": "ownership",
+   "value": 90,
+   "role": null,
+   "date": null,
+   "status": null,
+   "seen": [],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+     "date": null
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "l-muscnngo-mlsu1n": {
+   "source": "e-pt-rimba-persada-hijau",
+   "target": "e-pt-acacia-andalan-utama",
+   "type": "ownership",
+   "value": 10,
+   "role": null,
+   "date": null,
+   "status": null,
+   "seen": [],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+     "date": null
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "l-muscnngo-ax9ucb": {
+   "source": "e-supriyadi",
+   "target": "e-pt-acacia-andalan-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": null,
+   "status": null,
+   "seen": [],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+     "date": null
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "l-muscnngo-4pmpld": {
+   "source": "e-wilibrudus-budi-artanto",
+   "target": "e-pt-acacia-andalan-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": null,
+   "status": null,
+   "seen": [],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+     "date": null
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
+  },
+  "l-muscnngo-ettml0": {
+   "source": "e-edwin-tjandra",
+   "target": "e-pt-acacia-andalan-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": null,
+   "status": null,
+   "seen": [],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+     "date": null
+    }
+   ],
+   "note": "",
+   "createdAt": 1791029392008,
+   "updatedAt": 1791029392008
   }
  },
  "versions": {
-  "v-musakqhu-kiii": {
-   "at": 1791025896738,
-   "batch": "v-musakqhu-kiii",
-   "summary": "Added the cluster Pulp and Paper: PT Adindo Hutani Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-adindo-hutani-lestari",
-     "before": {
-      "name": "PT Adindo Hutani Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Adindo Hutani Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025896735,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-musakrm8-4lu3": {
    "at": 1791025898192,
    "batch": "v-musakrm8-4lu3",
@@ -9861,6 +9976,219 @@
       "note": "",
       "createdAt": 1791026886145,
       "updatedAt": 1791027575625
+     }
+    }
+   ]
+  },
+  "v-muscnnhm-iz5c": {
+   "at": 1791029392042,
+   "batch": "v-muscnnhm-iz5c",
+   "summary": "Added 5 rows from Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 11,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-bakti-persada-alam",
+     "before": null,
+     "after": {
+      "name": "PT Bakti Persada Alam",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-acacia-andalan-utama",
+     "before": null,
+     "after": {
+      "name": "PT Acacia Andalan Utama",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-rimba-persada-hijau",
+     "before": null,
+     "after": {
+      "name": "PT Rimba Persada Hijau",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-supriyadi",
+     "before": null,
+     "after": {
+      "name": "Supriyadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-wilibrudus-budi-artanto",
+     "before": null,
+     "after": {
+      "name": "Wilibrudus Budi Artanto",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-edwin-tjandra",
+     "before": null,
+     "after": {
+      "name": "Edwin Tjandra",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscnngo-817vqd",
+     "before": null,
+     "after": {
+      "source": "e-pt-bakti-persada-alam",
+      "target": "e-pt-acacia-andalan-utama",
+      "type": "ownership",
+      "value": 90,
+      "role": null,
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscnngo-mlsu1n",
+     "before": null,
+     "after": {
+      "source": "e-pt-rimba-persada-hijau",
+      "target": "e-pt-acacia-andalan-utama",
+      "type": "ownership",
+      "value": 10,
+      "role": null,
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscnngo-ax9ucb",
+     "before": null,
+     "after": {
+      "source": "e-supriyadi",
+      "target": "e-pt-acacia-andalan-utama",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscnngo-4pmpld",
+     "before": null,
+     "after": {
+      "source": "e-wilibrudus-budi-artanto",
+      "target": "e-pt-acacia-andalan-utama",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muscnngo-ettml0",
+     "before": null,
+     "after": {
+      "source": "e-edwin-tjandra",
+      "target": "e-pt-acacia-andalan-utama",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": null,
+      "status": null,
+      "seen": [],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. n.d. “PT Acacia Andalan Utama.” Corporate profile.",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1791029392008,
+      "updatedAt": 1791029392008
      }
     }
    ]
