@@ -249,7 +249,7 @@
           method: 'POST', signal: opts.signal,
           headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
           body: JSON.stringify({
-            model: AI_MODEL, temperature: 0, max_tokens: 4096,
+            model: AI_MODEL, temperature: 0, max_tokens: 8192,   // the deepseek-chat maximum: a full profile with every deed is long
             response_format: { type: 'json_object' },
             messages: [
               { role: 'system', content: 'You extract structured data from documents and answer only with one valid JSON object.' },
@@ -269,6 +269,7 @@
       var body = await res.json();
       var text = body && body.choices && body.choices[0] && body.choices[0].message && body.choices[0].message.content;
       if (!text) throw { code: 'empty_completion' };
+      if (body.choices[0].finish_reason === 'length') throw { code: 'output_too_long' };
       try { return parseJsonLoose(text); } catch (e){ throw { code: 'invalid_json' }; }
     }
   };

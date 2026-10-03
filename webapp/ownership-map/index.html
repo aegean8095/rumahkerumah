@@ -619,6 +619,13 @@
   .rv-status.change{ color: #9a5316; font-weight: 500; }
   .rv-computed{ display: block; font-size: 10.5px; color: var(--ink-400); margin-top: 2px; }
   .rv-del{ appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-400); width: 24px; height: 24px; border-radius: 50%; }
+  .rv-chrono{ border-radius: var(--r-md); background: var(--bg); padding: 10px 14px; font-size: 12.5px; }
+  .rv-chrono summary{ cursor: pointer; font-weight: 600; color: var(--ink-900); }
+  .rv-chrono ol{ margin: 8px 0 6px; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+  .rv-chrono li{ display: grid; grid-template-columns: 74px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; }
+  .rv-c-date{ font-variant-numeric: tabular-nums; color: var(--ink-600); }
+  .rv-c-what{ font-size: 11.5px; color: var(--ink-400); white-space: nowrap; }
+  .rv-chrono p{ margin: 0; font-size: 11.5px; color: var(--ink-400); }
   .rv-term{ white-space: nowrap; }
   .rv-term span{ margin: 0 4px; color: var(--ink-400); }
   .rv-table input.tm{ width: 78px; font-variant-numeric: tabular-nums; }
@@ -4863,6 +4870,7 @@
           date: null, status: l.explicitStatus || null };
         if (l.start) data.start = l.start;
         if (l.end) data.end = l.end;
+        const addCites = list => { list.citations = list.citations || []; (l.cites || []).forEach(c => { if (c && c.text && !list.citations.some(x => x.text === c.text && (x.date || null) === (c.date || null))) list.citations.push({ text: c.text, date: c.date || null }); }); };
         setSeen(data, (l.seen || []).map(dateKeyStr));
         const k = linkKey(data);
         let id = byKey.get(k);
@@ -4879,6 +4887,7 @@
           setSeen(cur, seenOf(cur).concat(data.seen));
           if (group && !cur.groups.includes(group)) cur.groups.push(group);
           if (citation && !cur.citations.some(c => c.text === citation.text && (c.date || null) === citation.date)) cur.citations.push(Object.assign({}, citation));
+          addCites(cur);
           working.set(id, cur);
           if (master.links.has(id)) matched++;
           return;
@@ -4886,6 +4895,7 @@
         id = newLinkId();
         byKey.set(k, id);
         working.set(id, Object.assign(data, { groups: group ? [group] : [], citations: citation ? [Object.assign({}, citation)] : [], note: '', createdAt: now }));
+        addCites(working.get(id));
         added++;
       });
       if (cluster) describedIds.forEach(eid => {
@@ -5909,6 +5919,10 @@
     ' "shareholders": [{"name": "PT Holding Example", "kind": "company", "shares": 9500, "percent": 95, "percent_computed": true, "since": "2019-02", "until": null, "status": "current", "country": "Indonesia", "address": null, "ids": [{"kind": "NPWP (tax no.)", "number": "02.345.678.9-012.000"}]}],',
     ' "board": [{"name": "Budi Santoso", "role": "Direktur Utama", "since": "2021-06", "until": "2026-06", "status": "current", "country": "Indonesia", "address": "Jl. Melati 5, Bandung", "ids": [{"kind": "KTP / NIK", "number": "3273010101800001"}]},',
     '           {"name": "Andi Wijaya", "role": "Direktur", "since": "2016-03", "until": "2021-06", "status": "former", "country": null, "address": null, "ids": []}],',
+    ' "deeds": [{"number": "5", "date": "2016-03-10", "notary": "Siti Rahma, S.H., M.Kn.", "kind": "Akta Pendirian", "approval": "AHU-0012345.AH.01.01.Tahun 2016",',
+    '            "shareholders": [{"name": "PT Holding Example", "percent": 60}, {"name": "Andi Wijaya", "percent": 40}], "board": [{"name": "Andi Wijaya", "role": "Direktur"}]},',
+    '           {"number": "12", "date": "2021-06-15", "notary": "Siti Rahma, S.H., M.Kn.", "kind": "Perubahan Direksi", "approval": null,',
+    '            "shareholders": null, "board": [{"name": "Budi Santoso", "role": "Direktur Utama"}]}],',
     ' "warnings": ["The second page is partly unreadable."]}',
     '',
     'Rules:',
@@ -5921,6 +5935,11 @@
     '- If the document covers more than one company, extract only the main company and say so in warnings.',
     '- warnings: anything unreadable, uncertain or inconsistent, such as stakes that do not add up to 100%. Use an empty list when there is nothing to report.',
     '- If no shareholders or board can be found, return empty lists and explain why in warnings.',
+    '- deeds: every deed (akta) the document records, oldest first: the deed of establishment (pendirian) and each amendment (perubahan), with its number, date (YYYY-MM-DD, or as precise as written), notary, what it was about (kind) and the ministry approval or notification number (approval) if given.',
+    '  For each deed, shareholders and board are the complete composition in force right after that deed, as the document shows it. If a deed changed only some people, carry the unchanged ones over from the deed before so each list is complete.',
+    '  Use null for shareholders or board when the document gives no composition for that deed (the deed did not concern it). In deeds give only name and percent (shareholders) or name and role (board); put country, address and ids in the top-level lists.',
+    '  A short document about a single deed has one entry in deeds. A full profile (profil lengkap, riwayat) has one entry per deed, so the whole chronology is kept.',
+    '- shareholders and board (top level): everyone who appears anywhere in the document, the latest composition and also earlier ones, each with country / address / ids when stated.',
     '- Timeline: give every shareholder and board member "since", "until" and "status".',
     '  since: when the person took office or the holder acquired the shares (appointment date, "mulai menjabat", the date of the deed or of the share transfer), as YYYY-MM, or YYYY if only the year is given; null when not stated.',
     '  until: when the term ends or ended ("masa jabatan berakhir", "sampai dengan", resignation, or the date the shares were transferred away), same format; null when not stated. A term end in the future is still given.',
@@ -5979,6 +5998,7 @@
     no_key: 'No DeepSeek API key was entered, so the document was not read.',
     bad_key: 'DeepSeek rejected the API key. It was removed from this browser; choose Try again to enter it again.',
     insufficient_balance: 'The DeepSeek account has no balance left. Top it up, then try again.',
+    output_too_long: 'The document holds more deeds and people than can be read in one go. Upload it in parts (for example the pages of a few deeds at a time); each part adds to the timeline.',
   };
 
   async function pdfToInput(file, sample, signal){
@@ -5998,7 +6018,7 @@
       text += '\n--- Page ' + i + ' ---\n' + pageText.replace(/[ \t]+\n/g, '\n').replace(/[ \t]{2,}/g, ' ');
     }
     // A real text layer: send the text. Otherwise a scan: send page images.
-    if (chars >= 120 * pages) return { mode: 'text', text: text.slice(0, 45000), pages, truncated: text.length > 45000 };
+    if (chars >= 120 * pages) return { mode: 'text', text: text.slice(0, 90000), pages, truncated: text.length > 90000 };
     const caps = await sample.limits().catch(() => null);
     if (!caps || !caps.images) throw { code: 'images_unavailable' };
     const maxPages = Math.min(doc.numPages, caps.images.maxCount || 5);
@@ -6097,6 +6117,46 @@
     return { since, until, state: (x && x.status === 'former') || ended ? 'former' : 'current' };
   };
   const profOf = x => ({ country: String((x && x.country) || '').trim(), address: String((x && x.address) || '').replace(/\s+/g, ' ').trim(), ids: idsText(x && x.ids) });
+  // ---- Chronology from deeds: each deed gives the composition after it; a run of deeds that list the
+  // same person with the same stake or role is one relationship, from the first of those deeds until
+  // the deed that no longer lists them (former) or still in place in the latest deed (current).
+  const deedRef = d => ['Akta' + (d.number ? ' No. ' + d.number : ''), d.dateText ? 'tanggal ' + d.dateText : '', d.notary ? 'Notaris ' + d.notary : '', d.kind || ''].filter(Boolean).join(', ') +
+    (d.approval ? ' (' + d.approval + ')' : '');
+  function chronology(deeds, docDate){
+    const ds = deeds.filter(d => d && typeof d === 'object').map((d, i) => ({
+      i, date: monthTok(d.date), dateText: String(d.date || '').trim(), number: String(d.number || '').trim(), notary: String(d.notary || '').trim(),
+      kind: String(d.kind || '').trim(), approval: String(d.approval || '').trim(),
+      sh: Array.isArray(d.shareholders) ? d.shareholders.filter(x => x && x.name) : null,
+      bd: Array.isArray(d.board) ? d.board.filter(x => x && x.name) : null,
+    }));
+    const k = d => d.date ? dateSortKey(parseDateToken(d.date)) : Infinity;
+    ds.sort((a, b) => (k(a) - k(b)) || (a.i - b.i));
+    const runsOf = (section, keyOf) => {
+      const active = new Map(), done = [];
+      let last = null;
+      ds.forEach(d => {
+        let list = d[section], carried = false;
+        if (!list){ if (!last) return; list = last; carried = true; }
+        last = list;
+        const here = new Set();
+        list.forEach(x => {
+          const key = keyOf(x); if (here.has(key)) return; here.add(key);
+          const run = active.get(key);
+          if (run){ run.item = x; if (!carried) run.deeds.push(d); }
+          else active.set(key, { item: x, first: d, deeds: carried ? [] : [d] });
+        });
+        active.forEach((run, key) => { if (!here.has(key)){ run.endDeed = d; done.push(run); active.delete(key); } });
+      });
+      active.forEach(run => done.push(run));
+      return done;
+    };
+    const who = x => looseKey(tidyName(x.name));
+    return {
+      deeds: ds,
+      sh: runsOf('sh', x => who(x) + '|' + (num(x.percent) == null ? '' : num(x.percent))),
+      bd: runsOf('bd', x => who(x) + '|' + canonRole(tidyRole(x.role) || 'Director/Commissioner').toLowerCase()),
+    };
+  }
   function startReview(out, input, label){
     const o = out && typeof out === 'object' ? out : {};
     const company = tidyName(o.company || '');
@@ -6122,6 +6182,42 @@
       board: (Array.isArray(o.board) ? o.board : []).filter(x => x && x.name).map(x => Object.assign({ on: true, name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) }, termOf(x, docDate), profOf(x))),
       warnings: (Array.isArray(o.warnings) ? o.warnings : []).map(String).filter(Boolean),
     };
+    // A document with deeds: the rows come from the chronology, with the profile details of the top-level lists.
+    const deeds = Array.isArray(o.deeds) ? o.deeds : [];
+    if (deeds.length){
+      const ch = chronology(deeds, docDate);
+      const details = new Map();
+      [].concat(Array.isArray(o.shareholders) ? o.shareholders : [], Array.isArray(o.board) ? o.board : []).forEach(x => {
+        if (!x || !x.name) return;
+        const key = looseKey(tidyName(x.name)), p = profOf(x), cur = details.get(key);
+        if (!cur){ details.set(key, Object.assign({ kind: x.kind, since: monthTok(x.since), until: monthTok(x.until) }, p)); return; }
+        cur.country = cur.country || p.country; cur.address = cur.address || p.address;
+        cur.ids = [cur.ids, p.ids].filter(Boolean).join('; '); cur.kind = cur.kind || x.kind;
+      });
+      const latest = ch.deeds.length ? ch.deeds[ch.deeds.length - 1].date : '';
+      const fromRun = (run, extra) => {
+        const d = details.get(looseKey(tidyName(run.item.name))) || {};
+        const former = !!run.endDeed;
+        const seenDates = run.deeds.map(x => x.date).filter(Boolean);
+        return Object.assign(extra(run.item, d), {
+          // the first deed of the document is the earliest evidence, not necessarily the start: a stated date wins there
+          // one deed only: it shows who was in place, not when they started, so a stated date is used (or none)
+          on: true, since: ch.deeds.length === 1 ? (d.since || '') : (run.first === ch.deeds[0] && d.since ? d.since : (run.first.date || '')), until: former ? (run.endDeed.date || '') : (d.until || ''), state: former ? 'former' : 'current',
+          seenDates, deeds: run.deeds.map(deedRef), cites: run.deeds.map(x => ({ text: deedRef(x), date: x.date || null })),
+          country: d.country || '', address: d.address || '', ids: d.ids || '',
+        });
+      };
+      review.shareholders = ch.sh.map(run => fromRun(run, (x, d) => {
+        const kind = x.kind === 'person' || d.kind === 'person' ? 'person' : (x.kind === 'company' || d.kind === 'company' ? 'company' : inferType(tidyName(x.name)));
+        return { name: kind === 'person' ? tidyPerson(tidyName(x.name)) : tidyName(x.name), kind, percent: num(x.percent), computed: !!x.percent_computed };
+      }));
+      review.board = ch.bd.map(run => fromRun(run, x => ({ name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) })));
+      // current rows first, then former, each oldest first
+      const order = (a, b) => (a.state === 'former') - (b.state === 'former') || String(a.since).localeCompare(String(b.since));
+      review.shareholders.sort(order); review.board.sort(order);
+      review.chronology = ch.deeds.map(d => ({ ref: deedRef(d), date: d.date, sh: !!d.sh, bd: !!d.bd }));
+      if (!review.date && latest) review.date = latest;
+    }
     if (input.truncated) review.warnings.push('The PDF was long; only its first part was read.');
     if (input.skipped > 0) review.warnings.push('Only the first ' + (input.pages - input.skipped) + ' of ' + input.pages + ' pages were read.');
     renderReview();
@@ -6137,7 +6233,8 @@
       '<label class="ids">ID numbers<input class="well" data-f="ids" value="' + escapeHtml(x.ids || '') + '" placeholder="e.g. KTP / NIK: 3201…; NPWP (tax no.): 01.234…"></label>' +
       '</div><p class="rv-was" data-was></p></td></tr>';
   }
-  const moreBtn = x => hasProf(x) ? '' : '<button type="button" class="link-btn rv-more" data-more>' + (x.open ? 'Hide details' : 'Address, country, ID…') + '</button>';
+  const moreBtn = x => (x.deeds && x.deeds.length ? '<span class="rv-computed" title="' + escapeHtml(x.deeds.join('\n')) + '">in ' + x.deeds.length + ' deed' + (x.deeds.length === 1 ? '' : 's') + '</span>' : '') +
+    (hasProf(x) ? '' : '<button type="button" class="link-btn rv-more" data-more>' + (x.open ? 'Hide details' : 'Address, country, ID…') + '</button>');
   function renderReview(focusSel){
     if (!review) return;
     const r = review;
@@ -6173,6 +6270,11 @@
       '</div>' +
       '<datalist id="rvCountries">' + ['Indonesia', 'Singapore', 'Malaysia', 'Hong Kong', 'China', 'Japan', 'South Korea', 'Netherlands', 'United Kingdom', 'British Virgin Islands', 'Cayman Islands', 'Mauritius', 'Seychelles', 'Samoa', 'Labuan', 'Australia', 'United States'].map(c => '<option value="' + c + '">').join('') + '</datalist>' +
       (r.warnings.length ? '<ul class="rv-warn">' + r.warnings.map(w => '<li>' + escapeHtml(w) + '</li>').join('') + '</ul>' : '') +
+      (r.chronology && r.chronology.length ? '<details class="rv-chrono"' + (r.chronology.length > 1 ? ' open' : '') + '><summary>Chronology from ' + r.chronology.length + ' deed' + (r.chronology.length === 1 ? '' : 's') +
+        (r.chronology.length > 1 && r.chronology[0].date ? ', ' + escapeHtml(fmtMonth(r.chronology[0].date)) + ' – ' + escapeHtml(fmtMonth(r.chronology[r.chronology.length - 1].date || r.chronology[0].date)) : '') + '</summary><ol>' +
+        r.chronology.map(d => '<li><span class="rv-c-date">' + escapeHtml(d.date ? fmtMonth(d.date) : 'no date') + '</span><span>' + escapeHtml(d.ref) + '</span><span class="rv-c-what">' +
+          [d.sh ? 'shareholders' : '', d.bd ? 'board' : ''].filter(Boolean).join(' · ') + '</span></li>').join('') + '</ol>' +
+        '<p>Each row below runs from the first deed that lists it to the deed that no longer does. Each deed is added as a source of the rows it lists.</p></details>' : '') +
       '<section class="rv-section"><h3>Shareholders <span>' + r.shareholders.length + ' found</span></h3>' +
         '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">%</th><th scope="col">Held from – until</th><th scope="col">Now</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
         (shRows || '<tr><td colspan="8" class="rv-status">None found.</td></tr>') + '</tbody></table></div>' +
@@ -6354,11 +6456,20 @@
     const addTimeline = (n, type, what, x) => {
       const since = parseDateToken(monthTok(x.since)) ? monthTok(x.since) : '', until = parseDateToken(monthTok(x.until)) ? monthTok(x.until) : '';
       const former = x.state === 'former';
-      const seen = [];
+      const seen = (x.seenDates || []).filter(v => parseDateToken(v));
       if (since) seen.push(since);
       if (former){ if (until) seen.push(until); else if (!since && date) seen.push(date); }
       else { if (date) seen.push(date); if (until && dateSortKey(parseDateToken(until)) <= docKey) seen.push(until); }
-      timeline.set(nameKey(normalizeName(n, false)) + '|' + type + '|' + what, { seen, former, start: since || null, end: until || null });
+      const tk = nameKey(normalizeName(n, false)) + '|' + type + '|' + what, prev = timeline.get(tk);
+      const cur = { seen, former, start: since || null, end: until || null, cites: x.cites || [] };
+      if (prev){   // the same stake or role held twice: one relationship, all its dates and sources
+        const key = v => v ? dateSortKey(parseDateToken(v)) : Infinity;
+        cur.seen = prev.seen.concat(seen); cur.cites = prev.cites.concat(cur.cites);
+        cur.former = prev.former && former;
+        cur.start = key(prev.start) <= key(cur.start) ? prev.start : cur.start;
+        cur.end = cur.former ? [prev.end, cur.end].filter(Boolean).sort((a, b) => key(a) - key(b)).pop() || null : (former ? prev.end : cur.end);
+      }
+      timeline.set(tk, cur);
     };
     const addProfile = (n, x) => {
       const p = { country: String(x.country || '').trim(), address: String(x.address || '').trim(), ids: parseIds(x.ids) };
@@ -6394,7 +6505,7 @@
       l.seen = t.seen.map(parseDateToken).filter(Boolean);
       l.date = l.seen.length ? l.seen[l.seen.length - 1] : null;
       l.explicitStatus = t.former ? 'previous' : null; l.status = l.explicitStatus;
-      l.current = !t.former; l.start = t.start; l.end = t.end;
+      l.current = !t.former; l.start = t.start; l.end = t.end; l.cites = t.cites;
     });
     const btn = document.getElementById('rvApprove');
     if (btn){ btn.disabled = true; btn.textContent = 'Adding…'; }

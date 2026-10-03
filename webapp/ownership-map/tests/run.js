@@ -86,7 +86,7 @@ function fakeDeepSeek(log){
     if (q.method() === 'OPTIONS') return r.fulfill({ status: 204, headers: cors });
     log.push({ auth: q.headers().authorization, body: JSON.parse(q.postData()) });
     r.fulfill({ status: 200, contentType: 'application/json', headers: cors,
-      body: JSON.stringify({ choices: [{ message: { content: JSON.stringify(DS_ANSWER) } }], usage: { prompt_tokens: 1, completion_tokens: 1 } }) });
+      body: JSON.stringify({ choices: [{ message: { content: JSON.stringify(log.answer || DS_ANSWER) } }], usage: { prompt_tokens: 1, completion_tokens: 1 } }) });
   };
 }
 
@@ -918,6 +918,52 @@ const tests = {
     await p.evaluate(() => window.OwnershipMapTabs.show('map')); await sleep(500);
     await p.click('#connectBtn').catch(() => {}); await sleep(400); await shot('connect');
     await p.keyboard.press('Escape'); await p.click('#asofBtn').catch(() => {}); await sleep(400); await shot('asof');
+  },
+  async 'pdf: full profile with several deeds becomes a timeline per stake and role'(){
+    const gh = fakeGitHub(); gh.set(SEED); const ds = [];
+    ds.answer = { company: 'PT Kronologi Uji', document: 'Profil Perusahaan Lengkap (AHU)', document_date: '2024-02', company_profile: { country: 'Indonesia', address: null, ids: [] },
+      shareholders: [{ name: 'PT Induk Kronologi', kind: 'company', ids: [{ kind: 'NPWP', number: '01.111.111.1-111.000' }] }, { name: 'Bambang Uji', kind: 'person' }],
+      board: [{ name: 'Bambang Uji', role: 'Direktur' }, { name: 'Citra Uji', role: 'Komisaris', until: '2027-01' }, { name: 'Dodi Uji', role: 'Direktur Utama' }],
+      deeds: [
+        { number: '1', date: '2010-05-03', notary: 'Ani, S.H.', kind: 'Akta Pendirian', shareholders: [{ name: 'PT Induk Kronologi', percent: 60 }, { name: 'Bambang Uji', percent: 40 }], board: [{ name: 'Bambang Uji', role: 'Direktur' }, { name: 'Citra Uji', role: 'Komisaris' }] },
+        { number: '20', date: '2020-11-09', notary: 'Ani, S.H.', kind: 'Jual Beli Saham', shareholders: [{ name: 'PT Induk Kronologi', percent: 100 }], board: null },
+        { number: '7', date: '2015-08-21', notary: 'Ani, S.H.', kind: 'Perubahan Direksi', shareholders: null, board: [{ name: 'DODI UJI', role: 'Direktur Utama' }, { name: 'Citra Uji', role: 'Komisaris' }] } ],
+      warnings: [] };
+    const { ctx } = await context({ gh, ds });
+    const maker = await ctx.newPage();
+    await maker.setContent('<h1>Profil Perusahaan Lengkap</h1><p>' + 'PT Kronologi Uji. Akta pendirian, perubahan direksi, jual beli saham. '.repeat(12) + '</p>');
+    const pdf = path.join(require('os').tmpdir(), 'om-test-deeds-' + Date.now() + '.pdf'); await maker.pdf({ path: pdf }); await maker.close();
+    const p = await open(ctx, d => d.accept('sk-test-key'));
+    await p.setInputFiles('#pdfInput', pdf);
+    await p.waitForFunction(() => /Chronology from 3 deeds/.test((document.querySelector('.review-sheet') || {}).innerText || ''), null, { timeout: 40000 });
+    ok(/"deeds"/.test(ds[0].body.messages[1].content) && /complete composition in force right after that deed/.test(ds[0].body.messages[1].content), 'prompt asks for every deed');
+    eq(ds[0].body.max_tokens, 8192, 'room for a long answer');
+    const rows = await p.$$eval('tr[data-k]:not(.rv-sub)', trs => trs.map(tr => [tr.dataset.k, tr.querySelector('[data-f="name"]').value,
+      (tr.querySelector('[data-f="percent"]') || tr.querySelector('[data-f="role"]')).value, tr.querySelector('[data-f="since"]').value, tr.querySelector('[data-f="until"]').value, tr.querySelector('[data-f="state"]').value]));
+    eq(rows, [
+      ['sh', 'PT Induk Kronologi', '100', '2020-11', '', 'current'],
+      ['sh', 'PT Induk Kronologi', '60', '2010-05', '2020-11', 'former'],
+      ['sh', 'Bambang Uji', '40', '2010-05', '2020-11', 'former'],
+      ['bd', 'Citra Uji', 'Komisaris', '2010-05', '2027-01', 'current'],
+      ['bd', 'Dodi Uji', 'Direktur Utama', '2015-08', '', 'current'],
+      ['bd', 'Bambang Uji', 'Direktur', '2010-05', '2015-08', 'former'] ], 'one row per stake or role run, dated by its deeds (deeds sorted, names matched across spellings)');
+    ok(/Current stakes add up to 100%/.test(await p.textContent('#rvSum')), 'only current stakes are added up');
+    if (process.env.SHOT2) await p.screenshot({ path: process.env.SHOT2 });
+    await p.click('#rvApprove'); await sleep(2500);
+    const got = await p.evaluate(() => { const E = [...OwnershipMap.master.entities], by = n => E.find(([, e]) => e.name === n)[0], co = by('PT Kronologi Uji');
+      const L = [...OwnershipMap.master.links.values()].filter(l => l.target === co);
+      const f = (n, test) => L.find(l => l.source === by(n) && test(l));
+      const pick = l => ({ seen: l.seen, status: l.status || null, start: l.start || null, end: l.end || null, cites: l.citations.map(c => /^Akta/.test(c.text) ? c.text.split(',')[0] : 'profile') });
+      const g = l => OwnershipMap.graph.links.find(x => x.id === [...OwnershipMap.master.links].find(([, v]) => v === l)[0]).status;
+      const a100 = f('PT Induk Kronologi', l => l.value === 100), a60 = f('PT Induk Kronologi', l => l.value === 60), cit = f('Citra Uji', l => l.type === 'directorship'), bam = f('Bambang Uji', l => l.type === 'directorship');
+      return { a100: pick(a100), a60: pick(a60), cit: pick(cit), bam: pick(bam), st: [g(a100), g(a60), g(cit), g(bam)], npwp: (E.find(([, e]) => e.name === 'PT Induk Kronologi')[1].identities || []).length }; });
+    eq(got.a100, { seen: ['2020-11', '2024-02'], status: null, start: '2020-11', end: null, cites: ['profile', 'Akta No. 20'] }, 'current stake: from its deed, seen in the latest document');
+    eq(got.a60, { seen: ['2010-05', '2020-11'], status: 'previous', start: '2010-05', end: '2020-11', cites: ['profile', 'Akta No. 1'] }, 'former stake: until the deed that replaced it');
+    eq(got.cit, { seen: ['2010-05', '2015-08', '2024-02'], status: null, start: '2010-05', end: '2027-01', cites: ['profile', 'Akta No. 1', 'Akta No. 7'] }, 'continuing role: every deed that lists it, term end kept');
+    eq(got.bam.status, 'previous', 'former director recorded as previous'); eq(got.bam.end, '2015-08', 'until the deed that changed the board');
+    eq(got.st, ['recent', 'previous', 'recent', 'previous'], 'map statuses follow the deeds');
+    eq(got.npwp, 1, 'profile details from the top-level lists kept');
+    eq(p.errors, [], 'page errors');
   },
 };
 

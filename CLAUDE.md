@@ -260,6 +260,15 @@ Working efficiently (token use):
 - Relationship detail shows Term (or Held) and the edit form has Term from / Until (end before start refused; start and a past end also become dates seen). Relationships table has a Term column
 - PDF test extended (term read, former row, recorded dates and statuses, term editing)
 
+### 2026-10-03 — Ownership Map: chronology from every deed (short and full profiles)
+
+- Two kinds of PDF: a short one about one deed, and a full profile (profil lengkap / riwayat) with every deed. `EXTRACT_PROMPT` now asks for `deeds` (oldest first: number, date, notary, kind, approval no.) each with the complete board and shareholder composition in force after it (unchanged people carried over; `null` when the deed has no composition for that part); top-level lists give everyone named, with profile details
+- `chronology()` (index.html, before `startReview`): deeds sorted by date; a `null` section carries the previous composition; a run of deeds listing the same person (matched with `looseKey`, so spellings across deeds join) with the same stake or role is one row: from its first deed until the deed that no longer lists it (Former) or still in place (Current, term end from the top-level list). A changed stake or role starts a new row. One-deed documents: start only from a stated date
+- Each row records every deed date as a date seen, plus the document date if current; every deed it appears in becomes a source (`Akta No. …, tanggal …, Notaris …, kind (approval)`) next to the profile reference. The same stake held twice is merged into one relationship
+- Review sheet: "Chronology from N deeds" list (date, deed, which parts it lists); rows show "in N deeds" (hover for the list); current rows first
+- DeepSeek: `max_tokens` 8192 (was 4096), text sent up to 90,000 characters (was 45,000); a cut-off answer now says to upload the document in parts instead of "could not be read"
+- New test `pdf: full profile with several deeds…` (3 deeds out of order, carried sections, a name in capitals in one deed, stake change 60/40 → 100, board change; rows, dates seen, statuses, sources)
+
 ---
 
 ## Notes
