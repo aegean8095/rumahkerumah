@@ -1,5 +1,13 @@
 {
  "entities": {
+  "e-adi-widjaja": {
+   "name": "Adi Widjaja",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "e-agoes-projosasmito": {
    "name": "Agoes Projosasmito",
    "type": "person",
@@ -272,6 +280,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-cinthya": {
+   "name": "Cinthya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "e-coaltrade-services-international-pte-ltd": {
    "name": "Coaltrade Services International Pte Ltd",
    "type": "company",
@@ -295,6 +311,14 @@
    "note": "",
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
+  },
+  "e-david-vence-turangan": {
+   "name": "David Vence Turangan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
   },
   "e-djohan-tobing": {
    "name": "Djohan Tobing",
@@ -376,6 +400,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-eka-dharmajanto-kasih": {
+   "name": "Eka Dharmajanto Kasih",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
   "e-enoch-ng": {
    "name": "Enoch Ng",
    "type": "person",
@@ -399,6 +431,14 @@
    "note": "",
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
+  },
+  "e-frank-wijaya": {
+   "name": "Frank Wijaya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
   },
   "e-frans-juli-santoso": {
    "name": "Frans Juli Santoso",
@@ -479,6 +519,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-hadi-ngadiman": {
+   "name": "Hadi Ngadiman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
   },
   "e-hari-sumitro": {
    "name": "Hari Sumitro",
@@ -608,6 +656,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-jajang-suherlan": {
+   "name": "Jajang Suherlan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
   "e-janti-tutty-sujarti": {
    "name": "Janti Tutty Sujarti",
    "type": "person",
@@ -679,6 +735,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-kirmadi": {
+   "name": "Kirmadi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   },
   "e-kl-kepong-plantation": {
    "name": "Kl-Kepong Plantation Sdn Bhd",
@@ -834,6 +898,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1791020961647
   },
+  "e-muliani-hendro": {
+   "name": "Muliani Hendro",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "e-mutanto-juwono": {
    "name": "Mutanto Juwono",
    "type": "person",
@@ -873,6 +945,14 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-parluhutan-sitohang": {
+   "name": "Parluhutan Sitohang",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
   },
   "e-patrick-kee-chuan-peng": {
    "name": "Patrick Kee Chuan Peng",
@@ -978,6 +1058,22 @@
    "createdAt": 1791043270817,
    "updatedAt": 1791043270817
   },
+  "e-pt-adimulia-agrolestari": {
+   "name": "PT Adimulia Agrolestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-pt-adimulia-palmo-lestari": {
+   "name": "PT Adimulia Palmo Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "e-pt-adindo-hutani-lestari": {
    "name": "PT Adindo Hutani Lestari",
    "type": "company",
@@ -988,6 +1084,22 @@
    "clusters": [
     "Pulp and Paper"
    ]
+  },
+  "e-pt-aek-tarum": {
+   "name": "PT Aek Tarum",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "e-pt-agam-sempurna": {
+   "name": "PT Agam Sempurna",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   },
   "e-pt-alam-tri-abadi": {
    "name": "PT Alam Tri Abadi",
@@ -1106,6 +1218,14 @@
    "clusters": [
     "Pulp and Paper"
    ]
+  },
+  "e-pt-bintang-utama-lestari": {
+   "name": "PT Bintang Utama Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   },
   "e-pt-borneo-foresta-industri": {
    "name": "PT Borneo Foresta Industri",
@@ -1470,6 +1590,14 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-sampoerna-agro-tbk": {
+   "name": "PT Sampoerna Agro Tbk",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
   "e-pt-sari-dumai-sejati": {
    "name": "PT Sari Dumai Sejati",
    "type": "company",
@@ -1497,6 +1625,14 @@
     "Pulp and Paper"
    ]
   },
+  "e-pt-selapan-permai-lestari": {
+   "name": "PT Selapan Permai Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
   "e-pt-seroja-universum-narwastu": {
    "name": "PT Seroja Universum Narwastu",
    "type": "company",
@@ -1518,6 +1654,14 @@
    "clusters": [
     "Pulp and Paper"
    ]
+  },
+  "e-pt-super-mitra-nusantara-abadi": {
+   "name": "PT Super Mitra Nusantara Abadi",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
   },
   "e-pt-swadaya-perkasa": {
    "name": "PT Swadaya Perkasa",
@@ -1822,6 +1966,14 @@
    "createdAt": 1791029392008,
    "updatedAt": 1791029392008
   },
+  "e-susan-wijaya": {
+   "name": "Susan Wijaya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "e-sutardi": {
    "name": "Sutardi",
    "type": "person",
@@ -2014,110 +2166,6 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
-  "e-pt-adimulia-agrolestari": {
-   "name": "PT Adimulia Agrolestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-pt-adimulia-palmo-lestari": {
-   "name": "PT Adimulia Palmo Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-adi-widjaja": {
-   "name": "Adi Widjaja",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-david-vence-turangan": {
-   "name": "David Vence Turangan",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-muliani-hendro": {
-   "name": "Muliani Hendro",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-hadi-ngadiman": {
-   "name": "Hadi Ngadiman",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-frank-wijaya": {
-   "name": "Frank Wijaya",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-susan-wijaya": {
-   "name": "Susan Wijaya",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-cinthya": {
-   "name": "Cinthya",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "e-pt-sampoerna-agro-tbk": {
-   "name": "PT Sampoerna Agro Tbk",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
-  "e-pt-aek-tarum": {
-   "name": "PT Aek Tarum",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
-  "e-pt-selapan-permai-lestari": {
-   "name": "PT Selapan Permai Lestari",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
-  "e-parluhutan-sitohang": {
-   "name": "Parluhutan Sitohang",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
   "e-zito-mulyabudhi-ubhakti": {
    "name": "Zito Mulyabudhi Ubhakti",
    "type": "person",
@@ -2126,53 +2174,127 @@
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
   },
-  "e-eka-dharmajanto-kasih": {
-   "name": "Eka Dharmajanto Kasih",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
-  "e-pt-bintang-utama-lestari": {
-   "name": "PT Bintang Utama Lestari",
+  "e-pt-bukit-muria-jaya-karton": {
+   "name": "PT Bukit Muria Jaya Karton",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "MENARA CITICON LT. 18, JL. LETJEND S PARMAN KAV 72",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-60517.AH.01.01.Tahun 2013"
+    }
+   ]
   },
-  "e-pt-agam-sempurna": {
-   "name": "PT Agam Sempurna",
+  "e-pt-agra-bareksa-indonesia": {
+   "name": "PT Agra Bareksa Indonesia",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-14217.AH.01.01.Tahun 2011"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-10884.AH.01.02.Tahun 2013"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.10-52739"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-01928.40.21.2014"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0003390.AH.01.02.Tahun 2015"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0013826"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0924809"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0964298"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0991656"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0031310"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0007528.AH.01.02.Tahun 2016"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0011261"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "03.093.653.8-031.000"
+    }
+   ]
   },
-  "e-pt-super-mitra-nusantara-abadi": {
-   "name": "PT Super Mitra Nusantara Abadi",
+  "e-pt-sapta-prima-persada": {
+   "name": "PT Sapta Prima Persada",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "JL. JENDRAL A.YANI NO 22 PANJUNAN"
   },
-  "e-jajang-suherlan": {
-   "name": "Jajang Suherlan",
+  "e-frankie-adrianov-justinus": {
+   "name": "Frankie Adrianov Justinus",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "TAMAN BRAWIJAYA JALAN GANDARIA NOMOR 3",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3603282811700005"
+    }
+   ]
   },
-  "e-kirmadi": {
-   "name": "Kirmadi",
+  "e-hendrik-suherman": {
+   "name": "Hendrik Suherman",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954,
+   "country": "Indonesia",
+   "address": "Jl. Buana Biru Besar Blok E1 /36",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3578312105620001"
+    }
+   ]
   }
  },
  "links": {
@@ -9480,28 +9602,6 @@
    "createdAt": 1791043270817,
    "updatedAt": 1791043270817
   },
-  "l-musl1lc9-i5dbrg": {
-   "source": "e-pt-adimulia-agrolestari",
-   "target": "e-pt-adimulia-palmo-lestari",
-   "type": "ownership",
-   "value": 99.97,
-   "role": null,
-   "date": "2018-04",
-   "status": null,
-   "seen": [
-    "2018-04"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-     "date": "2018-04"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
   "l-musl1lc9-03do9d": {
    "source": "e-adi-widjaja",
    "target": "e-pt-adimulia-palmo-lestari",
@@ -9524,96 +9624,8 @@
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
   },
-  "l-musl1lc9-xtf6ah": {
-   "source": "e-adi-widjaja",
-   "target": "e-pt-adimulia-palmo-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris Utama",
-   "date": "2018-04",
-   "status": null,
-   "seen": [
-    "2018-04"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-     "date": "2018-04"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "l-musl1lc9-gl28qr": {
-   "source": "e-david-vence-turangan",
-   "target": "e-pt-adimulia-palmo-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur Utama",
-   "date": "2018-04",
-   "status": null,
-   "seen": [
-    "2018-04"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-     "date": "2018-04"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "l-musl1lc9-s1jy8o": {
-   "source": "e-muliani-hendro",
-   "target": "e-pt-adimulia-palmo-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2018-04",
-   "status": null,
-   "seen": [
-    "2018-04"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-     "date": "2018-04"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
   "l-musl1lc9-b5160a": {
    "source": "e-hadi-ngadiman",
-   "target": "e-pt-adimulia-palmo-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2018-04",
-   "status": null,
-   "seen": [
-    "2018-04"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
-     "date": "2018-04"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043479369,
-   "updatedAt": 1791043479369
-  },
-  "l-musl1lc9-spm7ps": {
-   "source": "e-frank-wijaya",
    "target": "e-pt-adimulia-palmo-lestari",
    "type": "directorship",
    "value": null,
@@ -9656,6 +9668,94 @@
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
   },
+  "l-musl1lc9-gl28qr": {
+   "source": "e-david-vence-turangan",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-i5dbrg": {
+   "source": "e-pt-adimulia-agrolestari",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "ownership",
+   "value": 99.97,
+   "role": null,
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-s1jy8o": {
+   "source": "e-muliani-hendro",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-spm7ps": {
+   "source": "e-frank-wijaya",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "l-musl1lc9-vrnrae": {
    "source": "e-cinthya",
    "target": "e-pt-adimulia-palmo-lestari",
@@ -9678,33 +9778,33 @@
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
   },
+  "l-musl1lc9-xtf6ah": {
+   "source": "e-adi-widjaja",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris Utama",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
   "l-musl26gt-7ba2nr": {
    "source": "e-pt-sampoerna-agro-tbk",
    "target": "e-pt-aek-tarum",
    "type": "ownership",
    "value": 99,
-   "role": null,
-   "date": "2016-11",
-   "status": null,
-   "seen": [
-    "2016-11"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
-     "date": "2016-11"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791043506749,
-   "updatedAt": 1791043506749
-  },
-  "l-musl26gt-cjyg6s": {
-   "source": "e-pt-selapan-permai-lestari",
-   "target": "e-pt-aek-tarum",
-   "type": "ownership",
-   "value": 1,
    "role": null,
    "date": "2016-11",
    "status": null,
@@ -9744,12 +9844,12 @@
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
   },
-  "l-musl26gt-ph5huv": {
-   "source": "e-zito-mulyabudhi-ubhakti",
+  "l-musl26gt-cjyg6s": {
+   "source": "e-pt-selapan-permai-lestari",
    "target": "e-pt-aek-tarum",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
+   "type": "ownership",
+   "value": 1,
+   "role": null,
    "date": "2016-11",
    "status": null,
    "seen": [
@@ -9788,11 +9888,33 @@
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
   },
-  "l-musl2zfn-kcwnxu": {
-   "source": "e-pt-bintang-utama-lestari",
+  "l-musl26gt-ph5huv": {
+   "source": "e-zito-mulyabudhi-ubhakti",
+   "target": "e-pt-aek-tarum",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2016-11",
+   "status": null,
+   "seen": [
+    "2016-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2016. “PT Aek Tarum.” Corporate profile.",
+     "date": "2016-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043506749,
+   "updatedAt": 1791043506749
+  },
+  "l-musl2zfn-fqp883": {
+   "source": "e-pt-super-mitra-nusantara-abadi",
    "target": "e-pt-agam-sempurna",
    "type": "ownership",
-   "value": 98.8,
+   "value": 1.2,
    "role": null,
    "date": "2017-06",
    "status": null,
@@ -9810,11 +9932,33 @@
    "createdAt": 1791043544291,
    "updatedAt": 1791043544291
   },
-  "l-musl2zfn-fqp883": {
-   "source": "e-pt-super-mitra-nusantara-abadi",
+  "l-musl2zfn-h4zcxl": {
+   "source": "e-kirmadi",
+   "target": "e-pt-agam-sempurna",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043544291,
+   "updatedAt": 1791043544291
+  },
+  "l-musl2zfn-kcwnxu": {
+   "source": "e-pt-bintang-utama-lestari",
    "target": "e-pt-agam-sempurna",
    "type": "ownership",
-   "value": 1.2,
+   "value": 98.8,
    "role": null,
    "date": "2017-06",
    "status": null,
@@ -9854,9 +9998,75 @@
    "createdAt": 1791043544291,
    "updatedAt": 1791043544291
   },
-  "l-musl2zfn-h4zcxl": {
-   "source": "e-kirmadi",
-   "target": "e-pt-agam-sempurna",
+  "l-musl6x5f-kask2n": {
+   "source": "e-pt-bukit-muria-jaya-karton",
+   "target": "e-pt-agra-bareksa-indonesia",
+   "type": "ownership",
+   "value": 99.99986,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954
+  },
+  "l-musl6x5f-kv6ttm": {
+   "source": "e-pt-sapta-prima-persada",
+   "target": "e-pt-agra-bareksa-indonesia",
+   "type": "ownership",
+   "value": 0.00014,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954
+  },
+  "l-musl6x5f-ryk78b": {
+   "source": "e-frankie-adrianov-justinus",
+   "target": "e-pt-agra-bareksa-indonesia",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954
+  },
+  "l-musl6x5f-9982wh": {
+   "source": "e-hendrik-suherman",
+   "target": "e-pt-agra-bareksa-indonesia",
    "type": "directorship",
    "value": null,
    "role": "Direktur",
@@ -9868,199 +10078,16 @@
    "groups": [],
    "citations": [
     {
-     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agam Sempurna.” Corporate profile.",
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
      "date": "2017-06"
     }
    ],
    "note": "",
-   "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "createdAt": 1791043727954,
+   "updatedAt": 1791043727954
   }
  },
  "versions": {
-  "v-musbaycu-yalq": {
-   "at": 1791027119982,
-   "batch": "v-musbaycu-yalq",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-meadows-ocean-sdn-bhd",
-     "before": null,
-     "after": {
-      "name": "Meadows Ocean Sdn Bhd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-nusantara-kalimantan-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Nusantara Kalimantan Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-meadows-essence-sdn-bhd",
-     "before": null,
-     "after": {
-      "name": "Meadows Essence Sdn Bhd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-juni-edi-darmatuah-sinaga",
-     "before": null,
-     "after": {
-      "name": "Juni Edi Darmatuah Sinaga",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-segen-simamora",
-     "before": null,
-     "after": {
-      "name": "Segen Simamora",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbaybt-fi9pa6",
-     "before": null,
-     "after": {
-      "source": "e-meadows-ocean-sdn-bhd",
-      "target": "e-pt-nusantara-kalimantan-lestari",
-      "type": "ownership",
-      "value": 97.19,
-      "role": null,
-      "date": "2025-11",
-      "status": null,
-      "seen": [
-       "2025-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-        "date": "2025-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbaybt-1iatjb",
-     "before": null,
-     "after": {
-      "source": "e-meadows-essence-sdn-bhd",
-      "target": "e-pt-nusantara-kalimantan-lestari",
-      "type": "ownership",
-      "value": 2.81,
-      "role": null,
-      "date": "2025-11",
-      "status": null,
-      "seen": [
-       "2025-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-        "date": "2025-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbaybt-c2filb",
-     "before": null,
-     "after": {
-      "source": "e-juni-edi-darmatuah-sinaga",
-      "target": "e-pt-nusantara-kalimantan-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2025-11",
-      "status": null,
-      "seen": [
-       "2025-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-        "date": "2025-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musbaybt-n5vwgm",
-     "before": null,
-     "after": {
-      "source": "e-segen-simamora",
-      "target": "e-pt-nusantara-kalimantan-lestari",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2025-11",
-      "status": null,
-      "seen": [
-       "2025-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
-        "date": "2025-11"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791027119945,
-      "updatedAt": 1791027119945
-     }
-    }
-   ]
-  },
   "v-musbkpxq-qz9a": {
    "at": 1791027575630,
    "batch": "v-musbkpxq-qz9a",
@@ -12364,6 +12391,271 @@
       "note": "",
       "createdAt": 1791043544291,
       "updatedAt": 1791043544291
+     }
+    }
+   ]
+  },
+  "v-musl6x5x-x1pc": {
+   "at": 1791043727973,
+   "batch": "v-musl6x5x-x1pc",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-bukit-muria-jaya-karton",
+     "before": null,
+     "after": {
+      "name": "PT Bukit Muria Jaya Karton",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954,
+      "country": "Indonesia",
+      "address": "MENARA CITICON LT. 18, JL. LETJEND S PARMAN KAV 72",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-60517.AH.01.01.Tahun 2013"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-agra-bareksa-indonesia",
+     "before": null,
+     "after": {
+      "name": "PT Agra Bareksa Indonesia",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954,
+      "country": "Indonesia",
+      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-14217.AH.01.01.Tahun 2011"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-10884.AH.01.02.Tahun 2013"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.10-52739"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-01928.40.21.2014"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0003390.AH.01.02.Tahun 2015"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0013826"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0924809"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0964298"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0991656"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0031310"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0007528.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0011261"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "03.093.653.8-031.000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-sapta-prima-persada",
+     "before": null,
+     "after": {
+      "name": "PT Sapta Prima Persada",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954,
+      "country": "Indonesia",
+      "address": "JL. JENDRAL A.YANI NO 22 PANJUNAN"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-frankie-adrianov-justinus",
+     "before": null,
+     "after": {
+      "name": "Frankie Adrianov Justinus",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954,
+      "country": "Indonesia",
+      "address": "TAMAN BRAWIJAYA JALAN GANDARIA NOMOR 3",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3603282811700005"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-hendrik-suherman",
+     "before": null,
+     "after": {
+      "name": "Hendrik Suherman",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954,
+      "country": "Indonesia",
+      "address": "Jl. Buana Biru Besar Blok E1 /36",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3578312105620001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl6x5f-kask2n",
+     "before": null,
+     "after": {
+      "source": "e-pt-bukit-muria-jaya-karton",
+      "target": "e-pt-agra-bareksa-indonesia",
+      "type": "ownership",
+      "value": 99.99986,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl6x5f-kv6ttm",
+     "before": null,
+     "after": {
+      "source": "e-pt-sapta-prima-persada",
+      "target": "e-pt-agra-bareksa-indonesia",
+      "type": "ownership",
+      "value": 0.00014,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl6x5f-ryk78b",
+     "before": null,
+     "after": {
+      "source": "e-frankie-adrianov-justinus",
+      "target": "e-pt-agra-bareksa-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl6x5f-9982wh",
+     "before": null,
+     "after": {
+      "source": "e-hendrik-suherman",
+      "target": "e-pt-agra-bareksa-indonesia",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Agra Bareksa Indonesia.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043727954,
+      "updatedAt": 1791043727954
      }
     }
    ]
