@@ -1584,6 +1584,46 @@
    "note": "",
    "createdAt": 1791026987632,
    "updatedAt": 1791026987632
+  },
+  "e-laksamana-adyaksa": {
+   "name": "Laksamana Adyaksa",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "e-pt-firdaus-mitra-utama": {
+   "name": "PT Firdaus Mitra Utama",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "e-pt-indograha-mandiri": {
+   "name": "PT Indograha Mandiri",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "e-haryanto-wisastra": {
+   "name": "Haryanto Wisastra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "e-andi-chandra": {
+   "name": "Andi Chandra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
   }
  },
  "links": {
@@ -7866,42 +7906,97 @@
    "note": "",
    "createdAt": 1791026987632,
    "updatedAt": 1791026987632
+  },
+  "l-musb9shn-1wxhfl": {
+   "source": "e-laksamana-adyaksa",
+   "target": "e-pt-firdaus-mitra-utama",
+   "type": "ownership",
+   "value": 19.07,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "l-musb9shn-gf9ldh": {
+   "source": "e-pt-indograha-mandiri",
+   "target": "e-pt-firdaus-mitra-utama",
+   "type": "ownership",
+   "value": 80.93,
+   "role": null,
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "l-musb9shn-s7pf7i": {
+   "source": "e-haryanto-wisastra",
+   "target": "e-pt-firdaus-mitra-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
+  },
+  "l-musb9shn-95sx8i": {
+   "source": "e-andi-chandra",
+   "target": "e-pt-firdaus-mitra-utama",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-02",
+   "status": null,
+   "seen": [
+    "2023-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+     "date": "2023-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027065722,
+   "updatedAt": 1791027065722
   }
  },
  "versions": {
-  "v-musak900-7ijr": {
-   "at": 1791025874064,
-   "batch": "v-musak900-7ijr",
-   "summary": "Added the cluster Pulp and Paper: PT Seroja Universum Narwastu",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-seroja-universum-narwastu",
-     "before": {
-      "name": "PT Seroja Universum Narwastu",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Seroja Universum Narwastu",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025874052,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-musak9o7-km8u": {
    "at": 1791025874935,
    "batch": "v-musak9o7-km8u",
@@ -9735,6 +9830,189 @@
       "note": "",
       "createdAt": 1791026987632,
       "updatedAt": 1791026987632
+     }
+    }
+   ]
+  },
+  "v-musb9sie-cy8t": {
+   "at": 1791027065750,
+   "batch": "v-musb9sie-cy8t",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-laksamana-adyaksa",
+     "before": null,
+     "after": {
+      "name": "Laksamana Adyaksa",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-firdaus-mitra-utama",
+     "before": null,
+     "after": {
+      "name": "PT Firdaus Mitra Utama",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-indograha-mandiri",
+     "before": null,
+     "after": {
+      "name": "PT Indograha Mandiri",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-haryanto-wisastra",
+     "before": null,
+     "after": {
+      "name": "Haryanto Wisastra",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-andi-chandra",
+     "before": null,
+     "after": {
+      "name": "Andi Chandra",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb9shn-1wxhfl",
+     "before": null,
+     "after": {
+      "source": "e-laksamana-adyaksa",
+      "target": "e-pt-firdaus-mitra-utama",
+      "type": "ownership",
+      "value": 19.07,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb9shn-gf9ldh",
+     "before": null,
+     "after": {
+      "source": "e-pt-indograha-mandiri",
+      "target": "e-pt-firdaus-mitra-utama",
+      "type": "ownership",
+      "value": 80.93,
+      "role": null,
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb9shn-s7pf7i",
+     "before": null,
+     "after": {
+      "source": "e-haryanto-wisastra",
+      "target": "e-pt-firdaus-mitra-utama",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musb9shn-95sx8i",
+     "before": null,
+     "after": {
+      "source": "e-andi-chandra",
+      "target": "e-pt-firdaus-mitra-utama",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-02",
+      "status": null,
+      "seen": [
+       "2023-02"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Firdaus Mitra Utama.” Corporate profile.",
+        "date": "2023-02"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027065722,
+      "updatedAt": 1791027065722
      }
     }
    ]
