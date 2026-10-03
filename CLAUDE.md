@@ -167,6 +167,12 @@ Working efficiently (token use):
 - Follows the Relationships and Timeline filters. `focusOn(id, depth)` sits next to `hideNode` in `index.html` and is on the add-on API, with `showAllNodes`
 - 1 new test (18 total). In one full run the "quality: counts" test failed once and then passed 4 times on its own (likely timing under load)
 
+### 2026-10-03 — Ownership Map: relation label setting
+
+- Zoom toolbar button (and key `L`) cycles relation labels: full (stake or role + dates) → short (stake or role) → off. Entity names are not affected; zooming far out still hides all labels; remembered per browser (`om-relation-labels`); the PNG export copies the computed display, so it follows the setting
+- In `index.html`: section "Relation labels" before the node context menu; the edge label text checks `labelMode`. Switching full ↔ short redraws the map (label sizes change)
+- 1 new test; all 19 pass
+
 ---
 
 ## Notes

@@ -409,6 +409,33 @@ const tests = {
     await menu('focus-1'); eq(await shown(), ownOnly, 'focus follows the Shareholding filter');
     eq(p.errors, [], 'page errors');
   },
+  async 'labels: toolbar button and L cycle full, short, off; remembered'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    // Zoomed far out every label hides anyway, so look at one company's neighbourhood.
+    const zoomIn = () => p.evaluate(() => { window.OwnershipMapTabs && window.OwnershipMapTabs.show('map');
+      const id = [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]; OwnershipMap.focusOn(id, 1); });
+    await zoomIn(); await sleep(2500);
+    const labels = () => p.$$eval('g.edge-label text', ts => ts.map(t => t.textContent));
+    const shown = () => p.$eval('g.edge-label', g => getComputedStyle(g).display !== 'none');
+    ok(await shown(), 'labels visible in full');
+    let t = await labels();
+    ok(t.some(x => x.includes(' · ')), 'full labels carry dates');
+    await p.click('#labelModeBtn'); await sleep(1500); t = await labels();
+    ok(t.length && !t.some(x => x.includes(' · ')) && t.some(x => /%$/.test(x)), 'short labels: stake or role only');
+    ok(/short/.test(await p.getAttribute('#labelModeBtn', 'title')), 'button says short');
+    await p.click('#labelModeBtn'); await sleep(400);
+    ok(!(await shown()), 'off hides relation labels');
+    ok(await p.$eval('g.node .node-label, g.node text', el => getComputedStyle(el).display !== 'none'), 'entity names stay');
+    await reload(p); await zoomIn(); await sleep(2500);
+    ok(!(await shown()), 'off remembered after reload');
+    await p.keyboard.press('l'); await sleep(1500); t = await labels();
+    ok(await shown() && t.some(x => x.includes(' · ')), 'L goes back to full, with dates');
+    await p.click('#dataToggle').catch(() => {});
+    await p.focus('#dataInput'); await p.keyboard.press('l'); await sleep(300);
+    ok(/full/.test(await p.getAttribute('#labelModeBtn', 'title')), 'typing L in a text box does not switch');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {

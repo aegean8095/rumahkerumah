@@ -751,6 +751,7 @@
   .edge-label.previous text{ font-style: italic; }
   .map-note{ font-family: var(--font-body); font-size: 13px; fill: var(--ink-400); }
   svg.labels-hidden .edge-label{ display:none; }
+  svg.relation-labels-off .edge-label{ display:none; }
   svg.labels-hidden .node-label{ display:none; }
 
   /* Entrance on new data only: opacity, so the layout's own transforms are untouched */
@@ -795,6 +796,9 @@
   <defs>
     <symbol id="i-minus" viewBox="0 0 16 16"><path d="M3.5 8h9"/></symbol>
     <symbol id="i-plus" viewBox="0 0 16 16"><path d="M8 3.5v9M3.5 8h9"/></symbol>
+    <symbol id="i-label-full" viewBox="0 0 16 16"><path d="M2.75 4.25h10.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-.75.75H2.75a.75.75 0 0 1-.75-.75V5a.75.75 0 0 1 .75-.75ZM4.75 7h6.5M4.75 9.25h4"/></symbol>
+    <symbol id="i-label-short" viewBox="0 0 16 16"><path d="M2.75 4.25h10.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-.75.75H2.75a.75.75 0 0 1-.75-.75V5a.75.75 0 0 1 .75-.75ZM4.75 8h3.5"/></symbol>
+    <symbol id="i-label-off" viewBox="0 0 16 16"><path d="M2.75 4.25h10.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-.75.75H2.75a.75.75 0 0 1-.75-.75V5a.75.75 0 0 1 .75-.75ZM2.25 13.75l11.5-11.5"/></symbol>
     <symbol id="i-fit" viewBox="0 0 16 16"><path d="M2.75 6V3.5a.75.75 0 0 1 .75-.75H6M10 2.75h2.5a.75.75 0 0 1 .75.75V6M13.25 10v2.5a.75.75 0 0 1-.75.75H10M6 13.25H3.5a.75.75 0 0 1-.75-.75V10"/><rect x="6" y="6" width="4" height="4" rx="1"/></symbol>
     <symbol id="i-close" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8"/></symbol>
     <symbol id="i-panel" viewBox="0 0 16 16"><rect x="2.25" y="2.75" width="11.5" height="10.5" rx="2"/><path d="M6.25 2.75v10.5"/></symbol>
@@ -1130,6 +1134,7 @@
     <div class="overlay canvas-toolbar" role="group" aria-label="Zoom">
       <button type="button" class="icon-btn" id="zoomOutBtn" title="Zoom out" aria-label="Zoom out"><svg class="icon"><use href="#i-minus"/></svg></button>
       <button type="button" class="icon-btn" id="zoomInBtn" title="Zoom in" aria-label="Zoom in"><svg class="icon"><use href="#i-plus"/></svg></button>
+      <button type="button" class="icon-btn" id="labelModeBtn" title="Relation labels: full" aria-label="Relation labels: full. Click for short."><svg class="icon"><use href="#i-label-full"/></svg></button>
       <button type="button" class="icon-btn" id="resetViewBtn" title="Fit the map to the view" aria-label="Fit the map to the view"><svg class="icon"><use href="#i-fit"/></svg></button>
     </div>
 
@@ -1862,6 +1867,41 @@
   document.querySelectorAll('.type-btn').forEach(btn => {
     btn.addEventListener('click', () => setTypeFilter(btn.dataset.type));
   });
+
+  // ---------- Relation labels: full (stake or role + dates), short, off ----------
+  // A display setting next to the zoom buttons; "L" cycles it. Zooming far out
+  // still hides every label, and the PNG export follows the setting.
+  const LABEL_MODES = ['full', 'short', 'off'];
+  const LABEL_TEXT = { full: 'full (stake or role, and dates)', short: 'short (stake or role only)', off: 'off' };
+  let labelMode = 'full';
+  let labelTextFull = true;              // whether the labels drawn now carry dates
+  try { const m = localStorage.getItem('om-relation-labels'); if (LABEL_MODES.includes(m)) labelMode = m; } catch (e){}
+  const labelModeBtn = document.getElementById('labelModeBtn');
+  function applyLabelMode(){
+    const next = LABEL_MODES[(LABEL_MODES.indexOf(labelMode) + 1) % LABEL_MODES.length];
+    els.svg.classList.toggle('relation-labels-off', labelMode === 'off');
+    labelModeBtn.querySelector('use').setAttribute('href', '#i-label-' + labelMode);
+    labelModeBtn.title = 'Relation labels: ' + LABEL_TEXT[labelMode] + ' (L)';
+    labelModeBtn.setAttribute('aria-label', 'Relation labels: ' + LABEL_TEXT[labelMode] + '. Click for ' + next + '.');
+  }
+  function setLabelMode(mode){
+    labelMode = mode;
+    const textChanged = mode !== 'off' && (mode === 'full') !== labelTextFull;
+    try { localStorage.setItem('om-relation-labels', mode); } catch (e){}
+    applyLabelMode();
+    // The label text (and so the room each label needs) changes between full and short.
+    if (textChanged && graph.nodes.length) drawGraph();
+  }
+  function cycleLabelMode(){ setLabelMode(LABEL_MODES[(LABEL_MODES.indexOf(labelMode) + 1) % LABEL_MODES.length]); }
+  labelModeBtn.addEventListener('click', cycleLabelMode);
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'l' && event.key !== 'L') return;
+    if (event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.target.closest && event.target.closest('input, textarea, select, [contenteditable]')) return;
+    if (els.canvasWrap.classList.contains('table-mode')) return;
+    cycleLabelMode();
+  });
+  applyLabelMode();
 
   // ---------- Node context menu ----------
   let contextNodeId = null;
@@ -2630,7 +2670,8 @@
         const base = d.type === 'ownership'
           ? (typeof d.value === 'number' ? d.value + '%' : 'n/a')
           : shortRole(d.role);
-        const dl = datesLabel(d);
+        labelTextFull = labelMode === 'full';
+        const dl = labelTextFull ? datesLabel(d) : '';
         return base + (dl ? ' · ' + dl : '');
       });
 
