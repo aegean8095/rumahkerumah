@@ -163,15 +163,15 @@
   });
   function open(from, to){
     rebuildNames();
-    panel.hidden = false;
+    panel.hidden = false; wrap.classList.add('cn-open');
     if (from) $('cnFrom').value = OM.entityName(from);
     if (to) $('cnTo').value = OM.entityName(to);
     if (from && to) run(); else (from ? $('cnTo') : $('cnFrom')).focus();
   }
-  function close(){ panel.hidden = true; if (window.OwnershipMapHL) window.OwnershipMapHL.clear(); }
+  function close(){ panel.hidden = true; wrap.classList.remove('cn-open'); if (window.OwnershipMapHL) window.OwnershipMapHL.clear(); }
   window.OwnershipMapConnect = { open: open, close: close };
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !panel.hidden && panel.contains(document.activeElement)) close(); });
-  new MutationObserver(function(){ if (wrap.classList.contains('table-mode')) panel.hidden = true; }).observe(wrap, { attributes: true, attributeFilter: ['class'] });
+  new MutationObserver(function(){ if (wrap.classList.contains('table-mode')){ panel.hidden = true; wrap.classList.remove('cn-open'); } }).observe(wrap, { attributes: true, attributeFilter: ['class'] });
 
   // ---------- toolbar button ----------
   var sprite = document.querySelector('svg.sprite');

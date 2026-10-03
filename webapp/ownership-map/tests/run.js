@@ -670,6 +670,49 @@ const tests = {
     eq((await drawn()).edges, 235, 'Now restores everything');
     eq(p.errors, [], 'page errors');
   },
+  async 'report: content matches the detail panel, opens from the detail, prints to PDF'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(800);
+    // The app's own indirect-owner list (original code) is the reference for the new calculation.
+    const panel = await p.evaluate(() => { const h = [...document.querySelectorAll('#detailPanel h4')].find(x => /Indirectly owned/.test(x.textContent)); if (!h) return []; const ul = h.nextElementSibling;
+      return [...ul.querySelectorAll('li')].map(li => ({ name: (li.querySelector('.detail-link, button') || li.querySelector('span')).textContent.trim(), pct: parseFloat(li.querySelector('b').textContent) })); });
+    ok(panel.length > 0, 'detail panel lists indirect owners for the reference');
+    ok(await p.isVisible('[data-rk="report"]'), 'Company report button in the detail panel');
+    await p.click('[data-rk="report"]'); await sleep(700);
+    ok(await p.isVisible('#reportOverlay'), 'report opens');
+    const rep = await p.evaluate(() => { const t = [...document.querySelectorAll('#reportSheet h2')].find(h => /Who holds it/.test(h.textContent)).parentElement;
+      return { rows: [...t.querySelectorAll('tbody tr')].map(r => ({ name: r.cells[0].textContent.trim(), pct: parseFloat(r.cells[2].textContent), note: r.cells[3].textContent })), title: document.querySelector('#reportSheet h1').textContent.trim(),
+        sh: [...document.querySelectorAll('#reportSheet h2')].find(h => /^Shareholders/.test(h.textContent)).parentElement.querySelectorAll('tbody tr').length,
+        board: [...document.querySelectorAll('#reportSheet h2')].find(h => /^Directors/.test(h.textContent)).parentElement.querySelectorAll('tbody tr').length }; });
+    eq(rep.title, 'PT Flora Nuansa Hijau', 'report title');
+    for (const x of panel){ const r = rep.rows.find(r => r.name === x.name); ok(r && Math.abs(r.pct - x.pct) < 0.51, 'indirect owner ' + x.name + ' ' + x.pct + '% appears in the report as ' + (r && r.pct)); }
+    const direct = SEED.links ? Object.values(SEED.links).filter(l => l.type === 'ownership' && SEED.entities[l.target].name.includes('Flora Nuansa')).length : 0;
+    ok(rep.sh >= 1 && rep.sh <= direct + 1, 'shareholder rows ' + rep.sh);
+    const boardSeed = Object.values(SEED.links).filter(l => l.type === 'directorship' && SEED.entities[l.target].name.includes('Flora Nuansa')).length;
+    eq(rep.board, boardSeed, 'board rows match the seed');
+    // Print: only the report is laid out, and the PDF has the company name and few pages
+    await p.emulateMedia({ media: 'print' }); await sleep(300);
+    const hidden = await p.evaluate(() => ({ sidebar: getComputedStyle(document.querySelector('.app')).display, bar: getComputedStyle(document.querySelector('.report-bar')).display, sheet: getComputedStyle(document.getElementById('reportSheet')).display }));
+    eq(hidden.sidebar, 'none', 'the app (sidebar and map) is not printed'); eq(hidden.bar, 'none', 'report toolbar not printed'); ok(hidden.sheet !== 'none', 'report printed');
+    const pdf = await p.pdf({ format: 'A4', printBackground: true, preferCSSPageSize: true });
+    const file = path.join(require('os').tmpdir(), 'om-report-' + Date.now() + '.pdf'); fs.writeFileSync(file, pdf);
+    const text = execSync('pdftotext -layout "' + file + '" -').toString();
+    const lower = text.toLowerCase();
+    ok(text.includes('PT Flora Nuansa Hijau') && lower.includes('shareholders') && lower.includes('sources') && lower.includes('points to check'), 'PDF text has the title and sections');
+    ok(!text.includes('Commodity clusters') && !text.includes('Right-click an entity') && !text.includes('Legend'), 'PDF holds only the report, none of the app');
+    const pages = (pdf.toString('latin1').match(/\/Type\s*\/Page[^s]/g) || []).length;
+    ok(pages >= 1 && pages <= 2, 'PDF pages: ' + pages);
+    await p.emulateMedia({ media: 'screen' });
+    await p.keyboard.press('Escape'); await sleep(300); ok(!(await p.isVisible('#reportOverlay')), 'Esc closes the report');
+    // a person has no company report button
+    const pid = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => e.type === 'person')[0]);
+    await p.evaluate(id => OwnershipMap.selectNode(id), pid); await sleep(700);
+    ok(!(await p.isVisible('[data-rk="report"]')), 'no report button for an individual');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {
