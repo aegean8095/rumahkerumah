@@ -1273,7 +1273,15 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "UOB PLAZA lT. 33 uNIT 1,Jl. MH.Thamrin No. 10",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-86511.AH.01.02.tAHUN 2008"
+    }
+   ]
   },
   "e-pt-borneo-foresta-industri": {
    "name": "PT Borneo Foresta Industri",
@@ -2373,6 +2381,90 @@
     {
      "kind": "KTP / NIK",
      "number": "1271212906910003"
+    }
+   ]
+  },
+  "e-pt-bukit-raya-mudisa": {
+   "name": "PT Bukit Raya Mudisa",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0049287.AH.01.02.Tahun 2019"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "017367830211000"
+    }
+   ]
+  },
+  "e-pt-nusantara-sentosa-raya": {
+   "name": "PT Nusantara Sentosa Raya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-17122.AH.01.02.tAHUN 2009"
+    }
+   ]
+  },
+  "e-dr-muslim-ahmad-nathin": {
+   "name": "DR. Muslim Ahmad Nathin",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. TEBET DALAM III NO. 16",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3174010708440006"
+    }
+   ]
+  },
+  "e-ir-kirmadi": {
+   "name": "Ir. KIRMADI",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1401063010640002"
+    }
+   ]
+  },
+  "e-ir-hotma-silitonga": {
+   "name": "Ir. HOTMA SILITONGA",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1401060202660006"
     }
    ]
   }
@@ -10335,107 +10427,141 @@
    "note": "",
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
+  },
+  "l-musmqdaw-jiy8wx": {
+   "source": "e-pt-bintang-utama-lestari",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 78,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-zbk5s9": {
+   "source": "e-pt-nusantara-sentosa-raya",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 10,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-dxyl3n": {
+   "source": "e-dr-muslim-ahmad-nathin",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 12,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-3wtf40": {
+   "source": "e-ir-kirmadi",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-5bi9zt": {
+   "source": "e-dr-muslim-ahmad-nathin",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-ww7cl6": {
+   "source": "e-ir-hotma-silitonga",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
   }
  },
  "versions": {
-  "v-musl85t6-28j3": {
-   "at": 1791043785834,
-   "batch": "v-musl85t6-28j3",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043785341,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0924809"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043785831,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl868h-tw9i": {
    "at": 1791043786385,
    "batch": "v-musl868h-tw9i",
@@ -11422,6 +11548,315 @@
       "note": "",
       "createdAt": 1791046198402,
       "updatedAt": 1791046198402
+     }
+    }
+   ]
+  },
+  "v-musmqdbe-7buz": {
+   "at": 1791046314986,
+   "batch": "v-musmqdbe-7buz",
+   "summary": "Added 6 rows from Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 12,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-bukit-raya-mudisa",
+     "before": null,
+     "after": {
+      "name": "PT Bukit Raya Mudisa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0049287.AH.01.02.Tahun 2019"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "017367830211000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-nusantara-sentosa-raya",
+     "before": null,
+     "after": {
+      "name": "PT Nusantara Sentosa Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-17122.AH.01.02.tAHUN 2009"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-dr-muslim-ahmad-nathin",
+     "before": null,
+     "after": {
+      "name": "DR. Muslim Ahmad Nathin",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. TEBET DALAM III NO. 16",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174010708440006"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ir-kirmadi",
+     "before": null,
+     "after": {
+      "name": "Ir. KIRMADI",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401063010640002"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ir-hotma-silitonga",
+     "before": null,
+     "after": {
+      "name": "Ir. HOTMA SILITONGA",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401060202660006"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-bintang-utama-lestari",
+     "before": {
+      "name": "PT Bintang Utama Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     },
+     "after": {
+      "name": "PT Bintang Utama Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "UOB PLAZA lT. 33 uNIT 1,Jl. MH.Thamrin No. 10",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-86511.AH.01.02.tAHUN 2008"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-jiy8wx",
+     "before": null,
+     "after": {
+      "source": "e-pt-bintang-utama-lestari",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "ownership",
+      "value": 78,
+      "role": null,
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-zbk5s9",
+     "before": null,
+     "after": {
+      "source": "e-pt-nusantara-sentosa-raya",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "ownership",
+      "value": 10,
+      "role": null,
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-dxyl3n",
+     "before": null,
+     "after": {
+      "source": "e-dr-muslim-ahmad-nathin",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "ownership",
+      "value": 12,
+      "role": null,
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-3wtf40",
+     "before": null,
+     "after": {
+      "source": "e-ir-kirmadi",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-5bi9zt",
+     "before": null,
+     "after": {
+      "source": "e-dr-muslim-ahmad-nathin",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-ww7cl6",
+     "before": null,
+     "after": {
+      "source": "e-ir-hotma-silitonga",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
      }
     }
    ]
