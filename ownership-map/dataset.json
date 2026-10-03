@@ -2013,6 +2013,78 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-adimulia-agrolestari": {
+   "name": "PT Adimulia Agrolestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-pt-adimulia-palmo-lestari": {
+   "name": "PT Adimulia Palmo Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-adi-widjaja": {
+   "name": "Adi Widjaja",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-david-vence-turangan": {
+   "name": "David Vence Turangan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-muliani-hendro": {
+   "name": "Muliani Hendro",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-hadi-ngadiman": {
+   "name": "Hadi Ngadiman",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-frank-wijaya": {
+   "name": "Frank Wijaya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-susan-wijaya": {
+   "name": "Susan Wijaya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "e-cinthya": {
+   "name": "Cinthya",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
   }
  },
  "links": {
@@ -9319,195 +9391,207 @@
    "note": "",
    "createdAt": 1791043270817,
    "updatedAt": 1791043270817
+  },
+  "l-musl1lc9-i5dbrg": {
+   "source": "e-pt-adimulia-agrolestari",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "ownership",
+   "value": 99.97,
+   "role": null,
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-03do9d": {
+   "source": "e-adi-widjaja",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "ownership",
+   "value": 0.03,
+   "role": null,
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-xtf6ah": {
+   "source": "e-adi-widjaja",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris Utama",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-gl28qr": {
+   "source": "e-david-vence-turangan",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-s1jy8o": {
+   "source": "e-muliani-hendro",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-b5160a": {
+   "source": "e-hadi-ngadiman",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-spm7ps": {
+   "source": "e-frank-wijaya",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-e0fu8q": {
+   "source": "e-susan-wijaya",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
+  },
+  "l-musl1lc9-vrnrae": {
+   "source": "e-cinthya",
+   "target": "e-pt-adimulia-palmo-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2018-04",
+   "status": null,
+   "seen": [
+    "2018-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+     "date": "2018-04"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043479369,
+   "updatedAt": 1791043479369
   }
  },
  "versions": {
-  "v-musb848z-7hi9": {
-   "at": 1791026987651,
-   "batch": "v-musb848z-7hi9",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-april-garuda-nusantara",
-     "before": null,
-     "after": {
-      "name": "PT April Garuda Nusantara",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-damai-setiatama-timber",
-     "before": null,
-     "after": {
-      "name": "PT Damai Setiatama Timber",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632,
-      "clusters": [
-       "Forestry"
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-april-garuda-perkasa",
-     "before": null,
-     "after": {
-      "name": "PT April Garuda Perkasa",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-riyadin-hendratno",
-     "before": null,
-     "after": {
-      "name": "Riyadin Hendratno",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-sukma-dewantoro",
-     "before": null,
-     "after": {
-      "name": "Sukma Dewantoro",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb848g-8uaty7",
-     "before": null,
-     "after": {
-      "source": "e-pt-april-garuda-nusantara",
-      "target": "e-pt-damai-setiatama-timber",
-      "type": "ownership",
-      "value": 69,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb848g-tefgdr",
-     "before": null,
-     "after": {
-      "source": "e-pt-april-garuda-perkasa",
-      "target": "e-pt-damai-setiatama-timber",
-      "type": "ownership",
-      "value": 31,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb848g-19dpvr",
-     "before": null,
-     "after": {
-      "source": "e-riyadin-hendratno",
-      "target": "e-pt-damai-setiatama-timber",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb848g-zin5sj",
-     "before": null,
-     "after": {
-      "source": "e-sukma-dewantoro",
-      "target": "e-pt-damai-setiatama-timber",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Damai Setiatama Timber.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026987632,
-      "updatedAt": 1791026987632
-     }
-    }
-   ]
-  },
   "v-musb9sie-cy8t": {
    "at": 1791027065750,
    "batch": "v-musb9sie-cy8t",
@@ -11587,6 +11671,376 @@
       "note": "",
       "createdAt": 1791043270817,
       "updatedAt": 1791043270817
+     }
+    }
+   ]
+  },
+  "v-musl1ld1-1ygr": {
+   "at": 1791043479397,
+   "batch": "v-musl1ld1-1ygr",
+   "summary": "Added 9 rows from Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 18,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-adimulia-agrolestari",
+     "before": null,
+     "after": {
+      "name": "PT Adimulia Agrolestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-adimulia-palmo-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Adimulia Palmo Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-adi-widjaja",
+     "before": null,
+     "after": {
+      "name": "Adi Widjaja",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-david-vence-turangan",
+     "before": null,
+     "after": {
+      "name": "David Vence Turangan",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-muliani-hendro",
+     "before": null,
+     "after": {
+      "name": "Muliani Hendro",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-hadi-ngadiman",
+     "before": null,
+     "after": {
+      "name": "Hadi Ngadiman",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-frank-wijaya",
+     "before": null,
+     "after": {
+      "name": "Frank Wijaya",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-susan-wijaya",
+     "before": null,
+     "after": {
+      "name": "Susan Wijaya",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-cinthya",
+     "before": null,
+     "after": {
+      "name": "Cinthya",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-i5dbrg",
+     "before": null,
+     "after": {
+      "source": "e-pt-adimulia-agrolestari",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "ownership",
+      "value": 99.97,
+      "role": null,
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-03do9d",
+     "before": null,
+     "after": {
+      "source": "e-adi-widjaja",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "ownership",
+      "value": 0.03,
+      "role": null,
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-xtf6ah",
+     "before": null,
+     "after": {
+      "source": "e-adi-widjaja",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris Utama",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-gl28qr",
+     "before": null,
+     "after": {
+      "source": "e-david-vence-turangan",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-s1jy8o",
+     "before": null,
+     "after": {
+      "source": "e-muliani-hendro",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-b5160a",
+     "before": null,
+     "after": {
+      "source": "e-hadi-ngadiman",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-spm7ps",
+     "before": null,
+     "after": {
+      "source": "e-frank-wijaya",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-e0fu8q",
+     "before": null,
+     "after": {
+      "source": "e-susan-wijaya",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musl1lc9-vrnrae",
+     "before": null,
+     "after": {
+      "source": "e-cinthya",
+      "target": "e-pt-adimulia-palmo-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2018-04",
+      "status": null,
+      "seen": [
+       "2018-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. April 2018. “PT Adimulia Palmo Lestari.” Corporate profile.",
+        "date": "2018-04"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043479369,
+      "updatedAt": 1791043479369
      }
     }
    ]
