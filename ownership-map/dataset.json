@@ -1816,9 +1816,9 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "updatedAt": 1791047074963,
    "country": "Indonesia",
-   "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
+   "address": "JL. LINTAS TIMUR KOMPLEK RUKAN AKASIA PANGKALAN KE",
    "identities": [
     {
      "kind": "Company registration no.",
@@ -2549,6 +2549,68 @@
     {
      "kind": "NPWP (tax no.)",
      "number": "141608232222000"
+    }
+   ]
+  },
+  "e-pt-foresta-sarana-persada": {
+   "name": "PT Foresta Sarana Persada",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "MENARA BATAVIA LT.17 JL. KH MAS MANSYUR KAV. 126"
+  },
+  "e-pt-nusa-wana-raya": {
+   "name": "PT Nusa Wana Raya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0077847.AH.01.02.Tahun 2019"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "015550361216001"
+    }
+   ]
+  },
+  "e-muller-tampubolon-se-mm": {
+   "name": "Muller Tampubolon, SE, MM",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1471102712640001"
+    }
+   ]
+  },
+  "e-kasim": {
+   "name": "Kasim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JL. LILY I NO. 29-G",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1471011606720021"
     }
    ]
   }
@@ -10763,91 +10825,97 @@
    "note": "",
    "createdAt": 1791047039326,
    "updatedAt": 1791047039326
+  },
+  "l-musn6npv-ohq62s": {
+   "source": "e-pt-foresta-sarana-persada",
+   "target": "e-pt-nusa-wana-raya",
+   "type": "ownership",
+   "value": 99,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963
+  },
+  "l-musn6npv-9r70j6": {
+   "source": "e-pt-nusantara-sentosa-raya",
+   "target": "e-pt-nusa-wana-raya",
+   "type": "ownership",
+   "value": 1,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963
+  },
+  "l-musn6npv-x6ndk5": {
+   "source": "e-muller-tampubolon-se-mm",
+   "target": "e-pt-nusa-wana-raya",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963
+  },
+  "l-musn6npv-t3nkjz": {
+   "source": "e-kasim",
+   "target": "e-pt-nusa-wana-raya",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963
   }
  },
  "versions": {
-  "v-musl86l8-gvf3": {
-   "at": 1791043786844,
-   "batch": "v-musl86l8-gvf3",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043786373,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043786815,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl86zs-rbfs": {
    "at": 1791043787368,
    "batch": "v-musl86zs-rbfs",
@@ -12270,6 +12338,242 @@
       "note": "",
       "createdAt": 1791047039326,
       "updatedAt": 1791047039326
+     }
+    }
+   ]
+  },
+  "v-musn6nqa-d03k": {
+   "at": 1791047074978,
+   "batch": "v-musn6nqa-d03k",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-foresta-sarana-persada",
+     "before": null,
+     "after": {
+      "name": "PT Foresta Sarana Persada",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "MENARA BATAVIA LT.17 JL. KH MAS MANSYUR KAV. 126"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-nusa-wana-raya",
+     "before": null,
+     "after": {
+      "name": "PT Nusa Wana Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0077847.AH.01.02.Tahun 2019"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "015550361216001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-muller-tampubolon-se-mm",
+     "before": null,
+     "after": {
+      "name": "Muller Tampubolon, SE, MM",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1471102712640001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-kasim",
+     "before": null,
+     "after": {
+      "name": "Kasim",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JL. LILY I NO. 29-G",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1471011606720021"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-nusantara-sentosa-raya",
+     "before": {
+      "name": "PT Nusantara Sentosa Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-17122.AH.01.02.tAHUN 2009"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Nusantara Sentosa Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JL. LINTAS TIMUR KOMPLEK RUKAN AKASIA PANGKALAN KE",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-17122.AH.01.02.tAHUN 2009"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn6npv-ohq62s",
+     "before": null,
+     "after": {
+      "source": "e-pt-foresta-sarana-persada",
+      "target": "e-pt-nusa-wana-raya",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn6npv-9r70j6",
+     "before": null,
+     "after": {
+      "source": "e-pt-nusantara-sentosa-raya",
+      "target": "e-pt-nusa-wana-raya",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn6npv-x6ndk5",
+     "before": null,
+     "after": {
+      "source": "e-muller-tampubolon-se-mm",
+      "target": "e-pt-nusa-wana-raya",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn6npv-t3nkjz",
+     "before": null,
+     "after": {
+      "source": "e-kasim",
+      "target": "e-pt-nusa-wana-raya",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963
      }
     }
    ]
