@@ -1090,12 +1090,12 @@
    "updatedAt": 1790961478929
   },
   "e-santiana": {
-   "name": "SANTIANA",
+   "name": "Santiana",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020773421
   },
   "e-siet-lin-lee": {
    "name": "Siet Lin Lee",
@@ -7285,39 +7285,6 @@
   }
  },
  "versions": {
-  "v-mur8gasz-l49c": {
-   "at": 1790961864371,
-   "batch": "v-mur8gasz-l49c",
-   "summary": "Added the cluster Forestry: PT Sumalindo Alam Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-sumalindo-alam-lestari",
-     "before": {
-      "name": "PT Sumalindo Alam Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Sumalindo Alam Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961864365,
-      "clusters": [
-       "Forestry"
-      ]
-     }
-    }
-   ]
-  },
   "v-mur8ggmd-zmuf": {
    "at": 1790961871909,
    "batch": "v-mur8ggmd-zmuf",
@@ -7931,6 +7898,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020752767
+     }
+    }
+   ]
+  },
+  "v-mus7ixbu-or3y": {
+   "at": 1791020773434,
+   "batch": "v-mus7ixbu-or3y",
+   "summary": "Renamed SANTIANA to Santiana",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-santiana",
+     "before": {
+      "name": "SANTIANA",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Santiana",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020773421
      }
     }
    ]
