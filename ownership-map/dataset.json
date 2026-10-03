@@ -673,7 +673,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025762990,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-borneo-foresta-industri": {
    "name": "PT Borneo Foresta Industri",
@@ -8945,6 +8948,39 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025749493,
+      "clusters": [
+       "Pulp and Paper"
+      ]
+     }
+    }
+   ]
+  },
+  "v-musahvap-27lo": {
+   "at": 1791025762993,
+   "batch": "v-musahvap-27lo",
+   "summary": "Added the cluster Pulp and Paper: PT Belantara Pusaka",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-belantara-pusaka",
+     "before": {
+      "name": "PT Belantara Pusaka",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Belantara Pusaka",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025762990,
       "clusters": [
        "Pulp and Paper"
       ]
