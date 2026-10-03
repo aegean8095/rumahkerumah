@@ -3398,9 +3398,7 @@
     "2024-08",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3409,7 +3407,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025831238
   },
   "l-0083": {
    "source": "e-prosper-season-sdn-bhd",
@@ -3423,9 +3421,7 @@
     "2024-08",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3434,7 +3430,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025831238
   },
   "l-0084": {
    "source": "e-muhartati",
@@ -3448,9 +3444,7 @@
     "2024-08",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3459,7 +3453,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025831238
   },
   "l-0085": {
    "source": "e-yudiana",
@@ -3473,9 +3467,7 @@
     "2024-08",
     "2024-09"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
      "text": "cSPKaltim.csv (shadow-corporate)",
@@ -3484,7 +3476,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025831238
   },
   "l-0086": {
    "source": "e-lee-ching-ying",
@@ -7263,39 +7255,6 @@
   }
  },
  "versions": {
-  "v-musahdbi-ed12": {
-   "at": 1791025739694,
-   "batch": "v-musahdbi-ed12",
-   "summary": "Added the cluster Pulp and Paper: PT Belantara Persada",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-belantara-persada",
-     "before": {
-      "name": "PT Belantara Persada",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Belantara Persada",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025739677,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-musaheeh-vqdf": {
    "at": 1791025741097,
    "batch": "v-musaheeh-vqdf",
@@ -8849,6 +8808,224 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791025820782
+     }
+    }
+   ]
+  },
+  "v-musajbyu-rms7": {
+   "at": 1791025831254,
+   "batch": "v-musajbyu-rms7",
+   "summary": "Removed PT Hutani Cipta Bersama from the group Kaltim: 4 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 4,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0082",
+     "before": {
+      "source": "e-prosper-grow-sdn-bhd",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "ownership",
+      "value": 95,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-prosper-grow-sdn-bhd",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "ownership",
+      "value": 95,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025831238
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0083",
+     "before": {
+      "source": "e-prosper-season-sdn-bhd",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "ownership",
+      "value": 5,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-prosper-season-sdn-bhd",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "ownership",
+      "value": 5,
+      "role": null,
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025831238
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0084",
+     "before": {
+      "source": "e-muhartati",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-muhartati",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025831238
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0085",
+     "before": {
+      "source": "e-yudiana",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-yudiana",
+      "target": "e-pt-hutani-cipta-bersama",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-09",
+      "status": null,
+      "seen": [
+       "2024-08",
+       "2024-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025831238
      }
     }
    ]
