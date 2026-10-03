@@ -235,6 +235,13 @@ Working efficiently (token use):
 - KPI strip (figures split by hairlines, no boxes), split bars under a hairline, leaderboard rows (rank · name · bar on a light track · value right-aligned), thinner meters, taller column chart, round legend dots, pill Table/Chart toggle, darker tooltip with blur; long names get an ellipsis and the full name on hover
 - Same validated palette; colours stay role tokens on `.st-view`
 
+### 2026-10-03 — Ownership Map: PDF reading takes address, jurisdiction and IDs
+
+- `EXTRACT_PROMPT` (index.html) now asks for `company_profile` {country, address, ids} and country / address / ids on every shareholder and board member, only when the document states them; ID kinds are the ones `rk-profile.js` uses (Company registration no., NIB, NPWP, KTP / NIK, Passport no., Other ID)
+- Review sheet: Company country / address / ID numbers fields under the source; each shareholder and board row gets a details line (Country, Address, ID numbers as one editable line `Kind: number; …`) when the document gave any, otherwise behind an "Address, country, ID…" link. A note shows what would replace the values already recorded
+- `importRows` takes `opts.profiles` (nameKey → {country, address, ids}): a value given replaces the recorded one (the document is newer), ID numbers are added without duplicates; one person in both lists gets the IDs of both rows. Saved in the same commit as the relationships, so one undo removes both
+- PDF test extended (prompt, review fields, kinds made standard, typed-in details, values saved)
+
 ---
 
 ## Notes

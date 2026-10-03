@@ -73,8 +73,10 @@ function fakeGitHub(){
 
 // ---------- fake DeepSeek ----------
 const DS_ANSWER = { company: 'PT Contoh Uji Indonesia', document: 'Profil Perusahaan (AHU)', document_date: '2026-09',
-  shareholders: [{ name: 'PT Induk Uji', kind: 'company', shares: 95, percent: 95 }, { name: 'Budi Santoso', kind: 'person', shares: 5, percent: 5 }],
-  board: [{ name: 'Budi Santoso', role: 'Direktur Utama' }, { name: 'Siti Aminah', role: 'Komisaris Utama' }], warnings: [] };
+  company_profile: { country: 'Indonesia', address: 'Jl. Sudirman No. 1, Jakarta Pusat', ids: [{ kind: 'Company registration no.', number: 'AHU-0012345.AH.01.01.Tahun 2015' }, { kind: 'NPWP', number: '01.234.567.8-901.000' }] },
+  shareholders: [{ name: 'PT Induk Uji', kind: 'company', shares: 95, percent: 95, country: 'Singapore', address: null, ids: [] },
+    { name: 'Budi Santoso', kind: 'person', shares: 5, percent: 5, country: 'Indonesia', address: 'Jl. Melati 5, Bandung', ids: [{ kind: 'NIK', number: '3273010101800001' }] }],
+  board: [{ name: 'Budi Santoso', role: 'Direktur Utama', ids: [{ kind: 'NPWP (tax no.)', number: '09.876.543.2-101.000' }] }, { name: 'Siti Aminah', role: 'Komisaris Utama' }], warnings: [] };
 function fakeDeepSeek(log){
   return async r => {
     const q = r.request();
@@ -243,6 +245,27 @@ const tests = {
     await p.waitForFunction(() => /Shareholders/.test((document.querySelector('.review-sheet') || {}).innerText || ''), null, { timeout: 40000 });
     eq(ds.length, 1, 'one DeepSeek call'); eq(ds[0].auth, 'Bearer sk-test-key', 'key sent');
     ok(ds[0].body.messages[1].content.includes('PT Induk Uji'), 'PDF text sent');
+    ok(/company_profile/.test(ds[0].body.messages[1].content) && /KTP \/ NIK/.test(ds[0].body.messages[1].content), 'prompt asks for address, country and IDs');
+    // the review shows the profile fields
+    eq(await p.inputValue('[data-meta="cCountry"]'), 'Indonesia', 'company country in review');
+    eq(await p.inputValue('[data-meta="cAddress"]'), 'Jl. Sudirman No. 1, Jakarta Pusat', 'company address in review');
+    ok((await p.inputValue('[data-meta="cIds"]')).includes('NPWP (tax no.): 01.234.567.8-901.000'), 'company IDs, kind made standard');
+    eq(await p.inputValue('tr.rv-sub[data-k="sh"][data-i="1"] [data-f="ids"]'), 'KTP / NIK: 3273010101800001', 'shareholder NIK');
+    ok(!(await p.$('tr.rv-sub[data-k="bd"][data-i="1"]')), 'no details row when nothing was found');
+    await p.click('tr[data-k="bd"][data-i="1"] [data-more]'); await sleep(200);
+    await p.fill('tr.rv-sub[data-k="bd"][data-i="1"] [data-f="country"]', 'Malaysia');
+    await p.fill('tr.rv-sub[data-k="bd"][data-i="1"] [data-f="ids"]', 'Passport: A1234567');
+    if (process.env.SHOT) await p.screenshot({ path: process.env.SHOT });
+    await p.click('#rvApprove'); await sleep(2500);
+    const prof = await p.evaluate(() => { const by = n => [...OwnershipMap.master.entities.values()].find(e => e.name === n) || {};
+      return { c: by('PT Contoh Uji Indonesia'), h: by('PT Induk Uji'), b: by('Budi Santoso'), s: by('Siti Aminah') }; });
+    eq([prof.c.country, prof.c.address], ['Indonesia', 'Jl. Sudirman No. 1, Jakarta Pusat'], 'company profile saved');
+    eq((prof.c.identities || []).length, 2, 'company IDs saved');
+    eq(prof.h.country, 'Singapore', 'shareholder country saved');
+    eq([prof.b.country, prof.b.address], ['Indonesia', 'Jl. Melati 5, Bandung'], 'person profile saved');
+    eq(prof.b.identities, [{ kind: 'KTP / NIK', number: '3273010101800001' }, { kind: 'NPWP (tax no.)', number: '09.876.543.2-101.000' }], 'IDs from both rows of one person merged');
+    eq([prof.s.country, prof.s.identities], ['Malaysia', [{ kind: 'Passport no.', number: 'A1234567' }]], 'details typed in the review saved');
+    eq(p.errors, [], 'page errors');
   },
   async 'table: tabs, both tables, sort, search, filters, row actions, CSV'(){
     const gh = fakeGitHub(); gh.set(SEED);

@@ -619,6 +619,13 @@
   .rv-status.change{ color: #9a5316; font-weight: 500; }
   .rv-computed{ display: block; font-size: 10.5px; color: var(--ink-400); margin-top: 2px; }
   .rv-del{ appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-400); width: 24px; height: 24px; border-radius: 50%; }
+  .rv-table tr.rv-sub td{ border-top: 0; padding-top: 0; padding-bottom: 10px; }
+  .rv-details{ display: grid; grid-template-columns: minmax(120px, 1fr) minmax(0, 2fr) minmax(0, 2fr); gap: 6px 8px; }
+  .rv-details label{ display: flex; flex-direction: column; gap: 3px; font-size: 11px; font-weight: 600; color: var(--ink-400); }
+  .rv-was{ margin: 4px 0 0; font-size: 11.5px; color: #9a5316; }
+  .rv-was:empty{ display: none; }
+  .rv-more{ display: block; margin-top: 3px; font-size: 11.5px; }
+  .rv-meta .span2{ grid-column: span 2; }
   .rv-del:hover{ background: rgba(20,28,36,.08); color: var(--danger); }
   .rv-add{ margin-top: 6px; }
   .rv-sum{ margin: 6px 0 0; font-size: 12px; color: var(--ink-600); }
@@ -4869,6 +4876,26 @@
         after.clusters = (after.clusters || []).concat(cluster); after.updatedAt = now;
         changes.push({ kind: 'entity', id: eid, before: clone(rec), after });
       });
+      // Country, address and ID numbers read from a document (rk-profile.js shows and edits them).
+      // A value given replaces the recorded one (the document is the newer evidence); ID numbers are added.
+      if (opts && opts.profiles) opts.profiles.forEach((p, pid) => {
+        const eid = keyIndex.get(pid); if (!eid) return;
+        const created = changes.find(c => c.kind === 'entity' && c.id === eid && !c.before);
+        const rec = created ? created.after : (changes.find(c => c.kind === 'entity' && c.id === eid) || {}).after || master.entities.get(eid);
+        if (!rec) return;
+        const after = created ? rec : clone(rec);
+        if (p.country) after.country = p.country;
+        if (p.address) after.address = p.address;
+        const ids = (after.identities || []).slice();
+        p.ids.forEach(i => { if (!ids.some(j => j.kind === i.kind && j.number === i.number)) ids.push(i); });
+        if (ids.length) after.identities = ids;
+        if (created) return;
+        const prior = changes.find(c => c.kind === 'entity' && c.id === eid);
+        if (prior){ prior.after = after; return; }
+        if (stableStr(after) === stableStr(rec)) return;
+        after.updatedAt = now;
+        changes.push({ kind: 'entity', id: eid, before: clone(rec), after });
+      });
       working.forEach((after, id) => {
         const before = master.links.get(id) || null;
         if (before && stableStr(before) === stableStr(after)) return;
@@ -5842,8 +5869,9 @@
     '',
     'Reply with only one JSON object of this shape:',
     '{"company": "PT Example Indonesia", "document": "Profil Perusahaan (AHU)", "document_date": "2025-12",',
-    ' "shareholders": [{"name": "PT Holding Example", "kind": "company", "shares": 9500, "percent": 95, "percent_computed": true}],',
-    ' "board": [{"name": "Budi Santoso", "role": "Direktur Utama"}],',
+    ' "company_profile": {"country": "Indonesia", "address": "Jl. Sudirman No. 1, Jakarta Pusat 10220", "ids": [{"kind": "Company registration no.", "number": "AHU-0012345.AH.01.01.Tahun 2015"}, {"kind": "NPWP (tax no.)", "number": "01.234.567.8-901.000"}]},',
+    ' "shareholders": [{"name": "PT Holding Example", "kind": "company", "shares": 9500, "percent": 95, "percent_computed": true, "country": "Indonesia", "address": null, "ids": [{"kind": "NPWP (tax no.)", "number": "02.345.678.9-012.000"}]}],',
+    ' "board": [{"name": "Budi Santoso", "role": "Direktur Utama", "country": "Indonesia", "address": "Jl. Melati 5, Bandung", "ids": [{"kind": "KTP / NIK", "number": "3273010101800001"}]}],',
     ' "warnings": ["The second page is partly unreadable."]}',
     '',
     'Rules:',
@@ -5856,6 +5884,10 @@
     '- If the document covers more than one company, extract only the main company and say so in warnings.',
     '- warnings: anything unreadable, uncertain or inconsistent, such as stakes that do not add up to 100%. Use an empty list when there is nothing to report.',
     '- If no shareholders or board can be found, return empty lists and explain why in warnings.',
+    '- company_profile, and country / address / ids on every shareholder and board member: copy them only when the document states them.',
+    '- country: for a company, where it is incorporated (an Indonesian PT or CV is "Indonesia"); for a person, the nationality given (WNI is "Indonesia"; WNA: the country named). Use English country names. null when not stated.',
+    '- address: the full address as written (street, number, RT/RW, kelurahan, kecamatan, city, postcode), on one line. null when not given.',
+    '- ids: every identity or registration number given, each as {"kind", "number"} with the number copied exactly. kind is one of: "Company registration no." (AHU number, SK Menkumham, deed/akta number, foreign company number), "NIB", "NPWP (tax no.)", "KTP / NIK", "Passport no.", "Other ID". Use an empty list when there are none.',
   ].join('\n');
 
   let review = null;          // the rows being checked
@@ -5996,6 +6028,27 @@
   // AHU prints everything in capitals: one-word personal names and titles are tidied too.
   const tidyPerson = n => (els.tidyCaps.checked && /^[A-Z][A-Z'’-]+$/.test(n) ? n.charAt(0) + n.slice(1).toLowerCase() : n);
   const tidyRole = r => { r = String(r || '').trim().replace(/\s+/g, ' '); return /[a-z]/.test(r) ? r : r.toLowerCase().replace(/(^|\s)\S/g, c => c.toUpperCase()); };
+  // Identity numbers in the review are edited as one line: "KTP / NIK: 3201…; NPWP (tax no.): 01.2…".
+  function canonIdKind(k){
+    const t = String(k || '').toLowerCase();
+    if (/nik|ktp/.test(t)) return 'KTP / NIK';
+    if (/npwp|tax/.test(t)) return 'NPWP (tax no.)';
+    if (/\bnib\b|nomor induk berusaha/.test(t)) return 'NIB';
+    if (/pass|paspor/.test(t)) return 'Passport no.';
+    if (/regist|ahu|\bsk\b|akta|deed|company/.test(t)) return 'Company registration no.';
+    return String(k || '').trim() || 'Other ID';
+  }
+  const idsText = ids => (Array.isArray(ids) ? ids : []).filter(i => i && i.number).map(i => canonIdKind(i.kind) + ': ' + String(i.number).trim()).join('; ');
+  function parseIds(text){
+    const out = [];
+    String(text || '').split(/;|\n/).map(x => x.trim()).filter(Boolean).forEach(x => {
+      const c = x.indexOf(':');
+      const kind = c > 0 ? canonIdKind(x.slice(0, c)) : 'Other ID', number = (c > 0 ? x.slice(c + 1) : x).trim();
+      if (number && !out.some(i => i.kind === kind && i.number === number)) out.push({ kind, number });
+    });
+    return out;
+  }
+  const profOf = x => ({ country: String((x && x.country) || '').trim(), address: String((x && x.address) || '').replace(/\s+/g, ' ').trim(), ids: idsText(x && x.ids) });
   function startReview(out, input, label){
     const o = out && typeof out === 'object' ? out : {};
     const company = tidyName(o.company || '');
@@ -6013,11 +6066,12 @@
       company, group, date: docDate,
       cluster: existing && master.entities.get(existing) ? ((master.entities.get(existing).clusters || [])[0] || '') : '',
       source: profileRef(company, docDate), sourceAuto: true,
+      cCountry: profOf(o.company_profile).country, cAddress: profOf(o.company_profile).address, cIds: profOf(o.company_profile).ids,
       shareholders: (Array.isArray(o.shareholders) ? o.shareholders : []).filter(x => x && x.name).map(x => {
         const kind = x.kind === 'person' ? 'person' : (x.kind === 'company' ? 'company' : inferType(tidyName(x.name)));
-        return { on: true, name: kind === 'person' ? tidyPerson(tidyName(x.name)) : tidyName(x.name), kind, percent: num(x.percent), computed: !!x.percent_computed };
+        return Object.assign({ on: true, name: kind === 'person' ? tidyPerson(tidyName(x.name)) : tidyName(x.name), kind, percent: num(x.percent), computed: !!x.percent_computed }, profOf(x));
       }),
-      board: (Array.isArray(o.board) ? o.board : []).filter(x => x && x.name).map(x => ({ on: true, name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) })),
+      board: (Array.isArray(o.board) ? o.board : []).filter(x => x && x.name).map(x => Object.assign({ on: true, name: tidyPerson(tidyName(x.name)), role: tidyRole(x.role) }, profOf(x))),
       warnings: (Array.isArray(o.warnings) ? o.warnings : []).map(String).filter(Boolean),
     };
     if (input.truncated) review.warnings.push('The PDF was long; only its first part was read.');
@@ -6025,23 +6079,34 @@
     renderReview();
   }
 
+  // Country, address and ID numbers of a row: shown under it when the document gave any, or on "Details".
+  const hasProf = x => !!(x.country || x.address || x.ids);
+  function detailRow(k, x, i, cols){
+    if (!(x.open || hasProf(x))) return '';
+    return '<tr class="rv-sub' + (x.on ? '' : ' off') + '" data-k="' + k + '" data-i="' + i + '"><td></td><td colspan="' + cols + '"><div class="rv-details">' +
+      '<label>Country<input class="well" data-f="country" list="rvCountries" value="' + escapeHtml(x.country || '') + '" placeholder="Jurisdiction or nationality" autocomplete="off"></label>' +
+      '<label class="addr">Address<input class="well" data-f="address" value="' + escapeHtml(x.address || '') + '" placeholder="Address as written"></label>' +
+      '<label class="ids">ID numbers<input class="well" data-f="ids" value="' + escapeHtml(x.ids || '') + '" placeholder="e.g. KTP / NIK: 3201…; NPWP (tax no.): 01.234…"></label>' +
+      '</div><p class="rv-was" data-was></p></td></tr>';
+  }
+  const moreBtn = x => hasProf(x) ? '' : '<button type="button" class="link-btn rv-more" data-more>' + (x.open ? 'Hide details' : 'Address, country, ID…') + '</button>';
   function renderReview(focusSel){
     if (!review) return;
     const r = review;
     const shRows = r.shareholders.map((x, i) => '<tr data-k="sh" data-i="' + i + '"' + (x.on ? '' : ' class="off"') + '>' +
       '<td><input type="checkbox" data-f="on" ' + (x.on ? 'checked' : '') + ' aria-label="Add this row"></td>' +
-      '<td><input class="well" data-f="name" value="' + escapeHtml(x.name) + '" aria-label="Shareholder name"></td>' +
+      '<td><input class="well" data-f="name" value="' + escapeHtml(x.name) + '" aria-label="Shareholder name">' + moreBtn(x) + '</td>' +
       '<td><select class="well kind" data-f="kind" aria-label="Type"><option value="company"' + (x.kind === 'company' ? ' selected' : '') + '>Company</option><option value="person"' + (x.kind === 'person' ? ' selected' : '') + '>Individual</option></select></td>' +
       '<td><input class="well num" data-f="percent" type="number" min="0" max="100" step="any" inputmode="decimal" value="' + (x.percent == null ? '' : x.percent) + '" placeholder="n/a" aria-label="Shareholding %">' +
         (x.computed ? '<span class="rv-computed">from share counts</span>' : '') + '</td>' +
       '<td class="rv-status" data-status></td>' +
-      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>').join('');
+      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('sh', x, i, 5)).join('');
     const bdRows = r.board.map((x, i) => '<tr data-k="bd" data-i="' + i + '"' + (x.on ? '' : ' class="off"') + '>' +
       '<td><input type="checkbox" data-f="on" ' + (x.on ? 'checked' : '') + ' aria-label="Add this row"></td>' +
-      '<td><input class="well" data-f="name" value="' + escapeHtml(x.name) + '" aria-label="Name"></td>' +
+      '<td><input class="well" data-f="name" value="' + escapeHtml(x.name) + '" aria-label="Name">' + moreBtn(x) + '</td>' +
       '<td><input class="well" data-f="role" value="' + escapeHtml(x.role) + '" aria-label="Role" placeholder="e.g. Direktur"></td>' +
       '<td class="rv-status" data-status></td>' +
-      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>').join('');
+      '<td><button type="button" class="rv-del" data-del aria-label="Remove this row">×</button></td></tr>' + detailRow('bd', x, i, 4)).join('');
     els.reviewBody.innerHTML =
       '<div class="rv-meta">' +
         '<label>Company<input class="well" data-meta="company" value="' + escapeHtml(r.company) + '" placeholder="PT …"><span class="rv-match" id="rvCompanyMatch"></span></label>' +
@@ -6049,7 +6114,12 @@
         '<label>Document date<input class="well" type="month" data-meta="date" value="' + escapeHtml(r.date) + '"></label>' +
         '<label>Commodity cluster<input class="well" data-meta="cluster" list="clusterOptions" value="' + escapeHtml(r.cluster || '') + '" placeholder="Optional, e.g. Forestry"></label>' +
         '<label class="wide">Source<input class="well" data-meta="source" value="' + escapeHtml(r.source) + '"></label>' +
+        '<label>Company country<input class="well" data-meta="cCountry" list="rvCountries" value="' + escapeHtml(r.cCountry || '') + '" placeholder="Where it is incorporated" autocomplete="off"></label>' +
+        '<label class="span2">Company address<input class="well" data-meta="cAddress" value="' + escapeHtml(r.cAddress || '') + '" placeholder="Registered address"></label>' +
+        '<label class="wide">Company ID numbers<input class="well" data-meta="cIds" value="' + escapeHtml(r.cIds || '') + '" placeholder="e.g. Company registration no.: AHU-…; NIB: 81…; NPWP (tax no.): 01.…"></label>' +
+        '<p class="rv-was wide" data-was-company></p>' +
       '</div>' +
+      '<datalist id="rvCountries">' + ['Indonesia', 'Singapore', 'Malaysia', 'Hong Kong', 'China', 'Japan', 'South Korea', 'Netherlands', 'United Kingdom', 'British Virgin Islands', 'Cayman Islands', 'Mauritius', 'Seychelles', 'Samoa', 'Labuan', 'Australia', 'United States'].map(c => '<option value="' + c + '">').join('') + '</datalist>' +
       (r.warnings.length ? '<ul class="rv-warn">' + r.warnings.map(w => '<li>' + escapeHtml(w) + '</li>').join('') + '</ul>' : '') +
       '<section class="rv-section"><h3>Shareholders <span>' + r.shareholders.length + ' found</span></h3>' +
         '<div class="rv-table-wrap"><table class="rv-table"><thead><tr><th scope="col">Add</th><th scope="col">Name</th><th scope="col">Type</th><th scope="col">%</th><th scope="col">In the dataset</th><th></th></tr></thead><tbody>' +
@@ -6088,7 +6158,25 @@
     const seenIds = { ownership: new Set(), directorship: new Set() };
     const setStatus = (tr, cls, text) => { const td = tr.querySelector('[data-status]'); td.className = 'rv-status ' + cls; td.textContent = text; };
     let count = 0, sum = 0, known = 0;
-    els.reviewBody.querySelectorAll('tr[data-k="sh"]').forEach(tr => {
+    // What the profile fields would change on an entity already in the dataset.
+    const wasText = (hid, x) => {
+      const e = hid && master.entities.get(hid); if (!e) return '';
+      const bits = [];
+      if (x.country && e.country && e.country !== x.country.trim()) bits.push('country ' + e.country);
+      if (x.address && e.address && e.address !== x.address.trim()) bits.push('address ' + e.address);
+      const known = new Set((e.identities || []).map(i => i.kind + ':' + i.number));
+      const fresh = parseIds(x.ids).filter(i => !known.has(i.kind + ':' + i.number)).length;
+      return (bits.length ? 'Replaces the recorded ' + bits.join('; ') + '. ' : '') + (fresh && (e.identities || []).length ? fresh + ' ID number' + (fresh === 1 ? '' : 's') + ' added to the ' + e.identities.length + ' recorded.' : '');
+    };
+    els.reviewBody.querySelectorAll('tr.rv-sub').forEach(tr => {
+      const x = (tr.dataset.k === 'sh' ? r.shareholders : r.board)[+tr.dataset.i];
+      const n = tidyName(x.name), hid = n ? entityKeyIndex.get(nameKey(n)) : null;
+      tr.classList.toggle('off', !x.on);
+      const w = tr.querySelector('[data-was]'); if (w) w.textContent = x.on ? wasText(hid, x) : '';
+    });
+    const cw = els.reviewBody.querySelector('[data-was-company]');
+    if (cw) cw.textContent = wasText(cid, { country: r.cCountry, address: r.cAddress, ids: r.cIds });
+    els.reviewBody.querySelectorAll('tr[data-k="sh"]:not(.rv-sub)').forEach(tr => {
       const x = r.shareholders[+tr.dataset.i];
       tr.classList.toggle('off', !x.on);
       const n = tidyName(x.name), hid = n ? entityKeyIndex.get(nameKey(n)) : null;
@@ -6102,7 +6190,7 @@
       else if (ex.length) setStatus(tr, 'change', 'Was ' + ex.map(l => (typeof l.value === 'number' ? l.value + '%' : 'n/a')).join(', ') + '; records a new stake');
       else setStatus(tr, 'new', 'Matches ' + entityName(hid) + '; new stake here');
     });
-    els.reviewBody.querySelectorAll('tr[data-k="bd"]').forEach(tr => {
+    els.reviewBody.querySelectorAll('tr[data-k="bd"]:not(.rv-sub)').forEach(tr => {
       const x = r.board[+tr.dataset.i];
       tr.classList.toggle('off', !x.on);
       const n = tidyName(x.name), hid = n ? entityKeyIndex.get(nameKey(n)) : null;
@@ -6173,10 +6261,17 @@
       renderReview();
       return;
     }
+    const more = event.target.closest('[data-more]');
+    if (more){
+      const tr = more.closest('tr[data-k]'), row = (tr.dataset.k === 'sh' ? review.shareholders : review.board)[+tr.dataset.i];
+      row.open = !row.open;
+      renderReview(row.open ? 'tr.rv-sub[data-k="' + tr.dataset.k + '"][data-i="' + tr.dataset.i + '"] input[data-f="country"]' : null);
+      return;
+    }
     const add = event.target.closest('[data-add]');
     if (add){
-      if (add.dataset.add === 'sh') review.shareholders.push({ on: true, name: '', kind: 'company', percent: null, computed: false });
-      else review.board.push({ on: true, name: '', role: '' });
+      if (add.dataset.add === 'sh') review.shareholders.push({ on: true, name: '', kind: 'company', percent: null, computed: false, country: '', address: '', ids: '' });
+      else review.board.push({ on: true, name: '', role: '', country: '', address: '', ids: '' });
       const k = add.dataset.add, i = (k === 'sh' ? review.shareholders : review.board).length - 1;
       renderReview('tr[data-k="' + k + '"][data-i="' + i + '"] input[data-f="name"]');
     }
@@ -6198,25 +6293,36 @@
     if (!company) return;
     const date = r.date || '';
     const q = v => '"' + String(v).replace(/"/g, '') + '"';
-    const lines = [], kinds = new Map([[nameKey(company), 'company']]);
+    const lines = [], kinds = new Map([[nameKey(company), 'company']]), profiles = new Map();
+    const addProfile = (n, x) => {
+      const p = { country: String(x.country || '').trim(), address: String(x.address || '').trim(), ids: parseIds(x.ids) };
+      if (!p.country && !p.address && !p.ids.length) return;
+      const cur = profiles.get(nameKey(n));
+      if (!cur){ profiles.set(nameKey(n), p); return; }
+      cur.country = cur.country || p.country; cur.address = cur.address || p.address;
+      p.ids.forEach(i => { if (!cur.ids.some(j => j.kind === i.kind && j.number === i.number)) cur.ids.push(i); });
+    };
+    addProfile(company, { country: r.cCountry, address: r.cAddress, ids: r.cIds });
     r.shareholders.forEach(x => {
       const n = tidyName(x.name);
       if (!x.on || !n || nameKey(n) === nameKey(company)) return;
       lines.push(q(n) + ',' + q(company) + ',ownership,' + (typeof x.percent === 'number' ? x.percent : '') + (date ? ',' + date : ''));
       kinds.set(nameKey(n), x.kind === 'person' ? 'person' : 'company');
+      addProfile(n, x);
     });
     r.board.forEach(x => {
       const n = tidyName(x.name);
       if (!x.on || !n || nameKey(n) === nameKey(company)) return;
       lines.push(q(n) + ',' + q(company) + ',directorship,' + q(x.role.trim() || 'Director/Commissioner') + (date ? ',' + date : ''));
       if (!kinds.has(nameKey(n))) kinds.set(nameKey(n), 'person');
+      addProfile(n, x);
     });
     if (!lines.length) return;
     const parsed = parse(lines.join('\n'), { mode: 'standard', tidy: false });
     parsed.nodes.forEach(n => { if (kinds.has(n.id)) n.type = kinds.get(n.id); });
     const btn = document.getElementById('rvApprove');
     if (btn){ btn.disabled = true; btn.textContent = 'Adding…'; }
-    const res = await importRows({ parsed, group: r.group.trim(), source: r.source.trim(), sdate: date || null, cluster: (r.cluster || '').trim() });
+    const res = await importRows({ parsed, group: r.group.trim(), source: r.source.trim(), sdate: date || null, cluster: (r.cluster || '').trim(), profiles });
     if (!res || !res.ok){
       if (btn){ btn.disabled = false; }
       updateReviewStatus();
