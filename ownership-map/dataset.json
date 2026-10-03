@@ -1667,6 +1667,46 @@
    "note": "",
    "createdAt": 1791027090536,
    "updatedAt": 1791027090536
+  },
+  "e-meadows-ocean-sdn-bhd": {
+   "name": "Meadows Ocean Sdn Bhd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "e-pt-nusantara-kalimantan-lestari": {
+   "name": "PT Nusantara Kalimantan Lestari",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "e-meadows-essence-sdn-bhd": {
+   "name": "Meadows Essence Sdn Bhd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "e-juni-edi-darmatuah-sinaga": {
+   "name": "Juni Edi Darmatuah Sinaga",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "e-segen-simamora": {
+   "name": "Segen Simamora",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
   }
  },
  "links": {
@@ -8125,227 +8165,97 @@
    "note": "",
    "createdAt": 1791027090536,
    "updatedAt": 1791027090536
+  },
+  "l-musbaybt-fi9pa6": {
+   "source": "e-meadows-ocean-sdn-bhd",
+   "target": "e-pt-nusantara-kalimantan-lestari",
+   "type": "ownership",
+   "value": 97.19,
+   "role": null,
+   "date": "2025-11",
+   "status": null,
+   "seen": [
+    "2025-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+     "date": "2025-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "l-musbaybt-1iatjb": {
+   "source": "e-meadows-essence-sdn-bhd",
+   "target": "e-pt-nusantara-kalimantan-lestari",
+   "type": "ownership",
+   "value": 2.81,
+   "role": null,
+   "date": "2025-11",
+   "status": null,
+   "seen": [
+    "2025-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+     "date": "2025-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "l-musbaybt-c2filb": {
+   "source": "e-juni-edi-darmatuah-sinaga",
+   "target": "e-pt-nusantara-kalimantan-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2025-11",
+   "status": null,
+   "seen": [
+    "2025-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+     "date": "2025-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
+  },
+  "l-musbaybt-n5vwgm": {
+   "source": "e-segen-simamora",
+   "target": "e-pt-nusantara-kalimantan-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2025-11",
+   "status": null,
+   "seen": [
+    "2025-11"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+     "date": "2025-11"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791027119945,
+   "updatedAt": 1791027119945
   }
  },
  "versions": {
-  "v-musakfg4-685p": {
-   "at": 1791025882420,
-   "batch": "v-musakfg4-685p",
-   "summary": "Removed PT Swadaya Perkasa from the group Kaltim: 4 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 4,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0181",
-     "before": {
-      "source": "e-ieneke-santoso",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-ieneke-santoso",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025882405
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0182",
-     "before": {
-      "source": "e-eddy-sanusi",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-eddy-sanusi",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025882405
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0183",
-     "before": {
-      "source": "e-pt-kemakmuran-bersama-sejati",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-kemakmuran-bersama-sejati",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025882405
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0184",
-     "before": {
-      "source": "e-pt-satya-multi-prakarsa",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-pt-satya-multi-prakarsa",
-      "target": "e-pt-swadaya-perkasa",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2024-09",
-      "status": null,
-      "seen": [
-       "2023-08",
-       "2024-09"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791025882405
-     }
-    }
-   ]
-  },
   "v-musakisz-ffm8": {
    "at": 1791025886771,
    "batch": "v-musakisz-ffm8",
@@ -10112,6 +10022,189 @@
       "note": "",
       "createdAt": 1791027090536,
       "updatedAt": 1791027090536
+     }
+    }
+   ]
+  },
+  "v-musbaycu-yalq": {
+   "at": 1791027119982,
+   "batch": "v-musbaycu-yalq",
+   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 9,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-meadows-ocean-sdn-bhd",
+     "before": null,
+     "after": {
+      "name": "Meadows Ocean Sdn Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-nusantara-kalimantan-lestari",
+     "before": null,
+     "after": {
+      "name": "PT Nusantara Kalimantan Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-meadows-essence-sdn-bhd",
+     "before": null,
+     "after": {
+      "name": "Meadows Essence Sdn Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-juni-edi-darmatuah-sinaga",
+     "before": null,
+     "after": {
+      "name": "Juni Edi Darmatuah Sinaga",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-segen-simamora",
+     "before": null,
+     "after": {
+      "name": "Segen Simamora",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbaybt-fi9pa6",
+     "before": null,
+     "after": {
+      "source": "e-meadows-ocean-sdn-bhd",
+      "target": "e-pt-nusantara-kalimantan-lestari",
+      "type": "ownership",
+      "value": 97.19,
+      "role": null,
+      "date": "2025-11",
+      "status": null,
+      "seen": [
+       "2025-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+        "date": "2025-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbaybt-1iatjb",
+     "before": null,
+     "after": {
+      "source": "e-meadows-essence-sdn-bhd",
+      "target": "e-pt-nusantara-kalimantan-lestari",
+      "type": "ownership",
+      "value": 2.81,
+      "role": null,
+      "date": "2025-11",
+      "status": null,
+      "seen": [
+       "2025-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+        "date": "2025-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbaybt-c2filb",
+     "before": null,
+     "after": {
+      "source": "e-juni-edi-darmatuah-sinaga",
+      "target": "e-pt-nusantara-kalimantan-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2025-11",
+      "status": null,
+      "seen": [
+       "2025-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+        "date": "2025-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musbaybt-n5vwgm",
+     "before": null,
+     "after": {
+      "source": "e-segen-simamora",
+      "target": "e-pt-nusantara-kalimantan-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2025-11",
+      "status": null,
+      "seen": [
+       "2025-11"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. November 2025. “PT Nusantara Kalimantan Lestari.” Corporate profile.",
+        "date": "2025-11"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791027119945,
+      "updatedAt": 1791027119945
      }
     }
    ]
