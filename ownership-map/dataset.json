@@ -1957,6 +1957,62 @@
    "note": "",
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
+  },
+  "e-pt-eagle-high-plantations-tbk": {
+   "name": "PT Eagle High Plantations Tbk",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-pt-adhyaksa-dharmasatya": {
+   "name": "PT Adhyaksa Dharmasatya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-pt-bumilanggeng-perdanatrada": {
+   "name": "PT Bumilanggeng Perdanatrada",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-eddy-hartanto": {
+   "name": "Eddy Hartanto",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-bastian-purnama": {
+   "name": "Bastian Purnama",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-nicolaas-bernadus-tirtadinata": {
+   "name": "Nicolaas Bernadus Tirtadinata",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "e-arfan-sani": {
+   "name": "Arfan Sani",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   }
  },
  "links": {
@@ -9131,192 +9187,141 @@
    "note": "",
    "createdAt": 1791043146378,
    "updatedAt": 1791043146378
+  },
+  "l-muskx4f6-dntmfm": {
+   "source": "e-pt-eagle-high-plantations-tbk",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "ownership",
+   "value": 99.999999,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-8o73aq": {
+   "source": "e-pt-bumilanggeng-perdanatrada",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "ownership",
+   "value": 0.000001,
+   "role": null,
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-80uuc5": {
+   "source": "e-eddy-hartanto",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-qhk0rj": {
+   "source": "e-bastian-purnama",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-zl8t19": {
+   "source": "e-nicolaas-bernadus-tirtadinata",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
+  },
+  "l-muskx4f6-mma28d": {
+   "source": "e-arfan-sani",
+   "target": "e-pt-adhyaksa-dharmasatya",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2017-06",
+   "status": null,
+   "seen": [
+    "2017-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+     "date": "2017-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791043270817,
+   "updatedAt": 1791043270817
   }
  },
  "versions": {
-  "v-musb7hpq-8jwp": {
-   "at": 1791026958446,
-   "batch": "v-musb7hpq-8jwp",
-   "summary": "Added 4 rows from Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 9,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-asianagro-lestari",
-     "before": null,
-     "after": {
-      "name": "PT Asianagro Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-mukti-artha-yoga",
-     "before": null,
-     "after": {
-      "name": "PT Mukti Artha Yoga",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-asianagri-riau-jambi",
-     "before": null,
-     "after": {
-      "name": "PT Asianagri Riau Jambi",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-krisman-p-sitinjak",
-     "before": null,
-     "after": {
-      "name": "Krisman P Sitinjak",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pengarapen-gurusinga",
-     "before": null,
-     "after": {
-      "name": "Pengarapen Gurusinga",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb7hp5-3fsii9",
-     "before": null,
-     "after": {
-      "source": "e-pt-asianagro-lestari",
-      "target": "e-pt-mukti-artha-yoga",
-      "type": "ownership",
-      "value": 80,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb7hp5-8hdf70",
-     "before": null,
-     "after": {
-      "source": "e-pt-asianagri-riau-jambi",
-      "target": "e-pt-mukti-artha-yoga",
-      "type": "ownership",
-      "value": 20,
-      "role": null,
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb7hp5-sqdzis",
-     "before": null,
-     "after": {
-      "source": "e-krisman-p-sitinjak",
-      "target": "e-pt-mukti-artha-yoga",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musb7hp5-o42bfu",
-     "before": null,
-     "after": {
-      "source": "e-pengarapen-gurusinga",
-      "target": "e-pt-mukti-artha-yoga",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2023-02",
-      "status": null,
-      "seen": [
-       "2023-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2023. “PT Mukti Artha Yoga.” Corporate profile.",
-        "date": "2023-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791026958424,
-      "updatedAt": 1791026958424
-     }
-    }
-   ]
-  },
   "v-musb848z-7hi9": {
    "at": 1791026987651,
    "batch": "v-musb848z-7hi9",
@@ -11319,6 +11324,269 @@
       "note": "",
       "createdAt": 1791043146378,
       "updatedAt": 1791043175845
+     }
+    }
+   ]
+  },
+  "v-muskx4fv-m7o9": {
+   "at": 1791043270843,
+   "batch": "v-muskx4fv-m7o9",
+   "summary": "Added 6 rows from Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 13,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-eagle-high-plantations-tbk",
+     "before": null,
+     "after": {
+      "name": "PT Eagle High Plantations Tbk",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-adhyaksa-dharmasatya",
+     "before": null,
+     "after": {
+      "name": "PT Adhyaksa Dharmasatya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-bumilanggeng-perdanatrada",
+     "before": null,
+     "after": {
+      "name": "PT Bumilanggeng Perdanatrada",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-eddy-hartanto",
+     "before": null,
+     "after": {
+      "name": "Eddy Hartanto",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-bastian-purnama",
+     "before": null,
+     "after": {
+      "name": "Bastian Purnama",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-nicolaas-bernadus-tirtadinata",
+     "before": null,
+     "after": {
+      "name": "Nicolaas Bernadus Tirtadinata",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-arfan-sani",
+     "before": null,
+     "after": {
+      "name": "Arfan Sani",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-dntmfm",
+     "before": null,
+     "after": {
+      "source": "e-pt-eagle-high-plantations-tbk",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "ownership",
+      "value": 99.999999,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-8o73aq",
+     "before": null,
+     "after": {
+      "source": "e-pt-bumilanggeng-perdanatrada",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "ownership",
+      "value": 0.000001,
+      "role": null,
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-80uuc5",
+     "before": null,
+     "after": {
+      "source": "e-eddy-hartanto",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-qhk0rj",
+     "before": null,
+     "after": {
+      "source": "e-bastian-purnama",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-zl8t19",
+     "before": null,
+     "after": {
+      "source": "e-nicolaas-bernadus-tirtadinata",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-muskx4f6-mma28d",
+     "before": null,
+     "after": {
+      "source": "e-arfan-sani",
+      "target": "e-pt-adhyaksa-dharmasatya",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2017-06",
+      "status": null,
+      "seen": [
+       "2017-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2017. “PT Adhyaksa Dharmasatya.” Corporate profile.",
+        "date": "2017-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791043270817,
+      "updatedAt": 1791043270817
      }
     }
    ]
