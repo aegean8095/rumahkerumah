@@ -140,7 +140,7 @@
   // ordinal ramp (concentration), stacked columns (years), ranked bars (top lists),
   // stacked bars (groups). Every chart has a table twin behind the card's Table button,
   // and every mark shows its value on hover or keyboard focus.
-  function nameBtn(id){ return '<button type="button" class="link-btn st-ent" data-ent="' + esc(id) + '">' + esc(OM.entityName(id)) + '</button>'; }
+  function nameBtn(id){ return '<button type="button" class="link-btn st-ent" data-ent="' + esc(id) + '" title="' + esc(OM.entityName(id)) + '">' + esc(OM.entityName(id)) + '</button>'; }
   function tipAttr(value, label){ return ' tabindex="0" data-tip-v="' + esc(String(value)) + '" data-tip-l="' + esc(label) + '"'; }
   function nf(n){ return Number(n).toLocaleString('en-US'); }
   function niceMax(mx){
@@ -169,13 +169,15 @@
     }).join('') + '</ul>';
   }
   // ranked horizontal bars, one series: value at the tip
-  function ranked(rows){
+  function ranked(rows, opts){
+    opts = opts || {};
     if (!rows.length) return '<p class="st-none">Nothing to show yet.</p>';
     var mx = Math.max.apply(null, rows.map(function(r){ return r.value; }).concat([1]));
-    return '<ul class="st-rank">' + rows.map(function(r){
-      return '<li><span class="st-r-label">' + (r.html || esc(r.label)) + '</span><span class="st-r-bar">' +
-        '<i class="' + (r.muted ? 'mut' : 's1') + '" style="width:' + Math.max(0.8, r.value / mx * 84) + '%"' + tipAttr(r.text, r.label) + '></i><b>' + esc(r.short != null ? r.short : nf(r.value)) + '</b></span></li>';
-    }).join('') + '</ul>';
+    return '<ol class="st-rank' + (opts.noRank ? ' no-rank' : '') + '">' + rows.map(function(r, i){
+      return '<li>' + (opts.noRank ? '' : '<span class="st-r-n">' + (i + 1) + '</span>') + '<span class="st-r-label" title="' + esc(r.label) + '">' + (r.html || esc(r.label)) + '</span>' +
+        '<span class="st-r-track"><i class="' + (r.muted ? 'mut' : 's1') + '" style="width:' + Math.max(1.5, r.value / mx * 100) + '%"' + tipAttr(r.text, r.label) + '></i></span>' +
+        '<b class="st-r-v">' + esc(r.short != null ? r.short : nf(r.value)) + '</b></li>';
+    }).join('') + '</ol>';
   }
   // vertical columns; each column is a list of segments [{v, cls, label}] stacked from the baseline
   function columns(cols, opts){
@@ -201,12 +203,12 @@
   function stacked(rows, a, b){
     if (!rows.length) return '<p class="st-none">Nothing to show yet.</p>';
     var mx = Math.max.apply(null, rows.map(function(r){ return r.a + r.b; }).concat([1]));
-    return legend([{ cls: 's1', label: a }, { cls: 's2', label: b }]) + '<ul class="st-rank">' + rows.map(function(r){
+    return '<ol class="st-rank no-rank">' + rows.map(function(r){
       var t = r.a + r.b;
-      return '<li><span class="st-r-label">' + esc(r.label) + '</span><span class="st-r-bar"><span class="st-r-stack" style="width:' + Math.max(0.8, t / mx * 84) + '%">' +
+      return '<li><span class="st-r-label">' + esc(r.label) + '</span><span class="st-r-track"><span class="st-r-stack" style="width:' + Math.max(1.5, t / mx * 100) + '%">' +
         (r.a ? '<i class="s1" style="flex-grow:' + r.a + '"' + tipAttr(nf(r.a), r.label + ' · ' + a) + '></i>' : '') +
-        (r.b ? '<i class="s2" style="flex-grow:' + r.b + '"' + tipAttr(nf(r.b), r.label + ' · ' + b) + '></i>' : '') + '</span><b>' + nf(t) + '</b></span></li>';
-    }).join('') + '</ul>';
+        (r.b ? '<i class="s2" style="flex-grow:' + r.b + '"' + tipAttr(nf(r.b), r.label + ' · ' + b) + '></i>' : '') + '</span></span><b class="st-r-v">' + nf(t) + '</b></li>';
+    }).join('') + '</ol>' + legend([{ cls: 's1', label: a }, { cls: 's2', label: b }]);
   }
   function tableHtml(head, rows){
     return '<table class="st-table"><thead><tr>' + head.map(function(c, i){ return '<th' + (i ? ' class="num"' : '') + '>' + esc(c) + '</th>'; }).join('') + '</tr></thead><tbody>' +
@@ -215,10 +217,12 @@
   var showTable = {};
   function card(id, title, chart, hint, table, wide){
     var t = !!showTable[id];
-    return '<section class="st-card' + (wide ? ' wide' : '') + (t ? ' show-table' : '') + '" data-card="' + id + '"><div class="st-card-head"><h3>' + esc(title) + '</h3>' +
-      (table ? '<button type="button" class="chip-btn st-tv-btn" data-tv="' + id + '" aria-pressed="' + t + '">' + (t ? 'Chart' : 'Table') + '</button>' : '') + '</div>' +
-      (hint ? '<p class="st-hint">' + esc(hint) + '</p>' : '') + '<div class="st-chart">' + chart + '</div>' + (table ? '<div class="st-tablev">' + table + '</div>' : '') + '</section>';
+    return '<section class="st-card' + (wide ? ' wide' : '') + (t ? ' show-table' : '') + '" data-card="' + id + '"><div class="st-card-head"><div><h3>' + esc(title) + '</h3>' +
+      (hint ? '<p class="st-hint">' + esc(hint) + '</p>' : '') + '</div>' +
+      (table ? '<button type="button" class="st-tv-btn" data-tv="' + id + '" aria-pressed="' + t + '" title="Switch between the chart and its numbers">' + (t ? 'Chart' : 'Table') + '</button>' : '') + '</div>' +
+      '<div class="st-chart">' + chart + '</div>' + (table ? '<div class="st-tablev">' + table + '</div>' : '') + '</section>';
   }
+  function section(t, sub){ return '<header class="st-section"><h2>' + esc(t) + '</h2><p>' + esc(sub) + '</p></header>'; }
   function kpi(n, label){ return '<div class="st-kpi"><b>' + esc(nf(n)) + '</b><span>' + esc(label) + '</span></div>'; }
   function plural(n, one, many){ return nf(n) + ' ' + (n === 1 ? one : many); }
   function entRanked(list, one, many){ return list.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: plural(x[1], one, many) }; }); }
@@ -238,6 +242,7 @@
         split('Relationships', { label: 'Shareholdings', value: S.own }, { label: 'Board roles', value: S.dir }) +
         split('Status', { label: 'Current', value: S.cur }, { label: 'Previous', value: S.prev }) + '</div>',
       'Beneficial owner: an individual with over 25%, directly or through companies. Owner not recorded: a company that owns others but has no recorded owner.', null, true);
+    h += section('Data', 'How complete the records are, and how concentrated ownership is.');
     h += card('coverage', 'Data coverage', meters(S.coverage), 'Share of the data that is filled in. Short bars show where research is still needed.',
       tableHtml(['Measure', 'Share', 'Count', 'Of'], S.coverage.map(function(c){ return [c[0], pc(c[1], c[2]) + '%', c[1], c[2]]; })));
     var ramp = ['mut', 'mut', 'o1', 'o2', 'o3', 'o4'], short = ['None recorded', '% unknown', 'Under 25%', '25–50%', '50–75%', 'Over 75%'];
@@ -245,25 +250,29 @@
       columns(S.concentration.map(function(b, i){ return { label: short[i], segs: [{ v: b[1], cls: ramp[i], label: b[0] }] }; }), { capLabels: true }),
       'Companies by the size of their largest direct shareholder (current stakes). Gray: the size cannot be measured.',
       tableHtml(['Largest direct holder', 'Companies'], S.concentration.map(function(b){ return [b[0], b[1]]; })));
+    h += section('Ownership and control', 'Who sits at the top of the chains, and who holds the most.');
     h += card('control', 'Who controls most', ranked(entRanked(S.controllers, 'company', 'companies')),
       'Individuals by the number of companies they control with over 50% effective ownership. ' + plural(S.controllingPeople, 'individual controls', 'individuals control') + ' at least one.', entTable(S.controllers, 'Companies controlled'));
     h += card('bo', 'Largest beneficial owners', ranked(S.boList.map(function(x){ return { html: nameBtn(x[0]), label: OM.entityName(x[0]), value: x[1], text: x[1] + '%', short: x[1] + '%' }; })),
       'Highest effective stake an individual holds in any one company.', tableHtml(['Name', 'Highest effective stake (%)'], S.boList.map(function(x){ return [OM.entityName(x[0]), x[1]]; })));
     h += card('holdings', 'Most holdings', ranked(entRanked(S.holdersTop, 'holding', 'holdings')), 'Companies holding shares in the most other companies.', entTable(S.holdersTop, 'Holdings'));
+    h += card('connected', 'Most connected', ranked(entRanked(S.connTop, 'relationship', 'relationships')), 'Entities with the most relationships of any kind.', entTable(S.connTop, 'Relationships'));
+    h += section('Boards', 'Directors and commissioners, and the people who link boards.');
     h += card('boards', 'Boards', '<div class="st-kpis small">' + kpi(S.boardAvg, 'average board size') + kpi(S.interlock, 'people on 2+ boards') + kpi(S.seatPeople, 'people with a seat') + '</div>' +
       '<h4>Most board seats</h4>' + ranked(entRanked(S.seatTop, 'seat', 'seats')), 'Current directors and commissioners only.', entTable(S.seatTop, 'Seats'));
-    h += card('boardsize', 'Largest boards', ranked(entRanked(S.boardTop, 'member', 'members')) + '<h4>Roles</h4>' + ranked(S.roles.map(function(r){ return { label: r[0], value: r[1], text: nf(r[1]) }; })), null,
+    h += card('boardsize', 'Largest boards', ranked(entRanked(S.boardTop, 'member', 'members')) + '<h4>Roles</h4>' + ranked(S.roles.map(function(r){ return { label: r[0], value: r[1], text: nf(r[1]) }; }), { noRank: true }), null,
       tableHtml(['Company or role', 'Count'], S.boardTop.map(function(x){ return [OM.entityName(x[0]), x[1]]; }).concat(S.roles.map(function(r){ return ['Role: ' + r[0], r[1]]; }))));
-    h += card('connected', 'Most connected', ranked(entRanked(S.connTop, 'relationship', 'relationships')), 'Entities with the most relationships of any kind.', entTable(S.connTop, 'Relationships'));
+    h += section('Over time', 'When the relationships in the data were first seen.');
     h += card('years', 'Relationships by year first seen',
       columns(S.years.map(function(y){ return { label: String(y[0]), segs: [{ v: y[1].cur, cls: 's1', label: 'Current' }, { v: y[1].prev, cls: 's2', label: 'Previous' }] }; })) +
         (S.years.length ? legend([{ cls: 's1', label: 'Current' }, { cls: 's2', label: 'Previous' }]) : ''),
       'The year of the earliest date recorded for each relationship, split by its status now. Undated relationships are not counted.',
       tableHtml(['Year', 'Current', 'Previous', 'Total'], S.years.map(function(y){ return [y[0], y[1].cur, y[1].prev, y[1].cur + y[1].prev]; })), true);
+    h += section('Groups and countries', 'How the data spreads over company groups and jurisdictions.');
     h += card('groups', 'Company groups', stacked(S.groups.map(function(g){ return { label: g.name, a: g.companies, b: g.people }; }), 'Companies', 'Individuals'),
       'Entities in each group. A group counts every entity on its relationships.',
       tableHtml(['Group', 'Entities', 'Companies', 'Individuals', 'Relationships'], S.groups.map(function(g){ return [g.name, g.ents, g.companies, g.people, g.links]; })));
-    h += card('countries', 'Countries', ranked(S.countries.map(function(c){ return { label: c[0], value: c[1], text: plural(c[1], 'entity', 'entities'), muted: c[0] === 'Not recorded' }; })),
+    h += card('countries', 'Countries', ranked(S.countries.map(function(c){ return { label: c[0], value: c[1], text: plural(c[1], 'entity', 'entities'), muted: c[0] === 'Not recorded' }; }), { noRank: true }),
       'Entities by country (jurisdiction) from their Profile. Gray: not recorded yet.', tableHtml(['Country', 'Entities'], S.countries));
     panel.querySelector('#stBody').innerHTML = h + '</div>';
   }
@@ -272,8 +281,9 @@
   var tip = document.createElement('div'); tip.className = 'st-tip'; tip.hidden = true; tip.setAttribute('role', 'tooltip');
   var tipV = document.createElement('b'), tipL = document.createElement('span'); tip.appendChild(tipV); tip.appendChild(tipL);
   panel.appendChild(tip);
+  var shownAt = 0;
   function showTip(el, x, y){
-    tipV.textContent = el.dataset.tipV; tipL.textContent = el.dataset.tipL; tip.hidden = false;
+    tipV.textContent = el.dataset.tipV; tipL.textContent = el.dataset.tipL; tip.hidden = false; shownAt = Date.now();
     var pr = panel.getBoundingClientRect(), w = tip.offsetWidth, hgt = tip.offsetHeight;
     if (x == null){ var r = el.getBoundingClientRect(); x = r.left + r.width / 2; y = r.top; }
     tip.style.left = Math.min(Math.max(8, x - pr.left - w / 2), pr.width - w - 8) + 'px';
@@ -283,7 +293,7 @@
   panel.addEventListener('pointerleave', function(){ tip.hidden = true; });
   panel.addEventListener('focusin', function(e){ var el = e.target.closest('[data-tip-v]'); if (el) showTip(el); });
   panel.addEventListener('focusout', function(){ tip.hidden = true; });
-  panel.addEventListener('scroll', function(){ tip.hidden = true; }, true);
+  panel.addEventListener('scroll', function(){ if (Date.now() - shownAt > 250) tip.hidden = true; }, true);
 
   $('stBody').addEventListener('click', function(e){
     var t = e.target.closest('[data-tv]');

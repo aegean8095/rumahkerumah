@@ -228,6 +228,13 @@ Working efficiently (token use):
 - Every mark has a tooltip on hover and keyboard focus (value first, label after; text set with `textContent`); every card has a Table button that swaps the chart for its table twin
 - Stats test extended (columns, table switch, tooltip); reads the concentration from the table twin
 
+### 2026-10-03 — Ownership Map: Statistics tab restyled
+
+- Soft canvas behind roomy cards (22–24px padding, 20px gaps, 16px radius, hairline border, faint shadow), at most two cards per row (one below 1100px), content capped at 1240px and centred
+- Cards grouped under section headings: Data, Ownership and control, Boards, Over time, Groups and countries
+- KPI strip (figures split by hairlines, no boxes), split bars under a hairline, leaderboard rows (rank · name · bar on a light track · value right-aligned), thinner meters, taller column chart, round legend dots, pill Table/Chart toggle, darker tooltip with blur; long names get an ellipsis and the full name on hover
+- Same validated palette; colours stay role tokens on `.st-view`
+
 ---
 
 ## Notes

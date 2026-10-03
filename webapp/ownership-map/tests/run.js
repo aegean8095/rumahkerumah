@@ -793,7 +793,7 @@ const tests = {
     const { ctx } = await context({ gh }); const p = await open(ctx);
     await p.evaluate(() => window.OwnershipMapTabs.show('stats')); await sleep(800);
     ok(await p.isVisible('#statsView') && !(await p.isVisible('.map-legend')), 'Statistics tab shown, map chrome hidden');
-    if (process.env.SHOT){ const vs = p.viewportSize(); await p.setViewportSize({ width: 1440, height: 2600 }); await sleep(800); await p.screenshot({ path: process.env.SHOT }); await p.setViewportSize(vs); await sleep(400); }
+    if (process.env.SHOT){ const vs = p.viewportSize(); await p.setViewportSize({ width: 1440, height: +(process.env.SHOTH || 2600) }); await sleep(800); await p.screenshot({ path: process.env.SHOT }); await p.setViewportSize(vs); await sleep(400); }
     // ground truth from the graph itself
     const truth = await p.evaluate(() => { const g = OwnershipMap.graph, L = g.links.filter(OwnershipMap.linkPassesFilter);
       const comps = g.nodes.filter(n => n.type === 'company').length;
