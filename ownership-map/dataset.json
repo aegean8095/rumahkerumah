@@ -1163,12 +1163,12 @@
    "updatedAt": 1791023599738
   },
   "e-soepriyatno": {
-   "name": "SOEPRIYATNO",
+   "name": "Soepriyatno",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791023608076
   },
   "e-sonny-engko": {
    "name": "Sonny Engko",
@@ -7294,36 +7294,6 @@
   }
  },
  "versions": {
-  "v-mus7ihdv-2py0": {
-   "at": 1791020752771,
-   "batch": "v-mus7ihdv-2py0",
-   "summary": "Renamed SUGIONO to Sugiono",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-sugiono",
-     "before": {
-      "name": "SUGIONO",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "Sugiono",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791020752767
-     }
-    }
-   ]
-  },
   "v-mus7ixbu-or3y": {
    "at": 1791020773434,
    "batch": "v-mus7ixbu-or3y",
@@ -7599,6 +7569,36 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791023599738
+     }
+    }
+   ]
+  },
+  "v-mus97okb-j2og": {
+   "at": 1791023608091,
+   "batch": "v-mus97okb-j2og",
+   "summary": "Renamed SOEPRIYATNO to Soepriyatno",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-soepriyatno",
+     "before": {
+      "name": "SOEPRIYATNO",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Soepriyatno",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791023608076
      }
     }
    ]
