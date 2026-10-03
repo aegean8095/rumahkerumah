@@ -103,7 +103,7 @@
   document.addEventListener('om:tab', function(e){
     var tab = e.detail.tab;
     if (tab === 'quality'){ if (btn.classList.contains('is-on') || OM.getAsOf().key != null) closeBar(); }
-    else if (tab === 'table'){ if (!bar.hidden) bar.hidden = true; }
+    else if (tab === 'table' || tab === 'stats'){ if (!bar.hidden) bar.hidden = true; }
     else if (tab === 'map'){ if (btn.classList.contains('is-on')) bar.hidden = false; }
   });
 })();

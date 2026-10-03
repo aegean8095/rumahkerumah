@@ -68,6 +68,7 @@ Files:
 | `rk-report.js` | Printable company report (`OwnershipMapReport.open`), print CSS in `rk-ui.css`. |
 | `rk-status.js` | Save status chip in the top capsule (Saved / Saving / Unsaved / Offline / Not connected). |
 | `rk-profile.js` | Detail panel block "Profile": country (jurisdiction), address, identity registry numbers (`identities[{kind, number}]` on the entity). Table columns, Entities CSV, search, report and merge read the same fields. |
+| `rk-stats.js` | Statistics tab: overview, data coverage, ownership concentration, who controls most, largest beneficial owners, boards, most connected, groups, countries, relationships by year first seen. Follows the map filters (like Table); names open the detail panel; Statistics CSV. |
 | `rk-fold.js` | Sidebar panels fold to their heading on click / Enter / Space; remembered per browser (`om-folded-panels`); `OwnershipMapFold.open(id)`. |
 | `rk-ui.css` | Styles for the modules above. |
 | `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
@@ -213,6 +214,12 @@ Working efficiently (token use):
 
 - New `rk-fold.js`: every sidebar panel (Company groups, Commodity, Search, Data, Dataset, Export) folds down to its heading when the heading is clicked (or Enter / Space); chevron shows the state, `aria-expanded` is set, state is remembered per browser. Panels the app hides stay hidden. The save-status chip unfolds Dataset before it scrolls there
 - 1 new test (29 total)
+
+### 2026-10-03 — Ownership Map: Statistics tab
+
+- New `rk-stats.js`: tab "Statistics" (fourth tab) with aggregate figures for analysis, computed from what the map shows (group, relationship, timeline and as-of filters apply, as in Table). Cards: overview (companies, individuals, shareholdings, board roles, current / previous, beneficial owners, owners not recorded), data coverage (% of companies with shareholders / stakes adding to 100% / board; % of relationships with source and date; % of entities with country, address, identity), ownership concentration (largest direct holder buckets), who controls most (>50% effective), largest beneficial owners, most holdings, boards (average size, people on 2+ boards, most seats, largest boards, roles), most connected, company groups table, countries, relationships by year first seen
+- Bars are plain CSS (no chart library); names open the detail panel; "Statistics CSV" saves every figure as section, label, value. The as-of bar hides on this tab like on Table
+- 1 new test (checks the figures against the graph itself, the Kaltim group size, the Timeline filter, CSV); 30 total
 
 ---
 

@@ -788,6 +788,50 @@ const tests = {
     ok(await p.evaluate(() => !OwnershipMapFold.isFolded('datasetPanel')), 'API opens a panel');
     eq(p.errors, [], 'page errors');
   },
+  async 'stats: aggregate figures match the data, follow filters, names open detail, CSV'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs.show('stats')); await sleep(800);
+    ok(await p.isVisible('#statsView') && !(await p.isVisible('.map-legend')), 'Statistics tab shown, map chrome hidden');
+    if (process.env.SHOT) await p.screenshot({ path: process.env.SHOT });
+    // ground truth from the graph itself
+    const truth = await p.evaluate(() => { const g = OwnershipMap.graph, L = g.links.filter(OwnershipMap.linkPassesFilter);
+      const comps = g.nodes.filter(n => n.type === 'company').length;
+      const maxHolder = new Map(); L.forEach(l => { if (l.type !== 'ownership' || l.status === 'previous') return; const t = OwnershipMap.linkEnds(l)[1]; const v = typeof l.value === 'number' ? l.value : -1; maxHolder.set(t, Math.max(maxHolder.get(t) ?? -2, v)); });
+      let over50 = 0; g.nodes.forEach(n => { if (n.type === 'company' && (maxHolder.get(n.id) ?? -2) > 50) over50++; });
+      const kal = new Set(); L.forEach(l => { if ((OwnershipMap.master.links.get(l.id).groups || []).includes('Kaltim')) OwnershipMap.linkEnds(l).forEach(x => kal.add(x)); });
+      return { n: g.nodes.length, comps, people: g.nodes.length - comps, links: L.length, own: L.filter(l => l.type === 'ownership').length, over50, kal: kal.size, bo: OwnershipMap.ownershipFlags().bo.size }; });
+    const kpis = await p.$$eval('.st-card:first-child .st-kpi', k => Object.fromEntries(k.map(x => [x.querySelector('span').textContent, +x.querySelector('b').textContent])));
+    eq(kpis.companies, truth.comps, 'companies'); eq(kpis.individuals, truth.people, 'individuals');
+    eq(kpis.shareholdings, truth.own, 'shareholdings'); eq(kpis['board roles'], truth.links - truth.own, 'board roles');
+    eq(kpis['beneficial owners (over 25%)'], truth.bo, 'beneficial owners');
+    ok((await p.textContent('#stScope')).includes(truth.n + ' entities') && (await p.textContent('#stScope')).includes(truth.links + ' relationships'), 'scope line');
+    // concentration buckets add up to the companies and "Over 50% to 75%" + "Over 75%" matches
+    const conc = await p.evaluate(() => { const c = [...document.querySelectorAll('.st-card')].find(x => x.querySelector('h3').textContent === 'Ownership concentration');
+      return [...c.querySelectorAll('li')].map(li => ({ l: li.querySelector('.st-label').textContent, v: +li.querySelector('b').textContent })); });
+    eq(conc.reduce((a, b) => a + b.v, 0), truth.comps, 'buckets cover every company');
+    eq(conc.filter(x => /50% to 75|Over 75/.test(x.l)).reduce((a, b) => a + b.v, 0), truth.over50, 'companies with a holder over 50%');
+    // group table
+    const kal = await p.evaluate(() => { const r = [...document.querySelectorAll('.st-table tbody tr')].find(tr => tr.cells[0].textContent === 'Kaltim'); return r && +r.cells[1].textContent; });
+    eq(kal, truth.kal, 'Kaltim group size');
+    // a name opens the detail panel
+    const first = await p.$eval('.st-ent', b => b.dataset.ent);
+    await p.click('.st-ent'); await sleep(600);
+    ok(await p.isVisible('#detailPanel'), 'name opens detail'); eq(await p.evaluate(() => OwnershipMap.selectedEntityId()), first, 'the right entity');
+    // filters apply: Previous timeline shrinks the figures
+    await p.evaluate(() => window.OwnershipMapTabs.show('map')); await sleep(300);
+    const before = await p.evaluate(() => OwnershipMap.graph.links.filter(OwnershipMap.linkPassesFilter).length);
+    await p.click('.filter-btn[data-filter="previous"]'); await sleep(1500);
+    await p.evaluate(() => window.OwnershipMapTabs.show('stats')); await sleep(600);
+    const after = await p.evaluate(() => OwnershipMap.graph.links.filter(OwnershipMap.linkPassesFilter).length);
+    ok(after < before, 'Previous filter narrows the data: ' + before + ' -> ' + after);
+    ok((await p.textContent('#stScope')).includes(after + ' relationships'), 'scope follows the Timeline filter: ' + after);
+    // CSV
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#stExport')]);
+    const csv = fs.readFileSync(await dl.path(), 'utf8');
+    ok(csv.includes('section,label,value') && csv.includes('Overview,companies,') && csv.includes('Data coverage,'), 'CSV has the sections');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {
