@@ -96,6 +96,22 @@
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
   },
+  "e-ari-setiawan": {
+   "name": "Ari Setiawan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "Jalan Fatahillah Nomor: 25 A",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1171072408980002"
+    }
+   ]
+  },
   "e-aris-marsudiyanto": {
    "name": "Aris Marsudiyanto",
    "type": "person",
@@ -288,6 +304,22 @@
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
   },
+  "e-cipta-purnama": {
+   "name": "Cipta Purnama",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL. PENGADEGAN SELATAN RAYA NO.2",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1271212906910003"
+    }
+   ]
+  },
   "e-coaltrade-services-international-pte-ltd": {
    "name": "Coaltrade Services International Pte Ltd",
    "type": "company",
@@ -327,6 +359,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-dr-muslim-ahmad-nathin": {
+   "name": "DR. Muslim Ahmad Nathin",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. TEBET DALAM III NO. 16",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3174010708440006"
+    }
+   ]
   },
   "e-eddy-hartanto": {
    "name": "Eddy Hartanto",
@@ -510,7 +558,9 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791047039326,
+   "country": "Malaysia",
+   "address": "Room 1, 3RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee 50000 Kuala Lumpur."
   },
   "e-great-reach-global-ltd": {
    "name": "Great Reach Global Ltd",
@@ -679,6 +729,38 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-ir-hotma-silitonga": {
+   "name": "Ir. HOTMA SILITONGA",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1401060202660006"
+    }
+   ]
+  },
+  "e-ir-kirmadi": {
+   "name": "Ir. KIRMADI",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1401063010640002"
+    }
+   ]
   },
   "e-ivy-low-may-may": {
    "name": "Ivy Low May May",
@@ -858,6 +940,38 @@
    "createdAt": 1791029483294,
    "updatedAt": 1791029483294
   },
+  "e-makmur-se": {
+   "name": "Makmur SE",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "KOMPLEK TAMAN SETIA BUDI INDAH II BLOK V NO.96",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1271212802620006"
+    }
+   ]
+  },
+  "e-mawardi": {
+   "name": "Mawardi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL. FATAHILLAH NOMOR 25A",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "117107201260001"
+    }
+   ]
+  },
   "e-maya-zulfani": {
    "name": "Maya Zulfani",
    "type": "person",
@@ -913,6 +1027,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-muhammad-basyir-hasan": {
+   "name": "Muhammad Basyir Hasan",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL. MEGA PERUMAHAN GRIYA MEGA ASRI BLOK C",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1271021203610005"
+    }
+   ]
   },
   "e-muhammad-saleh-selamat": {
    "name": "Muhammad Saleh Selamat",
@@ -1149,6 +1279,22 @@
     }
    ]
   },
+  "e-pt-agra-bumi-niaga": {
+   "name": "PT Agra Bumi Niaga",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL.GABUS NO.41 D, GAMPONG BANDAR BARU, KUTA ALAM, KOTA BANDA ACEH, ACEH 23126",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0223914"
+    }
+   ]
+  },
   "e-pt-alam-tri-abadi": {
    "name": "PT Alam Tri Abadi",
    "type": "company",
@@ -1221,6 +1367,22 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-attra": {
+   "name": "PT Attra",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL.T. UMAR NO.143",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-59024.AH.01.01.TAHUN 2012"
+    }
+   ]
+  },
   "e-pt-bakti-persada-alam": {
    "name": "PT Bakti Persada Alam",
    "type": "company",
@@ -1243,7 +1405,19 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791047039326,
+   "country": "Indonesia",
+   "address": "TELUK WARU RT 009, BALIKPAPAN BARAT, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0129972.AH.01.02.Tahun 2022"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "025049529725000"
+    }
+   ]
   },
   "e-pt-belantara-persada": {
    "name": "PT Belantara Persada",
@@ -1312,6 +1486,26 @@
     {
      "kind": "Company registration no.",
      "number": "AHU-60517.AH.01.01.Tahun 2013"
+    }
+   ]
+  },
+  "e-pt-bukit-raya-mudisa": {
+   "name": "PT Bukit Raya Mudisa",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0049287.AH.01.02.Tahun 2019"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "017367830211000"
     }
    ]
   },
@@ -1458,6 +1652,22 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-pt-indrapurindo-marga-bakti-utama": {
+   "name": "PT indrapurindo Marga Bakti Utama",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402,
+   "country": "Indonesia",
+   "address": "JL. TGK. H.MUHAMMAD DAUD BEUREUEH NO 175",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-72023.AH.01.02.TAHUN 2008"
+    }
+   ]
+  },
   "e-pt-inhutani": {
    "name": "PT Inhutani",
    "type": "company",
@@ -1599,6 +1809,22 @@
    "note": "",
    "createdAt": 1791027119945,
    "updatedAt": 1791027119945
+  },
+  "e-pt-nusantara-sentosa-raya": {
+   "name": "PT Nusantara Sentosa Raya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967,
+   "country": "Indonesia",
+   "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-17122.AH.01.02.tAHUN 2009"
+    }
+   ]
   },
   "e-pt-oceanias-timber-products": {
    "name": "PT Oceanias Timber Products",
@@ -2256,215 +2482,73 @@
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
   },
-  "e-pt-indrapurindo-marga-bakti-utama": {
-   "name": "PT indrapurindo Marga Bakti Utama",
+  "e-bcl-industrial-sdn-bhd": {
+   "name": "Bcl Industrial Sdn. Bhd",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL. TGK. H.MUHAMMAD DAUD BEUREUEH NO 175",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-72023.AH.01.02.TAHUN 2008"
-    }
-   ]
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
+   "country": "Malaysia",
+   "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
   },
-  "e-pt-agra-bumi-niaga": {
-   "name": "PT Agra Bumi Niaga",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL.GABUS NO.41 D, GAMPONG BANDAR BARU, KUTA ALAM, KOTA BANDA ACEH, ACEH 23126",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0223914"
-    }
-   ]
-  },
-  "e-pt-attra": {
-   "name": "PT Attra",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL.T. UMAR NO.143",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-59024.AH.01.01.TAHUN 2012"
-    }
-   ]
-  },
-  "e-makmur-se": {
-   "name": "Makmur SE",
+  "e-lina-bustam": {
+   "name": "Lina Bustam",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
    "country": "Indonesia",
-   "address": "KOMPLEK TAMAN SETIA BUDI INDAH II BLOK V NO.96",
+   "address": "Villa Melati Mas Blok H-12/10.",
    "identities": [
     {
      "kind": "KTP / NIK",
-     "number": "1271212802620006"
-    }
-   ]
-  },
-  "e-ari-setiawan": {
-   "name": "Ari Setiawan",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "Jalan Fatahillah Nomor: 25 A",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "1171072408980002"
-    }
-   ]
-  },
-  "e-muhammad-basyir-hasan": {
-   "name": "Muhammad Basyir Hasan",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL. MEGA PERUMAHAN GRIYA MEGA ASRI BLOK C",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "1271021203610005"
-    }
-   ]
-  },
-  "e-mawardi": {
-   "name": "Mawardi",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL. FATAHILLAH NOMOR 25A",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "117107201260001"
-    }
-   ]
-  },
-  "e-cipta-purnama": {
-   "name": "Cipta Purnama",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402,
-   "country": "Indonesia",
-   "address": "JL. PENGADEGAN SELATAN RAYA NO.2",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "1271212906910003"
-    }
-   ]
-  },
-  "e-pt-bukit-raya-mudisa": {
-   "name": "PT Bukit Raya Mudisa",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
-   "country": "Indonesia",
-   "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0049287.AH.01.02.Tahun 2019"
+     "number": "3674026309670001"
     },
     {
      "kind": "NPWP (tax no.)",
-     "number": "017367830211000"
+     "number": "244819843411000"
     }
    ]
   },
-  "e-pt-nusantara-sentosa-raya": {
-   "name": "PT Nusantara Sentosa Raya",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
-   "country": "Indonesia",
-   "address": "JL. LINTAS TIMUR, PANGKALAN KERINCI TIMUR",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-17122.AH.01.02.tAHUN 2009"
-    }
-   ]
-  },
-  "e-dr-muslim-ahmad-nathin": {
-   "name": "DR. Muslim Ahmad Nathin",
+  "e-ivan-chandra": {
+   "name": "Ivan Chandra",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
    "country": "Indonesia",
-   "address": "JL. TEBET DALAM III NO. 16",
+   "address": "Jalan Rawa Tengah",
    "identities": [
     {
      "kind": "KTP / NIK",
-     "number": "3174010708440006"
+     "number": "3171082605900002"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "558103529024000"
     }
    ]
   },
-  "e-ir-kirmadi": {
-   "name": "Ir. KIRMADI",
+  "e-zulkifli": {
+   "name": "Zulkifli",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
    "country": "Indonesia",
-   "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+   "address": "Komplek PT RAPP CM 85",
    "identities": [
     {
      "kind": "KTP / NIK",
-     "number": "1401063010640002"
-    }
-   ]
-  },
-  "e-ir-hotma-silitonga": {
-   "name": "Ir. HOTMA SILITONGA",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
-   "country": "Indonesia",
-   "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
-   "identities": [
+     "number": "1405021904660005"
+    },
     {
-     "kind": "KTP / NIK",
-     "number": "1401060202660006"
+     "kind": "NPWP (tax no.)",
+     "number": "141608232222000"
     }
    ]
   }
@@ -10252,12 +10336,12 @@
    "createdAt": 1791043727954,
    "updatedAt": 1791043727954
   },
-  "l-musmnvcy-npo2p0": {
-   "source": "e-pt-indrapurindo-marga-bakti-utama",
+  "l-musmnvcy-d60fly": {
+   "source": "e-cipta-purnama",
    "target": "e-pt-agra-bumi-niaga",
-   "type": "ownership",
-   "value": 49,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
    "date": "2019-02",
    "status": null,
    "seen": [
@@ -10274,12 +10358,12 @@
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
   },
-  "l-musmnvcy-xhqrw5": {
-   "source": "e-pt-attra",
+  "l-musmnvcy-dkx6dd": {
+   "source": "e-mawardi",
    "target": "e-pt-agra-bumi-niaga",
-   "type": "ownership",
-   "value": 49,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
    "date": "2019-02",
    "status": null,
    "seen": [
@@ -10296,8 +10380,8 @@
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
   },
-  "l-musmnvcy-gxe5fb": {
-   "source": "e-makmur-se",
+  "l-musmnvcy-ff07ir": {
+   "source": "e-ari-setiawan",
    "target": "e-pt-agra-bumi-niaga",
    "type": "ownership",
    "value": 1,
@@ -10318,8 +10402,8 @@
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
   },
-  "l-musmnvcy-ff07ir": {
-   "source": "e-ari-setiawan",
+  "l-musmnvcy-gxe5fb": {
+   "source": "e-makmur-se",
    "target": "e-pt-agra-bumi-niaga",
    "type": "ownership",
    "value": 1,
@@ -10362,6 +10446,28 @@
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
   },
+  "l-musmnvcy-npo2p0": {
+   "source": "e-pt-indrapurindo-marga-bakti-utama",
+   "target": "e-pt-agra-bumi-niaga",
+   "type": "ownership",
+   "value": 49,
+   "role": null,
+   "date": "2019-02",
+   "status": null,
+   "seen": [
+    "2019-02"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
+     "date": "2019-02"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046198402,
+   "updatedAt": 1791046198402
+  },
   "l-musmnvcy-v67rcq": {
    "source": "e-muhammad-basyir-hasan",
    "target": "e-pt-agra-bumi-niaga",
@@ -10384,12 +10490,12 @@
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
   },
-  "l-musmnvcy-dkx6dd": {
-   "source": "e-mawardi",
+  "l-musmnvcy-xhqrw5": {
+   "source": "e-pt-attra",
    "target": "e-pt-agra-bumi-niaga",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur Utama",
+   "type": "ownership",
+   "value": 49,
+   "role": null,
    "date": "2019-02",
    "status": null,
    "seen": [
@@ -10405,94 +10511,6 @@
    "note": "",
    "createdAt": 1791046198402,
    "updatedAt": 1791046198402
-  },
-  "l-musmnvcy-d60fly": {
-   "source": "e-cipta-purnama",
-   "target": "e-pt-agra-bumi-niaga",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2019-02",
-   "status": null,
-   "seen": [
-    "2019-02"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-     "date": "2019-02"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791046198402,
-   "updatedAt": 1791046198402
-  },
-  "l-musmqdaw-jiy8wx": {
-   "source": "e-pt-bintang-utama-lestari",
-   "target": "e-pt-bukit-raya-mudisa",
-   "type": "ownership",
-   "value": 78,
-   "role": null,
-   "date": "2022-03",
-   "status": null,
-   "seen": [
-    "2022-03"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
-     "date": "2022-03"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967
-  },
-  "l-musmqdaw-zbk5s9": {
-   "source": "e-pt-nusantara-sentosa-raya",
-   "target": "e-pt-bukit-raya-mudisa",
-   "type": "ownership",
-   "value": 10,
-   "role": null,
-   "date": "2022-03",
-   "status": null,
-   "seen": [
-    "2022-03"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
-     "date": "2022-03"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967
-  },
-  "l-musmqdaw-dxyl3n": {
-   "source": "e-dr-muslim-ahmad-nathin",
-   "target": "e-pt-bukit-raya-mudisa",
-   "type": "ownership",
-   "value": 12,
-   "role": null,
-   "date": "2022-03",
-   "status": null,
-   "seen": [
-    "2022-03"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
-     "date": "2022-03"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967
   },
   "l-musmqdaw-3wtf40": {
    "source": "e-ir-kirmadi",
@@ -10538,6 +10556,50 @@
    "createdAt": 1791046314967,
    "updatedAt": 1791046314967
   },
+  "l-musmqdaw-dxyl3n": {
+   "source": "e-dr-muslim-ahmad-nathin",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 12,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-jiy8wx": {
+   "source": "e-pt-bintang-utama-lestari",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 78,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
   "l-musmqdaw-ww7cl6": {
    "source": "e-ir-hotma-silitonga",
    "target": "e-pt-bukit-raya-mudisa",
@@ -10559,99 +10621,151 @@
    "note": "",
    "createdAt": 1791046314967,
    "updatedAt": 1791046314967
+  },
+  "l-musmqdaw-zbk5s9": {
+   "source": "e-pt-nusantara-sentosa-raya",
+   "target": "e-pt-bukit-raya-mudisa",
+   "type": "ownership",
+   "value": 10,
+   "role": null,
+   "date": "2022-03",
+   "status": null,
+   "seen": [
+    "2022-03"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+     "date": "2022-03"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791046314967,
+   "updatedAt": 1791046314967
+  },
+  "l-musn5w7y-usree5": {
+   "source": "e-great-mahakam-sdn-bhd",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "ownership",
+   "value": 0.02,
+   "role": null,
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
+  },
+  "l-musn5w7y-jt4bar": {
+   "source": "e-bcl-industrial-sdn-bhd",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "ownership",
+   "value": 99.98,
+   "role": null,
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
+  },
+  "l-musn5w7y-nej498": {
+   "source": "e-lina-bustam",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
+  },
+  "l-musn5w7y-j6ki51": {
+   "source": "e-ivan-chandra",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
+  },
+  "l-musn5w7y-eo9pom": {
+   "source": "e-zulkifli",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
   }
  },
  "versions": {
-  "v-musl868h-tw9i": {
-   "at": 1791043786385,
-   "batch": "v-musl868h-tw9i",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043785831,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0964298"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043786373,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0991656"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl86l8-gvf3": {
    "at": 1791043786844,
    "batch": "v-musl86l8-gvf3",
@@ -11857,6 +11971,305 @@
       "note": "",
       "createdAt": 1791046314967,
       "updatedAt": 1791046314967
+     }
+    }
+   ]
+  },
+  "v-musn5w8f-jhrw": {
+   "at": 1791047039343,
+   "batch": "v-musn5w8f-jhrw",
+   "summary": "Added 5 rows to Kaltim from Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 11,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-bcl-industrial-sdn-bhd",
+     "before": null,
+     "after": {
+      "name": "Bcl Industrial Sdn. Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Malaysia",
+      "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-lina-bustam",
+     "before": null,
+     "after": {
+      "name": "Lina Bustam",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "Villa Melati Mas Blok H-12/10.",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3674026309670001"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "244819843411000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ivan-chandra",
+     "before": null,
+     "after": {
+      "name": "Ivan Chandra",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "Jalan Rawa Tengah",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3171082605900002"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "558103529024000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-zulkifli",
+     "before": null,
+     "after": {
+      "name": "Zulkifli",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "Komplek PT RAPP CM 85",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1405021904660005"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "141608232222000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-balikpapan-chip-lestari",
+     "before": {
+      "name": "PT Balikpapan Chip Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Balikpapan Chip Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "TELUK WARU RT 009, BALIKPAPAN BARAT, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0129972.AH.01.02.Tahun 2022"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "025049529725000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-great-mahakam-sdn-bhd",
+     "before": {
+      "name": "Great Mahakam Sdn Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "Great Mahakam Sdn Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791047039326,
+      "country": "Malaysia",
+      "address": "Room 1, 3RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee 50000 Kuala Lumpur."
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn5w7y-usree5",
+     "before": null,
+     "after": {
+      "source": "e-great-mahakam-sdn-bhd",
+      "target": "e-pt-balikpapan-chip-lestari",
+      "type": "ownership",
+      "value": 0.02,
+      "role": null,
+      "date": "2023-01",
+      "status": null,
+      "seen": [
+       "2023-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+        "date": "2023-01"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn5w7y-jt4bar",
+     "before": null,
+     "after": {
+      "source": "e-bcl-industrial-sdn-bhd",
+      "target": "e-pt-balikpapan-chip-lestari",
+      "type": "ownership",
+      "value": 99.98,
+      "role": null,
+      "date": "2023-01",
+      "status": null,
+      "seen": [
+       "2023-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+        "date": "2023-01"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn5w7y-nej498",
+     "before": null,
+     "after": {
+      "source": "e-lina-bustam",
+      "target": "e-pt-balikpapan-chip-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2023-01",
+      "status": null,
+      "seen": [
+       "2023-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+        "date": "2023-01"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn5w7y-j6ki51",
+     "before": null,
+     "after": {
+      "source": "e-ivan-chandra",
+      "target": "e-pt-balikpapan-chip-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2023-01",
+      "status": null,
+      "seen": [
+       "2023-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+        "date": "2023-01"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musn5w7y-eo9pom",
+     "before": null,
+     "after": {
+      "source": "e-zulkifli",
+      "target": "e-pt-balikpapan-chip-lestari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2023-01",
+      "status": null,
+      "seen": [
+       "2023-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+        "date": "2023-01"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326
      }
     }
    ]
