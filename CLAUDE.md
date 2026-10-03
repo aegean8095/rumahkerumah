@@ -68,6 +68,7 @@ Files:
 | `rk-report.js` | Printable company report (`OwnershipMapReport.open`), print CSS in `rk-ui.css`. |
 | `rk-status.js` | Save status chip in the top capsule (Saved / Saving / Unsaved / Offline / Not connected). |
 | `rk-profile.js` | Detail panel block "Profile": country (jurisdiction), address, identity registry numbers (`identities[{kind, number}]` on the entity). Table columns, Entities CSV, search, report and merge read the same fields. |
+| `rk-fold.js` | Sidebar panels fold to their heading on click / Enter / Space; remembered per browser (`om-folded-panels`); `OwnershipMapFold.open(id)`. |
 | `rk-ui.css` | Styles for the modules above. |
 | `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
 | `data/seed.json` | Fallback data (built by `shadow-corporate/build_seed.py`). |
@@ -207,6 +208,11 @@ Working efficiently (token use):
 - Shown as Country / Identity / Address columns in the Entities table (so also in its CSV), in the Entities CSV export (three new columns), in the company report (Profile section), found by map search (identity number, country) and kept by Merge (fills empty country/address, unions identities)
 - Not done: bulk import of these fields from pasted rows or PDFs; Data quality checks for missing profile data
 - 1 new test (28 total)
+
+### 2026-10-03 — Ownership Map: foldable sidebar panels
+
+- New `rk-fold.js`: every sidebar panel (Company groups, Commodity, Search, Data, Dataset, Export) folds down to its heading when the heading is clicked (or Enter / Space); chevron shows the state, `aria-expanded` is set, state is remembered per browser. Panels the app hides stay hidden. The save-status chip unfolds Dataset before it scrolls there
+- 1 new test (29 total)
 
 ---
 

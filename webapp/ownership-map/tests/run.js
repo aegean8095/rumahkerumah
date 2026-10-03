@@ -761,6 +761,33 @@ const tests = {
     eq([m.country, m.address], ['Indonesia', 'Jl. Sudirman 1, Jakarta'], 'merge keeps country and address');
     eq(p.errors, [], 'page errors');
   },
+  async 'fold: sidebar panels fold by heading, remembered, status chip reopens Dataset'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    const vis = sel => p.isVisible(sel);
+    ok(await vis('#exportPanel .export-row'), 'Export content visible at first');
+    const h0 = await p.evaluate(() => document.getElementById('searchPanel').offsetHeight);
+    await p.click('#exportHeading'); await sleep(200);
+    ok(!(await vis('#exportPanel .export-row')) && await vis('#exportHeading'), 'folded: content hidden, heading stays');
+    eq(await p.getAttribute('#exportHeading', 'aria-expanded'), 'false', 'aria-expanded false');
+    await p.focus('#searchHeading'); await p.keyboard.press('Enter'); await sleep(200);
+    ok(!(await vis('#searchInput')), 'Enter folds the Search panel');
+    ok(await p.evaluate(h => document.getElementById('searchPanel').offsetHeight < h, h0), 'a folded panel takes less room');
+    // Data panel keeps its own header (with the Add data button) usable
+    await p.click('#dataHeading'); await sleep(200);
+    ok(!(await vis('#dataBody')), 'Data panel folds');
+    // remembered after reload
+    await reload(p); await sleep(2000);
+    ok(!(await vis('#exportPanel .export-row')) && !(await vis('#searchInput')), 'folded state remembered');
+    await p.click('#exportHeading'); await sleep(200);
+    ok(await vis('#exportPanel .export-row'), 'unfolds again');
+    // status chip opens a folded Dataset panel
+    await p.click('#datasetHeading'); await sleep(200);
+    ok(!(await vis('#ghBlock')), 'Dataset folded');
+    await p.evaluate(() => OwnershipMapFold.open('datasetPanel')); await sleep(200);
+    ok(await p.evaluate(() => !OwnershipMapFold.isFolded('datasetPanel')), 'API opens a panel');
+    eq(p.errors, [], 'page errors');
+  },
 };
 
 (async () => {

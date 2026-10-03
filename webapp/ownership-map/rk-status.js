@@ -37,6 +37,7 @@
   chip.addEventListener('click', function(){
     if (!G) return;
     var st = G.state();
+    if (window.OwnershipMapFold) window.OwnershipMapFold.open('datasetPanel');
     if (!G.connected()){ var b = document.getElementById('ghConnectBtn'); if (b) b.click(); return; }
     if (st.phase === 'pending' || st.phase === 'error' || st.phase === 'offline'){ G.saveNow(); return; }
     var blk = document.getElementById('ghBlock'), sb = document.querySelector('.sidebar'), app = document.querySelector('.app');

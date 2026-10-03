@@ -141,3 +141,13 @@ g.node.multi-sel .node-label{ font-weight: 700; }
 .rk-id-kind{ color: var(--ink-600); flex: 0 0 auto; }
 .rk-id-num{ font-family: var(--font-data); flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .rk-id-add{ display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto; gap: 6px; }
+
+/* Foldable sidebar panels (rk-fold.js) */
+.rk-fold-head{ cursor: pointer; display: flex; align-items: center; gap: 6px; user-select: none; border-radius: 6px; }
+.rk-fold-head::after{ content: ''; width: 7px; height: 7px; margin-left: auto; border-right: 1.5px solid var(--ink-500, #6b7580); border-bottom: 1.5px solid var(--ink-500, #6b7580); transform: rotate(45deg) translateY(-2px); transition: transform .15s; flex: 0 0 auto; }
+.rk-fold-head:hover{ color: var(--accent, #1f4fd8); }
+.rk-fold-head:focus-visible{ outline: 2px solid var(--accent-focus, #1f4fd8); outline-offset: 2px; }
+.panel.rk-folded{ gap: 0; padding-bottom: 14px; }
+.panel.rk-folded > :not(h2):not(.panel-head){ display: none !important; }
+.panel.rk-folded .rk-fold-head::after{ transform: rotate(-45deg); }
+.panel-head .rk-fold-head{ flex: 1; }
