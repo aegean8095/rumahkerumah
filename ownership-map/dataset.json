@@ -4658,7 +4658,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4668,7 +4668,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0135": {
    "source": "e-edward-saputera",
@@ -4683,7 +4683,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4693,7 +4693,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0136": {
    "source": "e-teddy-salim",
@@ -4708,7 +4708,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4718,7 +4718,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0137": {
    "source": "e-sudarmo-salim",
@@ -4733,7 +4733,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4743,7 +4743,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0138": {
    "source": "e-winny-salim",
@@ -4758,7 +4758,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4768,7 +4768,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0139": {
    "source": "e-janti-tutty-sujarti",
@@ -4783,7 +4783,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4793,7 +4793,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0140": {
    "source": "e-kustinah",
@@ -4808,7 +4808,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4818,7 +4818,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0141": {
    "source": "e-johannes-lembong",
@@ -4833,7 +4833,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4843,7 +4843,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0142": {
    "source": "e-aylen-salim",
@@ -4858,7 +4858,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4868,7 +4868,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0143": {
    "source": "e-nathania-salim",
@@ -4883,7 +4883,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4893,7 +4893,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0144": {
    "source": "e-pt-hutan-tiara-lestari",
@@ -4908,7 +4908,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4918,7 +4918,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0145": {
    "source": "e-pt-kendeka-jaya",
@@ -4933,7 +4933,7 @@
     "2024-11"
    ],
    "groups": [
-    "Kaltim"
+    "Salim Group"
    ],
    "citations": [
     {
@@ -4943,7 +4943,7 @@
    ],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791025328799
   },
   "l-0146": {
    "source": "e-heri-santoso",
@@ -7293,7 +7293,1348 @@
    "updatedAt": 1790962084442
   }
  },
- "versions": {},
+ "versions": {
+  "v-musa8jew-xg3d": {
+   "at": 1791025327688,
+   "batch": "v-musa8jew-xg3d",
+   "summary": "Added PT Oceanias Timber Products and its corporate group to the group Salim Group: 12 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 12,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0134",
+     "before": {
+      "source": "e-katharina-seraphina",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-katharina-seraphina",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0135",
+     "before": {
+      "source": "e-edward-saputera",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-edward-saputera",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0136",
+     "before": {
+      "source": "e-teddy-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-teddy-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0137",
+     "before": {
+      "source": "e-sudarmo-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-sudarmo-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0138",
+     "before": {
+      "source": "e-winny-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-winny-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0139",
+     "before": {
+      "source": "e-janti-tutty-sujarti",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-janti-tutty-sujarti",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0140",
+     "before": {
+      "source": "e-kustinah",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-kustinah",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0141",
+     "before": {
+      "source": "e-johannes-lembong",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-johannes-lembong",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0142",
+     "before": {
+      "source": "e-aylen-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-aylen-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0143",
+     "before": {
+      "source": "e-nathania-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-nathania-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0144",
+     "before": {
+      "source": "e-pt-hutan-tiara-lestari",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": 47,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-hutan-tiara-lestari",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": 47,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0145",
+     "before": {
+      "source": "e-pt-kendeka-jaya",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "source": "e-pt-kendeka-jaya",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     }
+    }
+   ]
+  },
+  "v-musa8ka4-g6ms": {
+   "at": 1791025328812,
+   "batch": "v-musa8ka4-g6ms",
+   "summary": "Removed PT Oceanias Timber Products from the group Kaltim: 12 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 12,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0134",
+     "before": {
+      "source": "e-katharina-seraphina",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-katharina-seraphina",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0135",
+     "before": {
+      "source": "e-edward-saputera",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-edward-saputera",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0136",
+     "before": {
+      "source": "e-teddy-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-teddy-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0137",
+     "before": {
+      "source": "e-sudarmo-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-sudarmo-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0138",
+     "before": {
+      "source": "e-winny-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-winny-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0139",
+     "before": {
+      "source": "e-janti-tutty-sujarti",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-janti-tutty-sujarti",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0140",
+     "before": {
+      "source": "e-kustinah",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-kustinah",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0141",
+     "before": {
+      "source": "e-johannes-lembong",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-johannes-lembong",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0142",
+     "before": {
+      "source": "e-aylen-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-aylen-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0143",
+     "before": {
+      "source": "e-nathania-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-nathania-salim",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0144",
+     "before": {
+      "source": "e-pt-hutan-tiara-lestari",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": 47,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-pt-hutan-tiara-lestari",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": 47,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-0145",
+     "before": {
+      "source": "e-pt-kendeka-jaya",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Kaltim",
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025327669
+     },
+     "after": {
+      "source": "e-pt-kendeka-jaya",
+      "target": "e-pt-oceanias-timber-products",
+      "type": "ownership",
+      "value": null,
+      "role": null,
+      "date": "2024-11",
+      "status": null,
+      "seen": [
+       "2024-03",
+       "2024-11"
+      ],
+      "groups": [
+       "Salim Group"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791025328799
+     }
+    }
+   ]
+  }
+ },
  "reviews": {
   "dup%7Ce-sik-rommy-wongso%7Ce-sik-ronny-wongso": {
    "status": "checked",
