@@ -726,7 +726,10 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
+   "updatedAt": 1791020908067,
+   "clusters": [
+    "Pulp and Paper"
+   ]
   },
   "e-pt-hutan-tiara-lestari": {
    "name": "PT Hutan Tiara Lestari",
@@ -7285,39 +7288,6 @@
   }
  },
  "versions": {
-  "v-mur8ggmd-zmuf": {
-   "at": 1790961871909,
-   "batch": "v-mur8ggmd-zmuf",
-   "summary": "Added the cluster Pulp and Paper: PT Wana Kaltim Lestari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-wana-kaltim-lestari",
-     "before": {
-      "name": "PT Wana Kaltim Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "name": "PT Wana Kaltim Lestari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961871904,
-      "clusters": [
-       "Pulp and Paper"
-      ]
-     }
-    }
-   ]
-  },
   "v-mur8gjup-b1mx": {
    "at": 1790961876097,
    "batch": "v-mur8gjup-b1mx",
@@ -7928,6 +7898,39 @@
       "note": "",
       "createdAt": 1790961478929,
       "updatedAt": 1791020773421
+     }
+    }
+   ]
+  },
+  "v-mus7lt80-s01k": {
+   "at": 1791020908080,
+   "batch": "v-mus7lt80-s01k",
+   "summary": "Added the cluster Pulp and Paper: PT Hutan Berau Lestari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-hutan-berau-lestari",
+     "before": {
+      "name": "PT Hutan Berau Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": {
+      "name": "PT Hutan Berau Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791020908067,
+      "clusters": [
+       "Pulp and Paper"
+      ]
      }
     }
    ]
