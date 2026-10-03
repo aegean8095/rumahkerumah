@@ -152,6 +152,16 @@
    "createdAt": 1791043270817,
    "updatedAt": 1791043270817
   },
+  "e-bcl-industrial-sdn-bhd": {
+   "name": "Bcl Industrial Sdn. Bhd",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
+   "country": "Malaysia",
+   "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
+  },
   "e-benny-pangbin-gayonie": {
    "name": "Benny Pangbin Gayonie",
    "type": "person",
@@ -762,6 +772,26 @@
     }
    ]
   },
+  "e-ivan-chandra": {
+   "name": "Ivan Chandra",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
+   "country": "Indonesia",
+   "address": "Jalan Rawa Tengah",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3171082605900002"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "558103529024000"
+    }
+   ]
+  },
   "e-ivy-low-may-may": {
    "name": "Ivy Low May May",
    "type": "person",
@@ -841,6 +871,22 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-kasim": {
+   "name": "Kasim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JL. LILY I NO. 29-G",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1471011606720021"
+    }
+   ]
   },
   "e-katharina-seraphina": {
    "name": "Katharina Seraphina",
@@ -931,6 +977,26 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-lina-bustam": {
+   "name": "Lina Bustam",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326,
+   "country": "Indonesia",
+   "address": "Villa Melati Mas Blok H-12/10.",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3674026309670001"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "244819843411000"
+    }
+   ]
   },
   "e-luckman": {
    "name": "Luckman",
@@ -1067,6 +1133,22 @@
    "note": "",
    "createdAt": 1791043479369,
    "updatedAt": 1791043479369
+  },
+  "e-muller-tampubolon-se-mm": {
+   "name": "Muller Tampubolon, SE, MM",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1471102712640001"
+    }
+   ]
   },
   "e-mutanto-juwono": {
    "name": "Mutanto Juwono",
@@ -1584,6 +1666,16 @@
    "createdAt": 1791027090536,
    "updatedAt": 1791027090536
   },
+  "e-pt-foresta-sarana-persada": {
+   "name": "PT Foresta Sarana Persada",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "MENARA BATAVIA LT.17 JL. KH MAS MANSYUR KAV. 126"
+  },
   "e-pt-global-tanaman-lestari": {
    "name": "PT Global Tanaman Lestari",
    "type": "company",
@@ -1793,6 +1885,26 @@
    "note": "",
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
+  },
+  "e-pt-nusa-wana-raya": {
+   "name": "PT Nusa Wana Raya",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963,
+   "country": "Indonesia",
+   "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0077847.AH.01.02.Tahun 2019"
+    },
+    {
+     "kind": "NPWP (tax no.)",
+     "number": "015550361216001"
+    }
+   ]
   },
   "e-pt-nusantara-agro-forestry": {
    "name": "PT Nusantara Agro Forestry",
@@ -2482,56 +2594,6 @@
    "createdAt": 1791043506749,
    "updatedAt": 1791043506749
   },
-  "e-bcl-industrial-sdn-bhd": {
-   "name": "Bcl Industrial Sdn. Bhd",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791047039326,
-   "updatedAt": 1791047039326,
-   "country": "Malaysia",
-   "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
-  },
-  "e-lina-bustam": {
-   "name": "Lina Bustam",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791047039326,
-   "updatedAt": 1791047039326,
-   "country": "Indonesia",
-   "address": "Villa Melati Mas Blok H-12/10.",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "3674026309670001"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "244819843411000"
-    }
-   ]
-  },
-  "e-ivan-chandra": {
-   "name": "Ivan Chandra",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791047039326,
-   "updatedAt": 1791047039326,
-   "country": "Indonesia",
-   "address": "Jalan Rawa Tengah",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "3171082605900002"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "558103529024000"
-    }
-   ]
-  },
   "e-zulkifli": {
    "name": "Zulkifli",
    "type": "person",
@@ -2552,65 +2614,359 @@
     }
    ]
   },
-  "e-pt-foresta-sarana-persada": {
-   "name": "PT Foresta Sarana Persada",
+  "e-korindo-company-h-k-limited": {
+   "name": "Korindo Company (H.k) Limited",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
-   "country": "Indonesia",
-   "address": "MENARA BATAVIA LT.17 JL. KH MAS MANSYUR KAV. 126"
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Hong Kong",
+   "address": "HONGKONG"
   },
-  "e-pt-nusa-wana-raya": {
-   "name": "PT Nusa Wana Raya",
+  "e-pt-korindo-aria-bima-sari": {
+   "name": "PT Korindo Aria Bima Sari",
    "type": "company",
    "aliases": [],
    "note": "",
-   "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
    "country": "Indonesia",
-   "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+   "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
    "identities": [
     {
      "kind": "Company registration no.",
-     "number": "AHU-0077847.AH.01.02.Tahun 2019"
+     "number": "AHU-0012200.AH.01.02.Tahun 2016"
     },
     {
      "kind": "NPWP (tax no.)",
-     "number": "015550361216001"
+     "number": "01.060.115.1-092.000"
     }
    ]
   },
-  "e-muller-tampubolon-se-mm": {
-   "name": "Muller Tampubolon, SE, MM",
+  "e-bimaruna-kargo-servis": {
+   "name": "Bimaruna Kargo Servis",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Indonesia",
+   "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
+  },
+  "e-namil-trading-company-limited": {
+   "name": "Namil Trading Company Limited",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Hong Kong",
+   "address": "HONGKONG"
+  },
+  "e-reveno-company-limited": {
+   "name": "Reveno Company Limited",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Hong Kong",
+   "address": "HONGKONG"
+  },
+  "e-koperasi-karyawan-pt-korindo-group-pangkalanbun": {
+   "name": "Koperasi Karyawan PT. Korindo Group Pangkalanbun",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Indonesia",
+   "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
+  },
+  "e-primer-koperasi-angkatan-darat-kompi-senapan-b-batalyon-infa": {
+   "name": "Primer Koperasi Angkatan Darat Kompi Senapan B Batalyon Infantri 631 Antang",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "country": "Indonesia",
+   "address": "JL. ISKANDAR ASRAMA KOMPI B.631-A, ARUT SELATAN"
+  },
+  "e-sang-jin-kim": {
+   "name": "Sang Jin Kim",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
-   "country": "Indonesia",
-   "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. TAMAN RAJA UNIT A 104, KALIBATA, PANCORAN",
    "identities": [
     {
      "kind": "KTP / NIK",
-     "number": "1471102712640001"
+     "number": "3174083001530001"
     }
    ]
   },
-  "e-kasim": {
-   "name": "Kasim",
+  "e-eung-kyo-han": {
+   "name": "Eung Kyo Han",
    "type": "person",
    "aliases": [],
    "note": "",
-   "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
-   "country": "Indonesia",
-   "address": "JL. LILY I NO. 29-G",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. TAMAN RAJA BLOK B 306, KALIBATA, PANCORAN",
    "identities": [
     {
      "kind": "KTP / NIK",
-     "number": "1471011606720021"
+     "number": "3174081408561001"
+    }
+   ]
+  },
+  "e-tae-il-choi": {
+   "name": "Tae Il Choi",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APARTEMEN WISMA INDAH, JL RAYA PASAR MINGGU NO. 14, DUREN TIGA, PANCORAN, JAKARTA SELATAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0026237"
+    }
+   ]
+  },
+  "e-mun-jin-seok": {
+   "name": "Mun Jin Seok",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. TMN RAJA B.706, KALIBATA, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3174080103560005"
+    }
+   ]
+  },
+  "e-eun-ho-seung": {
+   "name": "Eun Ho Seung",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APARTEMEN TAMAN RAJA, JL. APARTEMEN TAMAN RAJA, KALIBATA, PANCORAN, JAKARTA SELATAN"
+  },
+  "e-mustakim": {
+   "name": "Mustakim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APARTEMEN RASUNA T-9/9CD, MENTENG ATAS, SETIA BUDI",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "09.5303.040954.7003"
+    }
+   ]
+  },
+  "e-seung-eun-ho": {
+   "name": "Seung Eun Ho",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APARTEMEN TAMAN RAJA UNIT C-803, KALIBATA, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0021827"
+    }
+   ]
+  },
+  "e-kim-sang-jim": {
+   "name": "Kim Sang Jim",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. WARUNG JATI BARAT I, APARTEMEN TAMAN RAJA UNIT",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0025427"
+    }
+   ]
+  },
+  "e-kim-sang-jin": {
+   "name": "Kim Sang Jin",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. TAMAN RAJA UNIT A 104, KALIBATA, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3174083001530001"
+    }
+   ]
+  },
+  "e-heo-kwang-bok": {
+   "name": "Heo Kwang Bok",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. KORINDO NO. 77, PANGKALANBUN, KALIMANTAN TENGAH",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0023501"
+    },
+    {
+     "kind": "KTP / NIK",
+     "number": "M10678777"
+    }
+   ]
+  },
+  "e-hermanto-rusli": {
+   "name": "Hermanto Rusli",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "09.5308.090545.7002"
+    }
+   ]
+  },
+  "e-rein-silvester-ranti": {
+   "name": "Rein Silvester Ranti",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. AKASIA III B XI NO.18, KEC. KEBON JERUK",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "09.5205.210840.1112"
+    }
+   ]
+  },
+  "e-ryu-geon-sang": {
+   "name": "Ryu Geon Sang",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. KORINDO NO.77, PANGKALANBUN, KALIMANTAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0023755"
+    }
+   ]
+  },
+  "e-choi-tae-il": {
+   "name": "Choi Tae Il",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. HOS COKROAMINOTO NO. 108",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ011621"
+    },
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0026237"
+    }
+   ]
+  },
+  "e-seung-min-soo": {
+   "name": "Seung Min Soo",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "SC1703165"
+    },
+    {
+     "kind": "KTP / NIK",
+     "number": "M27976040"
+    }
+   ]
+  },
+  "e-min-soo-seung": {
+   "name": "Min Soo Seung",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "M27976040"
+    }
+   ]
+  },
+  "e-han-eung-kyo": {
+   "name": "Han Eung Kyo",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. TMN RAJA BLOK B 306, KALIBATA, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "3174081408561001"
+    }
+   ]
+  },
+  "e-yun-du-yong": {
+   "name": "Yun Du Yong",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728,
+   "address": "APART. WISMA INDAH A.104, DUREN TIGA, PANCORAN",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "DJ0021670"
     }
    ]
   }
@@ -10706,12 +11062,36 @@
    "createdAt": 1791046314967,
    "updatedAt": 1791046314967
   },
-  "l-musn5w7y-usree5": {
-   "source": "e-great-mahakam-sdn-bhd",
+  "l-musn5w7y-eo9pom": {
+   "source": "e-zulkifli",
    "target": "e-pt-balikpapan-chip-lestari",
-   "type": "ownership",
-   "value": 0.02,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-01",
+   "status": null,
+   "seen": [
+    "2023-01"
+   ],
+   "groups": [
+    "Kaltim"
+   ],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
+     "date": "2023-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047039326,
+   "updatedAt": 1791047039326
+  },
+  "l-musn5w7y-j6ki51": {
+   "source": "e-ivan-chandra",
+   "target": "e-pt-balikpapan-chip-lestari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
    "date": "2023-01",
    "status": null,
    "seen": [
@@ -10778,12 +11158,12 @@
    "createdAt": 1791047039326,
    "updatedAt": 1791047039326
   },
-  "l-musn5w7y-j6ki51": {
-   "source": "e-ivan-chandra",
+  "l-musn5w7y-usree5": {
+   "source": "e-great-mahakam-sdn-bhd",
    "target": "e-pt-balikpapan-chip-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
+   "type": "ownership",
+   "value": 0.02,
+   "role": null,
    "date": "2023-01",
    "status": null,
    "seen": [
@@ -10802,29 +11182,27 @@
    "createdAt": 1791047039326,
    "updatedAt": 1791047039326
   },
-  "l-musn5w7y-eo9pom": {
-   "source": "e-zulkifli",
-   "target": "e-pt-balikpapan-chip-lestari",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
-   "date": "2023-01",
+  "l-musn6npv-9r70j6": {
+   "source": "e-pt-nusantara-sentosa-raya",
+   "target": "e-pt-nusa-wana-raya",
+   "type": "ownership",
+   "value": 1,
+   "role": null,
+   "date": "2022-03",
    "status": null,
    "seen": [
-    "2023-01"
+    "2022-03"
    ],
-   "groups": [
-    "Kaltim"
-   ],
+   "groups": [],
    "citations": [
     {
-     "text": "Ministry of Law Republic of Indonesia. January 2023. “PT Balikpapan Chip Lestari.” Corporate profile.",
-     "date": "2023-01"
+     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
+     "date": "2022-03"
     }
    ],
    "note": "",
-   "createdAt": 1791047039326,
-   "updatedAt": 1791047039326
+   "createdAt": 1791047074963,
+   "updatedAt": 1791047074963
   },
   "l-musn6npv-ohq62s": {
    "source": "e-pt-foresta-sarana-persada",
@@ -10848,12 +11226,12 @@
    "createdAt": 1791047074963,
    "updatedAt": 1791047074963
   },
-  "l-musn6npv-9r70j6": {
-   "source": "e-pt-nusantara-sentosa-raya",
+  "l-musn6npv-t3nkjz": {
+   "source": "e-kasim",
    "target": "e-pt-nusa-wana-raya",
-   "type": "ownership",
-   "value": 1,
-   "role": null,
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
    "date": "2022-03",
    "status": null,
    "seen": [
@@ -10892,104 +11270,577 @@
    "createdAt": 1791047074963,
    "updatedAt": 1791047074963
   },
-  "l-musn6npv-t3nkjz": {
-   "source": "e-kasim",
-   "target": "e-pt-nusa-wana-raya",
-   "type": "directorship",
-   "value": null,
-   "role": "Komisaris",
-   "date": "2022-03",
+  "l-musncgn4-bgch70": {
+   "source": "e-korindo-company-h-k-limited",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 42.44,
+   "role": null,
+   "date": "2016-06",
    "status": null,
    "seen": [
-    "2022-03"
+    "2016-06"
    ],
    "groups": [],
    "citations": [
     {
-     "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Nusa Wana Raya.” Corporate profile.",
-     "date": "2022-03"
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
     }
    ],
    "note": "",
-   "createdAt": 1791047074963,
-   "updatedAt": 1791047074963
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-y986nu": {
+   "source": "e-bimaruna-kargo-servis",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 28.22,
+   "role": null,
+   "date": "2016-06",
+   "status": null,
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-ewdekb": {
+   "source": "e-namil-trading-company-limited",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 19.59,
+   "role": null,
+   "date": "2016-06",
+   "status": null,
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-bhox9h": {
+   "source": "e-reveno-company-limited",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 9.48,
+   "role": null,
+   "date": "2016-06",
+   "status": null,
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-ku02gi": {
+   "source": "e-koperasi-karyawan-pt-korindo-group-pangkalanbun",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 0.22,
+   "role": null,
+   "date": "2016-06",
+   "status": null,
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-j59oti": {
+   "source": "e-primer-koperasi-angkatan-darat-kompi-senapan-b-batalyon-infa",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "ownership",
+   "value": 0.05,
+   "role": null,
+   "date": "2016-06",
+   "status": null,
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-7pe8kt": {
+   "source": "e-sang-jin-kim",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2016-06",
+   "status": null,
+   "start": "2016-06",
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-4p2dry": {
+   "source": "e-eung-kyo-han",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Wakil Direktur Utama",
+   "date": "2016-06",
+   "status": null,
+   "start": "2016-06",
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-fgpcnu": {
+   "source": "e-tae-il-choi",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2016-06",
+   "status": null,
+   "start": "2016-06",
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-1jqsic": {
+   "source": "e-mun-jin-seok",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2012-01",
+   "status": "previous",
+   "start": "2012-01",
+   "seen": [
+    "2012-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-o5olke": {
+   "source": "e-eun-ho-seung",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2016-06",
+   "status": null,
+   "start": "2016-06",
+   "seen": [
+    "2016-06"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-0veuwq": {
+   "source": "e-mustakim",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-qetny9": {
+   "source": "e-seung-eun-ho",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris Utama",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-oiunvo": {
+   "source": "e-seung-eun-ho",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Komisaris",
+   "date": "2009-04",
+   "status": "previous",
+   "start": "2009-04",
+   "seen": [
+    "2009-04"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-jvsg3a": {
+   "source": "e-kim-sang-jim",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-2ne090": {
+   "source": "e-kim-sang-jin",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2011-08",
+   "status": "previous",
+   "start": "2011-08",
+   "seen": [
+    "2011-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-iw12vp": {
+   "source": "e-heo-kwang-bok",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2012-08",
+   "status": "previous",
+   "start": "2012-08",
+   "seen": [
+    "2012-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-cke37m": {
+   "source": "e-hermanto-rusli",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-ntdwwm": {
+   "source": "e-rein-silvester-ranti",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-vmr69h": {
+   "source": "e-ryu-geon-sang",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2008-01",
+   "status": "previous",
+   "start": "2008-01",
+   "seen": [
+    "2008-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-rc67n7": {
+   "source": "e-choi-tae-il",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2011-08",
+   "status": "previous",
+   "start": "2011-08",
+   "seen": [
+    "2011-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-gmad9y": {
+   "source": "e-seung-min-soo",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2012-08",
+   "status": "previous",
+   "start": "2012-08",
+   "seen": [
+    "2012-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-g14dsx": {
+   "source": "e-min-soo-seung",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur Utama",
+   "date": "2014-09",
+   "status": "previous",
+   "start": "2014-09",
+   "seen": [
+    "2014-09"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-nduuq6": {
+   "source": "e-han-eung-kyo",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2012-08",
+   "status": "previous",
+   "start": "2012-08",
+   "seen": [
+    "2012-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
+  },
+  "l-musncgn5-d6ihh1": {
+   "source": "e-yun-du-yong",
+   "target": "e-pt-korindo-aria-bima-sari",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2009-08",
+   "status": "previous",
+   "start": "2009-08",
+   "seen": [
+    "2009-08"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+     "date": "2016-06"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791047345728,
+   "updatedAt": 1791047345728
   }
  },
  "versions": {
-  "v-musl86zs-rbfs": {
-   "at": 1791043787368,
-   "batch": "v-musl86zs-rbfs",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043786815,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0031310"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043787355,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0007528.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl87g1-xixk": {
    "at": 1791043787953,
    "batch": "v-musl87g1-xixk",
@@ -12574,6 +13425,1191 @@
       "note": "",
       "createdAt": 1791047074963,
       "updatedAt": 1791047074963
+     }
+    }
+   ]
+  },
+  "v-musncgpa-name": {
+   "at": 1791047345806,
+   "batch": "v-musncgpa-name",
+   "summary": "Added 26 rows from Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 50,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-korindo-company-h-k-limited",
+     "before": null,
+     "after": {
+      "name": "Korindo Company (H.k) Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Hong Kong",
+      "address": "HONGKONG"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-korindo-aria-bima-sari",
+     "before": null,
+     "after": {
+      "name": "PT Korindo Aria Bima Sari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0012200.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "01.060.115.1-092.000"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-bimaruna-kargo-servis",
+     "before": null,
+     "after": {
+      "name": "Bimaruna Kargo Servis",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-namil-trading-company-limited",
+     "before": null,
+     "after": {
+      "name": "Namil Trading Company Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Hong Kong",
+      "address": "HONGKONG"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-reveno-company-limited",
+     "before": null,
+     "after": {
+      "name": "Reveno Company Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Hong Kong",
+      "address": "HONGKONG"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-koperasi-karyawan-pt-korindo-group-pangkalanbun",
+     "before": null,
+     "after": {
+      "name": "Koperasi Karyawan PT. Korindo Group Pangkalanbun",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-primer-koperasi-angkatan-darat-kompi-senapan-b-batalyon-infa",
+     "before": null,
+     "after": {
+      "name": "Primer Koperasi Angkatan Darat Kompi Senapan B Batalyon Infantri 631 Antang",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "JL. ISKANDAR ASRAMA KOMPI B.631-A, ARUT SELATAN"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-sang-jin-kim",
+     "before": null,
+     "after": {
+      "name": "Sang Jin Kim",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. TAMAN RAJA UNIT A 104, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174083001530001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-eung-kyo-han",
+     "before": null,
+     "after": {
+      "name": "Eung Kyo Han",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. TAMAN RAJA BLOK B 306, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174081408561001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-tae-il-choi",
+     "before": null,
+     "after": {
+      "name": "Tae Il Choi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APARTEMEN WISMA INDAH, JL RAYA PASAR MINGGU NO. 14, DUREN TIGA, PANCORAN, JAKARTA SELATAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0026237"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-mun-jin-seok",
+     "before": null,
+     "after": {
+      "name": "Mun Jin Seok",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. TMN RAJA B.706, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174080103560005"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-eun-ho-seung",
+     "before": null,
+     "after": {
+      "name": "Eun Ho Seung",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APARTEMEN TAMAN RAJA, JL. APARTEMEN TAMAN RAJA, KALIBATA, PANCORAN, JAKARTA SELATAN"
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-mustakim",
+     "before": null,
+     "after": {
+      "name": "Mustakim",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APARTEMEN RASUNA T-9/9CD, MENTENG ATAS, SETIA BUDI",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "09.5303.040954.7003"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-seung-eun-ho",
+     "before": null,
+     "after": {
+      "name": "Seung Eun Ho",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APARTEMEN TAMAN RAJA UNIT C-803, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0021827"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-kim-sang-jim",
+     "before": null,
+     "after": {
+      "name": "Kim Sang Jim",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. WARUNG JATI BARAT I, APARTEMEN TAMAN RAJA UNIT",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0025427"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-kim-sang-jin",
+     "before": null,
+     "after": {
+      "name": "Kim Sang Jin",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. TAMAN RAJA UNIT A 104, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174083001530001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-heo-kwang-bok",
+     "before": null,
+     "after": {
+      "name": "Heo Kwang Bok",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. KORINDO NO. 77, PANGKALANBUN, KALIMANTAN TENGAH",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0023501"
+       },
+       {
+        "kind": "KTP / NIK",
+        "number": "M10678777"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-hermanto-rusli",
+     "before": null,
+     "after": {
+      "name": "Hermanto Rusli",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "09.5308.090545.7002"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-rein-silvester-ranti",
+     "before": null,
+     "after": {
+      "name": "Rein Silvester Ranti",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. AKASIA III B XI NO.18, KEC. KEBON JERUK",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "09.5205.210840.1112"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ryu-geon-sang",
+     "before": null,
+     "after": {
+      "name": "Ryu Geon Sang",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. KORINDO NO.77, PANGKALANBUN, KALIMANTAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0023755"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-choi-tae-il",
+     "before": null,
+     "after": {
+      "name": "Choi Tae Il",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. HOS COKROAMINOTO NO. 108",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ011621"
+       },
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0026237"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-seung-min-soo",
+     "before": null,
+     "after": {
+      "name": "Seung Min Soo",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "SC1703165"
+       },
+       {
+        "kind": "KTP / NIK",
+        "number": "M27976040"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-min-soo-seung",
+     "before": null,
+     "after": {
+      "name": "Min Soo Seung",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "JL. WARUNG JATI BARAT I, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "M27976040"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-han-eung-kyo",
+     "before": null,
+     "after": {
+      "name": "Han Eung Kyo",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. TMN RAJA BLOK B 306, KALIBATA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174081408561001"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-yun-du-yong",
+     "before": null,
+     "after": {
+      "name": "Yun Du Yong",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "address": "APART. WISMA INDAH A.104, DUREN TIGA, PANCORAN",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "DJ0021670"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn4-bgch70",
+     "before": null,
+     "after": {
+      "source": "e-korindo-company-h-k-limited",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 42.44,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-y986nu",
+     "before": null,
+     "after": {
+      "source": "e-bimaruna-kargo-servis",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 28.22,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-ewdekb",
+     "before": null,
+     "after": {
+      "source": "e-namil-trading-company-limited",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 19.59,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-bhox9h",
+     "before": null,
+     "after": {
+      "source": "e-reveno-company-limited",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 9.48,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-ku02gi",
+     "before": null,
+     "after": {
+      "source": "e-koperasi-karyawan-pt-korindo-group-pangkalanbun",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 0.22,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-j59oti",
+     "before": null,
+     "after": {
+      "source": "e-primer-koperasi-angkatan-darat-kompi-senapan-b-batalyon-infa",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "ownership",
+      "value": 0.05,
+      "role": null,
+      "date": "2016-06",
+      "status": null,
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-7pe8kt",
+     "before": null,
+     "after": {
+      "source": "e-sang-jin-kim",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2016-06",
+      "status": null,
+      "start": "2016-06",
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-4p2dry",
+     "before": null,
+     "after": {
+      "source": "e-eung-kyo-han",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Wakil Direktur Utama",
+      "date": "2016-06",
+      "status": null,
+      "start": "2016-06",
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-fgpcnu",
+     "before": null,
+     "after": {
+      "source": "e-tae-il-choi",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2016-06",
+      "status": null,
+      "start": "2016-06",
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-1jqsic",
+     "before": null,
+     "after": {
+      "source": "e-mun-jin-seok",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2012-01",
+      "status": "previous",
+      "start": "2012-01",
+      "seen": [
+       "2012-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-o5olke",
+     "before": null,
+     "after": {
+      "source": "e-eun-ho-seung",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2016-06",
+      "status": null,
+      "start": "2016-06",
+      "seen": [
+       "2016-06"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-0veuwq",
+     "before": null,
+     "after": {
+      "source": "e-mustakim",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-qetny9",
+     "before": null,
+     "after": {
+      "source": "e-seung-eun-ho",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris Utama",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-oiunvo",
+     "before": null,
+     "after": {
+      "source": "e-seung-eun-ho",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Komisaris",
+      "date": "2009-04",
+      "status": "previous",
+      "start": "2009-04",
+      "seen": [
+       "2009-04"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-jvsg3a",
+     "before": null,
+     "after": {
+      "source": "e-kim-sang-jim",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-2ne090",
+     "before": null,
+     "after": {
+      "source": "e-kim-sang-jin",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2011-08",
+      "status": "previous",
+      "start": "2011-08",
+      "seen": [
+       "2011-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-iw12vp",
+     "before": null,
+     "after": {
+      "source": "e-heo-kwang-bok",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2012-08",
+      "status": "previous",
+      "start": "2012-08",
+      "seen": [
+       "2012-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-cke37m",
+     "before": null,
+     "after": {
+      "source": "e-hermanto-rusli",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-ntdwwm",
+     "before": null,
+     "after": {
+      "source": "e-rein-silvester-ranti",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-vmr69h",
+     "before": null,
+     "after": {
+      "source": "e-ryu-geon-sang",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2008-01",
+      "status": "previous",
+      "start": "2008-01",
+      "seen": [
+       "2008-01"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-rc67n7",
+     "before": null,
+     "after": {
+      "source": "e-choi-tae-il",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2011-08",
+      "status": "previous",
+      "start": "2011-08",
+      "seen": [
+       "2011-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-gmad9y",
+     "before": null,
+     "after": {
+      "source": "e-seung-min-soo",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2012-08",
+      "status": "previous",
+      "start": "2012-08",
+      "seen": [
+       "2012-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-g14dsx",
+     "before": null,
+     "after": {
+      "source": "e-min-soo-seung",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2014-09",
+      "status": "previous",
+      "start": "2014-09",
+      "seen": [
+       "2014-09"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-nduuq6",
+     "before": null,
+     "after": {
+      "source": "e-han-eung-kyo",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2012-08",
+      "status": "previous",
+      "start": "2012-08",
+      "seen": [
+       "2012-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musncgn5-d6ihh1",
+     "before": null,
+     "after": {
+      "source": "e-yun-du-yong",
+      "target": "e-pt-korindo-aria-bima-sari",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur",
+      "date": "2009-08",
+      "status": "previous",
+      "start": "2009-08",
+      "seen": [
+       "2009-08"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. June 2016. “PT Korindo Aria Bima Sari.” Corporate profile.",
+        "date": "2016-06"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728
      }
     }
    ]
