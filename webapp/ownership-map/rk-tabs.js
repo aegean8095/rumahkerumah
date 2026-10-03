@@ -67,6 +67,9 @@
     entities: [
       { key: 'name', label: 'Name' },
       { key: 'type', label: 'Type' },
+      { key: 'country', label: 'Country' },
+      { key: 'identity', label: 'Identity', title: 'Registration or identity numbers' },
+      { key: 'address', label: 'Address', wrap: true },
       { key: 'groups', label: 'Groups', wrap: true },
       { key: 'clusters', label: 'Commodity' },
       { key: 'owners', label: 'Shareholders', num: true, title: 'Shareholders recorded for this company' },
@@ -102,7 +105,7 @@
     var links = visibleLinks(), by = new Map();
     OM.graph.nodes.forEach(function(n){
       var e = OM.master.entities.get(n.id) || {};
-      by.set(n.id, { id: n.id, name: n.name, type: n.type, groups: [], clusters: (e.clusters || []).slice(),
+      by.set(n.id, { id: n.id, name: n.name, type: n.type, country: e.country || '', address: e.address || '', identity: (e.identities || []).map(function(i){ return i.kind + ': ' + i.number; }).join('; '), groups: [], clusters: (e.clusters || []).slice(),
         owners: 0, board: 0, stakes: null, holdings: 0, roles: 0, latest: null, sources: new Set(), touched: false });
     });
     links.forEach(function(l){
@@ -128,6 +131,7 @@
         id: r.id, name: r.name,
         type: company ? 'Company' : 'Individual',
         groups: r.groups.sort().join('; '), clusters: r.clusters.join('; '),
+        country: r.country, address: r.address, identity: r.identity,
         owners: company ? r.owners : null, board: company ? r.board : null,
         stakes: company && r.stakes != null ? Math.round(r.stakes * 100) / 100 : null,
         holdings: r.holdings, roles: r.roles,

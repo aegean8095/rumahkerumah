@@ -258,7 +258,7 @@ const tests = {
     await p.fill('#tvSearch', 'Flora Nuansa'); await sleep(300);
     const flora = await p.$eval('#tvTable tbody tr[data-i]', tr => [...tr.cells].map(td => td.innerText.trim()));
     ok(flora[0].includes('Flora Nuansa Hijau') && flora[1] === 'Company', 'search finds the company: ' + flora.join(' | '));
-    ok(+flora[4] >= 2 && +flora[5] >= 2, 'shareholders and board counted: ' + flora.join(' | '));
+    ok(+flora[7] >= 2 && +flora[8] >= 2, 'shareholders and board counted: ' + flora.join(' | '));
     await p.fill('#tvSearch', ''); await sleep(200);
     // sort by name twice -> descending
     await p.click('#tvTable th[data-sort="name"]'); await sleep(200);
@@ -717,6 +717,48 @@ const tests = {
     const pid = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => e.type === 'person')[0]);
     await p.evaluate(id => OwnershipMap.selectNode(id), pid); await sleep(700);
     ok(!(await p.isVisible('[data-rk="report"]')), 'no report button for an individual');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'profile: country, address and identity numbers save, show in table, CSV, search, report, merge'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.evaluate(() => window.OwnershipMapTabs && window.OwnershipMapTabs.show('map')); await sleep(500);
+    const id = await p.evaluate(() => [...OwnershipMap.master.entities].find(([, e]) => /Flora Nuansa Hijau/.test(e.name))[0]);
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(800);
+    ok(await p.isVisible('.rk-profile'), 'Profile block in the detail panel');
+    eq(await p.evaluate(() => document.querySelector('.rk-profile').previousElementSibling.querySelector('h4').textContent.trim()), 'Note', 'Profile sits right after Note');
+    await p.fill('.rk-profile [name=country]', 'Indonesia');
+    await p.fill('.rk-profile [name=address]', 'Jl. Sudirman 1, Jakarta');
+    await p.click('[data-rkp=save]'); await sleep(900);
+    await p.selectOption('.rk-profile [name=kind]', 'NIB'); await p.fill('.rk-profile [name=number]', '8120000123456');
+    await p.click('[data-rkp=add]'); await sleep(900);
+    const e = await p.evaluate(id => OwnershipMap.master.entities.get(id), id);
+    eq([e.country, e.address], ['Indonesia', 'Jl. Sudirman 1, Jakarta'], 'country and address stored');
+    eq(e.identities, [{ kind: 'NIB', number: '8120000123456' }], 'identity stored');
+    ok((await p.textContent('.rk-ids')).includes('8120000123456'), 'identity listed after saving');
+    // table column + text filter
+    await p.evaluate(() => window.OwnershipMapTabs.show('table')); await sleep(600);
+    await p.fill('#tvSearch', '8120000123456'); await sleep(500);
+    const rows = await p.$$eval('#tvTable tbody tr', r => r.map(x => x.textContent));
+    eq(rows.length, 1, 'filter by identity number finds one row'); ok(rows[0].includes('Indonesia') && rows[0].includes('Jakarta'), 'row shows country and address');
+    await p.fill('#tvSearch', ''); await p.evaluate(() => window.OwnershipMapTabs.show('map')); await sleep(400);
+    // map search finds it by number
+    await p.fill('#searchInput', '8120000123456'); await sleep(600);
+    ok((await p.$$eval('g.node.match', g => g.length)) === 1, 'map search matches the identity number');
+    await p.fill('#searchInput', '');
+    // report
+    await p.evaluate(id => OwnershipMapReport.open(id), id); await sleep(600);
+    const rep = await p.textContent('#reportSheet'); ok(rep.includes('Jurisdiction') && rep.includes('8120000123456') && rep.includes('Jakarta'), 'report shows the profile');
+    await p.keyboard.press('Escape'); await sleep(300);
+    // removal
+    await p.evaluate(id => OwnershipMap.selectNode(id), id); await sleep(700);
+    await p.click('[data-rkp=del]'); await sleep(900);
+    eq(await p.evaluate(id => (OwnershipMap.master.entities.get(id).identities || []).length, id), 0, 'identity removed');
+    // merge carries the fields over when the target has none
+    const other = await p.evaluate(id => [...OwnershipMap.master.entities].find(([k, v]) => k !== id && v.type === 'person')[0], id);
+    await p.evaluate(([a, b]) => OwnershipMap.mergeEntities(a, b), [id, other]); await sleep(1500);
+    const m = await p.evaluate(o => OwnershipMap.master.entities.get(o), other);
+    eq([m.country, m.address], ['Indonesia', 'Jl. Sudirman 1, Jakarta'], 'merge keeps country and address');
     eq(p.errors, [], 'page errors');
   },
 };

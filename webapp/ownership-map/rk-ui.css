@@ -131,3 +131,13 @@ g.node.multi-sel .node-label{ font-weight: 700; }
 }
 
 .canvas-wrap.cn-open .sel-bar{ left: calc(50% + 208px); }
+
+/* Entity profile: country, address, identity registry (rk-profile.js) */
+.rk-profile .rk-field{ display: flex; flex-direction: column; gap: 4px; }
+.rk-profile .rk-field > span{ font-size: 12px; color: var(--ink-600); }
+.rk-profile textarea.well{ min-height: 52px; }
+.rk-ids{ list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.rk-ids li{ display: flex; align-items: baseline; gap: 8px; font-size: 12.5px; }
+.rk-id-kind{ color: var(--ink-600); flex: 0 0 auto; }
+.rk-id-num{ font-family: var(--font-data); flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.rk-id-add{ display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto; gap: 6px; }

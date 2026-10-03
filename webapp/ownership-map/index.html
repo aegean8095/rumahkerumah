@@ -3242,7 +3242,9 @@
     clusterHits.forEach(c => cst.ents.get(c).forEach(id => inGroup.add(id)));
     const aliasHit = id => {
       const e = useMaster && master.entities.get(id);
-      return !!(e && (e.aliases || []).some(a => a.toLowerCase().includes(q)));
+      return !!(e && ((e.aliases || []).some(a => a.toLowerCase().includes(q)) ||
+        (e.identities || []).some(i => String(i.number || '').toLowerCase().includes(q)) ||
+        (e.country || '').toLowerCase().includes(q)));
     };
     // With the shared dataset, entities outside the groups now shown are found too.
     const pool = useMaster
@@ -5254,6 +5256,11 @@
         if (nameKey(a) !== keyOfInto && !aliases.some(x => nameKey(x) === nameKey(a))) aliases.push(a);
       });
       intoAfter.aliases = aliases;
+      if (!intoAfter.country && from.country) intoAfter.country = from.country;
+      if (!intoAfter.address && from.address) intoAfter.address = from.address;
+      const ids = (into.identities || []).slice();
+      (from.identities || []).forEach(i => { if (!ids.some(x => x.kind === i.kind && x.number === i.number)) ids.push(i); });
+      if (ids.length) intoAfter.identities = ids;
       if (from.note) intoAfter.note = into.note ? into.note + '\n\n' + from.note : from.note;
       intoAfter.updatedAt = now;
       changes.push({ kind: 'entity', id: intoId, before: clone(into), after: intoAfter });
@@ -5602,14 +5609,14 @@
         const x = inScope.get(id); x.n++; (l.groups || []).forEach(g => x.groups.add(g));
       });
     });
-    const rows = [['name', 'type', 'commodity_clusters', 'other_spellings', 'groups', 'relationships', 'note', 'added', 'updated']];
+    const rows = [['name', 'type', 'country', 'address', 'identity_registry', 'commodity_clusters', 'other_spellings', 'groups', 'relationships', 'note', 'added', 'updated']];
     const iso = ms => (ms ? new Date(ms).toISOString().slice(0, 10) : '');
     const list = Array.from(master.entities.entries())
       .filter(([id]) => !gf || inScope.has(id))
       .sort((a, b) => a[1].name.localeCompare(b[1].name));
     list.forEach(([id, e]) => {
       const x = inScope.get(id) || { groups: new Set(), n: 0 };
-      rows.push([e.name, e.type || inferType(e.name), (e.clusters || []).join('; '), (e.aliases || []).join('; '), Array.from(x.groups).sort().join('; '), x.n, e.note || '', iso(e.createdAt), iso(e.updatedAt)]);
+      rows.push([e.name, e.type || inferType(e.name), e.country || '', e.address || '', (e.identities || []).map(i => i.kind + ': ' + i.number).join('; '), (e.clusters || []).join('; '), (e.aliases || []).join('; '), Array.from(x.groups).sort().join('; '), x.n, e.note || '', iso(e.createdAt), iso(e.updatedAt)]);
     });
     const csv = rows.map(r => r.map(csvCell).join(',')).join('\n') + '\n';
     saveCsv('ownership-entities-' + csvTag(gf) + '-' + csvStamp() + '.csv', csv, list.length + ' entities');
@@ -6399,4 +6406,5 @@
 <script src="rk-report.js"></script>
 <script src="rk-detail.js"></script>
 <script src="rk-time.js"></script>
+<script src="rk-profile.js"></script>
 </body></html>

@@ -99,6 +99,10 @@
     var html =
       '<header class="rp-head"><div><h1>' + esc(e.name) + '</h1><p class="rp-sub">Company' + (groups.size ? ' · ' + Array.from(groups).sort().map(esc).join(', ') : '') + ((e.clusters || []).length ? ' · ' + e.clusters.map(esc).join(', ') : '') + '</p></div>' +
         '<div class="rp-meta"><div>Report of ' + esc(today) + '</div><div>Latest data: ' + (d.latest ? esc(OM.formatDate(d.latest)) : 'no dates recorded') + '</div></div></header>' +
+      ((e.country || e.address || (e.identities || []).length) ? '<section><h2>Profile</h2><ul class="rp-list">' +
+        (e.country ? '<li>Jurisdiction: <b>' + esc(e.country) + '</b></li>' : '') +
+        (e.address ? '<li>Address: ' + esc(e.address) + '</li>' : '') +
+        (e.identities || []).map(function(i){ return '<li>' + esc(i.kind) + ': <b>' + esc(i.number) + '</b></li>'; }).join('') + '</ul></section>' : '') +
       '<section class="rp-summary">' +
         '<div><b>' + d.ownIn.length + '</b><span>shareholders recorded</span></div>' +
         '<div><b>' + (d.nums.length ? esc(pct(d.total)) : '—') + '</b><span>current stakes added up</span></div>' +
