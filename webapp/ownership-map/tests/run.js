@@ -232,6 +232,56 @@ const tests = {
     eq(ds.length, 1, 'one DeepSeek call'); eq(ds[0].auth, 'Bearer sk-test-key', 'key sent');
     ok(ds[0].body.messages[1].content.includes('PT Induk Uji'), 'PDF text sent');
   },
+  async 'table: tabs, both tables, sort, search, filters, row actions, CSV'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    const rowsN = () => p.$$eval('#tvTable tbody tr[data-i]', t => t.length);
+    const firstCell = () => p.$eval('#tvTable tbody tr[data-i] td', td => td.innerText.trim());
+    await p.click('[data-tab="table"]'); await sleep(400);
+    ok(await p.isVisible('#tableView') && !(await p.isVisible('.map-legend')), 'table shown, map chrome hidden');
+    await p.click('#tableView [data-kind="entities"]'); await sleep(300);
+    eq(await rowsN(), 165, 'entities rows');
+    ok(/165 entities/.test(await p.textContent('#tvCount')), 'entity count');
+    // a known company: shareholders, board and stakes columns
+    await p.fill('#tvSearch', 'Flora Nuansa'); await sleep(300);
+    const flora = await p.$eval('#tvTable tbody tr[data-i]', tr => [...tr.cells].map(td => td.innerText.trim()));
+    ok(flora[0].includes('Flora Nuansa Hijau') && flora[1] === 'Company', 'search finds the company: ' + flora.join(' | '));
+    ok(+flora[4] >= 2 && +flora[5] >= 2, 'shareholders and board counted: ' + flora.join(' | '));
+    await p.fill('#tvSearch', ''); await sleep(200);
+    // sort by name twice -> descending
+    await p.click('#tvTable th[data-sort="name"]'); await sleep(200);
+    ok(await p.$eval('#tvTable th[data-sort="name"]', th => th.getAttribute('aria-sort')) === 'descending', 'sorted descending');
+    const z = await firstCell(); await p.click('#tvTable th[data-sort="name"]'); await sleep(200);
+    ok((await firstCell()).localeCompare(z) < 0, 'sort flips');
+    // relationships table follows the Relationships filter
+    await p.click('#tableView [data-kind="links"]'); await sleep(300);
+    eq(await rowsN(), 235, 'relationship rows');
+    await p.click('.view-bar [data-type="ownership"]'); await sleep(600);
+    eq(await rowsN(), 87, 'only shareholdings after the map filter');
+    await p.click('.view-bar [data-type="all"]'); await sleep(600);
+    // row click opens the detail panel, map button switches to the map
+    await p.click('#tvTable tbody tr[data-i="0"] td:nth-child(3)'); await sleep(500);
+    ok(await p.isVisible('#detailPanel'), 'detail panel opens from a row');
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.click('#tvExport')]);
+    ok(/relationships-table/.test(dl.suggestedFilename()), 'CSV export');
+    const csv = fs.readFileSync(await dl.path(), 'utf8');
+    eq(csv.trim().split('\n').length, 236, 'CSV has header + 235 rows');
+    await p.click('#tvTable tbody tr[data-i="0"] [data-onmap]'); await sleep(600);
+    ok(!(await p.isVisible('#tableView')) && await p.isVisible('#graph'), 'map button goes to the map');
+    // remembered
+    await p.click('[data-tab="table"]'); await p.reload(); await sleep(2500);
+    ok(await p.isVisible('#tableView'), 'table tab remembered');
+    eq(p.errors, [], 'page errors');
+  },
+  async 'table: phone width scrolls sideways, name column stays'(){
+    const gh = fakeGitHub(); gh.set(SEED);
+    const { ctx } = await context({ gh }); const p = await open(ctx);
+    await p.setViewportSize({ width: 390, height: 800 });
+    await p.click('[data-tab="table"]'); await sleep(500);
+    const m = await p.evaluate(() => { const s = document.getElementById('tvScroll'); return { scrolls: s.scrollWidth > s.clientWidth, page: document.documentElement.scrollWidth <= window.innerWidth + 1,
+      sticky: getComputedStyle(document.querySelector('#tvTable td')).position }; });
+    ok(m.scrolls && m.page && m.sticky === 'sticky', 'phone layout ' + JSON.stringify(m));
+  },
 };
 
 (async () => {

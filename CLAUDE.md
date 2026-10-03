@@ -59,6 +59,7 @@ Files:
 | `rk-shim.js` | Replaces the claude.ai runtime: `db` (IndexedDB, tab sync), `downloads`, `sample` (DeepSeek). |
 | `rk-github.js` | GitHub sync of the dataset (branch `ownership-map-data`, file `ownership-map/dataset.json`). |
 | `rk-backup.js` | Back up / restore buttons and the "Saved on GitHub" block. |
+| `rk-tabs.js` + `rk-tabs.css` | Map / Table tabs: Entities and Relationships tables (sort, search, CSV, row → detail panel or map). |
 | `tests/run.js` | Browser tests with fake GitHub and DeepSeek: `node webapp/ownership-map/tests/run.js [name-filter]`. |
 | `data/seed.json` | Fallback data (built by `shadow-corporate/build_seed.py`). |
 
@@ -136,6 +137,14 @@ Working efficiently (token use):
 - Added the "Ownership Map — read this before…" section above: code map, file roles, working rules
 - `index.html`: add-on API `window.OwnershipMap` and an `om:change` event (fired after data or map changes), so new features can live in separate `rk-*.js` files
 - `tests/run.js`: one permanent browser test suite (12 tests, fake GitHub and DeepSeek, built-in server); all passing
+
+### 2026-10-03 — Ownership Map: Table tab (plan phases 0–1)
+
+- New `rk-tabs.js` / `rk-tabs.css` (add-on, no logic copied from `index.html`): Map | Table switch in the view bar, remembered per browser
+- Table tab: Entities (type, groups, commodity, shareholders, board, recent stakes %, holdings, roles, latest data, sources) and Relationships (from, to, type, stake/role, status, dates, groups, sources)
+- Follows the group, cluster, relationship and timeline filters; sort per column, text filter, CSV of the rows shown; row opens the detail panel, map-pin button jumps to the map
+- Phone: table scrolls sideways with the name column pinned. Add-on API gained `linkPassesFilter`, `formatDate`, `dateSortKey`
+- UI kept in English for consistency; "Data quality" tab comes with phase 2. 2 new tests; all 14 pass
 
 ---
 

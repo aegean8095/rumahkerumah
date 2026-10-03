@@ -1,0 +1,56 @@
+/* Map / Table tabs (rk-tabs.js). Uses the tokens and component classes of index.html. */
+.view-tabs .layout-btn{ font-weight: 600; }
+.canvas-wrap.table-mode #graph{ visibility: hidden; }   /* keeps its size, so the map is laid out right on return */
+.canvas-wrap.table-mode .map-legend,
+.canvas-wrap.table-mode .canvas-toolbar,
+.canvas-wrap.table-mode .view-bar [aria-label="Layout"],
+.canvas-wrap.table-mode .view-bar .view-divider.layout-divider{ display: none !important; }
+
+.table-view{
+  top: calc(var(--map-top-h, 92px) + 22px); left: 14px; right: 14px; bottom: 14px;
+  z-index: calc(var(--z-overlay) + 1);
+  background: var(--panel); display: flex; flex-direction: column; overflow: hidden;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.canvas-wrap.detail-open .table-view{ right: calc(min(368px, 100% - 28px) + 26px); }
+.tv-head{ display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 14px; border-bottom: 1px solid var(--border-soft); }
+.tv-head .segmented{ flex: 0 0 auto; }
+.tv-head .type-btn{ flex: 0 0 auto; padding: 6px 10px; }
+.tv-head .search-wrap{ flex: 1 1 200px; min-width: 160px; max-width: 360px; }
+.tv-count{ font-size: 12px; color: var(--ink-400); font-family: var(--font-data); margin-left: auto; white-space: nowrap; }
+.tv-scroll{ flex: 1 1 auto; overflow: auto; }
+.tv-table{ width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12.5px; }
+.tv-table th, .tv-table td{ padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border-soft); white-space: nowrap; }
+.tv-table td.wrap{ white-space: normal; min-width: 160px; max-width: 280px; }
+.tv-table th{
+  position: sticky; top: 0; z-index: 2; background: var(--bg); font-size: 11.5px; font-weight: 600; color: var(--ink-600);
+  cursor: pointer; user-select: none;
+}
+.tv-table th:hover{ color: var(--ink-900); }
+.tv-table th[aria-sort] .tv-arrow::after{ content: '▲'; font-size: 8px; margin-left: 4px; vertical-align: 1px; }
+.tv-table th[aria-sort="descending"] .tv-arrow::after{ content: '▼'; }
+.tv-table th.num, .tv-table td.num{ text-align: right; font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.tv-table th:first-child, .tv-table td:first-child{ position: sticky; left: 0; z-index: 1; background: var(--panel); }
+.tv-table th:first-child{ z-index: 3; background: var(--bg); }
+.tv-table tbody tr{ cursor: pointer; }
+.tv-table tbody tr:hover td{ background: var(--accent-focus-soft); }
+.tv-table tbody tr.selected td{ background: #dfe7f7; }
+.tv-table td.muted{ color: var(--ink-400); }
+.tv-name{ font-weight: 500; color: var(--ink-900); }
+.tv-type{ font-size: 11px; padding: 1px 6px; border-radius: var(--r-sm); background: var(--bg); color: var(--ink-600); }
+.tv-prev{ color: var(--ink-400); }
+.tv-onmap{
+  appearance: none; border: none; background: none; cursor: pointer; color: var(--ink-400);
+  width: 24px; height: 24px; border-radius: 6px; display: inline-grid; place-items: center; margin: -4px 0 -4px 6px; vertical-align: middle;
+}
+.tv-onmap:hover{ background: rgba(20,28,36,.07); color: var(--accent-focus); }
+.tv-onmap .icon{ width: 14px; height: 14px; }
+.tv-empty{ padding: 28px 16px; color: var(--ink-400); font-size: 13px; }
+@media (max-width: 860px){
+  .table-view{ left: 8px; right: 8px; bottom: 8px; }
+  .canvas-wrap.detail-open .table-view{ right: 8px; }
+  .tv-head{ padding: 10px; }
+  .tv-head .search-wrap{ max-width: none; order: 3; flex-basis: 100%; }
+  /* The pinned first column must leave room for the columns scrolling past it. */
+  .tv-table th:first-child, .tv-table td:first-child{ white-space: normal; min-width: 120px; max-width: 42vw; box-shadow: 1px 0 0 var(--border-soft); }
+}

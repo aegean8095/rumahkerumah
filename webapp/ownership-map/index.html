@@ -1,4 +1,4 @@
-<!doctype html><html><head><title>Ownership Map</title><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><title>Ownership Map</title><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><link rel="stylesheet" href="rk-tabs.css"></head><body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
@@ -6182,6 +6182,7 @@
     get preview(){ return previewMode; },
     groupFilter: () => effectiveGroupFilter(), clusterFilter: () => effectiveClusterFilter(),
     entityName, nodeName, nameKey, looseKey, inferType, canonRole, linkEnds, linkKey, seenOf, fmtMonth,
+    linkPassesFilter, formatDate, dateSortKey,
     profileRef, effectiveStakes, escapeHtml,
     focusNode, selectNode, selectLink, centerOnNode,
     mergeEntities, commitChanges, reportWrite, withBusy,
@@ -6203,4 +6204,5 @@
 })();
 </script>
 <script src="rk-backup.js"></script>
+<script src="rk-tabs.js"></script>
 </body></html>
