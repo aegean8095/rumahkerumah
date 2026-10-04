@@ -1346,12 +1346,12 @@
    "updatedAt": 1791043479369
   },
   "e-muller-tampubolon-se-mm": {
-   "name": "Muller Tampubolon, SE, MM",
+   "name": "Muller Tampubolon SE MM",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
+   "updatedAt": 1791082575553,
    "country": "Indonesia",
    "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
    "identities": [
@@ -12384,56 +12384,6 @@
   }
  },
  "versions": {
-  "v-mut5u5ru-0oag": {
-   "at": 1791078404538,
-   "batch": "v-mut5u5ru-0oag",
-   "summary": "Removed an identity number: PT Korindo Aria Bima Sari",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-korindo-aria-bima-sari",
-     "before": {
-      "name": "PT Korindo Aria Bima Sari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "country": "Indonesia",
-      "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0012200.AH.01.02.Tahun 2016"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "01.060.115.1-092.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Korindo Aria Bima Sari",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078404537,
-      "country": "Indonesia",
-      "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0012200.AH.01.02.Tahun 2016"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-mut5u863-edef": {
    "at": 1791078407643,
    "batch": "v-mut5u863-edef",
@@ -13934,6 +13884,52 @@
       ]
      },
      "after": null
+    }
+   ]
+  },
+  "v-mut8bk5r-71x7": {
+   "at": 1791082575567,
+   "batch": "v-mut8bk5r-71x7",
+   "summary": "Renamed Muller Tampubolon, SE, MM to Muller Tampubolon SE MM",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-muller-tampubolon-se-mm",
+     "before": {
+      "name": "Muller Tampubolon, SE, MM",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1471102712640001"
+       }
+      ]
+     },
+     "after": {
+      "name": "Muller Tampubolon SE MM",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791082575553,
+      "country": "Indonesia",
+      "address": "JL.PERKASA - PERUMAHAN GRAHA HANG TUAH PERMAI BLOK F/06",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1471102712640001"
+       }
+      ]
+     }
     }
    ]
   }
