@@ -2930,17 +2930,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791047039326,
-   "updatedAt": 1791047039326,
+   "updatedAt": 1791078427700,
    "country": "Indonesia",
    "address": "Komplek PT RAPP CM 85",
    "identities": [
     {
      "kind": "KTP / NIK",
      "number": "1405021904660005"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "141608232222000"
     }
    ]
   },
@@ -12126,42 +12122,6 @@
   }
  },
  "versions": {
-  "v-mut5sidk-rvd5": {
-   "at": 1791078327560,
-   "batch": "v-mut5sidk-rvd5",
-   "summary": "Renamed Korindo Company (H.k) Limited to Korindo Company (H.k) Ltd",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-korindo-company-h-k-limited",
-     "before": {
-      "name": "Korindo Company (H.k) Limited",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "country": "Hong Kong",
-      "address": "HONGKONG"
-     },
-     "after": {
-      "name": "Korindo Company (H.k) Ltd",
-      "type": "company",
-      "aliases": [
-       "Korindo Company (H.k) Limited"
-      ],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078327555,
-      "country": "Hong Kong",
-      "address": "HONGKONG"
-     }
-    }
-   ]
-  },
   "v-mut5tddo-d1hf": {
    "at": 1791078367740,
    "batch": "v-mut5tddo-d1hf",
@@ -12600,6 +12560,56 @@
        {
         "kind": "Company registration no.",
         "number": "AHU-AH.01.03-0138580"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5unn9-i0fa": {
+   "at": 1791078427701,
+   "batch": "v-mut5unn9-i0fa",
+   "summary": "Removed an identity number: Zulkifli",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-zulkifli",
+     "before": {
+      "name": "Zulkifli",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "Komplek PT RAPP CM 85",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1405021904660005"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "141608232222000"
+       }
+      ]
+     },
+     "after": {
+      "name": "Zulkifli",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791078427700,
+      "country": "Indonesia",
+      "address": "Komplek PT RAPP CM 85",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1405021904660005"
        }
       ]
      }
