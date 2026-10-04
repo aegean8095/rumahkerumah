@@ -153,12 +153,12 @@
    "updatedAt": 1791043270817
   },
   "e-bcl-industrial-sdn-bhd": {
-   "name": "Bcl Industrial Sdn. Bhd",
+   "name": "Bcl Industrial Sdn Bhd",
    "type": "company",
    "aliases": [],
    "note": "",
    "createdAt": 1791047039326,
-   "updatedAt": 1791047039326,
+   "updatedAt": 1791078280047,
    "country": "Malaysia",
    "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
   },
@@ -12158,56 +12158,6 @@
   }
  },
  "versions": {
-  "v-musl89dg-wsvj": {
-   "at": 1791043790452,
-   "batch": "v-musl89dg-wsvj",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043788733,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043790451,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musm3tq5-4e4e": {
    "at": 1791045263165,
    "batch": "v-musm3tq5-4e4e",
@@ -15239,6 +15189,40 @@
       "updatedAt": 1791078270047,
       "country": "Indonesia",
       "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
+     }
+    }
+   ]
+  },
+  "v-mut5rhqn-m4m2": {
+   "at": 1791078280079,
+   "batch": "v-mut5rhqn-m4m2",
+   "summary": "Renamed Bcl Industrial Sdn. Bhd to Bcl Industrial Sdn Bhd",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-bcl-industrial-sdn-bhd",
+     "before": {
+      "name": "Bcl Industrial Sdn. Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791047039326,
+      "country": "Malaysia",
+      "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
+     },
+     "after": {
+      "name": "Bcl Industrial Sdn Bhd",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047039326,
+      "updatedAt": 1791078280047,
+      "country": "Malaysia",
+      "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
      }
     }
    ]
