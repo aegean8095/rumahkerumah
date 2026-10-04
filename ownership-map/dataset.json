@@ -1698,17 +1698,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1790961478929,
-   "updatedAt": 1791047039326,
+   "updatedAt": 1791078410064,
    "country": "Indonesia",
    "address": "TELUK WARU RT 009, BALIKPAPAN BARAT, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-0129972.AH.01.02.Tahun 2022"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "025049529725000"
     }
    ]
   },
@@ -1788,17 +1784,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "updatedAt": 1791078407640,
    "country": "Indonesia",
    "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-0049287.AH.01.02.Tahun 2019"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "017367830211000"
     }
    ]
   },
@@ -2047,17 +2039,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791047345728,
-   "updatedAt": 1791047345728,
+   "updatedAt": 1791078404537,
    "country": "Indonesia",
    "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-0012200.AH.01.02.Tahun 2016"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "01.060.115.1-092.000"
     }
    ]
   },
@@ -2123,17 +2111,13 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791047074963,
-   "updatedAt": 1791047074963,
+   "updatedAt": 1791078401392,
    "country": "Indonesia",
    "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-0077847.AH.01.02.Tahun 2019"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "015550361216001"
     }
    ]
   },
@@ -2982,16 +2966,12 @@
    "aliases": [],
    "note": "",
    "createdAt": 1791077963594,
-   "updatedAt": 1791077963594,
+   "updatedAt": 1791078414882,
    "country": "Indonesia",
    "identities": [
     {
      "kind": "Company registration no.",
      "number": "AHU-AH.01.03-0138580"
-    },
-    {
-     "kind": "NPWP (tax no.)",
-     "number": "0000"
     }
    ]
   },
@@ -12146,542 +12126,6 @@
   }
  },
  "versions": {
-  "v-mut5kpkc-uvy1": {
-   "at": 1791077963628,
-   "batch": "v-mut5kpkc-uvy1",
-   "summary": "Added 9 rows from Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 15,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-sugiarto",
-     "before": null,
-     "after": {
-      "name": "Sugiarto",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "address": "WISATA BUKIT MAS BLOK E--16 RT. 001 RW. 006, KEL. LIDAH WETAN, KEC. LAKARSANTRI, KOTA SURABAYA",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3578181203660001"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-agrindo-sawit-mandiri",
-     "before": null,
-     "after": {
-      "name": "PT Agrindo Sawit Mandiri",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0138580"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "0000"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-johnny",
-     "before": null,
-     "after": {
-      "name": "Johnny",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "address": "JL. URIP SUMOHARJO NO. 148 RT. 005 RW. 004, KEL. NGRONGGO, KEC. KOTA, KOTA KEDIRI",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3571022309680006"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-mei-ling",
-     "before": null,
-     "after": {
-      "name": "Mei Ling",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "address": "JL. CEMARA I BLOK B-2 /39 RT. 002 RW. 014 KEL. PEGADUNGAN, KEC. KALIDERES JAKARTA BARAT",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3173064711750004"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-cita-rasa-sukses",
-     "before": null,
-     "after": {
-      "name": "PT Cita Rasa Sukses",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "address": "KOMPLEK PERGUDANGAN SURYA INTI PERMATA BLOK H-8, TAMBAK SAWAH",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "-"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-andi-oetomo",
-     "before": null,
-     "after": {
-      "name": "Andi Oetomo",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594,
-      "country": "Indonesia",
-      "address": "MUARA KARANG F2B/ NO.73",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3172010803630004"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-f7nybp",
-     "before": null,
-     "after": {
-      "source": "e-sugiarto",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "ownership",
-      "value": 32.5,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-uq0b9f",
-     "before": null,
-     "after": {
-      "source": "e-johnny",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "ownership",
-      "value": 32.5,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-hry6e7",
-     "before": null,
-     "after": {
-      "source": "e-mei-ling",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "ownership",
-      "value": 15,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-qnciqr",
-     "before": null,
-     "after": {
-      "source": "e-pt-cita-rasa-sukses",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "ownership",
-      "value": 10,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-xi3ycd",
-     "before": null,
-     "after": {
-      "source": "e-andi-oetomo",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "ownership",
-      "value": 10,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-4lg2yg",
-     "before": null,
-     "after": {
-      "source": "e-sugiarto",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-r2k6j5",
-     "before": null,
-     "after": {
-      "source": "e-johnny",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris Utama",
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-1jhv2w",
-     "before": null,
-     "after": {
-      "source": "e-mei-ling",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-mut5kpje-8fah1c",
-     "before": null,
-     "after": {
-      "source": "e-andi-oetomo",
-      "target": "e-pt-agrindo-sawit-mandiri",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2019-02",
-      "status": null,
-      "start": "2017-05",
-      "seen": [
-       "2017-05",
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agrindo Sawit Mandiri.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791077963594,
-      "updatedAt": 1791077963594
-     }
-    }
-   ]
-  },
-  "v-mut5ra07-0tlm": {
-   "at": 1791078270055,
-   "batch": "v-mut5ra07-0tlm",
-   "summary": "Renamed Bimaruna Kargo Servis to PT Bimaruna Kargo Servis",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-bimaruna-kargo-servis",
-     "before": {
-      "name": "Bimaruna Kargo Servis",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "country": "Indonesia",
-      "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
-     },
-     "after": {
-      "name": "PT Bimaruna Kargo Servis",
-      "type": "company",
-      "aliases": [
-       "Bimaruna Kargo Servis"
-      ],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078270047,
-      "country": "Indonesia",
-      "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
-     }
-    }
-   ]
-  },
-  "v-mut5rhqn-m4m2": {
-   "at": 1791078280079,
-   "batch": "v-mut5rhqn-m4m2",
-   "summary": "Renamed Bcl Industrial Sdn. Bhd to Bcl Industrial Sdn Bhd",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-bcl-industrial-sdn-bhd",
-     "before": {
-      "name": "Bcl Industrial Sdn. Bhd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047039326,
-      "updatedAt": 1791047039326,
-      "country": "Malaysia",
-      "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
-     },
-     "after": {
-      "name": "Bcl Industrial Sdn Bhd",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047039326,
-      "updatedAt": 1791078280047,
-      "country": "Malaysia",
-      "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
-     }
-    }
-   ]
-  },
-  "v-mut5rxlv-2pmx": {
-   "at": 1791078300643,
-   "batch": "v-mut5rxlv-2pmx",
-   "summary": "Renamed Egat International Company Limited to Egat International Co Ltd",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-egat-international-company-limited",
-     "before": {
-      "name": "Egat International Company Limited",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791029483294
-     },
-     "after": {
-      "name": "Egat International Co Ltd",
-      "type": "company",
-      "aliases": [
-       "Egat International Company Limited"
-      ],
-      "note": "",
-      "createdAt": 1791029483294,
-      "updatedAt": 1791078300637
-     }
-    }
-   ]
-  },
-  "v-mut5s66d-eyyj": {
-   "at": 1791078311749,
-   "batch": "v-mut5s66d-eyyj",
-   "summary": "Renamed Koperasi Karyawan PT. Korindo Group Pangkalanbun to Koperasi Karyawan PT Korindo Group Pangkalanbun",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-koperasi-karyawan-pt-korindo-group-pangkalanbun",
-     "before": {
-      "name": "Koperasi Karyawan PT. Korindo Group Pangkalanbun",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "country": "Indonesia",
-      "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
-     },
-     "after": {
-      "name": "Koperasi Karyawan PT Korindo Group Pangkalanbun",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078311743,
-      "country": "Indonesia",
-      "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
-     }
-    }
-   ]
-  },
   "v-mut5sidk-rvd5": {
    "at": 1791078327560,
    "batch": "v-mut5sidk-rvd5",
@@ -12908,6 +12352,254 @@
        {
         "kind": "KTP / NIK",
         "number": "DJ0023501"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5u3cv-01m3": {
+   "at": 1791078401407,
+   "batch": "v-mut5u3cv-01m3",
+   "summary": "Removed an identity number: PT Nusa Wana Raya",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-nusa-wana-raya",
+     "before": {
+      "name": "PT Nusa Wana Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791047074963,
+      "country": "Indonesia",
+      "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0077847.AH.01.02.Tahun 2019"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "015550361216001"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Nusa Wana Raya",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047074963,
+      "updatedAt": 1791078401392,
+      "country": "Indonesia",
+      "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0077847.AH.01.02.Tahun 2019"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5u5ru-0oag": {
+   "at": 1791078404538,
+   "batch": "v-mut5u5ru-0oag",
+   "summary": "Removed an identity number: PT Korindo Aria Bima Sari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-korindo-aria-bima-sari",
+     "before": {
+      "name": "PT Korindo Aria Bima Sari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0012200.AH.01.02.Tahun 2016"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "01.060.115.1-092.000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Korindo Aria Bima Sari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791078404537,
+      "country": "Indonesia",
+      "address": "JL. WISMA KORINDO JL MT HARYONO KAV.62 PANCORAN, KOTA ADMINISTRASI JAKARTA SELATAN, DKI JAKARTA",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0012200.AH.01.02.Tahun 2016"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5u863-edef": {
+   "at": 1791078407643,
+   "batch": "v-mut5u863-edef",
+   "summary": "Removed an identity number: PT Bukit Raya Mudisa",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-bukit-raya-mudisa",
+     "before": {
+      "name": "PT Bukit Raya Mudisa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0049287.AH.01.02.Tahun 2019"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "017367830211000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Bukit Raya Mudisa",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791078407640,
+      "country": "Indonesia",
+      "address": "JALAN SEI DUKU NO 333, Kelurahan TANJUNG RHU, Kecamatan LIMA PULUH, KOTA PEKANBARU, RIAU",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0049287.AH.01.02.Tahun 2019"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5ua1q-2xg9": {
+   "at": 1791078410078,
+   "batch": "v-mut5ua1q-2xg9",
+   "summary": "Removed an identity number: PT Balikpapan Chip Lestari",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-balikpapan-chip-lestari",
+     "before": {
+      "name": "PT Balikpapan Chip Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791047039326,
+      "country": "Indonesia",
+      "address": "TELUK WARU RT 009, BALIKPAPAN BARAT, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0129972.AH.01.02.Tahun 2022"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "025049529725000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Balikpapan Chip Lestari",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1791078410064,
+      "country": "Indonesia",
+      "address": "TELUK WARU RT 009, BALIKPAPAN BARAT, KOTA BALIKPAPAN, KALIMANTAN TIMUR",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-0129972.AH.01.02.Tahun 2022"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut5udr7-a94x": {
+   "at": 1791078414883,
+   "batch": "v-mut5udr7-a94x",
+   "summary": "Removed an identity number: PT Agrindo Sawit Mandiri",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-pt-agrindo-sawit-mandiri",
+     "before": {
+      "name": "PT Agrindo Sawit Mandiri",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791077963594,
+      "updatedAt": 1791077963594,
+      "country": "Indonesia",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0138580"
+       },
+       {
+        "kind": "NPWP (tax no.)",
+        "number": "0000"
+       }
+      ]
+     },
+     "after": {
+      "name": "PT Agrindo Sawit Mandiri",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791077963594,
+      "updatedAt": 1791078414882,
+      "country": "Indonesia",
+      "identities": [
+       {
+        "kind": "Company registration no.",
+        "number": "AHU-AH.01.03-0138580"
        }
       ]
      }
