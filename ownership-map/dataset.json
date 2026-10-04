@@ -882,22 +882,6 @@
     }
    ]
   },
-  "e-ir-kirmadi": {
-   "name": "Ir. KIRMADI",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
-   "country": "Indonesia",
-   "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
-   "identities": [
-    {
-     "kind": "KTP / NIK",
-     "number": "1401063010640002"
-    }
-   ]
-  },
   "e-ivan-chandra": {
    "name": "Ivan Chandra",
    "type": "person",
@@ -1067,10 +1051,20 @@
   "e-kirmadi": {
    "name": "Kirmadi",
    "type": "person",
-   "aliases": [],
+   "aliases": [
+    "Ir. KIRMADI"
+   ],
    "note": "",
    "createdAt": 1791043544291,
-   "updatedAt": 1791043544291
+   "updatedAt": 1791082556320,
+   "country": "Indonesia",
+   "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+   "identities": [
+    {
+     "kind": "KTP / NIK",
+     "number": "1401063010640002"
+    }
+   ]
   },
   "e-kl-kepong-plantation": {
    "name": "Kl-Kepong Plantation Sdn Bhd",
@@ -10827,7 +10821,7 @@
    "updatedAt": 1791046198402
   },
   "l-musmqdaw-3wtf40": {
-   "source": "e-ir-kirmadi",
+   "source": "e-kirmadi",
    "target": "e-pt-bukit-raya-mudisa",
    "type": "directorship",
    "value": null,
@@ -10846,7 +10840,7 @@
    ],
    "note": "",
    "createdAt": 1791046314967,
-   "updatedAt": 1791046314967
+   "updatedAt": 1791082556320
   },
   "l-musmqdaw-5bi9zt": {
    "source": "e-dr-muslim-ahmad-nathin",
@@ -12390,56 +12384,6 @@
   }
  },
  "versions": {
-  "v-mut5u3cv-01m3": {
-   "at": 1791078401407,
-   "batch": "v-mut5u3cv-01m3",
-   "summary": "Removed an identity number: PT Nusa Wana Raya",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-nusa-wana-raya",
-     "before": {
-      "name": "PT Nusa Wana Raya",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047074963,
-      "updatedAt": 1791047074963,
-      "country": "Indonesia",
-      "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0077847.AH.01.02.Tahun 2019"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "015550361216001"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Nusa Wana Raya",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047074963,
-      "updatedAt": 1791078401392,
-      "country": "Indonesia",
-      "address": "JALAN SULTAN SYARIF QASIM NOMOR 80, KOTA PEKANBARU, RIAU",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-0077847.AH.01.02.Tahun 2019"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-mut5u5ru-0oag": {
    "at": 1791078404538,
    "batch": "v-mut5u5ru-0oag",
@@ -13881,6 +13825,115 @@
        }
       ]
      }
+    }
+   ]
+  },
+  "v-mut8b5bh-sdp2": {
+   "at": 1791082556333,
+   "batch": "v-mut8b5bh-sdp2",
+   "summary": "Merged Ir. KIRMADI into Kirmadi",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 3,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-kirmadi",
+     "before": {
+      "name": "Kirmadi",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791043544291
+     },
+     "after": {
+      "name": "Kirmadi",
+      "type": "person",
+      "aliases": [
+       "Ir. KIRMADI"
+      ],
+      "note": "",
+      "createdAt": 1791043544291,
+      "updatedAt": 1791082556320,
+      "country": "Indonesia",
+      "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401063010640002"
+       }
+      ]
+     }
+    },
+    {
+     "kind": "link",
+     "id": "l-musmqdaw-3wtf40",
+     "before": {
+      "source": "e-ir-kirmadi",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967
+     },
+     "after": {
+      "source": "e-kirmadi",
+      "target": "e-pt-bukit-raya-mudisa",
+      "type": "directorship",
+      "value": null,
+      "role": "Direktur Utama",
+      "date": "2022-03",
+      "status": null,
+      "seen": [
+       "2022-03"
+      ],
+      "groups": [],
+      "citations": [
+       {
+        "text": "Ministry of Law Republic of Indonesia. March 2022. “PT Bukit Raya Mudisa.” Corporate profile.",
+        "date": "2022-03"
+       }
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791082556320
+     }
+    },
+    {
+     "kind": "entity",
+     "id": "e-ir-kirmadi",
+     "before": {
+      "name": "Ir. KIRMADI",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "PERUMAHAN PANDAU PERMAI BLOK C-13 NO. 30, DESA PANDAU JAYA",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401063010640002"
+       }
+      ]
+     },
+     "after": null
     }
    ]
   }
