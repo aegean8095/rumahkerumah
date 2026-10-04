@@ -474,12 +474,14 @@
    "updatedAt": 1791029392008
   },
   "e-egat-international-company-limited": {
-   "name": "Egat International Company Limited",
+   "name": "Egat International Co Ltd",
    "type": "company",
-   "aliases": [],
+   "aliases": [
+    "Egat International Company Limited"
+   ],
    "note": "",
    "createdAt": 1791029483294,
-   "updatedAt": 1791029483294
+   "updatedAt": 1791078300637
   },
   "e-egl-capital-sdn-bhd": {
    "name": "Egl Capital Sdn Bhd",
@@ -12158,120 +12160,6 @@
   }
  },
  "versions": {
-  "v-musm3tq5-4e4e": {
-   "at": 1791045263165,
-   "batch": "v-musm3tq5-4e4e",
-   "summary": "Removed Edhy Prabowo from the group Kaltim: 2 relationships",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 2,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0124",
-     "before": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-bali-pasific-investama",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2019-03",
-      "status": null,
-      "seen": [
-       "2008-02",
-       "2019-03"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-bali-pasific-investama",
-      "type": "directorship",
-      "value": null,
-      "role": "Director",
-      "date": "2019-03",
-      "status": null,
-      "seen": [
-       "2008-02",
-       "2019-03"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791045263162
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-0128",
-     "before": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-nusantara-agro-forestry",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2019-03",
-      "status": null,
-      "seen": [
-       "2007-01",
-       "2019-03"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-edhy-prabowo",
-      "target": "e-pt-nusantara-agro-forestry",
-      "type": "directorship",
-      "value": null,
-      "role": "Commissioner",
-      "date": "2019-03",
-      "status": null,
-      "seen": [
-       "2007-01",
-       "2019-03"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791045263162
-     }
-    }
-   ]
-  },
   "v-musm3vsr-mufq": {
    "at": 1791045265851,
    "batch": "v-musm3vsr-mufq",
@@ -15223,6 +15111,38 @@
       "updatedAt": 1791078280047,
       "country": "Malaysia",
       "address": "Room 1, 3 RD Floor, Wisma Kwong Siew, 149, Jalan Tun H.S. Lee, 50000 Kuala Lumpur."
+     }
+    }
+   ]
+  },
+  "v-mut5rxlv-2pmx": {
+   "at": 1791078300643,
+   "batch": "v-mut5rxlv-2pmx",
+   "summary": "Renamed Egat International Company Limited to Egat International Co Ltd",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-egat-international-company-limited",
+     "before": {
+      "name": "Egat International Company Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791029483294
+     },
+     "after": {
+      "name": "Egat International Co Ltd",
+      "type": "company",
+      "aliases": [
+       "Egat International Company Limited"
+      ],
+      "note": "",
+      "createdAt": 1791029483294,
+      "updatedAt": 1791078300637
      }
     }
    ]
