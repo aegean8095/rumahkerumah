@@ -1051,12 +1051,12 @@
    "updatedAt": 1791043175845
   },
   "e-koperasi-karyawan-pt-korindo-group-pangkalanbun": {
-   "name": "Koperasi Karyawan PT. Korindo Group Pangkalanbun",
+   "name": "Koperasi Karyawan PT Korindo Group Pangkalanbun",
    "type": "company",
    "aliases": [],
    "note": "",
    "createdAt": 1791047345728,
-   "updatedAt": 1791047345728,
+   "updatedAt": 1791078311743,
    "country": "Indonesia",
    "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
   },
@@ -12160,68 +12160,6 @@
   }
  },
  "versions": {
-  "v-musm3vsr-mufq": {
-   "at": 1791045265851,
-   "batch": "v-musm3vsr-mufq",
-   "summary": "Removed Green Meadows Fiber Product Ltd from the group Kaltim: 1 relationship",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "link",
-     "id": "l-0037",
-     "before": {
-      "source": "e-green-meadows-fiber-product-ltd",
-      "target": "e-pt-borneo-hijau-lestari",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2022-09",
-       "2024-11"
-      ],
-      "groups": [
-       "Kaltim"
-      ],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1790961478929
-     },
-     "after": {
-      "source": "e-green-meadows-fiber-product-ltd",
-      "target": "e-pt-borneo-hijau-lestari",
-      "type": "ownership",
-      "value": 99,
-      "role": null,
-      "date": "2024-11",
-      "status": null,
-      "seen": [
-       "2022-09",
-       "2024-11"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "cSPKaltim.csv (shadow-corporate)",
-        "date": null
-       }
-      ],
-      "note": "",
-      "createdAt": 1790961478929,
-      "updatedAt": 1791045265849
-     }
-    }
-   ]
-  },
   "v-musmnvdx-hqip": {
    "at": 1791046198437,
    "batch": "v-musmnvdx-hqip",
@@ -15143,6 +15081,40 @@
       "note": "",
       "createdAt": 1791029483294,
       "updatedAt": 1791078300637
+     }
+    }
+   ]
+  },
+  "v-mut5s66d-eyyj": {
+   "at": 1791078311749,
+   "batch": "v-mut5s66d-eyyj",
+   "summary": "Renamed Koperasi Karyawan PT. Korindo Group Pangkalanbun to Koperasi Karyawan PT Korindo Group Pangkalanbun",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-koperasi-karyawan-pt-korindo-group-pangkalanbun",
+     "before": {
+      "name": "Koperasi Karyawan PT. Korindo Group Pangkalanbun",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
+     },
+     "after": {
+      "name": "Koperasi Karyawan PT Korindo Group Pangkalanbun",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791078311743,
+      "country": "Indonesia",
+      "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
      }
     }
    ]
