@@ -1604,14 +1604,6 @@
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
   },
-  "e-pt-andalan-agri-mitra": {
-   "name": "PT Andalan Agri Mitra",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
   "e-pt-anugrah-hijau-lestari": {
    "name": "PT Anugrah Hijau Lestari",
    "type": "company",
@@ -3337,106 +3329,6 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
-  "l-0013": {
-   "source": "e-muhamad-sobirin",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Director",
-   "date": "2024-01",
-   "status": null,
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0014": {
-   "source": "e-hasudungan-simamora",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Commissioner",
-   "date": "2024-01",
-   "status": null,
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0015": {
-   "source": "e-inspired-medal-sdn-bhd",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 99,
-   "role": null,
-   "date": "2024-01",
-   "status": null,
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0016": {
-   "source": "e-olympia-medal-sdn-bhd",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 1,
-   "role": null,
-   "date": "2024-01",
-   "status": null,
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
   "l-0017": {
    "source": "e-inspired-medal-sdn-bhd",
    "target": "e-pt-maju-hijau-lestari",
@@ -3773,156 +3665,6 @@
    "seen": [
     "2022-11",
     "2024-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0031": {
-   "source": "e-pt-borneo-hijau-lestari",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 99,
-   "role": null,
-   "date": "2023-09",
-   "status": null,
-   "seen": [
-    "2021-07",
-    "2023-09"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0032": {
-   "source": "e-pt-borneo-foresta-industri",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 1,
-   "role": null,
-   "date": "2023-09",
-   "status": null,
-   "seen": [
-    "2021-07",
-    "2023-09"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0033": {
-   "source": "e-napalia-niwan-pasulu",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Director",
-   "date": "2022-01",
-   "status": null,
-   "seen": [
-    "2021-07",
-    "2022-01"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0034": {
-   "source": "e-budi-santoso",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Commissioner",
-   "date": "2023-09",
-   "status": null,
-   "seen": [
-    "2021-07",
-    "2023-09"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0035": {
-   "source": "e-egl-capital-sdn-bhd",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 50,
-   "role": null,
-   "date": "2023-09",
-   "status": null,
-   "seen": [
-    "2022-12",
-    "2023-09"
-   ],
-   "groups": [
-    "Kaltim"
-   ],
-   "citations": [
-    {
-     "text": "cSPKaltim.csv (shadow-corporate)",
-     "date": null
-    }
-   ],
-   "note": "",
-   "createdAt": 1790961478929,
-   "updatedAt": 1790961478929
-  },
-  "l-0036": {
-   "source": "e-yudiana",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Director",
-   "date": "2023-09",
-   "status": null,
-   "seen": [
-    "2022-01",
-    "2023-09"
    ],
    "groups": [
     "Kaltim"
@@ -12122,54 +11864,6 @@
   }
  },
  "versions": {
-  "v-mut5tddo-d1hf": {
-   "at": 1791078367740,
-   "batch": "v-mut5tddo-d1hf",
-   "summary": "Removed an identity number: Seung Min Soo",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-seung-min-soo",
-     "before": {
-      "name": "Seung Min Soo",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "address": "JL. WARUNG JATI BARAT I, PANCORAN",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "SC1703165"
-       },
-       {
-        "kind": "KTP / NIK",
-        "number": "M27976040"
-       }
-      ]
-     },
-     "after": {
-      "name": "Seung Min Soo",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078367738,
-      "address": "JL. WARUNG JATI BARAT I, PANCORAN",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "SC1703165"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-mut5to8d-kk5c": {
    "at": 1791078381805,
    "batch": "v-mut5to8d-kk5c",
@@ -12613,6 +12307,329 @@
        }
       ]
      }
+    }
+   ]
+  },
+  "v-mut5w6m3-x16z": {
+   "at": 1791078498939,
+   "batch": "v-mut5w6m3-x16z",
+   "summary": "Deleted entity: PT Andalan Agri Mitra and 10 relationships",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 11,
+   "changes": [
+    {
+     "kind": "link",
+     "id": "l-0013",
+     "before": {
+      "source": "e-muhamad-sobirin",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2024-01",
+      "status": null,
+      "seen": [
+       "2023-12",
+       "2024-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0014",
+     "before": {
+      "source": "e-hasudungan-simamora",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2024-01",
+      "status": null,
+      "seen": [
+       "2023-12",
+       "2024-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0015",
+     "before": {
+      "source": "e-inspired-medal-sdn-bhd",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2024-01",
+      "status": null,
+      "seen": [
+       "2023-12",
+       "2024-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0016",
+     "before": {
+      "source": "e-olympia-medal-sdn-bhd",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2024-01",
+      "status": null,
+      "seen": [
+       "2023-12",
+       "2024-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0031",
+     "before": {
+      "source": "e-pt-borneo-hijau-lestari",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "ownership",
+      "value": 99,
+      "role": null,
+      "date": "2023-09",
+      "status": null,
+      "seen": [
+       "2021-07",
+       "2023-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0032",
+     "before": {
+      "source": "e-pt-borneo-foresta-industri",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "ownership",
+      "value": 1,
+      "role": null,
+      "date": "2023-09",
+      "status": null,
+      "seen": [
+       "2021-07",
+       "2023-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0033",
+     "before": {
+      "source": "e-napalia-niwan-pasulu",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2022-01",
+      "status": null,
+      "seen": [
+       "2021-07",
+       "2022-01"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0034",
+     "before": {
+      "source": "e-budi-santoso",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "directorship",
+      "value": null,
+      "role": "Commissioner",
+      "date": "2023-09",
+      "status": null,
+      "seen": [
+       "2021-07",
+       "2023-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0035",
+     "before": {
+      "source": "e-egl-capital-sdn-bhd",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "ownership",
+      "value": 50,
+      "role": null,
+      "date": "2023-09",
+      "status": null,
+      "seen": [
+       "2022-12",
+       "2023-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "link",
+     "id": "l-0036",
+     "before": {
+      "source": "e-yudiana",
+      "target": "e-pt-andalan-agri-mitra",
+      "type": "directorship",
+      "value": null,
+      "role": "Director",
+      "date": "2023-09",
+      "status": null,
+      "seen": [
+       "2022-01",
+       "2023-09"
+      ],
+      "groups": [
+       "Kaltim"
+      ],
+      "citations": [
+       {
+        "text": "cSPKaltim.csv (shadow-corporate)",
+        "date": null
+       }
+      ],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
+    },
+    {
+     "kind": "entity",
+     "id": "e-pt-andalan-agri-mitra",
+     "before": {
+      "name": "PT Andalan Agri Mitra",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1790961478929,
+      "updatedAt": 1790961478929
+     },
+     "after": null
     }
    ]
   }
