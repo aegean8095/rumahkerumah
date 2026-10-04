@@ -263,7 +263,15 @@
         return true;
       },
       disconnect: function(){ clearTimeout(timer); timer = null; setToken(''); emit('local', ''); },
-      saveNow: function(){ clearTimeout(timer); return save(); }
+      saveNow: function(){ clearTimeout(timer); return save(); },
+      // A copy of a dataset file under ownership-map/backups/ on the data branch (used before deleting everything).
+      backupCopy: async function(text, name){
+        if (!getToken()) return null;
+        var path = 'ownership-map/backups/' + name;
+        var r = await call('/contents/' + path, { method: 'PUT', body: { message: 'Ownership Map: backup before deleting all data', content: b64encode(text), branch: BRANCH } });
+        if (!r.ok){ var msg = ''; try { msg = (await r.json()).message || ''; } catch (e){} throw { code: 'backup_failed', detail: r.status + (msg ? ' ' + msg : '') }; }
+        return { path: path, url: 'https://github.com/' + OWNER + '/' + REPO + '/blob/' + BRANCH + '/' + path };
+      }
     };
     async function afterSeed(){ if (saveSeed){ saveSeed = false; await changed(true); schedule(1000); } }
     return { onLoad: onLoad, changed: changed, afterSeed: afterSeed };

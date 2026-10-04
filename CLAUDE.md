@@ -58,7 +58,7 @@ Files:
 | `index.html` | The original artifact (map, panels, parsing, editing, history, checks, PDF review). Change it as little as possible. |
 | `rk-shim.js` | Replaces the claude.ai runtime: `db` (IndexedDB, tab sync), `downloads`, `sample` (DeepSeek). |
 | `rk-github.js` | GitHub sync of the dataset (branch `ownership-map-data`, file `ownership-map/dataset.json`). |
-| `rk-backup.js` | Back up / restore buttons and the "Saved on GitHub" block. |
+| `rk-backup.js` | Back up / restore buttons, Delete all data (backup first), and the "Saved on GitHub" block. |
 | `rk-tabs.js` + `rk-tabs.css` | Map / Table tabs: Entities and Relationships tables (sort, search, CSV, row → detail panel or map). `window.OwnershipMapTabs.add()` lets other modules add a tab. |
 | `rk-quality.js` | Data quality tab: 5 categories of findings, Checked / Ignore / note marks (collection `reviews`, synced), worklist CSV. Styles in `rk-tabs.css`. |
 | `rk-map.js` | Hover highlight of an entity's neighbourhood, pinned highlight (`OwnershipMapHL`), multi-select (Shift/Ctrl-click, Shift-drag box) with the action bar (Focus, Hide, Assign group, Find connection). |
@@ -268,6 +268,12 @@ Working efficiently (token use):
 - Review sheet: "Chronology from N deeds" list (date, deed, which parts it lists); rows show "in N deeds" (hover for the list); current rows first
 - DeepSeek: `max_tokens` 8192 (was 4096), text sent up to 90,000 characters (was 45,000); a cut-off answer now says to upload the document in parts instead of "could not be read"
 - New test `pdf: full profile with several deeds…` (3 deeds out of order, carried sections, a name in capitals in one deed, stake change 60/40 → 100, board change; rows, dates seen, statuses, sources)
+
+### 2026-10-04 — Ownership Map: delete all data, backed up first
+
+- Dataset panel: *Delete all data…* (`rk-backup.js`, last item of the actions grid). Asks to type `DELETE`; then downloads a full backup (`ownership-map-backup-before-delete-<stamp>.json`) and, when GitHub is connected, saves the same file to `ownership-map/backups/` on the data branch (`rumahkerumahGitHub.backupCopy`). If that GitHub copy fails nothing is deleted. Then the dataset (entities, links, reviews, history) is emptied with `rumahkerumahDB.replace`, which reloads and saves the empty dataset to GitHub; the status line says where the backup is. Restore with the file brings it back
+- Backup button now names files with date and time (two backups on one day no longer collide)
+- Tests: new `delete all` test (cancel, wrong word, GitHub copy failing, the real delete, download and GitHub copy complete, empty saved to GitHub, restore); `settled()` helper waits for a page that reloaded itself and reloads once more if the d3 CDN failed
 
 ---
 

@@ -313,3 +313,7 @@ g.node.multi-sel .node-label{ font-weight: 700; }
 #datasetActions:not([hidden]){ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 #datasetActions .btn{ justify-content: center; min-width: 0; }
 #datasetActions .btn .btn-label{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Delete all data (rk-backup.js): the last item of the Dataset actions, quiet until pointed at */
+#datasetActions .rk-danger{ grid-column: 1 / -1; justify-self: center; color: var(--danger); font-size: 12.5px; margin-top: 2px; }
+#datasetActions .rk-danger:hover{ text-decoration: underline; }
+#datasetActions .rk-danger:disabled{ opacity: .5; }

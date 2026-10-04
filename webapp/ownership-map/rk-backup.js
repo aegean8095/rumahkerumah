@@ -29,21 +29,69 @@
     note.hidden = actions.hidden;
   }
 
-  btn.addEventListener('click', function(){
+  // The whole dataset as one backup file; downloaded, and returned so it can be stored elsewhere too.
+  function downloadBackup(prefix){
     var data = window.rumahkerumahDB.export();
     var out = { entities: data.entities || {}, links: data.links || {}, versions: data.versions || {} };
     if (data.reviews && Object.keys(data.reviews).length) out.reviews = data.reviews;
     var json = JSON.stringify(out, null, 1);
-    var stamp = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    var stamp = new Date().toISOString().replace(/[-:]/g, '').replace('T', '-').slice(0, 13);
+    var name = (prefix || 'ownership-map-backup-') + stamp + '.json';
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
-    a.download = 'ownership-map-backup-' + stamp + '.json';
+    a.download = name;
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(function(){ URL.revokeObjectURL(a.href); }, 4000);
     try { localStorage.setItem(LAST_KEY, String(Date.now())); } catch (e){}
-    say('Backup saved: ' + count(data, 'entities') + ' entities, ' + count(data, 'links') + ' relationships.');
     renderNote();
+    return { data: data, json: json, name: name };
+  }
+  btn.addEventListener('click', function(){
+    var b = downloadBackup();
+    say('Backup saved: ' + count(b.data, 'entities') + ' entities, ' + count(b.data, 'links') + ' relationships.');
   });
+
+  // ---- Delete all data: confirm by typing DELETE, back up first (download, and GitHub when connected), then empty ----
+  var del = document.createElement('button');
+  del.type = 'button'; del.className = 'link-btn rk-danger'; del.id = 'deleteAllBtn';
+  del.textContent = 'Delete all data…';
+  del.title = 'Remove every entity, relationship, review mark and history entry. A backup is saved first.';
+  actions.appendChild(del);
+  del.addEventListener('click', async function(){
+    var cur = window.rumahkerumahDB.export(), ne = count(cur, 'entities'), nl = count(cur, 'links');
+    if (!ne && !nl){ say('The dataset is already empty.'); return; }
+    var G = window.rumahkerumahGitHub, gh = G && G.connected();
+    var typed = window.prompt('Delete all data: ' + ne + ' entities, ' + nl + ' relationships, their review marks and history.\n\n' +
+      'A backup file is downloaded first' + (gh ? ' and a copy is saved on GitHub (ownership-map/backups/)' : '') + '. ' +
+      'Nothing is deleted if the backup fails. Restore brings everything back.\n\nType DELETE to continue.');
+    if (typed == null){ say('Nothing was deleted.'); return; }
+    if (typed.trim() !== 'DELETE'){ say('Nothing was deleted: type DELETE in capitals to confirm.', true); return; }
+    del.disabled = true;
+    try {
+      say('Backing up before deleting…');
+      var b = downloadBackup('ownership-map-backup-before-delete-');
+      var where = 'Backup downloaded as ' + b.name;
+      if (gh){
+        var copy;
+        try { copy = await G.backupCopy(b.json, b.name); }
+        catch (e){ say('Nothing was deleted: the backup could not be saved on GitHub (' + ((e && e.detail) || 'no answer') + '). The downloaded file ' + b.name + ' is complete; try again, or Disconnect GitHub to delete with the download only.', true); return; }
+        where += ' and saved on GitHub as ' + copy.path;
+      }
+      say(where + '. Deleting…');
+      try { localStorage.setItem('rk-last-delete', JSON.stringify({ at: Date.now(), file: b.name, entities: ne, links: nl })); } catch (e){}
+      await window.rumahkerumahDB.replace({ entities: {}, links: {}, versions: {}, reviews: {} });   // reloads the page
+    } catch (e){
+      say('The data could not be deleted.', true);
+    } finally { del.disabled = false; }
+  });
+  // After the reload: say what happened and where the backup is.
+  window.rumahkerumahDB.ready.then(function(){
+    var last = null; try { last = JSON.parse(localStorage.getItem('rk-last-delete') || 'null'); } catch (e){}
+    if (!last) return;
+    if (Date.now() - last.at > 120000){ try { localStorage.removeItem('rk-last-delete'); } catch (e){} return; }
+    // shown a moment after start-up, so the app's own start-up messages do not replace it
+    setTimeout(function(){ say('All data deleted (' + last.entities + ' entities, ' + last.links + ' relationships). The backup is ' + last.file + '; use Restore to bring it back.'); }, 1200);
+  }, function(){});
 
   rbtn.addEventListener('click', function(){ input.value = ''; input.click(); });
   input.addEventListener('change', async function(){
@@ -59,6 +107,7 @@
       'Tip: back up the current dataset first if you may need it.');
     if (!ok){ say('Restore cancelled.'); return; }
     say('Restoring…');
+    try { localStorage.removeItem('rk-last-delete'); } catch (e){}
     try { await window.rumahkerumahDB.replace(obj); }
     catch (e){ say('The backup could not be restored.', true); }
   });

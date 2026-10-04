@@ -63,6 +63,12 @@ function fakeGitHub(){
       gh.file = { sha: 'sha' + (++gh.n), text: Buffer.from(b.content, 'base64').toString() };
       return J(200, { content: { sha: gh.file.sha } });
     }
+    if (p.startsWith('/contents/ownership-map/backups/') && m === 'PUT'){
+      if (!good) return J(401, { message: 'Requires authentication' });
+      if (gh.failBackup) return J(500, { message: 'Server Error' });
+      (gh.backups = gh.backups || []).push({ path: p.replace('/contents/', ''), text: Buffer.from(JSON.parse(q.postData()).content, 'base64').toString() });
+      return J(201, { content: { sha: 'b' + gh.backups.length } });
+    }
     if (p === '/git/trees' && m === 'POST'){ gh.pending = JSON.parse(q.postData()).tree[0].content; return J(201, { sha: 't1', tree: [{ path: FILE, sha: 'blob1' }] }); }
     if (p === '/git/commits' && m === 'POST') return J(201, { sha: 'c1' });
     if (p === '/git/refs' && m === 'POST'){ gh.branch = true; gh.file = { sha: 'blob1', text: gh.pending }; return J(201, {}); }
@@ -126,6 +132,13 @@ async function reload(p){
     // This attempt's errors come from the missing CDN script, not the app: drop them before retrying.
     if (p.errors) p.errors = p.errors.filter(m => !/d3 is not defined/.test(m));
   }
+}
+// After a reload the app started itself (delete, restore): wait for it; if the d3 CDN failed, reload once more.
+async function settled(p){
+  await p.waitForFunction(() => window.rumahkerumahDB, null, { timeout: 20000 });
+  await p.evaluate(() => window.rumahkerumahDB.ready.catch(() => {}));
+  await sleep(1500);
+  if (!(await p.evaluate(() => typeof d3 !== 'undefined' && !!window.OwnershipMap))) await reload(p);
 }
 const counts = p => p.evaluate(() => { const x = rumahkerumahDB.export(); return [Object.keys(x.entities || {}).length, Object.keys(x.links || {}).length]; });
 const ghStatus = p => p.textContent('#ghStatus');
@@ -964,6 +977,43 @@ const tests = {
     eq(got.st, ['recent', 'previous', 'recent', 'previous'], 'map statuses follow the deeds');
     eq(got.npwp, 1, 'profile details from the top-level lists kept');
     eq(p.errors, [], 'page errors');
+  },
+  async 'delete all: typed confirmation, backup first (download and GitHub), then empty everywhere'(){
+    const gh = fakeGitHub(); gh.set(SEED); let answer = null;
+    const { ctx } = await context({ gh, token: 'github_pat_GOOD000000000000000000000000' });
+    const p = await open(ctx, d => d.type() === 'prompt' ? (answer == null ? d.dismiss() : d.accept(answer)) : d.accept());
+    await p.evaluate(() => window.OwnershipMapFold && window.OwnershipMapFold.open('datasetPanel'));
+    ok(await p.isVisible('#deleteAllBtn'), 'Delete all data button in the Dataset panel');
+    const n = () => p.evaluate(() => Object.keys(rumahkerumahDB.export().entities).length);
+    // cancelled, or the wrong word: nothing happens
+    answer = null; await p.click('#deleteAllBtn'); await sleep(300);
+    answer = 'delete'; await p.click('#deleteAllBtn'); await sleep(300);
+    ok(/type DELETE in capitals/.test(await p.textContent('#datasetStatus')), 'wrong word refused'); eq(await n(), 165, 'nothing deleted');
+    // the GitHub copy fails: nothing deleted, though the download happened
+    gh.failBackup = true; answer = 'DELETE';
+    const [d1] = await Promise.all([p.waitForEvent('download'), p.click('#deleteAllBtn')]); await sleep(600);
+    ok(/before-delete/.test(d1.suggestedFilename()), 'backup downloaded first');
+    ok(/could not be saved on GitHub/.test(await p.textContent('#datasetStatus')), 'GitHub backup failure stops the deletion'); eq(await n(), 165, 'still all there');
+    // works: download + GitHub copy, then empty, saved to GitHub
+    gh.failBackup = false;
+    const reloaded = p.waitForEvent('load', { timeout: 30000 });
+    const [d2] = await Promise.all([p.waitForEvent('download'), p.click('#deleteAllBtn')]);
+    const file = JSON.parse(fs.readFileSync(await d2.path(), 'utf8'));
+    eq([Object.keys(file.entities).length, Object.keys(file.links).length], [165, 235], 'downloaded backup holds the whole dataset');
+    await reloaded; await settled(p);
+    eq(gh.backups.length, 1, 'one copy on GitHub'); ok(/^ownership-map\/backups\/ownership-map-backup-before-delete-.*\.json$/.test(gh.backups[0].path), 'in ownership-map/backups/');
+    eq(Object.keys(JSON.parse(gh.backups[0].text).links).length, 235, 'GitHub copy is complete');
+    eq(await n(), 0, 'dataset empty after the reload');
+    ok(/All data deleted \(165 entities, 235 relationships\)/.test(await p.textContent('#datasetStatus')), 'says what happened and where the backup is');
+    for (let i = 0; i < 30 && Object.keys(gh.data().entities || {}).length; i++) await sleep(500);
+    eq(Object.keys(gh.data().entities || {}).length, 0, 'the empty dataset is saved to GitHub');
+    // and Restore brings it back
+    answer = null;
+    await p.evaluate(() => window.OwnershipMapFold && window.OwnershipMapFold.open('datasetPanel'));
+    const reloaded2 = p.waitForEvent('load', { timeout: 30000 });
+    await p.setInputFiles('#restoreBackupInput', await d2.path()); await reloaded2; await settled(p);
+    eq(await n(), 165, 'restore from the backup brings everything back');
+    eq(p.errors.filter(e => !/d3 is not defined/.test(e)), [], 'page errors');
   },
 };
 
