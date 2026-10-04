@@ -419,12 +419,12 @@
    "updatedAt": 1790961478929
   },
   "e-dr-muslim-ahmad-nathin": {
-   "name": "DR. Muslim Ahmad Nathin",
+   "name": "Dr Muslim Ahmad Nathin",
    "type": "person",
    "aliases": [],
    "note": "",
    "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "updatedAt": 1791082531332,
    "country": "Indonesia",
    "address": "JL. TEBET DALAM III NO. 16",
    "identities": [
@@ -12390,54 +12390,6 @@
   }
  },
  "versions": {
-  "v-mut5tw8a-kwgo": {
-   "at": 1791078392170,
-   "batch": "v-mut5tw8a-kwgo",
-   "summary": "Removed an identity number: Heo Kwang Bok",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-heo-kwang-bok",
-     "before": {
-      "name": "Heo Kwang Bok",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791047345728,
-      "address": "JL. KORINDO NO. 77, PANGKALANBUN, KALIMANTAN TENGAH",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "DJ0023501"
-       },
-       {
-        "kind": "KTP / NIK",
-        "number": "M10678777"
-       }
-      ]
-     },
-     "after": {
-      "name": "Heo Kwang Bok",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047345728,
-      "updatedAt": 1791078392169,
-      "address": "JL. KORINDO NO. 77, PANGKALANBUN, KALIMANTAN TENGAH",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "DJ0023501"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-mut5u3cv-01m3": {
    "at": 1791078401407,
    "batch": "v-mut5u3cv-01m3",
@@ -13880,6 +13832,52 @@
        {
         "kind": "KTP / NIK",
         "number": "1401060202660006"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "v-mut8am1b-9lbf": {
+   "at": 1791082531343,
+   "batch": "v-mut8am1b-9lbf",
+   "summary": "Renamed DR. Muslim Ahmad Nathin to Dr Muslim Ahmad Nathin",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-dr-muslim-ahmad-nathin",
+     "before": {
+      "name": "DR. Muslim Ahmad Nathin",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. TEBET DALAM III NO. 16",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174010708440006"
+       }
+      ]
+     },
+     "after": {
+      "name": "Dr Muslim Ahmad Nathin",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791082531332,
+      "country": "Indonesia",
+      "address": "JL. TEBET DALAM III NO. 16",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "3174010708440006"
        }
       ]
      }
