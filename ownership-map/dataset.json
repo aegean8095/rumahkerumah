@@ -1061,12 +1061,14 @@
    "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
   },
   "e-korindo-company-h-k-limited": {
-   "name": "Korindo Company (H.k) Limited",
+   "name": "Korindo Company (H.k) Ltd",
    "type": "company",
-   "aliases": [],
+   "aliases": [
+    "Korindo Company (H.k) Limited"
+   ],
    "note": "",
    "createdAt": 1791047345728,
-   "updatedAt": 1791047345728,
+   "updatedAt": 1791078327555,
    "country": "Hong Kong",
    "address": "HONGKONG"
   },
@@ -12160,400 +12162,6 @@
   }
  },
  "versions": {
-  "v-musmnvdx-hqip": {
-   "at": 1791046198437,
-   "batch": "v-musmnvdx-hqip",
-   "summary": "Added 8 rows from Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 16,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-indrapurindo-marga-bakti-utama",
-     "before": null,
-     "after": {
-      "name": "PT indrapurindo Marga Bakti Utama",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL. TGK. H.MUHAMMAD DAUD BEUREUEH NO 175",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-72023.AH.01.02.TAHUN 2008"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bumi-niaga",
-     "before": null,
-     "after": {
-      "name": "PT Agra Bumi Niaga",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL.GABUS NO.41 D, GAMPONG BANDAR BARU, KUTA ALAM, KOTA BANDA ACEH, ACEH 23126",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0223914"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-pt-attra",
-     "before": null,
-     "after": {
-      "name": "PT Attra",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL.T. UMAR NO.143",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-59024.AH.01.01.TAHUN 2012"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-makmur-se",
-     "before": null,
-     "after": {
-      "name": "Makmur SE",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "KOMPLEK TAMAN SETIA BUDI INDAH II BLOK V NO.96",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "1271212802620006"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-ari-setiawan",
-     "before": null,
-     "after": {
-      "name": "Ari Setiawan",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "Jalan Fatahillah Nomor: 25 A",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "1171072408980002"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-muhammad-basyir-hasan",
-     "before": null,
-     "after": {
-      "name": "Muhammad Basyir Hasan",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL. MEGA PERUMAHAN GRIYA MEGA ASRI BLOK C",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "1271021203610005"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-mawardi",
-     "before": null,
-     "after": {
-      "name": "Mawardi",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL. FATAHILLAH NOMOR 25A",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "117107201260001"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "entity",
-     "id": "e-cipta-purnama",
-     "before": null,
-     "after": {
-      "name": "Cipta Purnama",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402,
-      "country": "Indonesia",
-      "address": "JL. PENGADEGAN SELATAN RAYA NO.2",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "1271212906910003"
-       }
-      ]
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-npo2p0",
-     "before": null,
-     "after": {
-      "source": "e-pt-indrapurindo-marga-bakti-utama",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "ownership",
-      "value": 49,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-xhqrw5",
-     "before": null,
-     "after": {
-      "source": "e-pt-attra",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "ownership",
-      "value": 49,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-gxe5fb",
-     "before": null,
-     "after": {
-      "source": "e-makmur-se",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-ff07ir",
-     "before": null,
-     "after": {
-      "source": "e-ari-setiawan",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "ownership",
-      "value": 1,
-      "role": null,
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-k8iiq9",
-     "before": null,
-     "after": {
-      "source": "e-makmur-se",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris Utama",
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-v67rcq",
-     "before": null,
-     "after": {
-      "source": "e-muhammad-basyir-hasan",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur",
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-dkx6dd",
-     "before": null,
-     "after": {
-      "source": "e-mawardi",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "directorship",
-      "value": null,
-      "role": "Direktur Utama",
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    },
-    {
-     "kind": "link",
-     "id": "l-musmnvcy-d60fly",
-     "before": null,
-     "after": {
-      "source": "e-cipta-purnama",
-      "target": "e-pt-agra-bumi-niaga",
-      "type": "directorship",
-      "value": null,
-      "role": "Komisaris",
-      "date": "2019-02",
-      "status": null,
-      "seen": [
-       "2019-02"
-      ],
-      "groups": [],
-      "citations": [
-       {
-        "text": "Ministry of Law Republic of Indonesia. February 2019. “PT Agra Bumi Niaga.” Corporate profile.",
-        "date": "2019-02"
-       }
-      ],
-      "note": "",
-      "createdAt": 1791046198402,
-      "updatedAt": 1791046198402
-     }
-    }
-   ]
-  },
   "v-musmqdbe-7buz": {
    "at": 1791046314986,
    "batch": "v-musmqdbe-7buz",
@@ -15115,6 +14723,42 @@
       "updatedAt": 1791078311743,
       "country": "Indonesia",
       "address": "JL. ABDUL ANCIS, KEL. MENDAWAI, KEC. ARUT SELATAN"
+     }
+    }
+   ]
+  },
+  "v-mut5sidk-rvd5": {
+   "at": 1791078327560,
+   "batch": "v-mut5sidk-rvd5",
+   "summary": "Renamed Korindo Company (H.k) Limited to Korindo Company (H.k) Ltd",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-korindo-company-h-k-limited",
+     "before": {
+      "name": "Korindo Company (H.k) Limited",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Hong Kong",
+      "address": "HONGKONG"
+     },
+     "after": {
+      "name": "Korindo Company (H.k) Ltd",
+      "type": "company",
+      "aliases": [
+       "Korindo Company (H.k) Limited"
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791078327555,
+      "country": "Hong Kong",
+      "address": "HONGKONG"
      }
     }
    ]
