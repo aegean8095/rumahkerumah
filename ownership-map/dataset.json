@@ -865,12 +865,14 @@
    "address": "8.03, 8th Floor, Plaza First Nationwide, 161 Jalan Tun H.S. Lee, 50000, Kuala Lumpur."
   },
   "e-ir-hotma-silitonga": {
-   "name": "Ir. HOTMA SILITONGA",
+   "name": "Hotma Silitonga",
    "type": "person",
-   "aliases": [],
+   "aliases": [
+    "Ir. HOTMA SILITONGA"
+   ],
    "note": "",
    "createdAt": 1791046314967,
-   "updatedAt": 1791046314967,
+   "updatedAt": 1791079125322,
    "country": "Indonesia",
    "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
    "identities": [
@@ -12388,56 +12390,6 @@
   }
  },
  "versions": {
-  "v-mut5trzf-hhl4": {
-   "at": 1791078386667,
-   "batch": "v-mut5trzf-hhl4",
-   "summary": "Removed an identity number: Ivan Chandra",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-ivan-chandra",
-     "before": {
-      "name": "Ivan Chandra",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047039326,
-      "updatedAt": 1791047039326,
-      "country": "Indonesia",
-      "address": "Jalan Rawa Tengah",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3171082605900002"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "558103529024000"
-       }
-      ]
-     },
-     "after": {
-      "name": "Ivan Chandra",
-      "type": "person",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791047039326,
-      "updatedAt": 1791078386666,
-      "country": "Indonesia",
-      "address": "Jalan Rawa Tengah",
-      "identities": [
-       {
-        "kind": "KTP / NIK",
-        "number": "3171082605900002"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-mut5tw8a-kwgo": {
    "at": 1791078392170,
    "batch": "v-mut5tw8a-kwgo",
@@ -13882,6 +13834,54 @@
       "note": "",
       "createdAt": 1791078610184,
       "updatedAt": 1791078610184
+     }
+    }
+   ]
+  },
+  "v-mut69lxu-76nd": {
+   "at": 1791079125330,
+   "batch": "v-mut69lxu-76nd",
+   "summary": "Renamed Ir. HOTMA SILITONGA to Hotma Silitonga",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-ir-hotma-silitonga",
+     "before": {
+      "name": "Ir. HOTMA SILITONGA",
+      "type": "person",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791046314967,
+      "country": "Indonesia",
+      "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401060202660006"
+       }
+      ]
+     },
+     "after": {
+      "name": "Hotma Silitonga",
+      "type": "person",
+      "aliases": [
+       "Ir. HOTMA SILITONGA"
+      ],
+      "note": "",
+      "createdAt": 1791046314967,
+      "updatedAt": 1791079125322,
+      "country": "Indonesia",
+      "address": "JL. ALPUKAT III BLOK C. 17 B NOMOR 10",
+      "identities": [
+       {
+        "kind": "KTP / NIK",
+        "number": "1401060202660006"
+       }
+      ]
      }
     }
    ]
