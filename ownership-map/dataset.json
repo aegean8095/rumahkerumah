@@ -195,12 +195,14 @@
    "updatedAt": 1791026850323
   },
   "e-bimaruna-kargo-servis": {
-   "name": "Bimaruna Kargo Servis",
+   "name": "PT Bimaruna Kargo Servis",
    "type": "company",
-   "aliases": [],
+   "aliases": [
+    "Bimaruna Kargo Servis"
+   ],
    "note": "",
    "createdAt": 1791047345728,
-   "updatedAt": 1791047345728,
+   "updatedAt": 1791078270047,
    "country": "Indonesia",
    "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
   },
@@ -12156,64 +12158,6 @@
   }
  },
  "versions": {
-  "v-musl881s-j9wb": {
-   "at": 1791043788736,
-   "batch": "v-musl881s-j9wb",
-   "summary": "Removed an identity number: PT Agra Bareksa Indonesia",
-   "part": 1,
-   "parts": 1,
-   "changeCount": 1,
-   "changes": [
-    {
-     "kind": "entity",
-     "id": "e-pt-agra-bareksa-indonesia",
-     "before": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043787941,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-AH.01.03-0011261"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     },
-     "after": {
-      "name": "PT Agra Bareksa Indonesia",
-      "type": "company",
-      "aliases": [],
-      "note": "",
-      "createdAt": 1791043727954,
-      "updatedAt": 1791043788733,
-      "country": "Indonesia",
-      "address": "JL. KS. TUBUN 2C/8 (BRIGJEN KATAMSO) KEL SLIPI, KOTA ADMINISTRASI JAKARTA BARAT, DKI JAKARTA",
-      "identities": [
-       {
-        "kind": "Company registration no.",
-        "number": "AHU-14217.AH.01.01.Tahun 2011"
-       },
-       {
-        "kind": "NPWP (tax no.)",
-        "number": "03.093.653.8-031.000"
-       }
-      ]
-     }
-    }
-   ]
-  },
   "v-musl89dg-wsvj": {
    "at": 1791043790452,
    "batch": "v-musl89dg-wsvj",
@@ -15259,6 +15203,42 @@
       "note": "",
       "createdAt": 1791077963594,
       "updatedAt": 1791077963594
+     }
+    }
+   ]
+  },
+  "v-mut5ra07-0tlm": {
+   "at": 1791078270055,
+   "batch": "v-mut5ra07-0tlm",
+   "summary": "Renamed Bimaruna Kargo Servis to PT Bimaruna Kargo Servis",
+   "part": 1,
+   "parts": 1,
+   "changeCount": 1,
+   "changes": [
+    {
+     "kind": "entity",
+     "id": "e-bimaruna-kargo-servis",
+     "before": {
+      "name": "Bimaruna Kargo Servis",
+      "type": "company",
+      "aliases": [],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791047345728,
+      "country": "Indonesia",
+      "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
+     },
+     "after": {
+      "name": "PT Bimaruna Kargo Servis",
+      "type": "company",
+      "aliases": [
+       "Bimaruna Kargo Servis"
+      ],
+      "note": "",
+      "createdAt": 1791047345728,
+      "updatedAt": 1791078270047,
+      "country": "Indonesia",
+      "address": "WISMA KORINDO JL. MT. HARYONO KAV.62, PANCORAN"
      }
     }
    ]
