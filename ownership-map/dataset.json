@@ -1329,6 +1329,15 @@
    "createdAt": 1790961478929,
    "updatedAt": 1790961478929
   },
+  "e-muhammad-sobirin": {
+   "name": "Muhammad Sobirin",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184,
+   "address": "Jalan Karet Blok F."
+  },
   "e-muhartati": {
    "name": "Muhartati",
    "type": "person",
@@ -1671,6 +1680,50 @@
    "note": "",
    "createdAt": 1791026850323,
    "updatedAt": 1791026850323
+  },
+  "e-pt-andalan-agri-mitra": {
+   "name": "PT Andalan Agri Mitra",
+   "type": "company",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184,
+   "country": "Indonesia",
+   "address": "Komplek Balikpapan Regency Blok H2 No. 6-18, RT 000, RW 000, Kelurahan Sepinggan Baru, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 78114",
+   "identities": [
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0046496.AH.01.01.Tahun 2021"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0048189.AH.01.02.Tahun 2021"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0074065.AH.01.02.Tahun 2021"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0066965"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-0130884.AH.01.02.Tahun 2022"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0497744"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.09-0161747"
+    },
+    {
+     "kind": "Company registration no.",
+     "number": "AHU-AH.01.03-0164215"
+    }
+   ]
   },
   "e-pt-anugrah-hijau-lestari": {
    "name": "PT Anugrah Hijau Lestari",
@@ -2993,6 +3046,15 @@
    "createdAt": 1790961478929,
    "updatedAt": 1791020652533
   },
+  "e-yudiana-s-hut": {
+   "name": "Yudiana S Hut",
+   "type": "person",
+   "aliases": [],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184,
+   "address": "KP Sindang Sari"
+  },
   "e-yulius-oetomo": {
    "name": "Yulius Oetomo",
    "type": "person",
@@ -3047,68 +3109,6 @@
      "number": "1405021904660005"
     }
    ]
-  },
-  "e-pt-andalan-agri-mitra": {
-   "name": "PT Andalan Agri Mitra",
-   "type": "company",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184,
-   "country": "Indonesia",
-   "address": "Komplek Balikpapan Regency Blok H2 No. 6-18, RT 000, RW 000, Kelurahan Sepinggan Baru, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 78114",
-   "identities": [
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0046496.AH.01.01.Tahun 2021"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0048189.AH.01.02.Tahun 2021"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0074065.AH.01.02.Tahun 2021"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0066965"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-0130884.AH.01.02.Tahun 2022"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0497744"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.09-0161747"
-    },
-    {
-     "kind": "Company registration no.",
-     "number": "AHU-AH.01.03-0164215"
-    }
-   ]
-  },
-  "e-muhammad-sobirin": {
-   "name": "Muhammad Sobirin",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184,
-   "address": "Jalan Karet Blok F."
-  },
-  "e-yudiana-s-hut": {
-   "name": "Yudiana S Hut",
-   "type": "person",
-   "aliases": [],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184,
-   "address": "KP Sindang Sari"
   }
  },
  "links": {
@@ -11945,207 +11945,30 @@
    "createdAt": 1791077963594,
    "updatedAt": 1791077963594
   },
-  "l-mut5ykg9-gc3q9m": {
-   "source": "e-inspired-medal-sdn-bhd",
+  "l-mut5ykg9-5nczma": {
+   "source": "e-yudiana-s-hut",
    "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 98.67,
-   "role": null,
-   "date": "2024-01",
-   "status": null,
-   "start": "2023-12",
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 86, tanggal 2023-12-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.Kn.), Pemberitahuan Perubahan Anggaran Dasar - Peningkatan Modal Ditempatkan/Disetor (AHU-AH.01.03-0164215)",
-     "date": "2023-12"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-vpuc8u": {
-   "source": "e-olympia-medal-sdn-bhd",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 1.33,
-   "role": null,
-   "date": "2024-01",
-   "status": null,
-   "start": "2023-12",
-   "seen": [
-    "2023-12",
-    "2024-01"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 86, tanggal 2023-12-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.Kn.), Pemberitahuan Perubahan Anggaran Dasar - Peningkatan Modal Ditempatkan/Disetor (AHU-AH.01.03-0164215)",
-     "date": "2023-12"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-e8zepc": {
-   "source": "e-pt-borneo-hijau-lestari",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 99,
-   "role": null,
-   "date": "2022-12",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2023-09",
    "status": "previous",
-   "start": "2021-07",
-   "end": "2022-12",
+   "start": "2022-01",
+   "end": "2023-09",
    "seen": [
-    "2021-07",
     "2022-01",
-    "2022-12"
+    "2022-12",
+    "2023-09"
    ],
    "groups": [],
    "citations": [
     {
      "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
      "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 19, tanggal 2021-07-19, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Akta Pendirian (AHU-0046496.AH.01.01.Tahun 2021)",
-     "date": "2021-07"
     },
     {
      "text": "Akta No. 05, tanggal 2022-01-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Pemberitahuan Perubahan Data Perseroan - Direksi dan Komisaris (AHU-AH.01.03-0066965)",
      "date": "2022-01"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-f9jxo8": {
-   "source": "e-pt-borneo-foresta-industri",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 1,
-   "role": null,
-   "date": "2022-12",
-   "status": "previous",
-   "start": "2021-07",
-   "end": "2022-12",
-   "seen": [
-    "2021-07",
-    "2022-01",
-    "2022-12"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 19, tanggal 2021-07-19, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Akta Pendirian (AHU-0046496.AH.01.01.Tahun 2021)",
-     "date": "2021-07"
-    },
-    {
-     "text": "Akta No. 05, tanggal 2022-01-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Pemberitahuan Perubahan Data Perseroan - Direksi dan Komisaris (AHU-AH.01.03-0066965)",
-     "date": "2022-01"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-frpou8": {
-   "source": "e-pt-borneo-hijau-lestari",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 49.5,
-   "role": null,
-   "date": "2023-09",
-   "status": "previous",
-   "start": "2022-12",
-   "end": "2023-09",
-   "seen": [
-    "2022-12",
-    "2023-09"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
-     "date": "2022-12"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-w0tv33": {
-   "source": "e-pt-borneo-foresta-industri",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 0.5,
-   "role": null,
-   "date": "2023-09",
-   "status": "previous",
-   "start": "2022-12",
-   "end": "2023-09",
-   "seen": [
-    "2022-12",
-    "2023-09"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
-    },
-    {
-     "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
-     "date": "2022-12"
-    }
-   ],
-   "note": "",
-   "createdAt": 1791078610184,
-   "updatedAt": 1791078610184
-  },
-  "l-mut5ykg9-fp7q3i": {
-   "source": "e-egl-capital-sdn-bhd",
-   "target": "e-pt-andalan-agri-mitra",
-   "type": "ownership",
-   "value": 50,
-   "role": null,
-   "date": "2023-09",
-   "status": "previous",
-   "start": "2022-12",
-   "end": "2023-09",
-   "seen": [
-    "2022-12",
-    "2023-09"
-   ],
-   "groups": [],
-   "citations": [
-    {
-     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
-     "date": "2024-01"
     },
     {
      "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
@@ -12280,19 +12103,20 @@
    "createdAt": 1791078610184,
    "updatedAt": 1791078610184
   },
-  "l-mut5ykg9-xsy5hl": {
-   "source": "e-napalia-niwan-pasulu",
+  "l-mut5ykg9-e8zepc": {
+   "source": "e-pt-borneo-hijau-lestari",
    "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
-   "date": "2022-01",
+   "type": "ownership",
+   "value": 99,
+   "role": null,
+   "date": "2022-12",
    "status": "previous",
    "start": "2021-07",
-   "end": "2022-01",
+   "end": "2022-12",
    "seen": [
     "2021-07",
-    "2022-01"
+    "2022-01",
+    "2022-12"
    ],
    "groups": [],
    "citations": [
@@ -12303,6 +12127,130 @@
     {
      "text": "Akta No. 19, tanggal 2021-07-19, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Akta Pendirian (AHU-0046496.AH.01.01.Tahun 2021)",
      "date": "2021-07"
+    },
+    {
+     "text": "Akta No. 05, tanggal 2022-01-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Pemberitahuan Perubahan Data Perseroan - Direksi dan Komisaris (AHU-AH.01.03-0066965)",
+     "date": "2022-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-f9jxo8": {
+   "source": "e-pt-borneo-foresta-industri",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "ownership",
+   "value": 1,
+   "role": null,
+   "date": "2022-12",
+   "status": "previous",
+   "start": "2021-07",
+   "end": "2022-12",
+   "seen": [
+    "2021-07",
+    "2022-01",
+    "2022-12"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 19, tanggal 2021-07-19, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Akta Pendirian (AHU-0046496.AH.01.01.Tahun 2021)",
+     "date": "2021-07"
+    },
+    {
+     "text": "Akta No. 05, tanggal 2022-01-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Pemberitahuan Perubahan Data Perseroan - Direksi dan Komisaris (AHU-AH.01.03-0066965)",
+     "date": "2022-01"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-fp7q3i": {
+   "source": "e-egl-capital-sdn-bhd",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "ownership",
+   "value": 50,
+   "role": null,
+   "date": "2023-09",
+   "status": "previous",
+   "start": "2022-12",
+   "end": "2023-09",
+   "seen": [
+    "2022-12",
+    "2023-09"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
+     "date": "2022-12"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-frpou8": {
+   "source": "e-pt-borneo-hijau-lestari",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "ownership",
+   "value": 49.5,
+   "role": null,
+   "date": "2023-09",
+   "status": "previous",
+   "start": "2022-12",
+   "end": "2023-09",
+   "seen": [
+    "2022-12",
+    "2023-09"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
+     "date": "2022-12"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-gc3q9m": {
+   "source": "e-inspired-medal-sdn-bhd",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "ownership",
+   "value": 98.67,
+   "role": null,
+   "date": "2024-01",
+   "status": null,
+   "start": "2023-12",
+   "seen": [
+    "2023-12",
+    "2024-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 86, tanggal 2023-12-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.Kn.), Pemberitahuan Perubahan Anggaran Dasar - Peningkatan Modal Ditempatkan/Disetor (AHU-AH.01.03-0164215)",
+     "date": "2023-12"
     }
    ],
    "note": "",
@@ -12348,18 +12296,45 @@
    "createdAt": 1791078610184,
    "updatedAt": 1791078610184
   },
-  "l-mut5ykg9-5nczma": {
-   "source": "e-yudiana-s-hut",
+  "l-mut5ykg9-vpuc8u": {
+   "source": "e-olympia-medal-sdn-bhd",
    "target": "e-pt-andalan-agri-mitra",
-   "type": "directorship",
-   "value": null,
-   "role": "Direktur",
+   "type": "ownership",
+   "value": 1.33,
+   "role": null,
+   "date": "2024-01",
+   "status": null,
+   "start": "2023-12",
+   "seen": [
+    "2023-12",
+    "2024-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 86, tanggal 2023-12-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.Kn.), Pemberitahuan Perubahan Anggaran Dasar - Peningkatan Modal Ditempatkan/Disetor (AHU-AH.01.03-0164215)",
+     "date": "2023-12"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-w0tv33": {
+   "source": "e-pt-borneo-foresta-industri",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "ownership",
+   "value": 0.5,
+   "role": null,
    "date": "2023-09",
    "status": "previous",
-   "start": "2022-01",
+   "start": "2022-12",
    "end": "2023-09",
    "seen": [
-    "2022-01",
     "2022-12",
     "2023-09"
    ],
@@ -12370,12 +12345,37 @@
      "date": "2024-01"
     },
     {
-     "text": "Akta No. 05, tanggal 2022-01-28, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Pemberitahuan Perubahan Data Perseroan - Direksi dan Komisaris (AHU-AH.01.03-0066965)",
-     "date": "2022-01"
-    },
-    {
      "text": "Akta No. 87, tanggal 2022-12-29, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn. (Notaris Pengganti: RANDY HERJANTO, S.H., M.KN.), Persetujuan Perubahan Anggaran Dasar dan Pemberitahuan Perubahan Anggaran Dasar - Peningkatan modal dasar dan Modal Ditempatkan/Disetor (AHU-0130884.AH.01.02.Tahun 2022)",
      "date": "2022-12"
+    }
+   ],
+   "note": "",
+   "createdAt": 1791078610184,
+   "updatedAt": 1791078610184
+  },
+  "l-mut5ykg9-xsy5hl": {
+   "source": "e-napalia-niwan-pasulu",
+   "target": "e-pt-andalan-agri-mitra",
+   "type": "directorship",
+   "value": null,
+   "role": "Direktur",
+   "date": "2022-01",
+   "status": "previous",
+   "start": "2021-07",
+   "end": "2022-01",
+   "seen": [
+    "2021-07",
+    "2022-01"
+   ],
+   "groups": [],
+   "citations": [
+    {
+     "text": "Ministry of Law Republic of Indonesia. January 2024. “PT Andalan Agri Mitra.” Corporate profile.",
+     "date": "2024-01"
+    },
+    {
+     "text": "Akta No. 19, tanggal 2021-07-19, Notaris ESTHER PASCALIA ERY JOVINA S.H., M.Kn., Akta Pendirian (AHU-0046496.AH.01.01.Tahun 2021)",
+     "date": "2021-07"
     }
    ],
    "note": "",
